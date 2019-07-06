@@ -592,6 +592,8 @@
     <None Include="Resources\i_7.png" />
     <None Include="Resources\escala_salarial3.png" />
     <None Include="Resources\briefcase_icon-icons.com_54413.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\Splashart.png" />
     <Content Include="Sin_t_tulo-1_.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

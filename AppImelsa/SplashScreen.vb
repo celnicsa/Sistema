@@ -12,7 +12,7 @@
         CProgress.IsRunning = True
         'Título de la aplicación
         If My.Application.Info.Title <> "" Then
-            ApplicationTitle.Text = "Sistema Gestor de Nomina Para RRHHH IMELSA"
+            ApplicationTitle.Text = "Sistema Informatico Para la Administracion de RRHH CELNIC SA"
         Else
             'Si falta el título de la aplicación, utilice el nombre de la aplicación sin la extensión
             ApplicationTitle.Text = System.IO.Path.GetFileNameWithoutExtension(My.Application.Info.AssemblyName)
@@ -29,10 +29,18 @@
         Version.Text = System.String.Format(Version.Text, My.Application.Info.Version.Major, My.Application.Info.Version.Minor)
 
         'Información de Copyright
-        Copyright.Text = My.Application.Info.Copyright
+        'Copyright.Text = My.Application.Info.Copyright
     End Sub
 
     Private Sub MainLayoutPanel_Paint(sender As Object, e As PaintEventArgs) Handles MainLayoutPanel.Paint
+
+    End Sub
+
+    Private Sub Version_Click(sender As Object, e As EventArgs) Handles Version.Click
+
+    End Sub
+
+    Private Sub ApplicationTitle_Click(sender As Object, e As EventArgs) Handles ApplicationTitle.Click
 
     End Sub
 End Class

@@ -53,7 +53,7 @@ Public Class PrincipalForm
     Private Sub ButtonSalario_Click(sender As Object, e As EventArgs) Handles BtnSalario.Click
         CallSalarioForm()
     End Sub
-    Private Sub ButtonTurno_Click(sender As Object, e As EventArgs) Handles BtnTurno.Click
+    Private Sub ButtonTurno_Click(sender As Object, e As EventArgs)
         CallTurnForm()
     End Sub
     Private Sub ButtonCargo_Click(sender As Object, e As EventArgs) Handles BtnCargo.Click
@@ -120,5 +120,13 @@ Public Class PrincipalForm
     Private Sub ButtonItem1_Click(sender As Object, e As EventArgs) Handles ButtonItem1.Click
         Dim WindowsAbono As New NominaForm
         WindowsAbono.ShowDialog()
+    End Sub
+
+    Private Sub ReflectionLabel1_Click(sender As Object, e As EventArgs) Handles ReflectionLabel1.Click
+
+    End Sub
+
+    Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
+
     End Sub
 End Class

@@ -103,10 +103,10 @@ Partial Class EmployedForm
         'PictureBox1
         '
         Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.LogoIme
-        Me.PictureBox1.Location = New System.Drawing.Point(265, 16)
+        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(265, 28)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(119, 148)
+        Me.PictureBox1.Size = New System.Drawing.Size(119, 136)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 50
         Me.PictureBox1.TabStop = False
@@ -566,12 +566,12 @@ Partial Class EmployedForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(766, 12)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(722, 12)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(345, 35)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(376, 35)
         Me.ReflectionLabel1.TabIndex = 34
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Ingeniería</i><font color=""#222222""> y </font><font color=""" &
-    "#003333"">Montaje Electromecanico .SA</font></font></b>"
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones Electronicas de Nicaragua  .SA</i><font colo" &
+    "r=""#222222""></font><font color=""#003333""></font></font></b>"
         '
         'ReflectionLabel2
         '
@@ -582,7 +582,7 @@ Partial Class EmployedForm
         Me.ReflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel2.Font = New System.Drawing.Font("Agency FB", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel2.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel2.Location = New System.Drawing.Point(898, 53)
+        Me.ReflectionLabel2.Location = New System.Drawing.Point(884, 53)
         Me.ReflectionLabel2.Name = "ReflectionLabel2"
         Me.ReflectionLabel2.Size = New System.Drawing.Size(213, 23)
         Me.ReflectionLabel2.TabIndex = 35
@@ -646,7 +646,7 @@ Partial Class EmployedForm
         'StyleManager1
         '
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.Empty, System.Drawing.Color.Empty)
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(26, Byte), Integer)))
         '
         'EmployedForm
         '

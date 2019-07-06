@@ -24,34 +24,38 @@ Partial Class SplashScreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen))
+        Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.CProgress = New DevComponents.DotNetBar.Controls.CircularProgress()
-        Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         Me.SuspendLayout()
         '
+        'StyleManager1
+        '
+        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        '
         'MainLayoutPanel
         '
-        Me.MainLayoutPanel.BackgroundImage = CType(resources.GetObject("MainLayoutPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainLayoutPanel.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Splashart
         Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainLayoutPanel.ColumnCount = 2
         Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
-        Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
-        Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 1, 0)
+        Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253.0!))
         Me.MainLayoutPanel.Controls.Add(Me.DetailsLayoutPanel, 1, 1)
         Me.MainLayoutPanel.Controls.Add(Me.CProgress, 0, 1)
+        Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 1, 0)
         Me.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainLayoutPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainLayoutPanel.Name = "MainLayoutPanel"
         Me.MainLayoutPanel.RowCount = 2
-        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 220.0!))
-        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
+        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
+        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
         Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
         Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.MainLayoutPanel.Size = New System.Drawing.Size(496, 303)
@@ -63,11 +67,12 @@ Partial Class SplashScreen
         Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
         Me.ApplicationTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ApplicationTitle.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationTitle.Location = New System.Drawing.Point(246, 12)
+        Me.ApplicationTitle.ForeColor = System.Drawing.Color.Snow
+        Me.ApplicationTitle.Location = New System.Drawing.Point(246, 57)
         Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(247, 196)
+        Me.ApplicationTitle.Size = New System.Drawing.Size(247, 104)
         Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "Sistema Informatico para la Administracion de Recursos Humanos"
+        Me.ApplicationTitle.Text = "Sistema Informatico para la Administracion de RR HH CELNIC SA"
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'DetailsLayoutPanel
@@ -79,7 +84,7 @@ Partial Class SplashScreen
         Me.DetailsLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142.0!))
         Me.DetailsLayoutPanel.Controls.Add(Me.Version, 0, 0)
         Me.DetailsLayoutPanel.Controls.Add(Me.Copyright, 0, 1)
-        Me.DetailsLayoutPanel.Location = New System.Drawing.Point(246, 223)
+        Me.DetailsLayoutPanel.Location = New System.Drawing.Point(246, 222)
         Me.DetailsLayoutPanel.Name = "DetailsLayoutPanel"
         Me.DetailsLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
         Me.DetailsLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
@@ -96,7 +101,7 @@ Partial Class SplashScreen
         Me.Version.Name = "Version"
         Me.Version.Size = New System.Drawing.Size(241, 20)
         Me.Version.TabIndex = 1
-        Me.Version.Text = "Versión {0}.{1:00}"
+        Me.Version.Text = "Versión  Alpha 0.10"
         '
         'Copyright
         '
@@ -108,7 +113,7 @@ Partial Class SplashScreen
         Me.Copyright.Name = "Copyright"
         Me.Copyright.Size = New System.Drawing.Size(241, 39)
         Me.Copyright.TabIndex = 2
-        Me.Copyright.Text = "Copyright"
+        Me.Copyright.Text = "Copyright 2019"
         '
         'CProgress
         '
@@ -118,17 +123,12 @@ Partial Class SplashScreen
         '
         Me.CProgress.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.CProgress.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CProgress.Location = New System.Drawing.Point(3, 223)
+        Me.CProgress.Location = New System.Drawing.Point(3, 221)
         Me.CProgress.Name = "CProgress"
         Me.CProgress.ProgressColor = System.Drawing.Color.MediumSpringGreen
-        Me.CProgress.Size = New System.Drawing.Size(237, 77)
+        Me.CProgress.Size = New System.Drawing.Size(237, 79)
         Me.CProgress.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeXP
         Me.CProgress.TabIndex = 2
-        '
-        'StyleManager1
-        '
-        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'SplashScreen
         '

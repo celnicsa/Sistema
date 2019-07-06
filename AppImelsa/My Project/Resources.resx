@@ -136,32 +136,38 @@
   <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo-degradado_1086499175.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nomina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nomina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sin título-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sin título-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icono-Nómina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono-Nómina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="i_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\i_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mision" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mision Imelsa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Icp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nomina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nomina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_003_Small_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_003_Small_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono-Nómina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono-Nómina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mision" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mision Imelsa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="relationship_icon_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\relationship_icon_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconos-para-prestamos_Credixpress-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconos-para-prestamos_Credixpress-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Anadir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Addition .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +181,7 @@
   <data name="ix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_003_Small_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_003_Small_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Splashart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Splashart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
