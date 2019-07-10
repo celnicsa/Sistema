@@ -523,6 +523,7 @@ Partial Class AddClientForm
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -583,6 +584,7 @@ Partial Class AddClientForm
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True

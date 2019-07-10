@@ -62,10 +62,10 @@ Public Class PrincipalForm
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles MTimer.Tick
         Time += 1
         If (Time = 300) Then
-            PVision_Mision.Image = My.Resources.Mision
-        ElseIf (Time = 600)
+            'PVision_Mision.Image = My.Resources.Mision
+        ElseIf (Time = 600)Then
             MTimer.Stop()
-            PVision_Mision.Image = My.Resources.Vision
+            ' PVision_Mision.Image = My.Resources.Vision
             Time = 0
             MTimer.Start()
         End If

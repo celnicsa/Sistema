@@ -309,12 +309,12 @@ Partial Class AbonoForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(535, 12)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(535, 23)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
         Me.ReflectionLabel1.Size = New System.Drawing.Size(311, 32)
         Me.ReflectionLabel1.TabIndex = 35
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Ingeniería</i><font color=""#222222""> y </font><font color=""" &
-    "#003333"">Montaje Electromecanico .SA</font></font></b>"
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcicones Eléctricas de Nicaragua SA.</i><font color=""" &
+    "#222222""></font><font color=""#003333""></font></font></b>"
         '
         'BtnClose
         '
@@ -367,7 +367,7 @@ Partial Class AbonoForm
         'PictureBox1
         '
         Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.LogoIme
+        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
         Me.PictureBox1.Location = New System.Drawing.Point(375, 23)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(77, 83)
@@ -390,6 +390,7 @@ Partial Class AbonoForm
         Me.Controls.Add(Me.PanelEx1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "AbonoForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

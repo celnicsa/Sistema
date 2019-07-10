@@ -61,12 +61,12 @@ Partial Class PrestamoForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(766, 12)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(749, 12)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(345, 35)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(362, 35)
         Me.ReflectionLabel1.TabIndex = 41
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Ingeniería</i><font color=""#222222""> y </font><font color=""" &
-    "#003333"">Montaje Electromecanico .SA</font></font></b>"
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones Electricas de Nicaragua SA.</i><font color=""" &
+    "#222222""></font><font color=""#003333""></font></font></b>"
         '
         'ReflectionLabel2
         '
@@ -137,7 +137,7 @@ Partial Class PrestamoForm
         '
         'GridPrestamo
         '
-        Me.GridPrestamo.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GridPrestamo.BackColor = System.Drawing.Color.White
         Me.GridPrestamo.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed
         Me.GridPrestamo.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridPrestamo.ForeColor = System.Drawing.Color.Black
@@ -182,7 +182,7 @@ Partial Class PrestamoForm
         'StyleManager1
         '
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'PanelEx2
         '
@@ -206,8 +206,7 @@ Partial Class PrestamoForm
         '
         'GroupPanel2
         '
-        Me.GroupPanel2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GroupPanel2.CanvasColor = System.Drawing.Color.WhiteSmoke
+        Me.GroupPanel2.BackColor = System.Drawing.Color.White
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
         Me.GroupPanel2.Controls.Add(Me.RbtnCode)
         Me.GroupPanel2.Controls.Add(Me.RbtnName)
@@ -351,8 +350,9 @@ Partial Class PrestamoForm
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.LogoIme
+        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
         Me.PictureBox1.Location = New System.Drawing.Point(265, 16)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(119, 148)
@@ -364,7 +364,7 @@ Partial Class PrestamoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1123, 505)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.BtnNewClient)

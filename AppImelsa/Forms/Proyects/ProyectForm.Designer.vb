@@ -135,12 +135,12 @@ Partial Class ProyectForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(766, 12)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(729, 12)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(345, 35)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(364, 35)
         Me.ReflectionLabel1.TabIndex = 40
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Ingeniería</i><font color=""#222222""> y </font><font color=""" &
-    "#003333"">Montaje Electromecanico .SA</font></font></b>"
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones Eléctricas de Nicaragua SA.</i><font color=""" &
+    "#222222""></font><font color=""#003333""></font></font></b>"
         '
         'ReflectionLabel2
         '
@@ -612,7 +612,7 @@ Partial Class ProyectForm
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.LogoIme
+        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
         Me.PictureBox1.Location = New System.Drawing.Point(265, 16)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(119, 148)

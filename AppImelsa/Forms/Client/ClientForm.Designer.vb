@@ -24,7 +24,7 @@ Partial Class ClientForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ClientForm))
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelEx2 = New DevComponents.DotNetBar.PanelEx()
@@ -84,7 +84,7 @@ Partial Class ClientForm
         'PictureBox1
         '
         Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.LogoIme
+        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
         Me.PictureBox1.Location = New System.Drawing.Point(265, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(119, 148)
@@ -273,9 +273,9 @@ Partial Class ClientForm
         '
         '
         Me.GridClient.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridClient.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridClient.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridClient.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridClient.PrimaryGrid.MultiSelect = False
         Me.GridClient.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -293,12 +293,12 @@ Partial Class ClientForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(766, 12)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(729, 12)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(345, 35)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(364, 35)
         Me.ReflectionLabel1.TabIndex = 26
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Ingeniería</i><font color=""#222222""> y </font><font color=""" &
-    "#003333"">Montaje Electromecanico .SA</font></font></b>"
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones Electricas de Nicaragua SA.</i><font color=""" &
+    "#222222""></font><font color=""#003333""></font></font></b>"
         '
         'ReflectionLabel2
         '

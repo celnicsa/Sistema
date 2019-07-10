@@ -137,3 +137,4 @@ C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\D
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.exe
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.xml
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.pdb
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\FlashControlV71.dll

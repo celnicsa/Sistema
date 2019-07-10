@@ -43,14 +43,19 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3172352">
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="amd64" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3171328">
       <assemblyIdentity name="AppImelsa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fXB78/vY67Rt40V14xXAiGBkzAleLwA9tj0tWra4d+Q=</dsig:DigestValue>
+        <dsig:DigestValue>GI3fQwsiTnBRPIjqTgcy6Oqpx4Im/9OtqYx4rfp35Q0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
