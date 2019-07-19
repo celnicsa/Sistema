@@ -138,3 +138,12 @@ C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\D
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.xml
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.pdb
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\FlashControlV71.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.TreeGX.dll

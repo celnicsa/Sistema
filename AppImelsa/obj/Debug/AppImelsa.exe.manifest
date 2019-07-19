@@ -55,7 +55,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GI3fQwsiTnBRPIjqTgcy6Oqpx4Im/9OtqYx4rfp35Q0=</dsig:DigestValue>
+        <dsig:DigestValue>4iVY1dCAE9RBoQmkADrId1Ikdod0I2rG/aA3y1vADxg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -395,13 +395,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AppImelsa.exe.config" size="492">
+  <file name="AppImelsa.exe.config" size="530">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Z2NsMqT0Xf+9uv18r5EjMZsPwFyrW+vk4VMb5EW7Rpg=</dsig:DigestValue>
+      <dsig:DigestValue>st5TMZRKRm+JR5sPhSq5+nbbjwJSdlwIbhoLlC5vqqU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LogoImelsa.ico" size="67646">

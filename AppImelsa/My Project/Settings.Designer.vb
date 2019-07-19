@@ -57,7 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=RENNERP\SQLEXPRESS;Initial Catalog=BDImelsa;Integrated Security=True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=cemicsa.cucaxhq0asdg.us-east-2.rds.amazonaws.com;Initial Catalog=BDIm"& _ 
+            "elsa;User ID=admin;Password=root12345")>  _
         Public ReadOnly Property ConexionSQL() As String
             Get
                 Return CType(Me("ConexionSQL"),String)
