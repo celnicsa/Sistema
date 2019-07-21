@@ -24,11 +24,11 @@ Partial Class PrincipalForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
-        Dim SuperTabColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
-        Dim SuperTabLinearGradientColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Dim SuperTabPanelColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
-        Dim SuperTabPanelItemColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
         Dim SuperTabLinearGradientColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
+        Dim SuperTabPanelColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
+        Dim SuperTabPanelItemColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
         Me.RibbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
@@ -641,9 +641,9 @@ Partial Class PrincipalForm
         Me.TabCWindows.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
-        SuperTabLinearGradientColorTable2.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
-        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable2
-        Me.TabCWindows.TabStripColor = SuperTabColorTable1
+        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
+        SuperTabColorTable2.Background = SuperTabLinearGradientColorTable1
+        Me.TabCWindows.TabStripColor = SuperTabColorTable2
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
         '
@@ -655,10 +655,10 @@ Partial Class PrincipalForm
         Me.SuperTabControlPanel1.Location = New System.Drawing.Point(0, 26)
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
-        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
-        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
-        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
+        SuperTabLinearGradientColorTable3.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
+        SuperTabPanelItemColorTable2.Background = SuperTabLinearGradientColorTable3
+        SuperTabPanelColorTable2.Default = SuperTabPanelItemColorTable2
+        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable2
         Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 520)
         Me.SuperTabControlPanel1.TabIndex = 1
         Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
