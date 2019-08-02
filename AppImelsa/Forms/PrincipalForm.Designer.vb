@@ -24,10 +24,10 @@ Partial Class PrincipalForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
-        Dim SuperTabColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
+        Dim SuperTabColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
         Dim SuperTabLinearGradientColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Dim SuperTabPanelColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
-        Dim SuperTabPanelItemColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabPanelColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
+        Dim SuperTabPanelItemColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
         Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
@@ -52,8 +52,12 @@ Partial Class PrincipalForm
         Me.ItemContainer5 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnCargo = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnViewOneEmp = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem4 = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer2 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnSalario = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar1 = New DevComponents.DotNetBar.RibbonBar()
         Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
@@ -413,9 +417,27 @@ Partial Class PrincipalForm
         Me.BtnViewOneEmp.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
         Me.BtnViewOneEmp.ImageFixedSize = New System.Drawing.Size(25, 20)
         Me.BtnViewOneEmp.Name = "BtnViewOneEmp"
+        Me.BtnViewOneEmp.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem3})
         Me.BtnViewOneEmp.Symbol = ""
         Me.BtnViewOneEmp.SymbolColor = System.Drawing.Color.MidnightBlue
         Me.BtnViewOneEmp.Text = "Ver Perfil"
+        '
+        'ButtonItem3
+        '
+        Me.ButtonItem3.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem3.Image = Global.AppImelsa.My.Resources.Resources.i_7
+        Me.ButtonItem3.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.ButtonItem3.Name = "ButtonItem3"
+        Me.ButtonItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4})
+        Me.ButtonItem3.Text = "Salarios Base"
+        '
+        'ButtonItem4
+        '
+        Me.ButtonItem4.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem4.Image = Global.AppImelsa.My.Resources.Resources.i_7
+        Me.ButtonItem4.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.ButtonItem4.Name = "ButtonItem4"
+        Me.ButtonItem4.Text = "Salarios Base"
         '
         'ItemContainer2
         '
@@ -425,7 +447,7 @@ Partial Class PrincipalForm
         Me.ItemContainer2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ItemContainer2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
         Me.ItemContainer2.Name = "ItemContainer2"
-        Me.ItemContainer2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnSalario})
+        Me.ItemContainer2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnSalario, Me.ButtonItem44})
         '
         '
         '
@@ -437,7 +459,25 @@ Partial Class PrincipalForm
         Me.BtnSalario.Image = Global.AppImelsa.My.Resources.Resources.i_7
         Me.BtnSalario.ImageFixedSize = New System.Drawing.Size(20, 20)
         Me.BtnSalario.Name = "BtnSalario"
+        Me.BtnSalario.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem2})
         Me.BtnSalario.Text = "Salarios Base"
+        '
+        'ButtonItem2
+        '
+        Me.ButtonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem2.Image = Global.AppImelsa.My.Resources.Resources.i_7
+        Me.ButtonItem2.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.ButtonItem2.Name = "ButtonItem2"
+        Me.ButtonItem2.Text = "Salarios Base"
+        '
+        'ButtonItem44
+        '
+        Me.ButtonItem44.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem44.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.ButtonItem44.Name = "ButtonItem44"
+        Me.ButtonItem44.Symbol = ""
+        Me.ButtonItem44.SymbolColor = System.Drawing.Color.DarkSlateGray
+        Me.ButtonItem44.Text = "Escolaridad"
         '
         'RibbonPanel2
         '
@@ -642,8 +682,8 @@ Partial Class PrincipalForm
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
         SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
-        SuperTabColorTable2.Background = SuperTabLinearGradientColorTable1
-        Me.TabCWindows.TabStripColor = SuperTabColorTable2
+        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable1
+        Me.TabCWindows.TabStripColor = SuperTabColorTable1
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
         '
@@ -656,9 +696,9 @@ Partial Class PrincipalForm
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
         SuperTabLinearGradientColorTable3.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable2.Background = SuperTabLinearGradientColorTable3
-        SuperTabPanelColorTable2.Default = SuperTabPanelItemColorTable2
-        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable2
+        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable3
+        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
+        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
         Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 520)
         Me.SuperTabControlPanel1.TabIndex = 1
         Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
@@ -821,4 +861,8 @@ Partial Class PrincipalForm
     Friend WithEvents BtnAbono As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonBar1 As DevComponents.DotNetBar.RibbonBar
     Friend WithEvents ButtonItem1 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem2 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem44 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem3 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem4 As DevComponents.DotNetBar.ButtonItem
 End Class

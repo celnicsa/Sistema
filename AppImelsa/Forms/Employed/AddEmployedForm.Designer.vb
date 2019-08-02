@@ -302,8 +302,9 @@ Partial Class AddEmployedForm
         Me.TxtBAddres.Location = New System.Drawing.Point(286, 201)
         Me.TxtBAddres.MaxLength = 133
         Me.TxtBAddres.Name = "TxtBAddres"
-        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
-    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang19466{\fonttbl{\f0\fnil\fcharset0" &
+    " Arial Narrow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\*\generator Riched20 10.0.18362}\viewkind4\uc1 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\pard\f0\fs" &
+    "20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBAddres.Size = New System.Drawing.Size(223, 49)
         Me.TxtBAddres.TabIndex = 162
         '

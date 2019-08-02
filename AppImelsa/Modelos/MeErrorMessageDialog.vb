@@ -54,6 +54,8 @@
                 Message = "Error, Eliminación de Datos de Cliente Erronea!"
             Case "Error-P03"
                 Message = "Error, Eliminación de Datos de Proyecto Erronea!"
+            Case "Error-E01"
+                Message = "Error, Eliminación de la escolaridad Erronea"
         End Select
 
         MsgBox(Message, MsgBoxStyle.Exclamation)

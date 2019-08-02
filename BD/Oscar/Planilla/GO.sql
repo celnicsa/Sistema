@@ -6,7 +6,7 @@ CREATE TABLE MTableBeneficioEscolaridad(
 
 
 ALTER TABLE MTableEMP 
-ADD Tipo_Escolaridad int FOREIGN KEY REFERENCES MTableBeneficioEscolaridad(Cod_Escolaridad);
+ADD Tipo_Escolaridad varchar(5) FOREIGN KEY REFERENCES MTableBeneficioEscolaridad(Cod_Escolaridad);
 
 
 Create Table MTableNominaEmpleado(

@@ -150,6 +150,12 @@
     <Compile Include="Forms\Client\SelectClientForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Employed\EscolaridadForm.Designer.vb">
+      <DependentUpon>EscolaridadForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employed\EscolaridadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Employed\SelectEmployedForm.Designer.vb">
       <DependentUpon>SelectEmployedForm.vb</DependentUpon>
     </Compile>
@@ -301,6 +307,7 @@
     <Compile Include="Modelos\Employed\CelEmployed.vb" />
     <Compile Include="Modelos\Employed\EmailEmployed.vb" />
     <Compile Include="Modelos\Employed\Employed.vb" />
+    <Compile Include="Modelos\Employed\Escolaridad.vb" />
     <Compile Include="Modelos\Employed\Salario.vb" />
     <Compile Include="Modelos\Employed\Turno.vb" />
     <Compile Include="Modelos\MeErrorMessageDialog.vb" />
@@ -372,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Client\SelectClientForm.resx">
       <DependentUpon>SelectClientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employed\EscolaridadForm.resx">
+      <DependentUpon>EscolaridadForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Employed\SelectEmployedForm.resx">
       <DependentUpon>SelectEmployedForm.vb</DependentUpon>

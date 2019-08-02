@@ -122,11 +122,8 @@ Public Class PrincipalForm
         WindowsAbono.ShowDialog()
     End Sub
 
-    Private Sub ReflectionLabel1_Click(sender As Object, e As EventArgs) Handles ReflectionLabel1.Click
-
-    End Sub
-
-    Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
-
+    Private Sub ButtonItem44_Click(sender As Object, e As EventArgs) Handles ButtonItem44.Click
+        Dim EscolaridadForm As New EscolaridadForm
+        EscolaridadForm.ShowDialog()
     End Sub
 End Class

@@ -1517,4 +1517,85 @@ Module ModuleCmdSql
         End Try
     End Sub
 
+
+    Public Sub CmdViewEscolaridad(ByRef DataGridViewEscolaridad As GridPanel)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("Select Cod_Escolaridad As [Codigo],Nombre_Grado As [Escolaridad], Beneficio_Grado As [Bonificación] From MTableBeneficioEscolaridad", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Cargos")
+            DataGridViewEscolaridad.DataSource = ds.Tables("Cargos")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
+    Public Function CmdInsertEscolaridad(ByVal Data As Escolaridad) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPInsertEscolaridad]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@Codigo", Data.P_Codigo_Escolaridad)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.P_Nombre_Grado)
+            Cmd.Parameters.AddWithValue("@Beneficio", Data.P_Beneficio_Grado)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+
+    Public Function CmdUpdateEscolaridad(ByVal Data As Escolaridad) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPUpdatescolaridad]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@Codigo", Data.P_Codigo_Escolaridad)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.P_Nombre_Grado)
+            Cmd.Parameters.AddWithValue("@Beneficio", Data.P_Beneficio_Grado)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+
+
+    Public Function CmdDeleteEscolaridad(ByVal ID) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPDeleteEscolaridad]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@Codigo", ID)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+
 End Module
