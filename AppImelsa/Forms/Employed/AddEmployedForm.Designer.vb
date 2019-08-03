@@ -88,6 +88,8 @@ Partial Class AddEmployedForm
         Me.CProgress = New DevComponents.DotNetBar.CircularProgressItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.PSliderEmployed.SuspendLayout()
         Me.PageSliderPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -124,7 +126,7 @@ Partial Class AddEmployedForm
         Me.PSliderEmployed.NextPageVisibleMargin = 0
         Me.PSliderEmployed.PageMouseDragEnabled = False
         Me.PSliderEmployed.ScrollBarVisibility = DevComponents.DotNetBar.Controls.eScrollBarVisibility.Hidden
-        Me.PSliderEmployed.SelectedPage = Me.PageSliderPage3
+        Me.PSliderEmployed.SelectedPage = Me.PageSliderPage1
         Me.PSliderEmployed.Size = New System.Drawing.Size(805, 331)
         Me.PSliderEmployed.TabIndex = 11
         Me.PSliderEmployed.Text = "PageSlider1"
@@ -134,6 +136,8 @@ Partial Class AddEmployedForm
         '
         Me.PageSliderPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PageSliderPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PageSliderPage1.Controls.Add(Me.ComboBox1)
+        Me.PageSliderPage1.Controls.Add(Me.LabelX15)
         Me.PageSliderPage1.Controls.Add(Me.BtnLoadPhoto)
         Me.PageSliderPage1.Controls.Add(Me.PictureBox1)
         Me.PageSliderPage1.Controls.Add(Me.DateInputBirth)
@@ -155,7 +159,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Controls.Add(Me.LabelX1)
         Me.PageSliderPage1.Controls.Add(Me.ReflectionLabel1)
         Me.PageSliderPage1.ForeColor = System.Drawing.Color.Black
-        Me.PageSliderPage1.Location = New System.Drawing.Point(-1590, 8)
+        Me.PageSliderPage1.Location = New System.Drawing.Point(4, 8)
         Me.PageSliderPage1.Name = "PageSliderPage1"
         Me.PageSliderPage1.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage1.TabIndex = 3
@@ -492,7 +496,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage2.Controls.Add(Me.CmBTurno)
         Me.PageSliderPage2.Controls.Add(Me.ReflectionLabel3)
         Me.PageSliderPage2.ForeColor = System.Drawing.Color.Black
-        Me.PageSliderPage2.Location = New System.Drawing.Point(-793, 8)
+        Me.PageSliderPage2.Location = New System.Drawing.Point(801, 8)
         Me.PageSliderPage2.Name = "PageSliderPage2"
         Me.PageSliderPage2.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage2.TabIndex = 6
@@ -674,7 +678,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage3.Controls.Add(Me.BtnAddPhone)
         Me.PageSliderPage3.Controls.Add(Me.ReflectionLabel2)
         Me.PageSliderPage3.ForeColor = System.Drawing.Color.Black
-        Me.PageSliderPage3.Location = New System.Drawing.Point(4, 8)
+        Me.PageSliderPage3.Location = New System.Drawing.Point(1598, 8)
         Me.PageSliderPage3.Name = "PageSliderPage3"
         Me.PageSliderPage3.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage3.TabIndex = 5
@@ -756,7 +760,6 @@ Partial Class AddEmployedForm
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -817,7 +820,6 @@ Partial Class AddEmployedForm
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -1054,6 +1056,29 @@ Partial Class AddEmployedForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
+        'LabelX15
+        '
+        Me.LabelX15.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX15.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX15.ForeColor = System.Drawing.Color.Black
+        Me.LabelX15.Location = New System.Drawing.Point(17, 259)
+        Me.LabelX15.Name = "LabelX15"
+        Me.LabelX15.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX15.TabIndex = 172
+        Me.LabelX15.Text = "Escolaridad"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(98, 259)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
+        Me.ComboBox1.TabIndex = 173
+        '
         'AddEmployedForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1149,4 +1174,6 @@ Partial Class AddEmployedForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents LabelX15 As DevComponents.DotNetBar.LabelX
 End Class

@@ -106,6 +106,8 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Cargo", Data.CodeCargo)
             Cmd.Parameters.AddWithValue("@SalarioBase", Data.CodeSalario)
             Cmd.Parameters.AddWithValue("@Photo", BytesToString(ImageToBytes(Data.Photo)))
+            Cmd.Parameters.AddWithValue("@CodEscolaridad", Data.Escolaridad)
+
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -136,6 +138,7 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Cargo", Data.CodeCargo)
             Cmd.Parameters.AddWithValue("@SalarioBase", Data.CodeSalario)
             Cmd.Parameters.AddWithValue("@Photo", BytesToString(ImageToBytes(Data.Photo)))
+            Cmd.Parameters.AddWithValue("@CodEscolaridad", Data.Escolaridad)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -1532,6 +1535,24 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Sub
+
+
+    Public Sub CmdViewEscolaridadCombo(ByRef Combobox As ComboBox)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("Select Cod_Escolaridad + ' '+ Nombre_Grado AS ESC From MTableBeneficioEscolaridad", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Cargos")
+            Combobox.DataSource = ds.Tables("Cargos")
+            Combobox.DisplayMember = "ESC"
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
 
     Public Function CmdInsertEscolaridad(ByVal Data As Escolaridad) As Boolean
         Try

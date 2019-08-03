@@ -12,6 +12,7 @@
     Private _codeCargo As String
     Private _codeTurno As String
     Private _codeSalario As String
+    Private _codigoescolaridad As String
     Public Property Code As String
         Get
             Return _code
@@ -126,6 +127,16 @@
         End Get
         Set(value As String)
             _sexo = value
+        End Set
+    End Property
+
+
+    Public Property Escolaridad As String
+        Get
+            Return _codigoescolaridad
+        End Get
+        Set(value As String)
+            _codigoescolaridad = value
         End Set
     End Property
 End Class
