@@ -23,6 +23,7 @@ Public Class EscolaridadForm
             TxtBName.Text = ""
             TxtBBeneficio.Text = ""
             BtnInsertEscolaridad.Text = "Agregar"
+            FlagOperacion = "Insertar"
         Else
             ErrorMessage("Error-E01")
         End If

@@ -29,7 +29,6 @@ Module ModuleConvert
                 Return Nothing
             End If
         Catch ex As Exception
-            MsgBox("Convertision a Byte Termino en Error: " + ex.Message, MsgBoxStyle.Exclamation)
             Return Nothing
         End Try
     End Function
@@ -42,7 +41,6 @@ Module ModuleConvert
                 Salida += Array(Count).ToString + ","
             Next
         Catch ex As Exception
-            MsgBox("Conversion a String Termino en error", MsgBoxStyle.Exclamation)
         End Try
         Return Salida
     End Function

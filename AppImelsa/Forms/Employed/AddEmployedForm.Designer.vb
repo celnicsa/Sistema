@@ -27,6 +27,8 @@ Partial Class AddEmployedForm
         Me.BtnCancel = New DevComponents.DotNetBar.ButtonX()
         Me.PSliderEmployed = New DevComponents.DotNetBar.Controls.PageSlider()
         Me.PageSliderPage1 = New DevComponents.DotNetBar.Controls.PageSliderPage()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.BtnLoadPhoto = New DevComponents.DotNetBar.ButtonX()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DateInputBirth = New System.Windows.Forms.DateTimePicker()
@@ -37,7 +39,6 @@ Partial Class AddEmployedForm
         Me.RbtnFemenine = New System.Windows.Forms.RadioButton()
         Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.TxtBAddres = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
-        Me.TxtBInss = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBIden = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBLastName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBName = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -88,8 +89,7 @@ Partial Class AddEmployedForm
         Me.CProgress = New DevComponents.DotNetBar.CircularProgressItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
-        Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TxtBInss = New System.Windows.Forms.ComboBox()
         Me.PSliderEmployed.SuspendLayout()
         Me.PageSliderPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,7 +115,7 @@ Partial Class AddEmployedForm
         '
         'PSliderEmployed
         '
-        Me.PSliderEmployed.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.PSliderEmployed.BackColor = System.Drawing.Color.White
         Me.PSliderEmployed.Controls.Add(Me.PageSliderPage1)
         Me.PSliderEmployed.Controls.Add(Me.PageSliderPage2)
         Me.PSliderEmployed.Controls.Add(Me.PageSliderPage3)
@@ -134,8 +134,9 @@ Partial Class AddEmployedForm
         '
         'PageSliderPage1
         '
-        Me.PageSliderPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.PageSliderPage1.BackColor = System.Drawing.Color.White
         Me.PageSliderPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PageSliderPage1.Controls.Add(Me.TxtBInss)
         Me.PageSliderPage1.Controls.Add(Me.ComboBox1)
         Me.PageSliderPage1.Controls.Add(Me.LabelX15)
         Me.PageSliderPage1.Controls.Add(Me.BtnLoadPhoto)
@@ -148,7 +149,6 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Controls.Add(Me.RbtnFemenine)
         Me.PageSliderPage1.Controls.Add(Me.LabelX7)
         Me.PageSliderPage1.Controls.Add(Me.TxtBAddres)
-        Me.PageSliderPage1.Controls.Add(Me.TxtBInss)
         Me.PageSliderPage1.Controls.Add(Me.TxtBIden)
         Me.PageSliderPage1.Controls.Add(Me.TxtBLastName)
         Me.PageSliderPage1.Controls.Add(Me.TxtBName)
@@ -163,6 +163,29 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Name = "PageSliderPage1"
         Me.PageSliderPage1.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage1.TabIndex = 3
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(98, 259)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
+        Me.ComboBox1.TabIndex = 173
+        '
+        'LabelX15
+        '
+        Me.LabelX15.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX15.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX15.ForeColor = System.Drawing.Color.Black
+        Me.LabelX15.Location = New System.Drawing.Point(17, 259)
+        Me.LabelX15.Name = "LabelX15"
+        Me.LabelX15.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX15.TabIndex = 172
+        Me.LabelX15.Text = "Escolaridad"
         '
         'BtnLoadPhoto
         '
@@ -251,7 +274,7 @@ Partial Class AddEmployedForm
         'RbtnMale
         '
         Me.RbtnMale.AutoSize = True
-        Me.RbtnMale.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.RbtnMale.BackColor = System.Drawing.Color.White
         Me.RbtnMale.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RbtnMale.ForeColor = System.Drawing.Color.Black
         Me.RbtnMale.Location = New System.Drawing.Point(369, 142)
@@ -264,7 +287,7 @@ Partial Class AddEmployedForm
         'RbtnFemenine
         '
         Me.RbtnFemenine.AutoSize = True
-        Me.RbtnFemenine.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.RbtnFemenine.BackColor = System.Drawing.Color.White
         Me.RbtnFemenine.Checked = True
         Me.RbtnFemenine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RbtnFemenine.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -311,25 +334,6 @@ Partial Class AddEmployedForm
     "20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBAddres.Size = New System.Drawing.Size(223, 49)
         Me.TxtBAddres.TabIndex = 162
-        '
-        'TxtBInss
-        '
-        Me.TxtBInss.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        '
-        '
-        '
-        Me.TxtBInss.Border.BackColorGradientType = DevComponents.DotNetBar.eGradientType.Radial
-        Me.TxtBInss.Border.Class = "TextBoxBorder"
-        Me.TxtBInss.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TxtBInss.DisabledBackColor = System.Drawing.Color.White
-        Me.TxtBInss.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Highlighter1.SetHighlightOnFocus(Me.TxtBInss, True)
-        Me.TxtBInss.Location = New System.Drawing.Point(98, 222)
-        Me.TxtBInss.MaxLength = 9
-        Me.TxtBInss.Name = "TxtBInss"
-        Me.TxtBInss.PreventEnterBeep = True
-        Me.TxtBInss.Size = New System.Drawing.Size(144, 22)
-        Me.TxtBInss.TabIndex = 161
         '
         'TxtBIden
         '
@@ -465,7 +469,7 @@ Partial Class AddEmployedForm
         '
         'ReflectionLabel1
         '
-        Me.ReflectionLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ReflectionLabel1.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -648,7 +652,7 @@ Partial Class AddEmployedForm
         '
         'ReflectionLabel3
         '
-        Me.ReflectionLabel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ReflectionLabel3.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -711,8 +715,7 @@ Partial Class AddEmployedForm
         '
         'GroupPanel2
         '
-        Me.GroupPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GroupPanel2.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel2.BackColor = System.Drawing.Color.White
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.GroupPanel2.Controls.Add(Me.ListBoxEmail)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
@@ -753,13 +756,14 @@ Partial Class AddEmployedForm
         'ListBoxEmail
         '
         Me.ListBoxEmail.AutoScroll = True
-        Me.ListBoxEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ListBoxEmail.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -773,8 +777,7 @@ Partial Class AddEmployedForm
         '
         'GroupPanel1
         '
-        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GroupPanel1.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel1.BackColor = System.Drawing.Color.White
         Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.GroupPanel1.Controls.Add(Me.ListBoxTel)
         Me.GroupPanel1.DisabledBackColor = System.Drawing.Color.Empty
@@ -813,13 +816,14 @@ Partial Class AddEmployedForm
         'ListBoxTel
         '
         Me.ListBoxTel.AutoScroll = True
-        Me.ListBoxTel.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ListBoxTel.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -920,7 +924,7 @@ Partial Class AddEmployedForm
         '
         'ReflectionLabel2
         '
-        Me.ReflectionLabel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ReflectionLabel2.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -974,7 +978,7 @@ Partial Class AddEmployedForm
         '
         'ProgressSteps1
         '
-        Me.ProgressSteps1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ProgressSteps1.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -1056,28 +1060,15 @@ Partial Class AddEmployedForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
-        'LabelX15
+        'TxtBInss
         '
-        Me.LabelX15.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX15.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX15.ForeColor = System.Drawing.Color.Black
-        Me.LabelX15.Location = New System.Drawing.Point(17, 259)
-        Me.LabelX15.Name = "LabelX15"
-        Me.LabelX15.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX15.TabIndex = 172
-        Me.LabelX15.Text = "Escolaridad"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(98, 259)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
-        Me.ComboBox1.TabIndex = 173
+        Me.TxtBInss.FormattingEnabled = True
+        Me.TxtBInss.Items.AddRange(New Object() {"Aplica", "No aplica"})
+        Me.TxtBInss.Location = New System.Drawing.Point(98, 227)
+        Me.TxtBInss.Name = "TxtBInss"
+        Me.TxtBInss.Size = New System.Drawing.Size(144, 21)
+        Me.TxtBInss.TabIndex = 174
+        Me.TxtBInss.Text = "Aplica"
         '
         'AddEmployedForm
         '
@@ -1145,7 +1136,6 @@ Partial Class AddEmployedForm
     Friend WithEvents RbtnFemenine As RadioButton
     Friend WithEvents LabelX7 As DevComponents.DotNetBar.LabelX
     Friend WithEvents TxtBAddres As DevComponents.DotNetBar.Controls.RichTextBoxEx
-    Friend WithEvents TxtBInss As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBIden As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBLastName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBName As DevComponents.DotNetBar.Controls.TextBoxX
@@ -1176,4 +1166,5 @@ Partial Class AddEmployedForm
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents LabelX15 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents TxtBInss As ComboBox
 End Class

@@ -13,6 +13,7 @@ Public Class AddEmployedForm
         LoadDefaultPhoto()
         LoadNextCode()
         CmdViewEscolaridadCombo(ComboBox1)
+        ComboBox1.SelectedIndex = 0
     End Sub
     Public Sub LoadNextCode()
         TxtBCode.Text = CmdNextCode("SPNextCodeEmp")

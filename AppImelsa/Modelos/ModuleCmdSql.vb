@@ -1155,6 +1155,7 @@ Module ModuleCmdSql
                 Data.CodeProyect = dr.Item("Proyecto Asignado")
                 Data.CodeCargo = dr.Item("Cargo")
                 Data.CodeSalario = dr.Item("Salario Base")
+                Data.Escolaridad = dr.Item("Escolaridad")
                 Resultado = dr.Item("Foto")
             Loop
             ArrayText = Resultado.Split(",")
@@ -1544,8 +1545,12 @@ Module ModuleCmdSql
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
             da.Fill(ds, "Cargos")
-            Combobox.DataSource = ds.Tables("Cargos")
-            Combobox.DisplayMember = "ESC"
+
+            For Each Row As DataRow In ds.Tables(0).Rows
+                For Each Coll As DataColumn In ds.Tables(0).Columns
+                    Combobox.Items.Add(Row(Coll.ColumnName).ToString())
+                Next
+            Next
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

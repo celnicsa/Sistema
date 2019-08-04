@@ -293,7 +293,7 @@ Partial Class EscolaridadForm
         Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "EscolaridadForm"
-        Me.Text = "EscolaridadForm"
+        Me.Text = "Escolaridades del sistema"
         Me.PanelEx1.ResumeLayout(False)
         Me.GroupPanel1.ResumeLayout(False)
         Me.GroupPanel1.PerformLayout()
