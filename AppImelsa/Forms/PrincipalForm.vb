@@ -118,12 +118,14 @@ Public Class PrincipalForm
     End Sub
 
     Private Sub ButtonItem1_Click(sender As Object, e As EventArgs) Handles ButtonItem1.Click
-        Dim WindowsAbono As New NominaForm
-        WindowsAbono.ShowDialog()
+        Dim NF As New NominaForm
+        NewWindows("Nomina", NominaForm)
     End Sub
 
     Private Sub ButtonItem44_Click(sender As Object, e As EventArgs) Handles ButtonItem44.Click
         Dim EscolaridadForm As New EscolaridadForm
         EscolaridadForm.ShowDialog()
     End Sub
+
+
 End Class

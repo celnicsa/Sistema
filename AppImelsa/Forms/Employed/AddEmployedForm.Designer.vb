@@ -27,10 +27,10 @@ Partial Class AddEmployedForm
         Me.BtnCancel = New DevComponents.DotNetBar.ButtonX()
         Me.PSliderEmployed = New DevComponents.DotNetBar.Controls.PageSlider()
         Me.PageSliderPage1 = New DevComponents.DotNetBar.Controls.PageSliderPage()
+        Me.TxtBInss = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.BtnLoadPhoto = New DevComponents.DotNetBar.ButtonX()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DateInputBirth = New System.Windows.Forms.DateTimePicker()
         Me.TxtBCode = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
@@ -51,19 +51,14 @@ Partial Class AddEmployedForm
         Me.PageSliderPage2 = New DevComponents.DotNetBar.Controls.PageSliderPage()
         Me.ListBoxProyect = New System.Windows.Forms.ListBox()
         Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
-        Me.BtnAddSalario = New DevComponents.DotNetBar.ButtonX()
         Me.ListBoxSalario = New System.Windows.Forms.ListBox()
         Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
-        Me.BtnAddCargo = New DevComponents.DotNetBar.ButtonX()
-        Me.BtnAddTurn = New DevComponents.DotNetBar.ButtonX()
         Me.ListBoxCargo = New System.Windows.Forms.ListBox()
         Me.LabelX12 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
         Me.CmBTurno = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ReflectionLabel3 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.PageSliderPage3 = New DevComponents.DotNetBar.Controls.PageSliderPage()
-        Me.BtnRemoveEmail = New DevComponents.DotNetBar.ButtonX()
-        Me.BtnRemovePhone = New DevComponents.DotNetBar.ButtonX()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.ListBoxEmail = New DevComponents.DotNetBar.ListBoxAdv()
         Me.GroupPanel1 = New DevComponents.DotNetBar.Controls.GroupPanel()
@@ -72,8 +67,6 @@ Partial Class AddEmployedForm
         Me.TxtBPhone = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
-        Me.BtnAddEmail = New DevComponents.DotNetBar.ButtonX()
-        Me.BtnAddPhone = New DevComponents.DotNetBar.ButtonX()
         Me.ReflectionLabel2 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.BtnAccept = New DevComponents.DotNetBar.ButtonX()
         Me.BtnBack = New DevComponents.DotNetBar.ButtonX()
@@ -89,15 +82,22 @@ Partial Class AddEmployedForm
         Me.CProgress = New DevComponents.DotNetBar.CircularProgressItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
-        Me.TxtBInss = New System.Windows.Forms.ComboBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnAddSalario = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnAddCargo = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnAddTurn = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnRemoveEmail = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnRemovePhone = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnAddEmail = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnAddPhone = New DevComponents.DotNetBar.ButtonX()
         Me.PSliderEmployed.SuspendLayout()
         Me.PageSliderPage1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PageSliderPage2.SuspendLayout()
         Me.PageSliderPage3.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
         Me.GroupPanel1.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnCancel
@@ -115,7 +115,7 @@ Partial Class AddEmployedForm
         '
         'PSliderEmployed
         '
-        Me.PSliderEmployed.BackColor = System.Drawing.Color.White
+        Me.PSliderEmployed.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PSliderEmployed.Controls.Add(Me.PageSliderPage1)
         Me.PSliderEmployed.Controls.Add(Me.PageSliderPage2)
         Me.PSliderEmployed.Controls.Add(Me.PageSliderPage3)
@@ -134,7 +134,7 @@ Partial Class AddEmployedForm
         '
         'PageSliderPage1
         '
-        Me.PageSliderPage1.BackColor = System.Drawing.Color.White
+        Me.PageSliderPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PageSliderPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PageSliderPage1.Controls.Add(Me.TxtBInss)
         Me.PageSliderPage1.Controls.Add(Me.ComboBox1)
@@ -164,8 +164,22 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage1.TabIndex = 3
         '
+        'TxtBInss
+        '
+        Me.TxtBInss.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.TxtBInss.ForeColor = System.Drawing.Color.Black
+        Me.TxtBInss.FormattingEnabled = True
+        Me.TxtBInss.Items.AddRange(New Object() {"Aplica", "No aplica"})
+        Me.TxtBInss.Location = New System.Drawing.Point(98, 227)
+        Me.TxtBInss.Name = "TxtBInss"
+        Me.TxtBInss.Size = New System.Drawing.Size(144, 21)
+        Me.TxtBInss.TabIndex = 174
+        Me.TxtBInss.Text = "Aplica"
+        '
         'ComboBox1
         '
+        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ComboBox1.ForeColor = System.Drawing.Color.Black
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(98, 259)
         Me.ComboBox1.Name = "ComboBox1"
@@ -197,18 +211,6 @@ Partial Class AddEmployedForm
         Me.BtnLoadPhoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnLoadPhoto.TabIndex = 171
         Me.BtnLoadPhoto.Text = "Cargar"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Location = New System.Drawing.Point(640, 16)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(89, 96)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 170
-        Me.PictureBox1.TabStop = False
         '
         'DateInputBirth
         '
@@ -274,7 +276,7 @@ Partial Class AddEmployedForm
         'RbtnMale
         '
         Me.RbtnMale.AutoSize = True
-        Me.RbtnMale.BackColor = System.Drawing.Color.White
+        Me.RbtnMale.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.RbtnMale.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RbtnMale.ForeColor = System.Drawing.Color.Black
         Me.RbtnMale.Location = New System.Drawing.Point(369, 142)
@@ -287,7 +289,7 @@ Partial Class AddEmployedForm
         'RbtnFemenine
         '
         Me.RbtnFemenine.AutoSize = True
-        Me.RbtnFemenine.BackColor = System.Drawing.Color.White
+        Me.RbtnFemenine.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.RbtnFemenine.Checked = True
         Me.RbtnFemenine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RbtnFemenine.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -469,7 +471,7 @@ Partial Class AddEmployedForm
         '
         'ReflectionLabel1
         '
-        Me.ReflectionLabel1.BackColor = System.Drawing.Color.White
+        Me.ReflectionLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -532,18 +534,6 @@ Partial Class AddEmployedForm
         Me.LabelX14.TabIndex = 163
         Me.LabelX14.Text = "Asignar Proyecto"
         '
-        'BtnAddSalario
-        '
-        Me.BtnAddSalario.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAddSalario.BackColor = System.Drawing.Color.SeaGreen
-        Me.BtnAddSalario.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
-        Me.BtnAddSalario.Image = CType(resources.GetObject("BtnAddSalario.Image"), System.Drawing.Image)
-        Me.BtnAddSalario.Location = New System.Drawing.Point(598, 165)
-        Me.BtnAddSalario.Name = "BtnAddSalario"
-        Me.BtnAddSalario.Size = New System.Drawing.Size(22, 21)
-        Me.BtnAddSalario.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnAddSalario.TabIndex = 162
-        '
         'ListBoxSalario
         '
         Me.ListBoxSalario.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
@@ -570,30 +560,6 @@ Partial Class AddEmployedForm
         Me.LabelX11.Size = New System.Drawing.Size(71, 23)
         Me.LabelX11.TabIndex = 160
         Me.LabelX11.Text = "Salario Base"
-        '
-        'BtnAddCargo
-        '
-        Me.BtnAddCargo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAddCargo.BackColor = System.Drawing.Color.SeaGreen
-        Me.BtnAddCargo.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
-        Me.BtnAddCargo.Image = CType(resources.GetObject("BtnAddCargo.Image"), System.Drawing.Image)
-        Me.BtnAddCargo.Location = New System.Drawing.Point(256, 130)
-        Me.BtnAddCargo.Name = "BtnAddCargo"
-        Me.BtnAddCargo.Size = New System.Drawing.Size(22, 21)
-        Me.BtnAddCargo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnAddCargo.TabIndex = 159
-        '
-        'BtnAddTurn
-        '
-        Me.BtnAddTurn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAddTurn.BackColor = System.Drawing.Color.SeaGreen
-        Me.BtnAddTurn.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
-        Me.BtnAddTurn.Image = CType(resources.GetObject("BtnAddTurn.Image"), System.Drawing.Image)
-        Me.BtnAddTurn.Location = New System.Drawing.Point(256, 72)
-        Me.BtnAddTurn.Name = "BtnAddTurn"
-        Me.BtnAddTurn.Size = New System.Drawing.Size(22, 21)
-        Me.BtnAddTurn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnAddTurn.TabIndex = 158
         '
         'ListBoxCargo
         '
@@ -652,7 +618,7 @@ Partial Class AddEmployedForm
         '
         'ReflectionLabel3
         '
-        Me.ReflectionLabel3.BackColor = System.Drawing.Color.White
+        Me.ReflectionLabel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -687,35 +653,10 @@ Partial Class AddEmployedForm
         Me.PageSliderPage3.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage3.TabIndex = 5
         '
-        'BtnRemoveEmail
-        '
-        Me.BtnRemoveEmail.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnRemoveEmail.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnRemoveEmail.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRemoveEmail.Image = CType(resources.GetObject("BtnRemoveEmail.Image"), System.Drawing.Image)
-        Me.BtnRemoveEmail.Location = New System.Drawing.Point(441, 261)
-        Me.BtnRemoveEmail.Name = "BtnRemoveEmail"
-        Me.BtnRemoveEmail.Size = New System.Drawing.Size(72, 23)
-        Me.BtnRemoveEmail.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnRemoveEmail.TabIndex = 163
-        Me.BtnRemoveEmail.Text = "Remover"
-        '
-        'BtnRemovePhone
-        '
-        Me.BtnRemovePhone.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnRemovePhone.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnRemovePhone.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRemovePhone.Image = CType(resources.GetObject("BtnRemovePhone.Image"), System.Drawing.Image)
-        Me.BtnRemovePhone.Location = New System.Drawing.Point(112, 259)
-        Me.BtnRemovePhone.Name = "BtnRemovePhone"
-        Me.BtnRemovePhone.Size = New System.Drawing.Size(72, 23)
-        Me.BtnRemovePhone.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnRemovePhone.TabIndex = 162
-        Me.BtnRemovePhone.Text = "Remover"
-        '
         'GroupPanel2
         '
-        Me.GroupPanel2.BackColor = System.Drawing.Color.White
+        Me.GroupPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel2.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.GroupPanel2.Controls.Add(Me.ListBoxEmail)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
@@ -756,14 +697,13 @@ Partial Class AddEmployedForm
         'ListBoxEmail
         '
         Me.ListBoxEmail.AutoScroll = True
-        Me.ListBoxEmail.BackColor = System.Drawing.Color.White
+        Me.ListBoxEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -777,7 +717,8 @@ Partial Class AddEmployedForm
         '
         'GroupPanel1
         '
-        Me.GroupPanel1.BackColor = System.Drawing.Color.White
+        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel1.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.GroupPanel1.Controls.Add(Me.ListBoxTel)
         Me.GroupPanel1.DisabledBackColor = System.Drawing.Color.Empty
@@ -816,14 +757,13 @@ Partial Class AddEmployedForm
         'ListBoxTel
         '
         Me.ListBoxTel.AutoScroll = True
-        Me.ListBoxTel.BackColor = System.Drawing.Color.White
+        Me.ListBoxTel.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -896,35 +836,9 @@ Partial Class AddEmployedForm
         Me.LabelX8.TabIndex = 155
         Me.LabelX8.Text = "N° Telefonico"
         '
-        'BtnAddEmail
-        '
-        Me.BtnAddEmail.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAddEmail.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnAddEmail.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAddEmail.Image = CType(resources.GetObject("BtnAddEmail.Image"), System.Drawing.Image)
-        Me.BtnAddEmail.Location = New System.Drawing.Point(525, 57)
-        Me.BtnAddEmail.Name = "BtnAddEmail"
-        Me.BtnAddEmail.Size = New System.Drawing.Size(72, 23)
-        Me.BtnAddEmail.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnAddEmail.TabIndex = 158
-        Me.BtnAddEmail.Text = "Agregar"
-        '
-        'BtnAddPhone
-        '
-        Me.BtnAddPhone.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAddPhone.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnAddPhone.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAddPhone.Image = CType(resources.GetObject("BtnAddPhone.Image"), System.Drawing.Image)
-        Me.BtnAddPhone.Location = New System.Drawing.Point(224, 55)
-        Me.BtnAddPhone.Name = "BtnAddPhone"
-        Me.BtnAddPhone.Size = New System.Drawing.Size(72, 23)
-        Me.BtnAddPhone.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnAddPhone.TabIndex = 154
-        Me.BtnAddPhone.Text = "Agregar"
-        '
         'ReflectionLabel2
         '
-        Me.ReflectionLabel2.BackColor = System.Drawing.Color.White
+        Me.ReflectionLabel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -978,7 +892,7 @@ Partial Class AddEmployedForm
         '
         'ProgressSteps1
         '
-        Me.ProgressSteps1.BackColor = System.Drawing.Color.White
+        Me.ProgressSteps1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -1060,15 +974,105 @@ Partial Class AddEmployedForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
-        'TxtBInss
+        'PictureBox1
         '
-        Me.TxtBInss.FormattingEnabled = True
-        Me.TxtBInss.Items.AddRange(New Object() {"Aplica", "No aplica"})
-        Me.TxtBInss.Location = New System.Drawing.Point(98, 227)
-        Me.TxtBInss.Name = "TxtBInss"
-        Me.TxtBInss.Size = New System.Drawing.Size(144, 21)
-        Me.TxtBInss.TabIndex = 174
-        Me.TxtBInss.Text = "Aplica"
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.ForeColor = System.Drawing.Color.Black
+        Me.PictureBox1.Location = New System.Drawing.Point(640, 16)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(89, 96)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 170
+        Me.PictureBox1.TabStop = False
+        '
+        'BtnAddSalario
+        '
+        Me.BtnAddSalario.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAddSalario.BackColor = System.Drawing.Color.SeaGreen
+        Me.BtnAddSalario.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
+        Me.BtnAddSalario.Image = CType(resources.GetObject("BtnAddSalario.Image"), System.Drawing.Image)
+        Me.BtnAddSalario.Location = New System.Drawing.Point(598, 165)
+        Me.BtnAddSalario.Name = "BtnAddSalario"
+        Me.BtnAddSalario.Size = New System.Drawing.Size(22, 21)
+        Me.BtnAddSalario.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnAddSalario.TabIndex = 162
+        '
+        'BtnAddCargo
+        '
+        Me.BtnAddCargo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAddCargo.BackColor = System.Drawing.Color.SeaGreen
+        Me.BtnAddCargo.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
+        Me.BtnAddCargo.Image = CType(resources.GetObject("BtnAddCargo.Image"), System.Drawing.Image)
+        Me.BtnAddCargo.Location = New System.Drawing.Point(256, 130)
+        Me.BtnAddCargo.Name = "BtnAddCargo"
+        Me.BtnAddCargo.Size = New System.Drawing.Size(22, 21)
+        Me.BtnAddCargo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnAddCargo.TabIndex = 159
+        '
+        'BtnAddTurn
+        '
+        Me.BtnAddTurn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAddTurn.BackColor = System.Drawing.Color.SeaGreen
+        Me.BtnAddTurn.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
+        Me.BtnAddTurn.Image = CType(resources.GetObject("BtnAddTurn.Image"), System.Drawing.Image)
+        Me.BtnAddTurn.Location = New System.Drawing.Point(256, 72)
+        Me.BtnAddTurn.Name = "BtnAddTurn"
+        Me.BtnAddTurn.Size = New System.Drawing.Size(22, 21)
+        Me.BtnAddTurn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnAddTurn.TabIndex = 158
+        '
+        'BtnRemoveEmail
+        '
+        Me.BtnRemoveEmail.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnRemoveEmail.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.BtnRemoveEmail.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRemoveEmail.Image = CType(resources.GetObject("BtnRemoveEmail.Image"), System.Drawing.Image)
+        Me.BtnRemoveEmail.Location = New System.Drawing.Point(441, 261)
+        Me.BtnRemoveEmail.Name = "BtnRemoveEmail"
+        Me.BtnRemoveEmail.Size = New System.Drawing.Size(72, 23)
+        Me.BtnRemoveEmail.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnRemoveEmail.TabIndex = 163
+        Me.BtnRemoveEmail.Text = "Remover"
+        '
+        'BtnRemovePhone
+        '
+        Me.BtnRemovePhone.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnRemovePhone.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.BtnRemovePhone.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRemovePhone.Image = CType(resources.GetObject("BtnRemovePhone.Image"), System.Drawing.Image)
+        Me.BtnRemovePhone.Location = New System.Drawing.Point(112, 259)
+        Me.BtnRemovePhone.Name = "BtnRemovePhone"
+        Me.BtnRemovePhone.Size = New System.Drawing.Size(72, 23)
+        Me.BtnRemovePhone.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnRemovePhone.TabIndex = 162
+        Me.BtnRemovePhone.Text = "Remover"
+        '
+        'BtnAddEmail
+        '
+        Me.BtnAddEmail.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAddEmail.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.BtnAddEmail.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAddEmail.Image = CType(resources.GetObject("BtnAddEmail.Image"), System.Drawing.Image)
+        Me.BtnAddEmail.Location = New System.Drawing.Point(525, 57)
+        Me.BtnAddEmail.Name = "BtnAddEmail"
+        Me.BtnAddEmail.Size = New System.Drawing.Size(72, 23)
+        Me.BtnAddEmail.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnAddEmail.TabIndex = 158
+        Me.BtnAddEmail.Text = "Agregar"
+        '
+        'BtnAddPhone
+        '
+        Me.BtnAddPhone.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAddPhone.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.BtnAddPhone.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAddPhone.Image = CType(resources.GetObject("BtnAddPhone.Image"), System.Drawing.Image)
+        Me.BtnAddPhone.Location = New System.Drawing.Point(224, 55)
+        Me.BtnAddPhone.Name = "BtnAddPhone"
+        Me.BtnAddPhone.Size = New System.Drawing.Size(72, 23)
+        Me.BtnAddPhone.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnAddPhone.TabIndex = 154
+        Me.BtnAddPhone.Text = "Agregar"
         '
         'AddEmployedForm
         '
@@ -1091,12 +1095,12 @@ Partial Class AddEmployedForm
         Me.PSliderEmployed.ResumeLayout(False)
         Me.PageSliderPage1.ResumeLayout(False)
         Me.PageSliderPage1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PageSliderPage2.ResumeLayout(False)
         Me.PageSliderPage3.ResumeLayout(False)
         Me.GroupPanel2.ResumeLayout(False)
         Me.GroupPanel1.ResumeLayout(False)
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

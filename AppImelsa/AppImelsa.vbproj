@@ -246,6 +246,12 @@
     <Compile Include="Forms\Nomina\AsistenceForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Nomina\NominaDetalleForm.Designer.vb">
+      <DependentUpon>NominaDetalleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nomina\NominaDetalleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Nomina\NominaForm.Designer.vb">
       <DependentUpon>NominaForm.vb</DependentUpon>
     </Compile>
@@ -428,6 +434,9 @@
     <EmbeddedResource Include="Forms\Nomina\AsistenceForm.resx">
       <DependentUpon>AsistenceForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Nomina\NominaDetalleForm.resx">
+      <DependentUpon>NominaDetalleForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nomina\NominaForm.resx">
       <DependentUpon>NominaForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -479,6 +488,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AppImelsa_ClaveTemporal.pfx" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="ImelsaDataSet.xsc">
       <DependentUpon>ImelsaDataSet.xsd</DependentUpon>
     </None>
