@@ -1,4 +1,4 @@
-Public Class OneProyectForm
+Public Class ActualizarProyectoForm
     Public Code As String
     Dim DataProyect As New Proyect
     Dim Input As New ValidateInput

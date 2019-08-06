@@ -294,33 +294,39 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Proyects\AddProyectForm.Designer.vb">
-      <DependentUpon>AddProyectForm.vb</DependentUpon>
+      <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\AddProyectForm.vb">
+    <Compile Include="Forms\Proyects\AgregarProyectoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\OneProyectForm.Designer.vb">
-      <DependentUpon>OneProyectForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ActualizarProyectoForm.Designer.vb">
+      <DependentUpon>ActualizarProyectoForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\OneProyectForm.vb">
+    <Compile Include="Forms\Proyects\ActualizarProyectoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ProyectForm.Designer.vb">
-      <DependentUpon>ProyectForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ProyectoForm.Designer.vb">
+      <DependentUpon>ProyectoForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\ProyectForm.vb">
+    <Compile Include="Forms\Proyects\ProyectoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ReportProyectForm.Designer.vb">
-      <DependentUpon>ReportProyectForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ReporteProyecto.Designer.vb">
+      <DependentUpon>ReporteProyecto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\ReportProyectForm.vb">
+    <Compile Include="Forms\Proyects\ReporteProyecto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\SelectProyectForm.Designer.vb">
-      <DependentUpon>SelectProyectForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ReporteProyectoForm.Designer.vb">
+      <DependentUpon>ReporteProyectoForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\SelectProyectForm.vb">
+    <Compile Include="Forms\Proyects\ReporteProyectoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proyects\SeleccionarProyectoForm.Designer.vb">
+      <DependentUpon>SeleccionarProyectoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proyects\SeleccionarProyectoForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ImelsaDataSet.Designer.vb">
@@ -470,19 +476,22 @@
       <DependentUpon>UpdateAbonoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proyects\AddProyectForm.resx">
-      <DependentUpon>AddProyectForm.vb</DependentUpon>
+      <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\OneProyectForm.resx">
-      <DependentUpon>OneProyectForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ActualizarProyectoForm.resx">
+      <DependentUpon>ActualizarProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ProyectForm.resx">
-      <DependentUpon>ProyectForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ProyectoForm.resx">
+      <DependentUpon>ProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ReportProyectForm.resx">
-      <DependentUpon>ReportProyectForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ReporteProyecto.resx">
+      <DependentUpon>ReporteProyecto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\SelectProyectForm.resx">
-      <DependentUpon>SelectProyectForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ReporteProyectoForm.resx">
+      <DependentUpon>ReporteProyectoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proyects\SeleccionarProyectoForm.resx">
+      <DependentUpon>SeleccionarProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

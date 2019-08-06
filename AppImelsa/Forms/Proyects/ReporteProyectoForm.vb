@@ -1,5 +1,5 @@
 Imports CrystalDecisions.Shared
-Public Class ReportProyectForm
+Public Class ReporteProyectoForm
     Dim Info As New CrystalReportProyect
     Dim Param As New ParameterValues
     Dim MyDiscretValues As New ParameterDiscreteValue

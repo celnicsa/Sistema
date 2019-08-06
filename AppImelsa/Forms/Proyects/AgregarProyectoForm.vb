@@ -1,4 +1,4 @@
-Public Class AddProyectForm
+Public Class AgregarProyectoForm
     Private DataProyect As New Proyect
     Private Sub AddProyectForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CmdLoadClient(CmBClient)
@@ -19,7 +19,7 @@ Public Class AddProyectForm
             Return False
         ElseIf TxtBPresupuesto.Text.Length = 0 Then
             Return False
-        ElseIf CmBClient.SelectedIndex = -1
+        ElseIf CmBClient.SelectedIndex = -1 Then
             Return False
         End If
         Return True
@@ -65,7 +65,4 @@ Public Class AddProyectForm
         Me.Close()
     End Sub
 
-    Private Sub PageSliderPage1_Paint(sender As Object, e As PaintEventArgs) Handles PageSliderPage1.Paint
-
-    End Sub
 End Class
