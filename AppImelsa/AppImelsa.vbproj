@@ -162,6 +162,24 @@
     <Compile Include="Forms\Employed\SelectPrestamoForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Inventario\Categoria\AddCategoria.Designer.vb">
+      <DependentUpon>AddCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\Categoria\AddCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\Categoria\CategoriaForm.Designer.vb">
+      <DependentUpon>CategoriaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\Categoria\CategoriaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\InventarioForm.Designer.vb">
+      <DependentUpon>InventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\InventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Nomina\AddAbono.Designer.vb">
       <DependentUpon>AddAbono.vb</DependentUpon>
     </Compile>
@@ -303,6 +321,7 @@
     <Compile Include="Modelos\Employed\Employed.vb" />
     <Compile Include="Modelos\Employed\Salario.vb" />
     <Compile Include="Modelos\Employed\Turno.vb" />
+    <Compile Include="Modelos\Inventario\Categoria.vb" />
     <Compile Include="Modelos\MeErrorMessageDialog.vb" />
     <Compile Include="Modelos\ModuleCmdSql.vb" />
     <Compile Include="Modelos\ModuleConvert.vb" />
@@ -378,6 +397,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Employed\SelectPrestamoForm.resx">
       <DependentUpon>SelectPrestamoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\Categoria\AddCategoria.resx">
+      <DependentUpon>AddCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\Categoria\CategoriaForm.resx">
+      <DependentUpon>CategoriaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\InventarioForm.resx">
+      <DependentUpon>InventarioForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nomina\AddAbono.resx">
       <DependentUpon>AddAbono.vb</DependentUpon>

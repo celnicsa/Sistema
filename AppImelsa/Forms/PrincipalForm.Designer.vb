@@ -24,11 +24,11 @@ Partial Class PrincipalForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
-        Dim SuperTabColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
-        Dim SuperTabLinearGradientColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Dim SuperTabPanelColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
-        Dim SuperTabPanelItemColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
         Dim SuperTabLinearGradientColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
+        Dim SuperTabPanelColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
+        Dim SuperTabPanelItemColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
         Me.RibbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
@@ -80,6 +80,7 @@ Partial Class PrincipalForm
         Me.RibbonTabItem1 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.MTimer = New System.Windows.Forms.Timer(Me.components)
         Me.StyleManager2 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.ButtonInventario = New DevComponents.DotNetBar.ButtonItem()
         Me.PanelEx1.SuspendLayout()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
@@ -425,7 +426,7 @@ Partial Class PrincipalForm
         Me.ItemContainer2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ItemContainer2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
         Me.ItemContainer2.Name = "ItemContainer2"
-        Me.ItemContainer2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnSalario})
+        Me.ItemContainer2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnSalario, Me.ButtonInventario})
         '
         '
         '
@@ -641,9 +642,9 @@ Partial Class PrincipalForm
         Me.TabCWindows.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
-        SuperTabLinearGradientColorTable2.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
-        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable2
-        Me.TabCWindows.TabStripColor = SuperTabColorTable1
+        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
+        SuperTabColorTable2.Background = SuperTabLinearGradientColorTable1
+        Me.TabCWindows.TabStripColor = SuperTabColorTable2
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
         '
@@ -655,10 +656,10 @@ Partial Class PrincipalForm
         Me.SuperTabControlPanel1.Location = New System.Drawing.Point(0, 26)
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
-        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
-        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
-        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
+        SuperTabLinearGradientColorTable3.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
+        SuperTabPanelItemColorTable2.Background = SuperTabLinearGradientColorTable3
+        SuperTabPanelColorTable2.Default = SuperTabPanelItemColorTable2
+        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable2
         Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 520)
         Me.SuperTabControlPanel1.TabIndex = 1
         Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
@@ -674,11 +675,11 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(275, 26)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(436, 26)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
         Me.ReflectionLabel1.Size = New System.Drawing.Size(550, 70)
         Me.ReflectionLabel1.TabIndex = 1
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222""> y </font><font col" &
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222"">   </font><font col" &
     "or=""#003333"">Eléctricas de Nicaragua.SA</font></font></b>"
         '
         'ReflectionImage1
@@ -693,7 +694,7 @@ Partial Class PrincipalForm
         Me.ReflectionImage1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
         Me.ReflectionImage1.ForeColor = System.Drawing.Color.Black
         Me.ReflectionImage1.Image = Global.AppImelsa.My.Resources.Resources.logo
-        Me.ReflectionImage1.Location = New System.Drawing.Point(296, 138)
+        Me.ReflectionImage1.Location = New System.Drawing.Point(461, 102)
         Me.ReflectionImage1.Name = "ReflectionImage1"
         Me.ReflectionImage1.Size = New System.Drawing.Size(511, 335)
         Me.ReflectionImage1.TabIndex = 0
@@ -746,6 +747,14 @@ Partial Class PrincipalForm
         '
         Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        '
+        'ButtonInventario
+        '
+        Me.ButtonInventario.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonInventario.Image = Global.AppImelsa.My.Resources.Resources.i_7
+        Me.ButtonInventario.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.ButtonInventario.Name = "ButtonInventario"
+        Me.ButtonInventario.Text = "Inventario"
         '
         'PrincipalForm
         '
@@ -821,4 +830,5 @@ Partial Class PrincipalForm
     Friend WithEvents BtnAbono As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonBar1 As DevComponents.DotNetBar.RibbonBar
     Friend WithEvents ButtonItem1 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonInventario As DevComponents.DotNetBar.ButtonItem
 End Class

@@ -95,4 +95,8 @@ Public Class ClientForm
             LoadTable()
         End If
     End Sub
+
+    Private Sub GridClient_Click(sender As Object, e As EventArgs) Handles GridClient.Click
+
+    End Sub
 End Class
