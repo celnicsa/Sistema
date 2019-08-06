@@ -44,6 +44,7 @@ Public Class OneEmployed
         End If
     End Sub
     Private Sub OneEmployed_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CmdViewEscolaridadCombo(ComboBox1)
         CmdLoadNamePhoto(cmBB)
         DataEmployed.Code = Code
         CmdDetaillsEmp(DataEmployed)
@@ -75,7 +76,7 @@ Public Class OneEmployed
         TxtBTurno.Text = DataEmployed.CodeTurno
         TxtBSal.Text = DataEmployed.CodeSalario
         TxtBProyect.Text = DataEmployed.CodeProyect
-
+        ComboBox1.SelectedItem = DataEmployed.Escolaridad
         DInput.Value = DataEmployed.DateNaci
         CheckedSexo(DataEmployed.Sexo)
         PicBPhoto.Image = DataEmployed.Photo
@@ -317,6 +318,7 @@ Public Class OneEmployed
                 DataEmployed.CodeCargo = TxtBCargo.Text 'ListBCargo.SelectedItem.ToString
                 DataEmployed.CodeSalario = TxtBSal.Text 'ListBSalario.SelectedItem.ToString
                 DataEmployed.Photo = PicBPhoto.Image
+                DataEmployed.Escolaridad = ComboBox1.Text.Split(" ")(0)
                 If CmdUpdateEmployed(DataEmployed) Then
                     MsgBox("Datos de Empleado Guardados Satisfactoriamente", MsgBoxStyle.Information)
                     Me.Close()

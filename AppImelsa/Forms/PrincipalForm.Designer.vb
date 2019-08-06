@@ -29,31 +29,48 @@ Partial Class PrincipalForm
         Dim SuperTabPanelColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
         Dim SuperTabPanelItemColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
         Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.ControlContainerItem1 = New DevComponents.DotNetBar.ControlContainerItem()
+        Me.LabelItem1 = New DevComponents.DotNetBar.LabelItem()
+        Me.QatCustomizeItem2 = New DevComponents.DotNetBar.QatCustomizeItem()
+        Me.QatCustomizeItem1 = New DevComponents.DotNetBar.QatCustomizeItem()
+        Me.RibbonTabItem2 = New DevComponents.DotNetBar.RibbonTabItem()
+        Me.RibbonTabItem1 = New DevComponents.DotNetBar.RibbonTabItem()
+        Me.MTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.StyleManager2 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem5 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem6 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem7 = New DevComponents.DotNetBar.ButtonItem()
+        Me.GalleryContainer1 = New DevComponents.DotNetBar.GalleryContainer()
+        Me.labelItem8 = New DevComponents.DotNetBar.LabelItem()
+        Me.ButtonItem8 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem9 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem10 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem11 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem12 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem13 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
         Me.RibbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar6 = New DevComponents.DotNetBar.RibbonBar()
         Me.BtnProyect = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem25 = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnAddProyect = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer3 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnReportProyect = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnViewOneProyect = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar7 = New DevComponents.DotNetBar.RibbonBar()
         Me.BtnClient = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem27 = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnAddClient = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer1 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnViewOneClient = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar8 = New DevComponents.DotNetBar.RibbonBar()
         Me.BtnEmployed = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem32 = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnAddEmp = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer5 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnCargo = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnViewOneEmp = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer2 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnSalario = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar1 = New DevComponents.DotNetBar.RibbonBar()
         Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
@@ -67,50 +84,163 @@ Partial Class PrincipalForm
         Me.RibbonTabItem3 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.RibbonTabItem4 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.QatCustomizeItem3 = New DevComponents.DotNetBar.QatCustomizeItem()
+        Me.ButtonItem14 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem15 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem16 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem17 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem18 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem19 = New DevComponents.DotNetBar.ButtonItem()
+        Me.GalleryContainer2 = New DevComponents.DotNetBar.GalleryContainer()
+        Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.TabCWindows = New DevComponents.DotNetBar.SuperTabControl()
         Me.SuperTabControlPanel1 = New DevComponents.DotNetBar.SuperTabControlPanel()
         Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.ReflectionImage1 = New DevComponents.DotNetBar.Controls.ReflectionImage()
         Me.SuperTabItem1 = New DevComponents.DotNetBar.SuperTabItem()
-        Me.ControlContainerItem1 = New DevComponents.DotNetBar.ControlContainerItem()
-        Me.LabelItem1 = New DevComponents.DotNetBar.LabelItem()
-        Me.QatCustomizeItem2 = New DevComponents.DotNetBar.QatCustomizeItem()
-        Me.QatCustomizeItem1 = New DevComponents.DotNetBar.QatCustomizeItem()
-        Me.RibbonTabItem2 = New DevComponents.DotNetBar.RibbonTabItem()
-        Me.RibbonTabItem1 = New DevComponents.DotNetBar.RibbonTabItem()
-        Me.MTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.StyleManager2 = New DevComponents.DotNetBar.StyleManager(Me.components)
-        Me.ButtonInventario = New DevComponents.DotNetBar.ButtonItem()
-        Me.PanelEx1.SuspendLayout()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
         Me.RibbonPanel2.SuspendLayout()
+        Me.PanelEx1.SuspendLayout()
         CType(Me.TabCWindows, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabCWindows.SuspendLayout()
         Me.SuperTabControlPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'PanelEx1
+        'ControlContainerItem1
         '
-        Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
-        Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx1.Controls.Add(Me.RibbonControl1)
-        Me.PanelEx1.Controls.Add(Me.TabCWindows)
-        Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
-        Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEx1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(1367, 725)
-        Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
-        Me.PanelEx1.Style.BackColor1.Color = System.Drawing.Color.WhiteSmoke
-        Me.PanelEx1.Style.BackColor2.Color = System.Drawing.Color.Gainsboro
-        Me.PanelEx1.Style.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Fondo
-        Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
-        Me.PanelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
-        Me.PanelEx1.Style.GradientAngle = 90
-        Me.PanelEx1.TabIndex = 3
+        Me.ControlContainerItem1.AllowItemResize = True
+        Me.ControlContainerItem1.MenuVisibility = DevComponents.DotNetBar.eMenuVisibility.VisibleAlways
+        Me.ControlContainerItem1.Name = "ControlContainerItem1"
+        '
+        'LabelItem1
+        '
+        Me.LabelItem1.Name = "LabelItem1"
+        Me.LabelItem1.Text = "READY"
+        '
+        'QatCustomizeItem2
+        '
+        Me.QatCustomizeItem2.Name = "QatCustomizeItem2"
+        '
+        'QatCustomizeItem1
+        '
+        Me.QatCustomizeItem1.BeginGroup = True
+        Me.QatCustomizeItem1.Name = "QatCustomizeItem1"
+        '
+        'RibbonTabItem2
+        '
+        Me.RibbonTabItem2.Name = "RibbonTabItem2"
+        Me.RibbonTabItem2.Text = "RibbonTabItem2"
+        '
+        'RibbonTabItem1
+        '
+        Me.RibbonTabItem1.Name = "RibbonTabItem1"
+        Me.RibbonTabItem1.Text = "RibbonTabItem1"
+        '
+        'MTimer
+        '
+        Me.MTimer.Interval = 20
+        '
+        'StyleManager2
+        '
+        Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
+        Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.WhiteSmoke, System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        '
+        'ButtonItem2
+        '
+        Me.ButtonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem2.Name = "ButtonItem2"
+        Me.ButtonItem2.SubItemsExpandWidth = 24
+        Me.ButtonItem2.Text = "&New"
+        '
+        'ButtonItem5
+        '
+        Me.ButtonItem5.BeginGroup = True
+        Me.ButtonItem5.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem5.Name = "ButtonItem5"
+        Me.ButtonItem5.SubItemsExpandWidth = 24
+        Me.ButtonItem5.Text = "S&hare..."
+        '
+        'ButtonItem6
+        '
+        Me.ButtonItem6.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem6.Name = "ButtonItem6"
+        Me.ButtonItem6.SubItemsExpandWidth = 24
+        Me.ButtonItem6.Text = "&Print..."
+        '
+        'ButtonItem7
+        '
+        Me.ButtonItem7.BeginGroup = True
+        Me.ButtonItem7.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem7.Name = "ButtonItem7"
+        Me.ButtonItem7.SubItemsExpandWidth = 24
+        Me.ButtonItem7.Text = "&Close"
+        '
+        'GalleryContainer1
+        '
+        '
+        '
+        '
+        Me.GalleryContainer1.BackgroundStyle.Class = "RibbonFileMenuColumnTwoContainer"
+        Me.GalleryContainer1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.GalleryContainer1.EnableGalleryPopup = False
+        Me.GalleryContainer1.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
+        Me.GalleryContainer1.MinimumSize = New System.Drawing.Size(180, 240)
+        Me.GalleryContainer1.MultiLine = False
+        Me.GalleryContainer1.Name = "GalleryContainer1"
+        Me.GalleryContainer1.PopupUsesStandardScrollbars = False
+        Me.GalleryContainer1.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.labelItem8, Me.ButtonItem8, Me.ButtonItem9, Me.ButtonItem10, Me.ButtonItem11})
+        '
+        '
+        '
+        Me.GalleryContainer1.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'labelItem8
+        '
+        Me.labelItem8.BorderSide = DevComponents.DotNetBar.eBorderSide.Bottom
+        Me.labelItem8.BorderType = DevComponents.DotNetBar.eBorderType.Etched
+        Me.labelItem8.CanCustomize = False
+        Me.labelItem8.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.labelItem8.Name = "labelItem8"
+        Me.labelItem8.PaddingBottom = 2
+        Me.labelItem8.PaddingTop = 2
+        Me.labelItem8.Stretch = True
+        Me.labelItem8.Text = "Recent Documents"
+        '
+        'ButtonItem8
+        '
+        Me.ButtonItem8.Name = "ButtonItem8"
+        Me.ButtonItem8.Text = "&1. Short News 5-7.rtf"
+        '
+        'ButtonItem9
+        '
+        Me.ButtonItem9.Name = "ButtonItem9"
+        Me.ButtonItem9.Text = "&2. Prospect Email.rtf"
+        '
+        'ButtonItem10
+        '
+        Me.ButtonItem10.Name = "ButtonItem10"
+        Me.ButtonItem10.Text = "&3. Customer Email.rtf"
+        '
+        'ButtonItem11
+        '
+        Me.ButtonItem11.Name = "ButtonItem11"
+        Me.ButtonItem11.Text = "&4. example.rtf"
+        '
+        'ButtonItem12
+        '
+        Me.ButtonItem12.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem12.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonItem12.Name = "ButtonItem12"
+        Me.ButtonItem12.SubItemsExpandWidth = 24
+        Me.ButtonItem12.Text = "Opt&ions"
+        '
+        'ButtonItem13
+        '
+        Me.ButtonItem13.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem13.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonItem13.Name = "ButtonItem13"
+        Me.ButtonItem13.SubItemsExpandWidth = 24
+        Me.ButtonItem13.Text = "E&xit"
         '
         'RibbonControl1
         '
@@ -214,14 +344,9 @@ Partial Class PrincipalForm
         Me.BtnProyect.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.BtnProyect.Name = "BtnProyect"
         Me.BtnProyect.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.BtnProyect.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem25, Me.BtnAddProyect})
+        Me.BtnProyect.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddProyect})
         Me.BtnProyect.SubItemsExpandWidth = 14
         Me.BtnProyect.Text = "Empleados"
-        '
-        'ButtonItem25
-        '
-        Me.ButtonItem25.Name = "ButtonItem25"
-        Me.ButtonItem25.Text = "Ver Registro"
         '
         'BtnAddProyect
         '
@@ -235,6 +360,7 @@ Partial Class PrincipalForm
         '
         Me.ItemContainer3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ItemContainer3.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
+        Me.ItemContainer3.MinimumSize = New System.Drawing.Size(120, 0)
         Me.ItemContainer3.Name = "ItemContainer3"
         Me.ItemContainer3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnReportProyect, Me.BtnViewOneProyect})
         '
@@ -297,14 +423,9 @@ Partial Class PrincipalForm
         Me.BtnClient.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.BtnClient.Name = "BtnClient"
         Me.BtnClient.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.BtnClient.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem27, Me.BtnAddClient})
+        Me.BtnClient.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddClient})
         Me.BtnClient.SubItemsExpandWidth = 14
         Me.BtnClient.Text = "Empleados"
-        '
-        'ButtonItem27
-        '
-        Me.ButtonItem27.Name = "ButtonItem27"
-        Me.ButtonItem27.Text = "Ver Registro"
         '
         'BtnAddClient
         '
@@ -372,14 +493,9 @@ Partial Class PrincipalForm
         Me.BtnEmployed.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.BtnEmployed.Name = "BtnEmployed"
         Me.BtnEmployed.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.BtnEmployed.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem32, Me.BtnAddEmp})
+        Me.BtnEmployed.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddEmp})
         Me.BtnEmployed.SubItemsExpandWidth = 14
         Me.BtnEmployed.Text = "Empleados"
-        '
-        'ButtonItem32
-        '
-        Me.ButtonItem32.Name = "ButtonItem32"
-        Me.ButtonItem32.Text = "Ver Registro"
         '
         'BtnAddEmp
         '
@@ -426,7 +542,7 @@ Partial Class PrincipalForm
         Me.ItemContainer2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ItemContainer2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
         Me.ItemContainer2.Name = "ItemContainer2"
-        Me.ItemContainer2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnSalario, Me.ButtonInventario})
+        Me.ItemContainer2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnSalario, Me.ButtonItem44})
         '
         '
         '
@@ -440,16 +556,25 @@ Partial Class PrincipalForm
         Me.BtnSalario.Name = "BtnSalario"
         Me.BtnSalario.Text = "Salarios Base"
         '
+        'ButtonItem44
+        '
+        Me.ButtonItem44.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem44.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.ButtonItem44.Name = "ButtonItem44"
+        Me.ButtonItem44.Symbol = ""
+        Me.ButtonItem44.SymbolColor = System.Drawing.Color.DarkSlateGray
+        Me.ButtonItem44.Text = "Escolaridad"
+        '
         'RibbonPanel2
         '
         Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonPanel2.Controls.Add(Me.RibbonBar1)
         Me.RibbonPanel2.Controls.Add(Me.RibbonBar9)
         Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 54)
         Me.RibbonPanel2.Name = "RibbonPanel2"
         Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.RibbonPanel2.Size = New System.Drawing.Size(1367, 151)
+        Me.RibbonPanel2.Size = New System.Drawing.Size(1367, 100)
         '
         '
         '
@@ -484,7 +609,7 @@ Partial Class PrincipalForm
         Me.RibbonBar1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem1})
         Me.RibbonBar1.Location = New System.Drawing.Point(252, 0)
         Me.RibbonBar1.Name = "RibbonBar1"
-        Me.RibbonBar1.Size = New System.Drawing.Size(100, 148)
+        Me.RibbonBar1.Size = New System.Drawing.Size(100, 97)
         Me.RibbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar1.TabIndex = 12
         Me.RibbonBar1.Text = "Nomina"
@@ -524,7 +649,7 @@ Partial Class PrincipalForm
         Me.RibbonBar9.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem33, Me.ItemContainer4})
         Me.RibbonBar9.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar9.Name = "RibbonBar9"
-        Me.RibbonBar9.Size = New System.Drawing.Size(249, 148)
+        Me.RibbonBar9.Size = New System.Drawing.Size(249, 97)
         Me.RibbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar9.TabIndex = 11
         Me.RibbonBar9.Text = "Prestamos"
@@ -611,6 +736,90 @@ Partial Class PrincipalForm
         'QatCustomizeItem3
         '
         Me.QatCustomizeItem3.Name = "QatCustomizeItem3"
+        '
+        'ButtonItem14
+        '
+        Me.ButtonItem14.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem14.Name = "ButtonItem14"
+        Me.ButtonItem14.SubItemsExpandWidth = 24
+        Me.ButtonItem14.Text = "&New"
+        '
+        'ButtonItem15
+        '
+        Me.ButtonItem15.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem15.Name = "ButtonItem15"
+        Me.ButtonItem15.SubItemsExpandWidth = 24
+        Me.ButtonItem15.Text = "&Open..."
+        '
+        'ButtonItem16
+        '
+        Me.ButtonItem16.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem16.Name = "ButtonItem16"
+        Me.ButtonItem16.SubItemsExpandWidth = 24
+        Me.ButtonItem16.Text = "&Save..."
+        '
+        'ButtonItem17
+        '
+        Me.ButtonItem17.BeginGroup = True
+        Me.ButtonItem17.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem17.Name = "ButtonItem17"
+        Me.ButtonItem17.SubItemsExpandWidth = 24
+        Me.ButtonItem17.Text = "S&hare..."
+        '
+        'ButtonItem18
+        '
+        Me.ButtonItem18.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem18.Name = "ButtonItem18"
+        Me.ButtonItem18.SubItemsExpandWidth = 24
+        Me.ButtonItem18.Text = "&Print..."
+        '
+        'ButtonItem19
+        '
+        Me.ButtonItem19.BeginGroup = True
+        Me.ButtonItem19.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem19.Name = "ButtonItem19"
+        Me.ButtonItem19.SubItemsExpandWidth = 24
+        Me.ButtonItem19.Text = "&Close"
+        '
+        'GalleryContainer2
+        '
+        '
+        '
+        '
+        Me.GalleryContainer2.BackgroundStyle.Class = "RibbonFileMenuColumnTwoContainer"
+        Me.GalleryContainer2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.GalleryContainer2.EnableGalleryPopup = False
+        Me.GalleryContainer2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
+        Me.GalleryContainer2.MinimumSize = New System.Drawing.Size(180, 240)
+        Me.GalleryContainer2.MultiLine = False
+        Me.GalleryContainer2.Name = "GalleryContainer2"
+        Me.GalleryContainer2.PopupUsesStandardScrollbars = False
+        '
+        '
+        '
+        Me.GalleryContainer2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'PanelEx1
+        '
+        Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
+        Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.PanelEx1.Controls.Add(Me.RibbonControl1)
+        Me.PanelEx1.Controls.Add(Me.TabCWindows)
+        Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
+        Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEx1.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEx1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PanelEx1.Name = "PanelEx1"
+        Me.PanelEx1.Size = New System.Drawing.Size(1367, 725)
+        Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
+        Me.PanelEx1.Style.BackColor1.Color = System.Drawing.Color.WhiteSmoke
+        Me.PanelEx1.Style.BackColor2.Color = System.Drawing.Color.Gainsboro
+        Me.PanelEx1.Style.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Fondo
+        Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
+        Me.PanelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
+        Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
+        Me.PanelEx1.Style.GradientAngle = 90
+        Me.PanelEx1.TabIndex = 3
         '
         'TabCWindows
         '
@@ -709,53 +918,6 @@ Partial Class PrincipalForm
         Me.SuperTabItem1.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SuperTabItem1.Text = "Bienvenidos"
         '
-        'ControlContainerItem1
-        '
-        Me.ControlContainerItem1.AllowItemResize = True
-        Me.ControlContainerItem1.MenuVisibility = DevComponents.DotNetBar.eMenuVisibility.VisibleAlways
-        Me.ControlContainerItem1.Name = "ControlContainerItem1"
-        '
-        'LabelItem1
-        '
-        Me.LabelItem1.Name = "LabelItem1"
-        Me.LabelItem1.Text = "READY"
-        '
-        'QatCustomizeItem2
-        '
-        Me.QatCustomizeItem2.Name = "QatCustomizeItem2"
-        '
-        'QatCustomizeItem1
-        '
-        Me.QatCustomizeItem1.BeginGroup = True
-        Me.QatCustomizeItem1.Name = "QatCustomizeItem1"
-        '
-        'RibbonTabItem2
-        '
-        Me.RibbonTabItem2.Name = "RibbonTabItem2"
-        Me.RibbonTabItem2.Text = "RibbonTabItem2"
-        '
-        'RibbonTabItem1
-        '
-        Me.RibbonTabItem1.Name = "RibbonTabItem1"
-        Me.RibbonTabItem1.Text = "RibbonTabItem1"
-        '
-        'MTimer
-        '
-        Me.MTimer.Interval = 20
-        '
-        'StyleManager2
-        '
-        Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
-        Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
-        '
-        'ButtonInventario
-        '
-        Me.ButtonInventario.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonInventario.Image = Global.AppImelsa.My.Resources.Resources.i_7
-        Me.ButtonInventario.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.ButtonInventario.Name = "ButtonInventario"
-        Me.ButtonInventario.Text = "Inventario"
-        '
         'PrincipalForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -764,27 +926,22 @@ Partial Class PrincipalForm
         Me.ClientSize = New System.Drawing.Size(1369, 727)
         Me.Controls.Add(Me.PanelEx1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "PrincipalForm"
         Me.Text = "Sistema Informatico Para la Administración de Recursos Humanos CELNICSA"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.PanelEx1.ResumeLayout(False)
         Me.RibbonControl1.ResumeLayout(False)
         Me.RibbonControl1.PerformLayout()
         Me.RibbonPanel1.ResumeLayout(False)
         Me.RibbonPanel2.ResumeLayout(False)
+        Me.PanelEx1.ResumeLayout(False)
         CType(Me.TabCWindows, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabCWindows.ResumeLayout(False)
         Me.SuperTabControlPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents TabCWindows As DevComponents.DotNetBar.SuperTabControl
-    Friend WithEvents SuperTabControlPanel1 As DevComponents.DotNetBar.SuperTabControlPanel
-    Friend WithEvents SuperTabItem1 As DevComponents.DotNetBar.SuperTabItem
-    Friend WithEvents ReflectionImage1 As DevComponents.DotNetBar.Controls.ReflectionImage
-    Friend WithEvents ReflectionLabel1 As DevComponents.DotNetBar.Controls.ReflectionLabel
     Friend WithEvents ControlContainerItem1 As DevComponents.DotNetBar.ControlContainerItem
     Friend WithEvents LabelItem1 As DevComponents.DotNetBar.LabelItem
     Friend WithEvents QatCustomizeItem2 As DevComponents.DotNetBar.QatCustomizeItem
@@ -792,43 +949,65 @@ Partial Class PrincipalForm
     Friend WithEvents RibbonTabItem2 As DevComponents.DotNetBar.RibbonTabItem
     Friend WithEvents RibbonTabItem1 As DevComponents.DotNetBar.RibbonTabItem
     Friend WithEvents MTimer As Timer
+    Friend WithEvents StyleManager2 As DevComponents.DotNetBar.StyleManager
+    Friend WithEvents ButtonItem2 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem5 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem6 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem7 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents GalleryContainer1 As DevComponents.DotNetBar.GalleryContainer
+    Friend WithEvents labelItem8 As DevComponents.DotNetBar.LabelItem
+    Friend WithEvents ButtonItem8 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem9 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem10 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem11 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem12 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem13 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonControl1 As DevComponents.DotNetBar.RibbonControl
     Friend WithEvents RibbonPanel1 As DevComponents.DotNetBar.RibbonPanel
     Friend WithEvents RibbonBar6 As DevComponents.DotNetBar.RibbonBar
     Friend WithEvents BtnProyect As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ButtonItem25 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents BtnAddProyect As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ItemContainer3 As DevComponents.DotNetBar.ItemContainer
+    Friend WithEvents BtnReportProyect As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents BtnViewOneProyect As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonBar7 As DevComponents.DotNetBar.RibbonBar
     Friend WithEvents BtnClient As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ButtonItem27 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents BtnAddClient As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ItemContainer1 As DevComponents.DotNetBar.ItemContainer
+    Friend WithEvents BtnViewOneClient As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonBar8 As DevComponents.DotNetBar.RibbonBar
     Friend WithEvents BtnEmployed As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ButtonItem32 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents BtnAddEmp As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ItemContainer5 As DevComponents.DotNetBar.ItemContainer
+    Friend WithEvents BtnCargo As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents BtnViewOneEmp As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ItemContainer2 As DevComponents.DotNetBar.ItemContainer
+    Friend WithEvents BtnSalario As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem44 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonPanel2 As DevComponents.DotNetBar.RibbonPanel
+    Friend WithEvents RibbonBar1 As DevComponents.DotNetBar.RibbonBar
+    Friend WithEvents ButtonItem1 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonBar9 As DevComponents.DotNetBar.RibbonBar
     Friend WithEvents ButtonItem33 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents ButtonItem34 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ItemContainer4 As DevComponents.DotNetBar.ItemContainer
+    Friend WithEvents BtnAbono As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents ApplicationButton1 As DevComponents.DotNetBar.ApplicationButton
+    Friend WithEvents BtnBackup As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonTabItem3 As DevComponents.DotNetBar.RibbonTabItem
     Friend WithEvents RibbonTabItem4 As DevComponents.DotNetBar.RibbonTabItem
     Friend WithEvents QatCustomizeItem3 As DevComponents.DotNetBar.QatCustomizeItem
-    Friend WithEvents StyleManager2 As DevComponents.DotNetBar.StyleManager
-    Friend WithEvents ItemContainer5 As DevComponents.DotNetBar.ItemContainer
-    Friend WithEvents BtnCargo As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents BtnSalario As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents BtnReportProyect As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents BtnBackup As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents BtnAddEmp As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents BtnAddProyect As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents BtnAddClient As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ItemContainer2 As DevComponents.DotNetBar.ItemContainer
-    Friend WithEvents BtnViewOneEmp As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ItemContainer3 As DevComponents.DotNetBar.ItemContainer
-    Friend WithEvents BtnViewOneProyect As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ItemContainer1 As DevComponents.DotNetBar.ItemContainer
-    Friend WithEvents BtnViewOneClient As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ItemContainer4 As DevComponents.DotNetBar.ItemContainer
-    Friend WithEvents BtnAbono As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents RibbonBar1 As DevComponents.DotNetBar.RibbonBar
-    Friend WithEvents ButtonItem1 As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ButtonInventario As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem14 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem15 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem16 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem17 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem18 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem19 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents GalleryContainer2 As DevComponents.DotNetBar.GalleryContainer
+    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
+    Friend WithEvents TabCWindows As DevComponents.DotNetBar.SuperTabControl
+    Friend WithEvents SuperTabControlPanel1 As DevComponents.DotNetBar.SuperTabControlPanel
+    Friend WithEvents ReflectionLabel1 As DevComponents.DotNetBar.Controls.ReflectionLabel
+    Friend WithEvents ReflectionImage1 As DevComponents.DotNetBar.Controls.ReflectionImage
+    Friend WithEvents SuperTabItem1 As DevComponents.DotNetBar.SuperTabItem
 End Class

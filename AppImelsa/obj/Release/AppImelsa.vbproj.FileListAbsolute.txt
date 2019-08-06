@@ -48,3 +48,40 @@ C:\Users\Familia Martinez\Documents\Visual Studio 2015\Projects\AppImelsa\AppIme
 C:\Users\Familia Martinez\Documents\Visual Studio 2015\Projects\AppImelsa\AppImelsa\bin\Release\AppImelsa.application
 C:\Users\Familia Martinez\Documents\Visual Studio 2015\Projects\AppImelsa\AppImelsa\obj\Release\AppImelsa.exe.manifest
 C:\Users\Familia Martinez\Documents\Visual Studio 2015\Projects\AppImelsa\AppImelsa\obj\Release\AppImelsa.application
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.vbprojAssemblyReference.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AddClientForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.ClientForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.OneClientForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.SelectClientForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.EscolaridadForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.SelectEmployedForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.SelectPrestamoForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AddAbono.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AddEmployedForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.CargoForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.EmployedForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AbonoForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.OneEmployed.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.SalarioForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.TurnForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.UpdateCargo.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.UpdateSalario.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.UpdateTurn.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AddPrestamoForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AsistenceForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.NominaForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.PrestamoForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.UpdateAbonoForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.AddProyectForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.OneProyectForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.ProyectForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.ReportProyectForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.SelectProyectForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.Resources.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.PrincipalForm.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.SplashScreen.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.vbproj.GenerateResource.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.vbproj.CoreCompileInputs.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.exe
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Release\AppImelsa.pdb

@@ -82,9 +82,32 @@
     <ApplicationIcon>Sin_t_tulo-1_.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommLayer.13.0.3501\lib\net20\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.3501\lib\net20\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Design, Version=12.5.0.2, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
@@ -148,6 +171,12 @@
       <DependentUpon>SelectClientForm.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Client\SelectClientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employed\EscolaridadForm.Designer.vb">
+      <DependentUpon>EscolaridadForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employed\EscolaridadForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Employed\SelectEmployedForm.Designer.vb">
@@ -258,6 +287,12 @@
     <Compile Include="Forms\Nomina\AsistenceForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Nomina\NominaDetalleForm.Designer.vb">
+      <DependentUpon>NominaDetalleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nomina\NominaDetalleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Nomina\NominaForm.Designer.vb">
       <DependentUpon>NominaForm.vb</DependentUpon>
     </Compile>
@@ -319,6 +354,7 @@
     <Compile Include="Modelos\Employed\CelEmployed.vb" />
     <Compile Include="Modelos\Employed\EmailEmployed.vb" />
     <Compile Include="Modelos\Employed\Employed.vb" />
+    <Compile Include="Modelos\Employed\Escolaridad.vb" />
     <Compile Include="Modelos\Employed\Salario.vb" />
     <Compile Include="Modelos\Employed\Turno.vb" />
     <Compile Include="Modelos\Inventario\Categoria.vb" />
@@ -392,6 +428,9 @@
     <EmbeddedResource Include="Forms\Client\SelectClientForm.resx">
       <DependentUpon>SelectClientForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employed\EscolaridadForm.resx">
+      <DependentUpon>EscolaridadForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Employed\SelectEmployedForm.resx">
       <DependentUpon>SelectEmployedForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -446,6 +485,9 @@
     <EmbeddedResource Include="Forms\Nomina\AsistenceForm.resx">
       <DependentUpon>AsistenceForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Nomina\NominaDetalleForm.resx">
+      <DependentUpon>NominaDetalleForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nomina\NominaForm.resx">
       <DependentUpon>NominaForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -497,6 +539,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AppImelsa_ClaveTemporal.pfx" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="ImelsaDataSet.xsc">
       <DependentUpon>ImelsaDataSet.xsd</DependentUpon>
     </None>
@@ -520,6 +563,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\Sin título-2.png" />
   </ItemGroup>
   <ItemGroup>

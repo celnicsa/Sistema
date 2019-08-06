@@ -106,6 +106,8 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Cargo", Data.CodeCargo)
             Cmd.Parameters.AddWithValue("@SalarioBase", Data.CodeSalario)
             Cmd.Parameters.AddWithValue("@Photo", BytesToString(ImageToBytes(Data.Photo)))
+            Cmd.Parameters.AddWithValue("@CodEscolaridad", Data.Escolaridad)
+
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -136,6 +138,7 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Cargo", Data.CodeCargo)
             Cmd.Parameters.AddWithValue("@SalarioBase", Data.CodeSalario)
             Cmd.Parameters.AddWithValue("@Photo", BytesToString(ImageToBytes(Data.Photo)))
+            Cmd.Parameters.AddWithValue("@CodEscolaridad", Data.Escolaridad)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -1152,6 +1155,7 @@ Module ModuleCmdSql
                 Data.CodeProyect = dr.Item("Proyecto Asignado")
                 Data.CodeCargo = dr.Item("Cargo")
                 Data.CodeSalario = dr.Item("Salario Base")
+                Data.Escolaridad = dr.Item("Escolaridad")
                 Resultado = dr.Item("Foto")
             Loop
             ArrayText = Resultado.Split(",")
@@ -1538,6 +1542,37 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
             Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
             Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
+
+
+    Public Sub CmdViewEscolaridadCombo(ByRef Combobox As ComboBox)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("Select Cod_Escolaridad + ' '+ Nombre_Grado AS ESC From MTableBeneficioEscolaridad", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Cargos")
+
+            For Each Row As DataRow In ds.Tables(0).Rows
+                For Each Coll As DataColumn In ds.Tables(0).Columns
+                    Combobox.Items.Add(Row(Coll.ColumnName).ToString())
+                Next
+            Next
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
+
+    Public Function CmdInsertEscolaridad(ByVal Data As Escolaridad) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPInsertEscolaridad]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@Codigo", Data.P_Codigo_Escolaridad)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.P_Nombre_Grado)
+            Cmd.Parameters.AddWithValue("@Beneficio", Data.P_Beneficio_Grado)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -1558,6 +1593,16 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
             Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
             Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
+
+
+    Public Function CmdUpdateEscolaridad(ByVal Data As Escolaridad) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPUpdatescolaridad]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@Codigo", Data.P_Codigo_Escolaridad)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.P_Nombre_Grado)
+            Cmd.Parameters.AddWithValue("@Beneficio", Data.P_Beneficio_Grado)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -1576,6 +1621,15 @@ Module ModuleCmdSql
             Cmd = New SqlCommand("SPDeleteCategoria", Connect)
             Cmd.CommandType = CommandType.StoredProcedure
             Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
+
+
+
+    Public Function CmdDeleteEscolaridad(ByVal ID) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPDeleteEscolaridad]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@Codigo", ID)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -1588,4 +1642,6 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Function
+
+
 End Module
