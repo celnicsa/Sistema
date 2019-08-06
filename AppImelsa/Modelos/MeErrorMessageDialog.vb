@@ -52,8 +52,6 @@
                 Message = "Insercion de Datos de Cliente Erronea! "
             Case "Error-CL03"
                 Message = "Error, Eliminación de Datos de Cliente Erronea!"
-            Case "Error-CL04"
-                Message = "Error, Modificación de Datos de Cliente Erronea!"
             Case "Error-P03"
                 Message = "Error, Eliminación de Datos de Proyecto Erronea!"
             Case "Error-E01"

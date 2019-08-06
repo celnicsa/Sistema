@@ -670,7 +670,6 @@ Partial Class EmployedForm
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEx1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents BtnRefresh As DevComponents.DotNetBar.ButtonX

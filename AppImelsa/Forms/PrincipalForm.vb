@@ -128,10 +128,4 @@ Public Class PrincipalForm
     End Sub
 
 
-    End Sub
-
-    Private Sub ButtonItem2_Click(sender As Object, e As EventArgs) Handles ButtonInventario.Click
-        Dim WindowsInventario As New InventarioForm
-        WindowsInventario.ShowDialog()
-    End Sub
 End Class

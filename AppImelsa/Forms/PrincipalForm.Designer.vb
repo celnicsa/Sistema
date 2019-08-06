@@ -884,11 +884,11 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(436, 26)
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(275, 26)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
         Me.ReflectionLabel1.Size = New System.Drawing.Size(550, 70)
         Me.ReflectionLabel1.TabIndex = 1
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222"">   </font><font col" &
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222""> y </font><font col" &
     "or=""#003333"">Eléctricas de Nicaragua.SA</font></font></b>"
         '
         'ReflectionImage1
@@ -903,7 +903,7 @@ Partial Class PrincipalForm
         Me.ReflectionImage1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
         Me.ReflectionImage1.ForeColor = System.Drawing.Color.Black
         Me.ReflectionImage1.Image = Global.AppImelsa.My.Resources.Resources.logo
-        Me.ReflectionImage1.Location = New System.Drawing.Point(461, 102)
+        Me.ReflectionImage1.Location = New System.Drawing.Point(296, 138)
         Me.ReflectionImage1.Name = "ReflectionImage1"
         Me.ReflectionImage1.Size = New System.Drawing.Size(511, 335)
         Me.ReflectionImage1.TabIndex = 0

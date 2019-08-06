@@ -1520,28 +1520,22 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Sub
-    Public Sub CmdViewCategoria(ByRef DataGridViewCategoria As GridPanel)
+
+
+    Public Sub CmdViewEscolaridad(ByRef DataGridViewEscolaridad As GridPanel)
         Try
             Connect.Open()
-            Cmd = New SqlCommand("Select * From MtableCategoria", Connect)
+            Cmd = New SqlCommand("Select Cod_Escolaridad As [Codigo],Nombre_Grado As [Escolaridad], Beneficio_Grado As [Bonificación] From MTableBeneficioEscolaridad", Connect)
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
-            da.Fill(ds, "Categoria")
-            DataGridViewCategoria.DataSource = ds.Tables("Categoria")
+            da.Fill(ds, "Cargos")
+            DataGridViewEscolaridad.DataSource = ds.Tables("Cargos")
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
             Connect.Close()
         End Try
     End Sub
-    Public Function CmdInsertCategoria(ByVal Data As Categoria) As Boolean
-        Try
-            Connect.Open()
-            Cmd = New SqlCommand("SPInsertCategoria", Connect)
-            Cmd.CommandType = CommandType.StoredProcedure
-            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
-            Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
-            Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
 
 
     Public Sub CmdViewEscolaridadCombo(ByRef Combobox As ComboBox)
@@ -1585,14 +1579,6 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Function
-    Public Function CmdUpdateCategoria(ByVal Data As Categoria) As Boolean
-        Try
-            Connect.Open()
-            Cmd = New SqlCommand("SPUpdateCategoria", Connect)
-            Cmd.CommandType = CommandType.StoredProcedure
-            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
-            Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
-            Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
 
 
     Public Function CmdUpdateEscolaridad(ByVal Data As Escolaridad) As Boolean
@@ -1615,12 +1601,6 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Function
-    Public Function CmdDeleteCategoria(ByVal Data As Categoria) As Boolean
-        Try
-            Connect.Open()
-            Cmd = New SqlCommand("SPDeleteCategoria", Connect)
-            Cmd.CommandType = CommandType.StoredProcedure
-            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
 
 
 

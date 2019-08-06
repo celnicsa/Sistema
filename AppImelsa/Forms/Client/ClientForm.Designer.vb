@@ -24,7 +24,7 @@ Partial Class ClientForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ClientForm))
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelEx2 = New DevComponents.DotNetBar.PanelEx()
@@ -273,9 +273,9 @@ Partial Class ClientForm
         '
         '
         Me.GridClient.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridClient.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridClient.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridClient.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridClient.PrimaryGrid.MultiSelect = False
         Me.GridClient.PrimaryGrid.PrimaryColumnIndex = 2236962
