@@ -1623,5 +1623,79 @@ Module ModuleCmdSql
         End Try
     End Function
 
+    Public Sub CmdViewCategoria(ByRef DataGridViewCategoria As GridPanel)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("Select * From MTableCategoria", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Categorias")
+            DataGridViewCategoria.DataSource = ds.Tables("Categorias")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+    Public Function CmdInsertCategoria(ByVal Data As Categoria) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPInsertCategoria]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
+            Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+    Public Function CmdUpdateCategoria(ByVal Data As Categoria) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPUpdateCategoria]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
+            Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+    Public Function CmdDeleteCategoria(ByVal Data As Categoria) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPDeleteCategoria]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Code)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
 
 End Module

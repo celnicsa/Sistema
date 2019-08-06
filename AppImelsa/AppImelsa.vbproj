@@ -191,6 +191,18 @@
     <Compile Include="Forms\Employed\SelectPrestamoForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Inventario\CategoriaForm.Designer.vb">
+      <DependentUpon>CategoriaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\CategoriaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\InventarioForm.Designer.vb">
+      <DependentUpon>InventarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\InventarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Nomina\AddAbono.Designer.vb">
       <DependentUpon>AddAbono.vb</DependentUpon>
     </Compile>
@@ -339,6 +351,7 @@
     <Compile Include="Modelos\Employed\Escolaridad.vb" />
     <Compile Include="Modelos\Employed\Salario.vb" />
     <Compile Include="Modelos\Employed\Turno.vb" />
+    <Compile Include="Modelos\Inventario\Categoria.vb" />
     <Compile Include="Modelos\MeErrorMessageDialog.vb" />
     <Compile Include="Modelos\ModuleCmdSql.vb" />
     <Compile Include="Modelos\ModuleConvert.vb" />
@@ -417,6 +430,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Employed\SelectPrestamoForm.resx">
       <DependentUpon>SelectPrestamoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\CategoriaForm.resx">
+      <DependentUpon>CategoriaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\InventarioForm.resx">
+      <DependentUpon>InventarioForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nomina\AddAbono.resx">
       <DependentUpon>AddAbono.vb</DependentUpon>
@@ -638,6 +657,8 @@
     <None Include="Resources\briefcase_icon-icons.com_54413.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\Splashart.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\images1.png" />
     <Content Include="Sin_t_tulo-1_.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -77,6 +77,16 @@ AppImelsa
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:AppImelsa.My.Resources.Resources.images">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AppImelsa.My.Resources.Resources.images1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:AppImelsa.My.Resources.Resources.ix">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

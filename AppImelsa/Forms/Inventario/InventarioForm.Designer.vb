@@ -22,16 +22,10 @@ Partial Class InventarioForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InventarioForm))
-        Me.GridClient = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
-        Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
-        Me.ReflectionLabel2 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
-        Me.BtnDeleteClient = New DevComponents.DotNetBar.ButtonX()
-        Me.BtnUpdateClient = New DevComponents.DotNetBar.ButtonX()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.PanelEx2 = New DevComponents.DotNetBar.PanelEx()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RbtnIden = New System.Windows.Forms.RadioButton()
         Me.RbtnCode = New System.Windows.Forms.RadioButton()
         Me.RbtnName = New System.Windows.Forms.RadioButton()
@@ -39,98 +33,17 @@ Partial Class InventarioForm
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.BtnSearch = New DevComponents.DotNetBar.ButtonX()
         Me.TxtBSearch = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.BtnCategoria = New DevComponents.DotNetBar.ButtonX()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GridClient = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
+        Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
+        Me.ReflectionLabel2 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.BtnLoadTable = New DevComponents.DotNetBar.ButtonX()
         Me.BtnNewClient = New DevComponents.DotNetBar.ButtonX()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.PanelEx2.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'GridClient
-        '
-        Me.GridClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GridClient.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed
-        Me.GridClient.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GridClient.ForeColor = System.Drawing.Color.Black
-        Me.GridClient.Location = New System.Drawing.Point(330, 168)
-        Me.GridClient.Name = "GridClient"
-        '
-        '
-        '
-        Me.GridClient.PrimaryGrid.AllowEdit = False
-        '
-        '
-        '
-        Me.GridClient.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background1.Color1 = System.Drawing.Color.DodgerBlue
-        Background1.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridClient.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
-        Me.GridClient.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
-        Me.GridClient.PrimaryGrid.MultiSelect = False
-        Me.GridClient.PrimaryGrid.PrimaryColumnIndex = 2236962
-        Me.GridClient.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.Row
-        Me.GridClient.Size = New System.Drawing.Size(832, 273)
-        Me.GridClient.TabIndex = 51
-        Me.GridClient.Text = "SuperGridControl1"
-        '
-        'ReflectionLabel1
-        '
-        Me.ReflectionLabel1.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel1.Location = New System.Drawing.Point(797, 34)
-        Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(364, 35)
-        Me.ReflectionLabel1.TabIndex = 48
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones Electricas de Nicaragua SA.</i><font color=""" &
-    "#222222""></font><font color=""#003333""></font></font></b>"
-        '
-        'ReflectionLabel2
-        '
-        Me.ReflectionLabel2.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.ReflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ReflectionLabel2.Font = New System.Drawing.Font("Agency FB", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReflectionLabel2.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel2.Location = New System.Drawing.Point(1000, 92)
-        Me.ReflectionLabel2.Name = "ReflectionLabel2"
-        Me.ReflectionLabel2.Size = New System.Drawing.Size(161, 23)
-        Me.ReflectionLabel2.TabIndex = 50
-        Me.ReflectionLabel2.Text = "<b><font size=""+6""><i>Inventariado de articulos</i><font color=""#222222""></font><" &
-    "font color=""#003333""></font></font></b>"
-        '
-        'BtnDeleteClient
-        '
-        Me.BtnDeleteClient.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnDeleteClient.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnDeleteClient.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDeleteClient.Location = New System.Drawing.Point(1032, 452)
-        Me.BtnDeleteClient.Name = "BtnDeleteClient"
-        Me.BtnDeleteClient.Size = New System.Drawing.Size(129, 23)
-        Me.BtnDeleteClient.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnDeleteClient.TabIndex = 53
-        Me.BtnDeleteClient.Text = "Eliminar"
-        '
-        'BtnUpdateClient
-        '
-        Me.BtnUpdateClient.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnUpdateClient.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnUpdateClient.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUpdateClient.Location = New System.Drawing.Point(891, 452)
-        Me.BtnUpdateClient.Name = "BtnUpdateClient"
-        Me.BtnUpdateClient.Size = New System.Drawing.Size(135, 23)
-        Me.BtnUpdateClient.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnUpdateClient.TabIndex = 54
-        Me.BtnUpdateClient.Text = "Ver Perfil"
         '
         'PanelEx2
         '
@@ -141,23 +54,22 @@ Partial Class InventarioForm
         Me.PanelEx2.Controls.Add(Me.BtnSearch)
         Me.PanelEx2.Controls.Add(Me.TxtBSearch)
         Me.PanelEx2.DisabledBackColor = System.Drawing.Color.Empty
-        Me.PanelEx2.Location = New System.Drawing.Point(22, 12)
+        Me.PanelEx2.Location = New System.Drawing.Point(12, 12)
         Me.PanelEx2.Name = "PanelEx2"
-        Me.PanelEx2.Size = New System.Drawing.Size(232, 481)
+        Me.PanelEx2.Size = New System.Drawing.Size(232, 455)
         Me.PanelEx2.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.PanelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
         Me.PanelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
         Me.PanelEx2.Style.GradientAngle = 90
-        Me.PanelEx2.TabIndex = 58
+        Me.PanelEx2.TabIndex = 46
         '
         'GroupPanel2
         '
         Me.GroupPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupPanel2.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel2.Controls.Add(Me.RadioButton1)
         Me.GroupPanel2.Controls.Add(Me.RbtnIden)
         Me.GroupPanel2.Controls.Add(Me.RbtnCode)
         Me.GroupPanel2.Controls.Add(Me.RbtnName)
@@ -166,7 +78,7 @@ Partial Class InventarioForm
         Me.GroupPanel2.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupPanel2.Location = New System.Drawing.Point(12, 94)
         Me.GroupPanel2.Name = "GroupPanel2"
-        Me.GroupPanel2.Size = New System.Drawing.Size(202, 173)
+        Me.GroupPanel2.Size = New System.Drawing.Size(202, 132)
         '
         '
         '
@@ -198,19 +110,6 @@ Partial Class InventarioForm
         Me.GroupPanel2.TabIndex = 39
         Me.GroupPanel2.Text = "Aplicar Busqueda Por"
         '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton1.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.ForeColor = System.Drawing.Color.Black
-        Me.RadioButton1.Location = New System.Drawing.Point(20, 79)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(66, 22)
-        Me.RadioButton1.TabIndex = 4
-        Me.RadioButton1.Text = "Proyecto"
-        Me.RadioButton1.UseVisualStyleBackColor = False
-        '
         'RbtnIden
         '
         Me.RbtnIden.AutoSize = True
@@ -219,9 +118,9 @@ Partial Class InventarioForm
         Me.RbtnIden.ForeColor = System.Drawing.Color.Black
         Me.RbtnIden.Location = New System.Drawing.Point(20, 51)
         Me.RbtnIden.Name = "RbtnIden"
-        Me.RbtnIden.Size = New System.Drawing.Size(67, 22)
+        Me.RbtnIden.Size = New System.Drawing.Size(79, 22)
         Me.RbtnIden.TabIndex = 3
-        Me.RbtnIden.Text = "Categoria"
+        Me.RbtnIden.Text = "Identificación"
         Me.RbtnIden.UseVisualStyleBackColor = False
         '
         'RbtnCode
@@ -257,7 +156,7 @@ Partial Class InventarioForm
         Me.RbtnAll.Checked = True
         Me.RbtnAll.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RbtnAll.ForeColor = System.Drawing.Color.Black
-        Me.RbtnAll.Location = New System.Drawing.Point(20, 107)
+        Me.RbtnAll.Location = New System.Drawing.Point(20, 75)
         Me.RbtnAll.Name = "RbtnAll"
         Me.RbtnAll.Size = New System.Drawing.Size(71, 22)
         Me.RbtnAll.TabIndex = 1
@@ -310,32 +209,64 @@ Partial Class InventarioForm
         Me.TxtBSearch.Size = New System.Drawing.Size(129, 23)
         Me.TxtBSearch.TabIndex = 16
         '
-        'BtnCategoria
+        'GridClient
         '
-        Me.BtnCategoria.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnCategoria.ColorTable = DevComponents.DotNetBar.eButtonColor.Orange
-        Me.BtnCategoria.FadeEffect = False
-        Me.BtnCategoria.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCategoria.Image = Global.AppImelsa.My.Resources.Resources.Ic
-        Me.BtnCategoria.Location = New System.Drawing.Point(455, 56)
-        Me.BtnCategoria.Name = "BtnCategoria"
-        Me.BtnCategoria.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
-        Me.BtnCategoria.Size = New System.Drawing.Size(124, 29)
-        Me.BtnCategoria.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
-        Me.BtnCategoria.TabIndex = 62
-        Me.BtnCategoria.Text = "Añadir Categoria"
-        Me.BtnCategoria.TextColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GridClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GridClient.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed
+        Me.GridClient.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GridClient.ForeColor = System.Drawing.Color.Black
+        Me.GridClient.Location = New System.Drawing.Point(250, 194)
+        Me.GridClient.Name = "GridClient"
         '
-        'PictureBox1
         '
-        Me.PictureBox1.ForeColor = System.Drawing.Color.Black
-        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(330, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(119, 148)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 52
-        Me.PictureBox1.TabStop = False
+        '
+        Me.GridClient.PrimaryGrid.AllowEdit = False
+        '
+        '
+        '
+        Me.GridClient.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridClient.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
+        Me.GridClient.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
+        Me.GridClient.PrimaryGrid.MultiSelect = False
+        Me.GridClient.PrimaryGrid.PrimaryColumnIndex = 2236962
+        Me.GridClient.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.Row
+        Me.GridClient.Size = New System.Drawing.Size(832, 273)
+        Me.GridClient.TabIndex = 47
+        Me.GridClient.Text = "SuperGridControl1"
+        '
+        'ReflectionLabel1
+        '
+        Me.ReflectionLabel1.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
+        Me.ReflectionLabel1.Location = New System.Drawing.Point(718, 31)
+        Me.ReflectionLabel1.Name = "ReflectionLabel1"
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(364, 35)
+        Me.ReflectionLabel1.TabIndex = 49
+        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones Electricas de Nicaragua SA.</i><font color=""" &
+    "#222222""></font><font color=""#003333""></font></font></b>"
+        '
+        'ReflectionLabel2
+        '
+        Me.ReflectionLabel2.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.ReflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ReflectionLabel2.Font = New System.Drawing.Font("Agency FB", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReflectionLabel2.ForeColor = System.Drawing.Color.Black
+        Me.ReflectionLabel2.Location = New System.Drawing.Point(881, 72)
+        Me.ReflectionLabel2.Name = "ReflectionLabel2"
+        Me.ReflectionLabel2.Size = New System.Drawing.Size(186, 23)
+        Me.ReflectionLabel2.TabIndex = 51
+        Me.ReflectionLabel2.Text = "<b><font size=""+6""><i></i><font color=""#222222""> Inventariado de Materiales </fon" &
+    "t><font color=""#003333""></font></font></b>"
         '
         'BtnLoadTable
         '
@@ -344,12 +275,12 @@ Partial Class InventarioForm
         Me.BtnLoadTable.FadeEffect = False
         Me.BtnLoadTable.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLoadTable.Image = Global.AppImelsa.My.Resources.Resources.Icp
-        Me.BtnLoadTable.Location = New System.Drawing.Point(1072, 131)
+        Me.BtnLoadTable.Location = New System.Drawing.Point(992, 150)
         Me.BtnLoadTable.Name = "BtnLoadTable"
         Me.BtnLoadTable.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
         Me.BtnLoadTable.Size = New System.Drawing.Size(90, 29)
         Me.BtnLoadTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
-        Me.BtnLoadTable.TabIndex = 49
+        Me.BtnLoadTable.TabIndex = 50
         Me.BtnLoadTable.Text = "Refrescar"
         Me.BtnLoadTable.TextColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         '
@@ -360,14 +291,25 @@ Partial Class InventarioForm
         Me.BtnNewClient.FadeEffect = False
         Me.BtnNewClient.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNewClient.Image = Global.AppImelsa.My.Resources.Resources.Ic
-        Me.BtnNewClient.Location = New System.Drawing.Point(959, 131)
+        Me.BtnNewClient.Location = New System.Drawing.Point(848, 150)
         Me.BtnNewClient.Name = "BtnNewClient"
         Me.BtnNewClient.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
-        Me.BtnNewClient.Size = New System.Drawing.Size(107, 29)
+        Me.BtnNewClient.Size = New System.Drawing.Size(126, 29)
         Me.BtnNewClient.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
-        Me.BtnNewClient.TabIndex = 47
+        Me.BtnNewClient.TabIndex = 48
         Me.BtnNewClient.Text = "Nuevo Articulo"
         Me.BtnNewClient.TextColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.ForeColor = System.Drawing.Color.Black
+        Me.PictureBox1.Image = Global.AppImelsa.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(250, 29)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(119, 148)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 52
+        Me.PictureBox1.TabStop = False
         '
         'ButtonX1
         '
@@ -376,33 +318,30 @@ Partial Class InventarioForm
         Me.ButtonX1.FadeEffect = False
         Me.ButtonX1.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonX1.Image = Global.AppImelsa.My.Resources.Resources.Ic
-        Me.ButtonX1.Location = New System.Drawing.Point(455, 21)
+        Me.ButtonX1.Location = New System.Drawing.Point(718, 150)
         Me.ButtonX1.Name = "ButtonX1"
         Me.ButtonX1.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
         Me.ButtonX1.Size = New System.Drawing.Size(107, 29)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
-        Me.ButtonX1.TabIndex = 63
-        Me.ButtonX1.Text = "Ver Categoria"
+        Me.ButtonX1.TabIndex = 53
+        Me.ButtonX1.Text = "Ver Categorias"
         Me.ButtonX1.TextColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         '
         'InventarioForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1206, 512)
+        Me.ClientSize = New System.Drawing.Size(1111, 480)
         Me.Controls.Add(Me.ButtonX1)
-        Me.Controls.Add(Me.BtnCategoria)
-        Me.Controls.Add(Me.PanelEx2)
-        Me.Controls.Add(Me.BtnDeleteClient)
-        Me.Controls.Add(Me.BtnUpdateClient)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.GridClient)
         Me.Controls.Add(Me.ReflectionLabel1)
         Me.Controls.Add(Me.ReflectionLabel2)
         Me.Controls.Add(Me.BtnLoadTable)
         Me.Controls.Add(Me.BtnNewClient)
+        Me.Controls.Add(Me.GridClient)
+        Me.Controls.Add(Me.PanelEx2)
         Me.Name = "InventarioForm"
-        Me.Text = "Inventario"
+        Me.Text = "InventarioForm"
         Me.PanelEx2.ResumeLayout(False)
         Me.GroupPanel2.ResumeLayout(False)
         Me.GroupPanel2.PerformLayout()
@@ -411,24 +350,20 @@ Partial Class InventarioForm
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents GridClient As DevComponents.DotNetBar.SuperGrid.SuperGridControl
-    Friend WithEvents ReflectionLabel1 As DevComponents.DotNetBar.Controls.ReflectionLabel
-    Friend WithEvents ReflectionLabel2 As DevComponents.DotNetBar.Controls.ReflectionLabel
-    Friend WithEvents BtnLoadTable As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents BtnNewClient As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents BtnDeleteClient As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents BtnUpdateClient As DevComponents.DotNetBar.ButtonX
     Friend WithEvents PanelEx2 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents GroupPanel2 As DevComponents.DotNetBar.Controls.GroupPanel
+    Friend WithEvents RbtnIden As RadioButton
     Friend WithEvents RbtnCode As RadioButton
     Friend WithEvents RbtnName As RadioButton
     Friend WithEvents RbtnAll As RadioButton
     Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
     Friend WithEvents BtnSearch As DevComponents.DotNetBar.ButtonX
     Friend WithEvents TxtBSearch As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents RbtnIden As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents BtnCategoria As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents GridClient As DevComponents.DotNetBar.SuperGrid.SuperGridControl
+    Friend WithEvents ReflectionLabel1 As DevComponents.DotNetBar.Controls.ReflectionLabel
+    Friend WithEvents ReflectionLabel2 As DevComponents.DotNetBar.Controls.ReflectionLabel
+    Friend WithEvents BtnLoadTable As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents BtnNewClient As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
 End Class

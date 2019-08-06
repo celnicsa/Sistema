@@ -127,5 +127,13 @@ Public Class PrincipalForm
         EscolaridadForm.ShowDialog()
     End Sub
 
+    Private Sub ButtonItem20_Click(sender As Object, e As EventArgs) Handles ButtonItem20.Click
+        Dim CategoriaForm As New CategoriaForm
+        CategoriaForm.ShowDialog()
+    End Sub
 
+    Private Sub ButtonItem3_Click(sender As Object, e As EventArgs) Handles ButtonItem3.Click
+        Dim InventarioForm As New InventarioForm
+        InventarioForm.ShowDialog()
+    End Sub
 End Class
