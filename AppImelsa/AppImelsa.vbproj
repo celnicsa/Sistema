@@ -108,7 +108,7 @@
     <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Design, Version=12.5.0.2, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Layout, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
@@ -311,12 +311,6 @@
     <Compile Include="Forms\Proyects\ProyectoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ReporteProyecto.Designer.vb">
-      <DependentUpon>ReporteProyecto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Proyects\ReporteProyecto.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\Proyects\ReporteProyectoForm.Designer.vb">
       <DependentUpon>ReporteProyectoForm.vb</DependentUpon>
     </Compile>
@@ -377,22 +371,10 @@
     <Compile Include="Forms\PrincipalForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\CrystalReport1.vb">
+    <Compile Include="Reporte\Proyecto.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\CrystalReportNomina.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportNomina.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\CrystalReportProyect.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportProyect.rpt</DependentUpon>
+      <DependentUpon>Proyecto.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SplashScreen.Designer.vb">
@@ -484,9 +466,6 @@
     <EmbeddedResource Include="Forms\Proyects\ProyectoForm.resx">
       <DependentUpon>ProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ReporteProyecto.resx">
-      <DependentUpon>ReporteProyecto.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proyects\ReporteProyectoForm.resx">
       <DependentUpon>ReporteProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -502,17 +481,9 @@
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
+    <EmbeddedResource Include="Reporte\Proyecto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\CrystalReportNomina.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportNomina.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\CrystalReportProyect.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportProyect.vb</LastGenOutput>
+      <LastGenOutput>Proyecto.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -649,6 +620,7 @@
     <None Include="Resources\Splashart.png" />
     <Content Include="Sin_t_tulo-1_.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

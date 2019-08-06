@@ -30,8 +30,10 @@ Partial Class ReporteProyectoForm
         Me.DateInputEnd = New System.Windows.Forms.DateTimePicker()
         Me.DateInputInit = New System.Windows.Forms.DateTimePicker()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.PanelEx1.SuspendLayout()
+        Me.PanelContenedor.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnGenerarReport
@@ -119,25 +121,32 @@ Partial Class ReporteProyectoForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Dark
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.Controls.Add(Me.CrystalReportViewer1)
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.Location = New System.Drawing.Point(0, 63)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(1196, 597)
+        Me.PanelContenedor.TabIndex = 5
+        '
         'CrystalReportViewer1
         '
         Me.CrystalReportViewer1.ActiveViewIndex = -1
-        Me.CrystalReportViewer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CrystalReportViewer1.ForeColor = System.Drawing.Color.White
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 63)
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1196, 597)
-        Me.CrystalReportViewer1.TabIndex = 5
+        Me.CrystalReportViewer1.TabIndex = 0
         '
         'ReporteProyectoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1196, 660)
-        Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.Controls.Add(Me.PanelContenedor)
         Me.Controls.Add(Me.PanelEx1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -145,6 +154,7 @@ Partial Class ReporteProyectoForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Generar Reporte"
         Me.PanelEx1.ResumeLayout(False)
+        Me.PanelContenedor.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -155,5 +165,6 @@ Partial Class ReporteProyectoForm
     Friend WithEvents DateInputEnd As DateTimePicker
     Friend WithEvents DateInputInit As DateTimePicker
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
-    Private WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents PanelContenedor As Panel
+    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
 End Class

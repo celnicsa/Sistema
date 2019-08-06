@@ -1,6 +1,5 @@
 Imports CrystalDecisions.Shared
 Public Class ReporteProyectoForm
-    Dim Info As New CrystalReportProyect
     Dim Param As New ParameterValues
     Dim MyDiscretValues As New ParameterDiscreteValue
     Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
@@ -12,17 +11,7 @@ Public Class ReporteProyectoForm
     End Sub
 
     Public Sub GenerarReport()
-        Param.Clear()
-        MyDiscretValues.Value = DateInputInit.Value '.ToString("yyyyMMMdd")
-        Param.Add(MyDiscretValues)
-        Info.DataDefinition.ParameterFields("@DateInit").ApplyCurrentValues(Param)
 
-        Param.Clear()
-        MyDiscretValues.Value = DateInputEnd.Value '.ToString("yyyyMMMdd")
-        Param.Add(MyDiscretValues)
-        Info.DataDefinition.ParameterFields("@DateEnd").ApplyCurrentValues(Param)
-
-        CrystalReportViewer1.ReportSource = Info
     End Sub
 
 End Class
