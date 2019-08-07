@@ -81,4 +81,8 @@ Public Class ActualizarProyectoForm
     Private Sub BtnAccept_Click(sender As Object, e As EventArgs) Handles BtnAccept.Click
         Me.Close()
     End Sub
+
+    Private Sub TxtBCode_Click(sender As Object, e As EventArgs) Handles TxtBCode.Click
+
+    End Sub
 End Class

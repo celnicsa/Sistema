@@ -371,10 +371,10 @@
     <Compile Include="Forms\PrincipalForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reporte\Proyecto.vb">
+    <Compile Include="Reporte\ReporteProyecto.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Proyecto.rpt</DependentUpon>
+      <DependentUpon>ReporteProyecto.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SplashScreen.Designer.vb">
@@ -481,9 +481,9 @@
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte\Proyecto.rpt">
+    <EmbeddedResource Include="Reporte\ReporteProyecto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Proyecto.vb</LastGenOutput>
+      <LastGenOutput>ReporteProyecto.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>

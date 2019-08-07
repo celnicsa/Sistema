@@ -18,7 +18,7 @@ Imports System
 Imports System.ComponentModel
 
 
-Public Class Proyecto
+Public Class ReporteProyecto
     Inherits ReportClass
     
     Public Sub New()
@@ -27,7 +27,7 @@ Public Class Proyecto
     
     Public Overrides Property ResourceName() As String
         Get
-            Return "Proyecto.rpt"
+            Return "ReporteProyecto.rpt"
         End Get
         Set
             'Do nothing
@@ -45,7 +45,7 @@ Public Class Proyecto
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "AppImelsa.Proyecto.rpt"
+            Return "AppImelsa.ReporteProyecto.rpt"
         End Get
         Set
             'Do nothing
@@ -91,10 +91,26 @@ Public Class Proyecto
             Return Me.ReportDefinition.Sections(4)
         End Get
     End Property
+    
+    <Browsable(false),  _
+     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
+    Public ReadOnly Property Parameter_DateInit() As CrystalDecisions.[Shared].IParameterField
+        Get
+            Return Me.DataDefinition.ParameterFields(0)
+        End Get
+    End Property
+    
+    <Browsable(false),  _
+     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
+    Public ReadOnly Property Parameter_DateEnd() As CrystalDecisions.[Shared].IParameterField
+        Get
+            Return Me.DataDefinition.ParameterFields(1)
+        End Get
+    End Property
 End Class
 
 <System.Drawing.ToolboxBitmapAttribute(GetType(CrystalDecisions.[Shared].ExportOptions), "report.bmp")>  _
-Public Class CachedProyecto
+Public Class CachedReporteProyecto
     Inherits Component
     Implements ICachedReport
     
@@ -136,7 +152,7 @@ Public Class CachedProyecto
     End Property
     
     Public Overridable Function CreateReport() As CrystalDecisions.CrystalReports.Engine.ReportDocument Implements CrystalDecisions.ReportSource.ICachedReport.CreateReport
-        Dim rpt As Proyecto = New Proyecto()
+        Dim rpt As ReporteProyecto = New ReporteProyecto()
         rpt.Site = Me.Site
         Return rpt
     End Function

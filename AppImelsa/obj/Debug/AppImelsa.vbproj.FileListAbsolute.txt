@@ -236,7 +236,6 @@ E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.UpdateAbo
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.AgregarProyectoForm.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ActualizarProyectoForm.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ProyectoForm.resources
-E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReporteProyecto.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReporteProyectoForm.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.SeleccionarProyectoForm.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.Resources.resources
@@ -280,3 +279,4 @@ E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\DevComponents.DotNe
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\DevComponents.Instrumentation.xml
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.exe.manifest
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.application
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\CrystalDecisions.Windows.Forms.dll

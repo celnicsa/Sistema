@@ -72,7 +72,7 @@ Public Class PrincipalForm
 
     End Sub
     Private Sub Btn_ReportProyect_Click(sender As Object, e As EventArgs) Handles BtnReportProyect.Click
-        Dim WindowsReportProyect As New ReporteProyecto
+        Dim WindowsReportProyect As New ReporteProyectoForm
         WindowsReportProyect.ShowDialog()
     End Sub
 
@@ -132,7 +132,7 @@ Public Class PrincipalForm
         NewWindows("Proyectos", WindowsProyect)
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Dim WindowsProyect As New ProyectoForm
         NewWindows("Proyectos", WindowsProyect)
     End Sub

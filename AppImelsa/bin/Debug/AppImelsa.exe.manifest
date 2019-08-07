@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3243008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3872768">
       <assemblyIdentity name="AppImelsa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NpCzneRoKTTfX8n+F020sjmIAHvJ4hpW0AgZfVhKAXo=</dsig:DigestValue>
+        <dsig:DigestValue>MKzlbRhmqVWBReWuDEcVGhPWSlq9PRWN74T8Jwl9dBw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -224,14 +224,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.Windows.Forms.dll" size="544768">
-      <assemblyIdentity name="CrystalDecisions.Windows.Forms" version="13.0.2000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.Windows.Forms.dll" size="552960">
+      <assemblyIdentity name="CrystalDecisions.Windows.Forms" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9xnazDScN/k2j7OvoNnVGxoqVpcYAiBS+1ZGs0f3OJ8=</dsig:DigestValue>
+        <dsig:DigestValue>hyWTki7iLdqNRy5qNHZLDsFgG+eiA4sxbCdtw3gZ/Hc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

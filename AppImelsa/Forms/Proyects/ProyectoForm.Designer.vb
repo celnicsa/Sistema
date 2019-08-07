@@ -70,7 +70,6 @@ Partial Class ProyectoForm
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.BtnReporte = New System.Windows.Forms.Button()
         Me.GroupPanel2.SuspendLayout()
         Me.GroupPanel1.SuspendLayout()
         Me.PanelEx3.SuspendLayout()
@@ -189,10 +188,10 @@ Partial Class ProyectoForm
         Me.GroupPanel2.Controls.Add(Me.RbtnName)
         Me.GroupPanel2.Controls.Add(Me.RbtnAll)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
-        Me.GroupPanel2.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupPanel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.GroupPanel2.Location = New System.Drawing.Point(21, 97)
         Me.GroupPanel2.Name = "GroupPanel2"
-        Me.GroupPanel2.Size = New System.Drawing.Size(202, 132)
+        Me.GroupPanel2.Size = New System.Drawing.Size(211, 132)
         '
         '
         '
@@ -228,11 +227,11 @@ Partial Class ProyectoForm
         '
         Me.RbtnIden.AutoSize = True
         Me.RbtnIden.BackColor = System.Drawing.Color.Transparent
-        Me.RbtnIden.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnIden.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.RbtnIden.ForeColor = System.Drawing.Color.White
-        Me.RbtnIden.Location = New System.Drawing.Point(20, 51)
+        Me.RbtnIden.Location = New System.Drawing.Point(21, 52)
         Me.RbtnIden.Name = "RbtnIden"
-        Me.RbtnIden.Size = New System.Drawing.Size(54, 22)
+        Me.RbtnIden.Size = New System.Drawing.Size(67, 20)
         Me.RbtnIden.TabIndex = 3
         Me.RbtnIden.Text = "Cliente"
         Me.RbtnIden.UseVisualStyleBackColor = False
@@ -241,11 +240,11 @@ Partial Class ProyectoForm
         '
         Me.RbtnCode.AutoSize = True
         Me.RbtnCode.BackColor = System.Drawing.Color.Transparent
-        Me.RbtnCode.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.RbtnCode.ForeColor = System.Drawing.Color.White
-        Me.RbtnCode.Location = New System.Drawing.Point(20, 3)
+        Me.RbtnCode.Location = New System.Drawing.Point(21, 4)
         Me.RbtnCode.Name = "RbtnCode"
-        Me.RbtnCode.Size = New System.Drawing.Size(54, 22)
+        Me.RbtnCode.Size = New System.Drawing.Size(70, 20)
         Me.RbtnCode.TabIndex = 2
         Me.RbtnCode.Text = "Codigo"
         Me.RbtnCode.UseVisualStyleBackColor = False
@@ -254,11 +253,11 @@ Partial Class ProyectoForm
         '
         Me.RbtnName.AutoSize = True
         Me.RbtnName.BackColor = System.Drawing.Color.Transparent
-        Me.RbtnName.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.RbtnName.ForeColor = System.Drawing.Color.White
-        Me.RbtnName.Location = New System.Drawing.Point(20, 27)
+        Me.RbtnName.Location = New System.Drawing.Point(21, 28)
         Me.RbtnName.Name = "RbtnName"
-        Me.RbtnName.Size = New System.Drawing.Size(60, 22)
+        Me.RbtnName.Size = New System.Drawing.Size(75, 20)
         Me.RbtnName.TabIndex = 0
         Me.RbtnName.Text = "Nombre"
         Me.RbtnName.UseVisualStyleBackColor = False
@@ -268,11 +267,11 @@ Partial Class ProyectoForm
         Me.RbtnAll.AutoSize = True
         Me.RbtnAll.BackColor = System.Drawing.Color.Transparent
         Me.RbtnAll.Checked = True
-        Me.RbtnAll.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.RbtnAll.ForeColor = System.Drawing.Color.White
-        Me.RbtnAll.Location = New System.Drawing.Point(20, 75)
+        Me.RbtnAll.Location = New System.Drawing.Point(21, 76)
         Me.RbtnAll.Name = "RbtnAll"
-        Me.RbtnAll.Size = New System.Drawing.Size(71, 22)
+        Me.RbtnAll.Size = New System.Drawing.Size(90, 20)
         Me.RbtnAll.TabIndex = 1
         Me.RbtnAll.TabStop = True
         Me.RbtnAll.Text = "Ver Todos"
@@ -285,10 +284,10 @@ Partial Class ProyectoForm
         Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
         Me.GroupPanel1.Controls.Add(Me.PanelEx3)
         Me.GroupPanel1.DisabledBackColor = System.Drawing.Color.Empty
-        Me.GroupPanel1.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupPanel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.GroupPanel1.Location = New System.Drawing.Point(21, 275)
         Me.GroupPanel1.Name = "GroupPanel1"
-        Me.GroupPanel1.Size = New System.Drawing.Size(200, 265)
+        Me.GroupPanel1.Size = New System.Drawing.Size(211, 265)
         '
         '
         '
@@ -341,11 +340,12 @@ Partial Class ProyectoForm
         Me.PanelEx3.Controls.Add(Me.LabelX7)
         Me.PanelEx3.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEx3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.PanelEx3.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx3.Margin = New System.Windows.Forms.Padding(5)
         Me.PanelEx3.Name = "PanelEx3"
         Me.PanelEx3.ScrollBarAppearance = DevComponents.DotNetBar.eScrollBarAppearance.ApplicationScroll
-        Me.PanelEx3.Size = New System.Drawing.Size(194, 240)
+        Me.PanelEx3.Size = New System.Drawing.Size(205, 240)
         Me.PanelEx3.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx3.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
@@ -416,10 +416,11 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX5.ForeColor = System.Drawing.Color.White
-        Me.LabelX5.Location = New System.Drawing.Point(27, 184)
+        Me.LabelX5.Location = New System.Drawing.Point(19, 183)
         Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.Size = New System.Drawing.Size(23, 23)
+        Me.LabelX5.Size = New System.Drawing.Size(51, 23)
         Me.LabelX5.TabIndex = 19
         Me.LabelX5.Text = "A"
         '
@@ -429,10 +430,11 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX6.ForeColor = System.Drawing.Color.White
-        Me.LabelX6.Location = New System.Drawing.Point(27, 155)
+        Me.LabelX6.Location = New System.Drawing.Point(19, 154)
         Me.LabelX6.Name = "LabelX6"
-        Me.LabelX6.Size = New System.Drawing.Size(23, 23)
+        Me.LabelX6.Size = New System.Drawing.Size(51, 23)
         Me.LabelX6.TabIndex = 18
         Me.LabelX6.Text = "De"
         '
@@ -442,10 +444,11 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX8.ForeColor = System.Drawing.Color.White
-        Me.LabelX8.Location = New System.Drawing.Point(8, 129)
+        Me.LabelX8.Location = New System.Drawing.Point(0, 128)
         Me.LabelX8.Name = "LabelX8"
-        Me.LabelX8.Size = New System.Drawing.Size(104, 23)
+        Me.LabelX8.Size = New System.Drawing.Size(132, 23)
         Me.LabelX8.TabIndex = 17
         Me.LabelX8.Text = "Fecha de Culminaci�n"
         '
@@ -480,10 +483,11 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX4.ForeColor = System.Drawing.Color.White
-        Me.LabelX4.Location = New System.Drawing.Point(27, 100)
+        Me.LabelX4.Location = New System.Drawing.Point(19, 99)
         Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.Size = New System.Drawing.Size(23, 23)
+        Me.LabelX4.Size = New System.Drawing.Size(51, 23)
         Me.LabelX4.TabIndex = 14
         Me.LabelX4.Text = "A"
         '
@@ -493,10 +497,11 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX3.ForeColor = System.Drawing.Color.White
-        Me.LabelX3.Location = New System.Drawing.Point(27, 71)
+        Me.LabelX3.Location = New System.Drawing.Point(19, 70)
         Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.Size = New System.Drawing.Size(23, 23)
+        Me.LabelX3.Size = New System.Drawing.Size(51, 23)
         Me.LabelX3.TabIndex = 13
         Me.LabelX3.Text = "De"
         '
@@ -506,10 +511,11 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX1.ForeColor = System.Drawing.Color.White
-        Me.LabelX1.Location = New System.Drawing.Point(8, 45)
+        Me.LabelX1.Location = New System.Drawing.Point(0, 44)
         Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX1.Size = New System.Drawing.Size(109, 23)
         Me.LabelX1.TabIndex = 12
         Me.LabelX1.Text = "Fecha de Inicio"
         '
@@ -546,25 +552,26 @@ Partial Class ProyectoForm
         '
         '
         Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!)
         Me.LabelX7.ForeColor = System.Drawing.Color.White
-        Me.LabelX7.Location = New System.Drawing.Point(8, 13)
+        Me.LabelX7.Location = New System.Drawing.Point(0, 12)
         Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.Size = New System.Drawing.Size(33, 23)
+        Me.LabelX7.Size = New System.Drawing.Size(61, 23)
         Me.LabelX7.TabIndex = 10
         Me.LabelX7.Text = "Estado"
         '
         'LabelX2
         '
-        Me.LabelX2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.LabelX2.BackColor = System.Drawing.Color.Transparent
         '
         '
         '
         Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
         Me.LabelX2.ForeColor = System.Drawing.Color.White
-        Me.LabelX2.Location = New System.Drawing.Point(30, 46)
+        Me.LabelX2.Location = New System.Drawing.Point(8, 47)
         Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(36, 23)
+        Me.LabelX2.Size = New System.Drawing.Size(63, 23)
         Me.LabelX2.TabIndex = 15
         Me.LabelX2.Text = "Buscar"
         '
@@ -605,10 +612,10 @@ Partial Class ProyectoForm
         Me.BtnGenerarReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.BtnGenerarReport.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnGenerarReport.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
-        Me.BtnGenerarReport.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGenerarReport.Location = New System.Drawing.Point(72, 574)
+        Me.BtnGenerarReport.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.BtnGenerarReport.Location = New System.Drawing.Point(197, 13)
         Me.BtnGenerarReport.Name = "BtnGenerarReport"
-        Me.BtnGenerarReport.Size = New System.Drawing.Size(100, 23)
+        Me.BtnGenerarReport.Size = New System.Drawing.Size(143, 30)
         Me.BtnGenerarReport.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnGenerarReport.TabIndex = 55
         Me.BtnGenerarReport.Text = "Generar Reporte"
@@ -718,7 +725,6 @@ Partial Class ProyectoForm
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.Panel3.Controls.Add(Me.GroupPanel2)
         Me.Panel3.Controls.Add(Me.LabelX2)
-        Me.Panel3.Controls.Add(Me.BtnGenerarReport)
         Me.Panel3.Controls.Add(Me.GroupPanel1)
         Me.Panel3.Controls.Add(Me.TxtBSearch)
         Me.Panel3.Controls.Add(Me.BtnSearch)
@@ -768,8 +774,8 @@ Partial Class ProyectoForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.BtnDeleteEmployed, 4, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BtnUpdateEmployed, 3, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BtnGenerarReport, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BtnNewEmployed, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.BtnReporte, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BtnLoadTable, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.ForeColor = System.Drawing.Color.White
@@ -782,23 +788,7 @@ Partial Class ProyectoForm
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(941, 60)
         Me.TableLayoutPanel1.TabIndex = 37
         '
-        'BtnReporte
-        '
-        Me.BtnReporte.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.BtnReporte.FlatAppearance.BorderSize = 0
-        Me.BtnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnReporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReporte.ForeColor = System.Drawing.Color.White
-        Me.BtnReporte.Location = New System.Drawing.Point(197, 13)
-        Me.BtnReporte.Name = "BtnReporte"
-        Me.BtnReporte.Size = New System.Drawing.Size(155, 30)
-        Me.BtnReporte.TabIndex = 34
-        Me.BtnReporte.Text = "Reporte"
-        Me.BtnReporte.UseVisualStyleBackColor = False
-        '
-        'Proyecto
+        'ProyectoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -807,10 +797,9 @@ Partial Class ProyectoForm
         Me.Controls.Add(Me.Panel4)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Location = New System.Drawing.Point(5, 5)
-        Me.Name = "Proyecto"
+        Me.Name = "ProyectoForm"
         Me.Text = "MetroForm"
         Me.GroupPanel2.ResumeLayout(False)
         Me.GroupPanel2.PerformLayout()
@@ -876,6 +865,5 @@ Partial Class ProyectoForm
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents BtnReporte As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 End Class

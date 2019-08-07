@@ -1,7 +1,7 @@
 Imports CrystalDecisions.Shared
 
 Public Class NominaForm
-    Dim Info As New CrystalReportNomina
+    'Dim Info As New CrystalReportNomina'
     Dim Param As New ParameterValues
     Dim MyDiscretValues As New ParameterDiscreteValue
     Public Code_Prestamo As String
@@ -10,17 +10,17 @@ Public Class NominaForm
         If TxtBCode.Text.Length = 0 Then
             MsgBox("Horas Extras no validad", MsgBoxStyle.Exclamation)
         Else
-            GenerarReport()
+            ' GenerarReport()
         End If
     End Sub
-    Public Sub GenerarReport()
-        Param.Clear()
-        MyDiscretValues.Value = TxtBCode.Text
-        Param.Add(MyDiscretValues)
-        Info.DataDefinition.ParameterFields("@HorasExtras").ApplyCurrentValues(Param)
+    '   Public Sub GenerarReport()
+    '     Param.Clear()
+    '     MyDiscretValues.Value = TxtBCode.Text
+    '    Param.Add(MyDiscretValues)
+    '    Info.DataDefinition.ParameterFields("@HorasExtras").ApplyCurrentValues(Param)
 
-        CrystalReportViewer1.ReportSource = Info
-    End Sub
+    '   CrystalReportViewer1.ReportSource = Info
+    '   End Sub'
     Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
         Me.Close()
     End Sub
