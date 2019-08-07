@@ -23,12 +23,12 @@ Partial Class PrincipalForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
         Dim SuperTabColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
-        Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
+        Dim SuperTabLinearGradientColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Dim SuperTabPanelColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
         Dim SuperTabPanelItemColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
-        Dim SuperTabLinearGradientColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
+        Dim SuperTabLinearGradientColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Me.ControlContainerItem1 = New DevComponents.DotNetBar.ControlContainerItem()
         Me.LabelItem1 = New DevComponents.DotNetBar.LabelItem()
         Me.QatCustomizeItem2 = New DevComponents.DotNetBar.QatCustomizeItem()
@@ -51,21 +51,41 @@ Partial Class PrincipalForm
         Me.ButtonItem13 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
         Me.RibbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
+        Me.RibbonBar2 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem4 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ItemContainer6 = New DevComponents.DotNetBar.ItemContainer()
+        Me.ButtonItem20 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar6 = New DevComponents.DotNetBar.RibbonBar()
+        Me.BtnProyect = New DevComponents.DotNetBar.ButtonItem()
+        Me.BtnAddProyect = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer3 = New DevComponents.DotNetBar.ItemContainer()
+        Me.BtnReportProyect = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnViewOneProyect = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar7 = New DevComponents.DotNetBar.RibbonBar()
+        Me.BtnClient = New DevComponents.DotNetBar.ButtonItem()
+        Me.BtnAddClient = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer1 = New DevComponents.DotNetBar.ItemContainer()
         Me.BtnViewOneClient = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar8 = New DevComponents.DotNetBar.RibbonBar()
+        Me.BtnEmployed = New DevComponents.DotNetBar.ButtonItem()
+        Me.BtnAddEmp = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer5 = New DevComponents.DotNetBar.ItemContainer()
+        Me.BtnCargo = New DevComponents.DotNetBar.ButtonItem()
         Me.BtnViewOneEmp = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer2 = New DevComponents.DotNetBar.ItemContainer()
+        Me.BtnSalario = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar1 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar9 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem33 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem34 = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer4 = New DevComponents.DotNetBar.ItemContainer()
+        Me.BtnAbono = New DevComponents.DotNetBar.ButtonItem()
+        Me.ApplicationButton1 = New DevComponents.DotNetBar.ApplicationButton()
+        Me.BtnBackup = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonTabItem3 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.RibbonTabItem4 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.QatCustomizeItem3 = New DevComponents.DotNetBar.QatCustomizeItem()
@@ -80,28 +100,8 @@ Partial Class PrincipalForm
         Me.TabCWindows = New DevComponents.DotNetBar.SuperTabControl()
         Me.SuperTabControlPanel1 = New DevComponents.DotNetBar.SuperTabControlPanel()
         Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
-        Me.SuperTabItem1 = New DevComponents.DotNetBar.SuperTabItem()
-        Me.RibbonBar2 = New DevComponents.DotNetBar.RibbonBar()
-        Me.ItemContainer6 = New DevComponents.DotNetBar.ItemContainer()
-        Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem4 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem20 = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnProyect = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnAddProyect = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnReportProyect = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnClient = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnAddClient = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnEmployed = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnAddEmp = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnCargo = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnSalario = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem33 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem34 = New DevComponents.DotNetBar.ButtonItem()
-        Me.BtnAbono = New DevComponents.DotNetBar.ButtonItem()
-        Me.ApplicationButton1 = New DevComponents.DotNetBar.ApplicationButton()
-        Me.BtnBackup = New DevComponents.DotNetBar.ButtonItem()
         Me.ReflectionImage1 = New DevComponents.DotNetBar.Controls.ReflectionImage()
+        Me.SuperTabItem1 = New DevComponents.DotNetBar.SuperTabItem()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
         Me.RibbonPanel2.SuspendLayout()
@@ -312,6 +312,76 @@ Partial Class PrincipalForm
         Me.RibbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.RibbonPanel1.TabIndex = 1
         '
+        'RibbonBar2
+        '
+        Me.RibbonBar2.AutoOverflowEnabled = True
+        Me.RibbonBar2.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.RibbonBar2.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar2.ContainerControlProcessDialogKey = True
+        Me.RibbonBar2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar2.DragDropSupport = True
+        Me.RibbonBar2.ForeColor = System.Drawing.Color.Black
+        Me.RibbonBar2.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem3, Me.ItemContainer6})
+        Me.RibbonBar2.Location = New System.Drawing.Point(822, 0)
+        Me.RibbonBar2.Name = "RibbonBar2"
+        Me.RibbonBar2.Size = New System.Drawing.Size(249, 95)
+        Me.RibbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar2.TabIndex = 6
+        Me.RibbonBar2.Text = "Iventario"
+        '
+        '
+        '
+        Me.RibbonBar2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem3
+        '
+        Me.ButtonItem3.Image = Global.AppImelsa.My.Resources.Resources.images1
+        Me.ButtonItem3.ImageFixedSize = New System.Drawing.Size(65, 65)
+        Me.ButtonItem3.Name = "ButtonItem3"
+        Me.ButtonItem3.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
+        Me.ButtonItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4})
+        Me.ButtonItem3.SubItemsExpandWidth = 14
+        Me.ButtonItem3.Text = "Empleados"
+        '
+        'ButtonItem4
+        '
+        Me.ButtonItem4.Name = "ButtonItem4"
+        Me.ButtonItem4.Text = "Añadir Nuevo"
+        '
+        'ItemContainer6
+        '
+        '
+        '
+        '
+        Me.ItemContainer6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ItemContainer6.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
+        Me.ItemContainer6.MinimumSize = New System.Drawing.Size(120, 0)
+        Me.ItemContainer6.Name = "ItemContainer6"
+        Me.ItemContainer6.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem20})
+        '
+        '
+        '
+        Me.ItemContainer6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem20
+        '
+        Me.ButtonItem20.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem20.Image = Global.AppImelsa.My.Resources.Resources.icono_Nómina
+        Me.ButtonItem20.ImageFixedSize = New System.Drawing.Size(25, 25)
+        Me.ButtonItem20.Name = "ButtonItem20"
+        Me.ButtonItem20.Text = "Categorias"
+        '
         'RibbonBar6
         '
         Me.RibbonBar6.AutoOverflowEnabled = True
@@ -344,6 +414,21 @@ Partial Class PrincipalForm
         '
         Me.RibbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'BtnProyect
+        '
+        Me.BtnProyect.Image = Global.AppImelsa.My.Resources.Resources.Icon_003_Small_2
+        Me.BtnProyect.ImageFixedSize = New System.Drawing.Size(65, 65)
+        Me.BtnProyect.Name = "BtnProyect"
+        Me.BtnProyect.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
+        Me.BtnProyect.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddProyect})
+        Me.BtnProyect.SubItemsExpandWidth = 14
+        Me.BtnProyect.Text = "Empleados"
+        '
+        'BtnAddProyect
+        '
+        Me.BtnAddProyect.Name = "BtnAddProyect"
+        Me.BtnAddProyect.Text = "Añadir Nuevo"
+        '
         'ItemContainer3
         '
         '
@@ -358,6 +443,14 @@ Partial Class PrincipalForm
         '
         '
         Me.ItemContainer3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'BtnReportProyect
+        '
+        Me.BtnReportProyect.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.BtnReportProyect.Image = Global.AppImelsa.My.Resources.Resources.icono_Nómina
+        Me.BtnReportProyect.ImageFixedSize = New System.Drawing.Size(25, 25)
+        Me.BtnReportProyect.Name = "BtnReportProyect"
+        Me.BtnReportProyect.Text = "Generar Reporte"
         '
         'BtnViewOneProyect
         '
@@ -399,6 +492,21 @@ Partial Class PrincipalForm
         '
         '
         Me.RibbonBar7.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'BtnClient
+        '
+        Me.BtnClient.Image = Global.AppImelsa.My.Resources.Resources.relationship_icon_2
+        Me.BtnClient.ImageFixedSize = New System.Drawing.Size(65, 65)
+        Me.BtnClient.Name = "BtnClient"
+        Me.BtnClient.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
+        Me.BtnClient.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddClient})
+        Me.BtnClient.SubItemsExpandWidth = 14
+        Me.BtnClient.Text = "Empleados"
+        '
+        'BtnAddClient
+        '
+        Me.BtnAddClient.Name = "BtnAddClient"
+        Me.BtnAddClient.Text = "Añadir Nuevo"
         '
         'ItemContainer1
         '
@@ -455,6 +563,21 @@ Partial Class PrincipalForm
         '
         Me.RibbonBar8.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'BtnEmployed
+        '
+        Me.BtnEmployed.Image = Global.AppImelsa.My.Resources.Resources.Sin_título_1
+        Me.BtnEmployed.ImageFixedSize = New System.Drawing.Size(65, 65)
+        Me.BtnEmployed.Name = "BtnEmployed"
+        Me.BtnEmployed.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
+        Me.BtnEmployed.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddEmp})
+        Me.BtnEmployed.SubItemsExpandWidth = 14
+        Me.BtnEmployed.Text = "Empleados"
+        '
+        'BtnAddEmp
+        '
+        Me.BtnAddEmp.Name = "BtnAddEmp"
+        Me.BtnAddEmp.Text = "Añadir Nuevo"
+        '
         'ItemContainer5
         '
         '
@@ -469,6 +592,14 @@ Partial Class PrincipalForm
         '
         '
         Me.ItemContainer5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'BtnCargo
+        '
+        Me.BtnCargo.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.BtnCargo.Image = Global.AppImelsa.My.Resources.Resources.briefcase_icon_icons_com_54413
+        Me.BtnCargo.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.BtnCargo.Name = "BtnCargo"
+        Me.BtnCargo.Text = "Cargos"
         '
         'BtnViewOneEmp
         '
@@ -492,6 +623,14 @@ Partial Class PrincipalForm
         '
         '
         Me.ItemContainer2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'BtnSalario
+        '
+        Me.BtnSalario.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.BtnSalario.Image = Global.AppImelsa.My.Resources.Resources.i_7
+        Me.BtnSalario.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.BtnSalario.Name = "BtnSalario"
+        Me.BtnSalario.Text = "Salarios Base"
         '
         'ButtonItem44
         '
@@ -559,6 +698,14 @@ Partial Class PrincipalForm
         '
         Me.RibbonBar1.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem1
+        '
+        Me.ButtonItem1.Image = Global.AppImelsa.My.Resources.Resources.nomina
+        Me.ButtonItem1.ImageFixedSize = New System.Drawing.Size(65, 65)
+        Me.ButtonItem1.Name = "ButtonItem1"
+        Me.ButtonItem1.SubItemsExpandWidth = 14
+        Me.ButtonItem1.Text = "Nomina"
+        '
         'RibbonBar9
         '
         Me.RibbonBar9.AutoOverflowEnabled = True
@@ -591,6 +738,21 @@ Partial Class PrincipalForm
         '
         Me.RibbonBar9.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem33
+        '
+        Me.ButtonItem33.Image = Global.AppImelsa.My.Resources.Resources.iconos_para_prestamos_Credixpress_05
+        Me.ButtonItem33.ImageFixedSize = New System.Drawing.Size(65, 65)
+        Me.ButtonItem33.Name = "ButtonItem33"
+        Me.ButtonItem33.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
+        Me.ButtonItem33.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem34})
+        Me.ButtonItem33.SubItemsExpandWidth = 14
+        Me.ButtonItem33.Text = "Empleados"
+        '
+        'ButtonItem34
+        '
+        Me.ButtonItem34.Name = "ButtonItem34"
+        Me.ButtonItem34.Text = "Ver Registro"
+        '
         'ItemContainer4
         '
         '
@@ -604,6 +766,35 @@ Partial Class PrincipalForm
         '
         '
         Me.ItemContainer4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'BtnAbono
+        '
+        Me.BtnAbono.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.BtnAbono.Image = Global.AppImelsa.My.Resources.Resources.iconos_para_prestamos_Credixpress_01
+        Me.BtnAbono.ImageFixedSize = New System.Drawing.Size(30, 30)
+        Me.BtnAbono.Name = "BtnAbono"
+        Me.BtnAbono.Text = "Abonos"
+        '
+        'ApplicationButton1
+        '
+        Me.ApplicationButton1.AutoExpandOnClick = True
+        Me.ApplicationButton1.CanCustomize = False
+        Me.ApplicationButton1.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.Image
+        Me.ApplicationButton1.Image = CType(resources.GetObject("ApplicationButton1.Image"), System.Drawing.Image)
+        Me.ApplicationButton1.ImageFixedSize = New System.Drawing.Size(16, 16)
+        Me.ApplicationButton1.ImagePaddingHorizontal = 0
+        Me.ApplicationButton1.ImagePaddingVertical = 0
+        Me.ApplicationButton1.Name = "ApplicationButton1"
+        Me.ApplicationButton1.ShowSubItems = False
+        Me.ApplicationButton1.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnBackup})
+        Me.ApplicationButton1.Text = "&IMELSA"
+        '
+        'BtnBackup
+        '
+        Me.BtnBackup.Name = "BtnBackup"
+        Me.BtnBackup.Symbol = "58154"
+        Me.BtnBackup.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
+        Me.BtnBackup.Text = "Respaldar Base de Datos"
         '
         'RibbonTabItem3
         '
@@ -736,8 +927,8 @@ Partial Class PrincipalForm
         Me.TabCWindows.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
-        SuperTabLinearGradientColorTable3.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
-        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable3
+        SuperTabLinearGradientColorTable2.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
+        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable2
         Me.TabCWindows.TabStripColor = SuperTabColorTable1
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
@@ -750,8 +941,8 @@ Partial Class PrincipalForm
         Me.SuperTabControlPanel1.Location = New System.Drawing.Point(0, 26)
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
-        SuperTabLinearGradientColorTable2.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable2
+        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
+        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
         SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
         Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
         Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 520)
@@ -776,207 +967,6 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222""> y </font><font col" &
     "or=""#003333"">Eléctricas de Nicaragua.SA</font></font></b>"
         '
-        'SuperTabItem1
-        '
-        Me.SuperTabItem1.AttachedControl = Me.SuperTabControlPanel1
-        Me.SuperTabItem1.CloseButtonVisible = False
-        Me.SuperTabItem1.GlobalItem = False
-        Me.SuperTabItem1.Name = "SuperTabItem1"
-        Me.SuperTabItem1.PredefinedColor = DevComponents.DotNetBar.eTabItemColor.OfficeMobile2014Blue
-        Me.SuperTabItem1.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SuperTabItem1.Text = "Bienvenidos"
-        '
-        'RibbonBar2
-        '
-        Me.RibbonBar2.AutoOverflowEnabled = True
-        Me.RibbonBar2.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.RibbonBar2.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar2.ContainerControlProcessDialogKey = True
-        Me.RibbonBar2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar2.DragDropSupport = True
-        Me.RibbonBar2.ForeColor = System.Drawing.Color.Black
-        Me.RibbonBar2.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem3, Me.ItemContainer6})
-        Me.RibbonBar2.Location = New System.Drawing.Point(822, 0)
-        Me.RibbonBar2.Name = "RibbonBar2"
-        Me.RibbonBar2.Size = New System.Drawing.Size(249, 95)
-        Me.RibbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar2.TabIndex = 6
-        Me.RibbonBar2.Text = "Iventario"
-        '
-        '
-        '
-        Me.RibbonBar2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ItemContainer6
-        '
-        '
-        '
-        '
-        Me.ItemContainer6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ItemContainer6.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
-        Me.ItemContainer6.MinimumSize = New System.Drawing.Size(120, 0)
-        Me.ItemContainer6.Name = "ItemContainer6"
-        Me.ItemContainer6.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem20})
-        '
-        '
-        '
-        Me.ItemContainer6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ButtonItem3
-        '
-        Me.ButtonItem3.Image = Global.AppImelsa.My.Resources.Resources.images1
-        Me.ButtonItem3.ImageFixedSize = New System.Drawing.Size(65, 65)
-        Me.ButtonItem3.Name = "ButtonItem3"
-        Me.ButtonItem3.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.ButtonItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4})
-        Me.ButtonItem3.SubItemsExpandWidth = 14
-        Me.ButtonItem3.Text = "Empleados"
-        '
-        'ButtonItem4
-        '
-        Me.ButtonItem4.Name = "ButtonItem4"
-        Me.ButtonItem4.Text = "Añadir Nuevo"
-        '
-        'ButtonItem20
-        '
-        Me.ButtonItem20.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem20.Image = Global.AppImelsa.My.Resources.Resources.icono_Nómina
-        Me.ButtonItem20.ImageFixedSize = New System.Drawing.Size(25, 25)
-        Me.ButtonItem20.Name = "ButtonItem20"
-        Me.ButtonItem20.Text = "Categorias"
-        '
-        'BtnProyect
-        '
-        Me.BtnProyect.Image = Global.AppImelsa.My.Resources.Resources.Icon_003_Small_2
-        Me.BtnProyect.ImageFixedSize = New System.Drawing.Size(65, 65)
-        Me.BtnProyect.Name = "BtnProyect"
-        Me.BtnProyect.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.BtnProyect.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddProyect})
-        Me.BtnProyect.SubItemsExpandWidth = 14
-        Me.BtnProyect.Text = "Empleados"
-        '
-        'BtnAddProyect
-        '
-        Me.BtnAddProyect.Name = "BtnAddProyect"
-        Me.BtnAddProyect.Text = "Añadir Nuevo"
-        '
-        'BtnReportProyect
-        '
-        Me.BtnReportProyect.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.BtnReportProyect.Image = Global.AppImelsa.My.Resources.Resources.icono_Nómina
-        Me.BtnReportProyect.ImageFixedSize = New System.Drawing.Size(25, 25)
-        Me.BtnReportProyect.Name = "BtnReportProyect"
-        Me.BtnReportProyect.Text = "Generar Reporte"
-        '
-        'BtnClient
-        '
-        Me.BtnClient.Image = Global.AppImelsa.My.Resources.Resources.relationship_icon_2
-        Me.BtnClient.ImageFixedSize = New System.Drawing.Size(65, 65)
-        Me.BtnClient.Name = "BtnClient"
-        Me.BtnClient.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.BtnClient.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddClient})
-        Me.BtnClient.SubItemsExpandWidth = 14
-        Me.BtnClient.Text = "Empleados"
-        '
-        'BtnAddClient
-        '
-        Me.BtnAddClient.Name = "BtnAddClient"
-        Me.BtnAddClient.Text = "Añadir Nuevo"
-        '
-        'BtnEmployed
-        '
-        Me.BtnEmployed.Image = Global.AppImelsa.My.Resources.Resources.Sin_título_1
-        Me.BtnEmployed.ImageFixedSize = New System.Drawing.Size(65, 65)
-        Me.BtnEmployed.Name = "BtnEmployed"
-        Me.BtnEmployed.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.BtnEmployed.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddEmp})
-        Me.BtnEmployed.SubItemsExpandWidth = 14
-        Me.BtnEmployed.Text = "Empleados"
-        '
-        'BtnAddEmp
-        '
-        Me.BtnAddEmp.Name = "BtnAddEmp"
-        Me.BtnAddEmp.Text = "Añadir Nuevo"
-        '
-        'BtnCargo
-        '
-        Me.BtnCargo.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.BtnCargo.Image = Global.AppImelsa.My.Resources.Resources.briefcase_icon_icons_com_54413
-        Me.BtnCargo.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.BtnCargo.Name = "BtnCargo"
-        Me.BtnCargo.Text = "Cargos"
-        '
-        'BtnSalario
-        '
-        Me.BtnSalario.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.BtnSalario.Image = Global.AppImelsa.My.Resources.Resources.i_7
-        Me.BtnSalario.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.BtnSalario.Name = "BtnSalario"
-        Me.BtnSalario.Text = "Salarios Base"
-        '
-        'ButtonItem1
-        '
-        Me.ButtonItem1.Image = Global.AppImelsa.My.Resources.Resources.nomina
-        Me.ButtonItem1.ImageFixedSize = New System.Drawing.Size(65, 65)
-        Me.ButtonItem1.Name = "ButtonItem1"
-        Me.ButtonItem1.SubItemsExpandWidth = 14
-        Me.ButtonItem1.Text = "Nomina"
-        '
-        'ButtonItem33
-        '
-        Me.ButtonItem33.Image = Global.AppImelsa.My.Resources.Resources.iconos_para_prestamos_Credixpress_05
-        Me.ButtonItem33.ImageFixedSize = New System.Drawing.Size(65, 65)
-        Me.ButtonItem33.Name = "ButtonItem33"
-        Me.ButtonItem33.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
-        Me.ButtonItem33.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem34})
-        Me.ButtonItem33.SubItemsExpandWidth = 14
-        Me.ButtonItem33.Text = "Empleados"
-        '
-        'ButtonItem34
-        '
-        Me.ButtonItem34.Name = "ButtonItem34"
-        Me.ButtonItem34.Text = "Ver Registro"
-        '
-        'BtnAbono
-        '
-        Me.BtnAbono.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.BtnAbono.Image = Global.AppImelsa.My.Resources.Resources.iconos_para_prestamos_Credixpress_01
-        Me.BtnAbono.ImageFixedSize = New System.Drawing.Size(30, 30)
-        Me.BtnAbono.Name = "BtnAbono"
-        Me.BtnAbono.Text = "Abonos"
-        '
-        'ApplicationButton1
-        '
-        Me.ApplicationButton1.AutoExpandOnClick = True
-        Me.ApplicationButton1.CanCustomize = False
-        Me.ApplicationButton1.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.Image
-        Me.ApplicationButton1.Image = CType(resources.GetObject("ApplicationButton1.Image"), System.Drawing.Image)
-        Me.ApplicationButton1.ImageFixedSize = New System.Drawing.Size(16, 16)
-        Me.ApplicationButton1.ImagePaddingHorizontal = 0
-        Me.ApplicationButton1.ImagePaddingVertical = 0
-        Me.ApplicationButton1.Name = "ApplicationButton1"
-        Me.ApplicationButton1.ShowSubItems = False
-        Me.ApplicationButton1.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnBackup})
-        Me.ApplicationButton1.Text = "&IMELSA"
-        '
-        'BtnBackup
-        '
-        Me.BtnBackup.Name = "BtnBackup"
-        Me.BtnBackup.Symbol = "58154"
-        Me.BtnBackup.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
-        Me.BtnBackup.Text = "Respaldar Base de Datos"
-        '
         'ReflectionImage1
         '
         Me.ReflectionImage1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -993,6 +983,16 @@ Partial Class PrincipalForm
         Me.ReflectionImage1.Name = "ReflectionImage1"
         Me.ReflectionImage1.Size = New System.Drawing.Size(511, 335)
         Me.ReflectionImage1.TabIndex = 0
+        '
+        'SuperTabItem1
+        '
+        Me.SuperTabItem1.AttachedControl = Me.SuperTabControlPanel1
+        Me.SuperTabItem1.CloseButtonVisible = False
+        Me.SuperTabItem1.GlobalItem = False
+        Me.SuperTabItem1.Name = "SuperTabItem1"
+        Me.SuperTabItem1.PredefinedColor = DevComponents.DotNetBar.eTabItemColor.OfficeMobile2014Blue
+        Me.SuperTabItem1.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SuperTabItem1.Text = "Bienvenidos"
         '
         'PrincipalForm
         '

@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property add() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("add", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Anadir() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Anadir", resourceCulture)
@@ -76,6 +86,26 @@ Namespace My.Resources
         Friend ReadOnly Property briefcase_icon_icons_com_54413() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("briefcase_icon-icons.com_54413", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property elimin() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("elimin", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property elimin1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("elimin1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -236,6 +266,16 @@ Namespace My.Resources
         Friend ReadOnly Property LogoIme2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("LogoIme2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property look() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("look", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

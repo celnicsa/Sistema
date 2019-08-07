@@ -191,16 +191,22 @@
     <Compile Include="Forms\Employed\SelectPrestamoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inventario\CategoriaForm.Designer.vb">
-      <DependentUpon>CategoriaForm.vb</DependentUpon>
+    <Compile Include="Forms\Inventario\AddArticuloForm.Designer.vb">
+      <DependentUpon>AddArticuloForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Inventario\CategoriaForm.vb">
+    <Compile Include="Forms\Inventario\AddArticuloForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inventario\InventarioForm.Designer.vb">
-      <DependentUpon>InventarioForm.vb</DependentUpon>
+    <Compile Include="Forms\Inventario\CategoriaForms.Designer.vb">
+      <DependentUpon>CategoriaForms.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Inventario\InventarioForm.vb">
+    <Compile Include="Forms\Inventario\CategoriaForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\InventariadoForm.Designer.vb">
+      <DependentUpon>InventariadoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\InventariadoForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Nomina\AddAbono.Designer.vb">
@@ -351,6 +357,7 @@
     <Compile Include="Modelos\Employed\Escolaridad.vb" />
     <Compile Include="Modelos\Employed\Salario.vb" />
     <Compile Include="Modelos\Employed\Turno.vb" />
+    <Compile Include="Modelos\Inventario\Articulo.vb" />
     <Compile Include="Modelos\Inventario\Categoria.vb" />
     <Compile Include="Modelos\MeErrorMessageDialog.vb" />
     <Compile Include="Modelos\ModuleCmdSql.vb" />
@@ -431,11 +438,14 @@
     <EmbeddedResource Include="Forms\Employed\SelectPrestamoForm.resx">
       <DependentUpon>SelectPrestamoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inventario\CategoriaForm.resx">
-      <DependentUpon>CategoriaForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Inventario\AddArticuloForm.resx">
+      <DependentUpon>AddArticuloForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inventario\InventarioForm.resx">
-      <DependentUpon>InventarioForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Inventario\CategoriaForms.resx">
+      <DependentUpon>CategoriaForms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\InventariadoForm.resx">
+      <DependentUpon>InventariadoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nomina\AddAbono.resx">
       <DependentUpon>AddAbono.vb</DependentUpon>
@@ -659,6 +669,10 @@
     <None Include="Resources\Splashart.png" />
     <None Include="Resources\images.png" />
     <None Include="Resources\images1.png" />
+    <None Include="Resources\elimin.png" />
+    <None Include="Resources\elimin1.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\look.png" />
     <Content Include="Sin_t_tulo-1_.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -1521,7 +1521,6 @@ Module ModuleCmdSql
         End Try
     End Sub
 
-
     Public Sub CmdViewEscolaridad(ByRef DataGridViewEscolaridad As GridPanel)
         Try
             Connect.Open()
@@ -1696,6 +1695,110 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Function
+    Public Function CmdInsertArticulo(ByVal Data As Articulo) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPInserArticulo]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@IDArticulo", Data.Articulo)
+            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Categoria)
+            Cmd.Parameters.AddWithValue("@Proyecto", Data.Proyecto)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
+            Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
+            Cmd.Parameters.AddWithValue("@Stock", Data.Stock)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+    Public Function CmdViewArticulo(ByVal DataGridViewArticulo As GridPanel) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select A.ID_ARTICULO CodigoArticulo,A.Nombre Articulo,C.Nombre Categoria, P.NamProyect Proyecto,A.STOCK Cantidad,A.DESCRIPCION Descripcion 
+                      from MTableArticulo A JOIN MTableCategoria C ON A.ID_CATEGORIA= C.ID_CATEGORIA JOIN MTableProyect P ON A.PROYECTO=P.CodProyect", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Articulos")
+            DataGridViewArticulo.DataSource = ds.Tables("Articulos")
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+    Public Function CmdUpdateArticulo(ByVal Data As Articulo) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPUpdateArticulo]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@IDArticulo", Data.Articulo)
+            Cmd.Parameters.AddWithValue("@IDCategoria", Data.Categoria)
+            Cmd.Parameters.AddWithValue("@Proyecto", Data.Proyecto)
+            Cmd.Parameters.AddWithValue("@Nombre", Data.Name)
+            Cmd.Parameters.AddWithValue("@Descripcion", Data.Descripcion)
+            Cmd.Parameters.AddWithValue("@Stock", Data.Stock)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
 
+    Public Function CmdDeleteArticulo(ByVal Data As Articulo) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SPDeleteArticulo]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@IDArticulo", Data.Articulo)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+    Public Sub CmdViewProyectosCombo(ByRef Combobox As ComboBox)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("Select CodProyect From MTableProyect", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Proyectos")
+
+            For Each Row As DataRow In ds.Tables(0).Rows
+                For Each Coll As DataColumn In ds.Tables(0).Columns
+                    Combobox.Items.Add(Row(Coll.ColumnName).ToString())
+                Next
+            Next
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
 
 End Module

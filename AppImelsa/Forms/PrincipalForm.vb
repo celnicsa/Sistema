@@ -128,12 +128,12 @@ Public Class PrincipalForm
     End Sub
 
     Private Sub ButtonItem20_Click(sender As Object, e As EventArgs) Handles ButtonItem20.Click
-        Dim CategoriaForm As New CategoriaForm
-        CategoriaForm.ShowDialog()
+        Dim CategoriaForm As New CategoriaForms
+        NewWindows("Categorias", CategoriaForms)
     End Sub
 
     Private Sub ButtonItem3_Click(sender As Object, e As EventArgs) Handles ButtonItem3.Click
-        Dim InventarioForm As New InventarioForm
-        InventarioForm.ShowDialog()
+        Dim Inventariado As New InventariadoForm
+        NewWindows("Inventariado", InventariadoForm)
     End Sub
 End Class

@@ -1,7 +1,7 @@
-ï»¿Imports DevComponents.DotNetBar.SuperGrid
-Public Class CategoriaForm
+Imports DevComponents.DotNetBar.SuperGrid
+Public Class CategoriaForms
     Private DataCategoria As New Categoria
-    Private Sub CategoriaForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub CategoriaForms_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadTable()
     End Sub
     Private Sub LoadTable()
@@ -13,7 +13,7 @@ Public Class CategoriaForm
     End Sub
     Private Function QuestionDelete(ByVal Entidad As String) As Boolean
         Dim Question As Int16
-        Question = MsgBox("Â¿Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
+        Question = MsgBox("¿Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
         If Question = MsgBoxResult.Yes Then
             Return True
         End If
@@ -39,7 +39,7 @@ Public Class CategoriaForm
     End Sub
     Private Function QuestionUpdate(ByVal Entidad As String) As Boolean
         Dim Question As Int16
-        Question = MsgBox("Â¿Desea Modificarla Entidad a:'" + Entidad + "' ?", MsgBoxStyle.YesNo)
+        Question = MsgBox("¿Desea Modificarla Entidad a:'" + Entidad + "' ?", MsgBoxStyle.YesNo)
         If Question = MsgBoxResult.Yes Then
             Return True
         End If
@@ -63,11 +63,11 @@ Public Class CategoriaForm
             End If
         End If
     End Sub
-    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles BtnDeleteCategoria.Click
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs)
         GetSelectedCategoria()
         LoadTable()
     End Sub
-    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles BtnUpdateClient.Click
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs)
         GetSelectedUpdateCategoria()
         LoadTable()
     End Sub
@@ -89,7 +89,7 @@ Public Class CategoriaForm
             MeErrorMessageDialog.ErrorMessage("Error-CL02")
         End If
     End Sub
-    Private Sub BtnUpdateClient_Click(sender As Object, e As EventArgs) Handles BtnAddClient.Click
+    Private Sub BtnUpdateClient_Click(sender As Object, e As EventArgs)
         GetData()
         LoadTable()
     End Sub

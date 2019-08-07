@@ -132,16 +132,6 @@ C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\D
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.exe
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.xml
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.pdb
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\FlashControlV71.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Design.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Layout.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Schedule.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.Instrumentation.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.SuperGrid.Design.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.TreeGX.dll
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\AppImelsa.exe.config
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\AppImelsa.exe.manifest
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\AppImelsa.application
@@ -202,10 +192,21 @@ C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDec
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.Web.dll
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.vbproj.AppImelsa.exe.config
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.EscolaridadForm.resources
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.CategoriaForm.resources
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.InventarioForm.resources
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.NominaDetalleForm.resources
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.AddArticuloForm.resources
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.Web.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\FlashControlV71.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources

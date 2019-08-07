@@ -22,12 +22,27 @@ AppImelsa
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:AppImelsa.My.Resources.Resources.add">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:AppImelsa.My.Resources.Resources.Anadir">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:AppImelsa.My.Resources.Resources.briefcase_icon_icons_com_54413">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AppImelsa.My.Resources.Resources.elimin">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AppImelsa.My.Resources.Resources.elimin1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -108,6 +123,11 @@ AppImelsa
 </summary>
 </member>
 <member name="P:AppImelsa.My.Resources.Resources.LogoIme2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AppImelsa.My.Resources.Resources.look">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

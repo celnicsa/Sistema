@@ -367,4 +367,12 @@ Public Class AddEmployedForm
     Private Sub BtnLoadPhoto_Click(sender As Object, e As EventArgs) Handles BtnLoadPhoto.Click
         Cargar_Imagen()
     End Sub
+
+    Private Sub ProgressTwo_Click(sender As Object, e As EventArgs) Handles ProgressTwo.Click
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
 End Class
