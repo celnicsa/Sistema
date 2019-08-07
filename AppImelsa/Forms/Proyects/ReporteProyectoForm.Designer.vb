@@ -25,6 +25,7 @@ Partial Class ReporteProyectoForm
         Me.components = New System.ComponentModel.Container()
         Me.BtnGenerarReport = New DevComponents.DotNetBar.ButtonX()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.Txt1 = New System.Windows.Forms.TextBox()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.DateInputEnd = New System.Windows.Forms.DateTimePicker()
@@ -32,7 +33,7 @@ Partial Class ReporteProyectoForm
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.Txt1 = New System.Windows.Forms.TextBox()
+        Me.CachedReporteProyecto1 = New AppImelsa.CachedReporteProyecto()
         Me.PanelEx1.SuspendLayout()
         Me.PanelContenedor.SuspendLayout()
         Me.SuspendLayout()
@@ -70,6 +71,15 @@ Partial Class ReporteProyectoForm
         Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
         Me.PanelEx1.Style.GradientAngle = 90
         Me.PanelEx1.TabIndex = 1
+        '
+        'Txt1
+        '
+        Me.Txt1.BackColor = System.Drawing.Color.Black
+        Me.Txt1.ForeColor = System.Drawing.Color.White
+        Me.Txt1.Location = New System.Drawing.Point(867, 20)
+        Me.Txt1.Name = "Txt1"
+        Me.Txt1.Size = New System.Drawing.Size(245, 26)
+        Me.Txt1.TabIndex = 5
         '
         'LabelX2
         '
@@ -143,15 +153,6 @@ Partial Class ReporteProyectoForm
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1196, 597)
         Me.CrystalReportViewer1.TabIndex = 0
         '
-        'Txt1
-        '
-        Me.Txt1.BackColor = System.Drawing.Color.Black
-        Me.Txt1.ForeColor = System.Drawing.Color.White
-        Me.Txt1.Location = New System.Drawing.Point(867, 20)
-        Me.Txt1.Name = "Txt1"
-        Me.Txt1.Size = New System.Drawing.Size(245, 26)
-        Me.Txt1.TabIndex = 5
-        '
         'ReporteProyectoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -161,6 +162,7 @@ Partial Class ReporteProyectoForm
         Me.Controls.Add(Me.PanelEx1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.White
         Me.Name = "ReporteProyectoForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Generar Reporte"
@@ -180,4 +182,5 @@ Partial Class ReporteProyectoForm
     Friend WithEvents PanelContenedor As Panel
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents Txt1 As TextBox
+    Friend WithEvents CachedReporteProyecto1 As CachedReporteProyecto
 End Class
