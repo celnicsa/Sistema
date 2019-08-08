@@ -191,12 +191,6 @@
     <Compile Include="Forms\Employed\SelectPrestamoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inventario\AddArticuloForm.Designer.vb">
-      <DependentUpon>AddArticuloForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Inventario\AddArticuloForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\Inventario\CategoriaForms.Designer.vb">
       <DependentUpon>CategoriaForms.vb</DependentUpon>
     </Compile>
@@ -437,9 +431,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Employed\SelectPrestamoForm.resx">
       <DependentUpon>SelectPrestamoForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inventario\AddArticuloForm.resx">
-      <DependentUpon>AddArticuloForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inventario\CategoriaForms.resx">
       <DependentUpon>CategoriaForms.vb</DependentUpon>

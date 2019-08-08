@@ -195,7 +195,6 @@ C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDec
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.vbproj.AppImelsa.exe.config
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.EscolaridadForm.resources
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.NominaDetalleForm.resources
-C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.AddArticuloForm.resources
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.Web.dll
 C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Design.dll

@@ -93,4 +93,9 @@ Public Class CategoriaForms
         GetData()
         LoadTable()
     End Sub
+
+    Private Sub BtnUpdateClient_Click_1(sender As Object, e As EventArgs) Handles BtnUpdateClient.Click
+        GetSelectedUpdateCategoria()
+        LoadTable()
+    End Sub
 End Class

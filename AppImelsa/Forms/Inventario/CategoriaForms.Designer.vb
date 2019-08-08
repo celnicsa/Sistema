@@ -22,7 +22,7 @@ Partial Class CategoriaForms
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BtnAddClient = New DevComponents.DotNetBar.ButtonX()
         Me.BtnDeleteCategoria = New DevComponents.DotNetBar.ButtonX()
@@ -138,6 +138,7 @@ Partial Class CategoriaForms
         'TextDesc
         '
         Me.TextDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TextDesc.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -146,6 +147,7 @@ Partial Class CategoriaForms
         Me.TextDesc.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TextDesc.DisabledBackColor = System.Drawing.Color.White
         Me.TextDesc.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextDesc.ForeColor = System.Drawing.Color.Black
         Me.TextDesc.Location = New System.Drawing.Point(12, 217)
         Me.TextDesc.MaxLength = 15
         Me.TextDesc.Name = "TextDesc"
@@ -171,6 +173,7 @@ Partial Class CategoriaForms
         'TextNombre
         '
         Me.TextNombre.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TextNombre.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -179,6 +182,7 @@ Partial Class CategoriaForms
         Me.TextNombre.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TextNombre.DisabledBackColor = System.Drawing.Color.White
         Me.TextNombre.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextNombre.ForeColor = System.Drawing.Color.Black
         Me.TextNombre.Location = New System.Drawing.Point(12, 151)
         Me.TextNombre.MaxLength = 15
         Me.TextNombre.Name = "TextNombre"
@@ -204,6 +208,7 @@ Partial Class CategoriaForms
         'TextCodigo
         '
         Me.TextCodigo.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TextCodigo.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -212,6 +217,7 @@ Partial Class CategoriaForms
         Me.TextCodigo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TextCodigo.DisabledBackColor = System.Drawing.Color.White
         Me.TextCodigo.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextCodigo.ForeColor = System.Drawing.Color.Black
         Me.TextCodigo.Location = New System.Drawing.Point(12, 92)
         Me.TextCodigo.MaxLength = 15
         Me.TextCodigo.Name = "TextCodigo"
@@ -250,9 +256,9 @@ Partial Class CategoriaForms
         '
         '
         Me.GridCategorias.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridCategorias.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridCategorias.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridCategorias.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridCategorias.PrimaryGrid.MultiSelect = False
         Me.GridCategorias.PrimaryGrid.PrimaryColumnIndex = 2236962
