@@ -174,4 +174,5 @@ Public Class ProyectoForm
         Dim WindowsReport As New ReporteProyectoForm
         WindowsReport.ShowDialog()
     End Sub
+
 End Class

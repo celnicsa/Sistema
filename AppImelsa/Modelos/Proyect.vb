@@ -1,4 +1,5 @@
 ﻿Public Class Proyect
+    Friend ReadOnly obs As Object
     Private _code As String
     Private _name As String
     Private _presupuesto As Decimal
@@ -8,6 +9,8 @@
     Private _ubicacion As String
     Private _estado As Int16
     Private _cliente As String
+    Private _observacion As String
+    Private _tipo As Int16
 
     Public Property Code As String
         Get
@@ -89,4 +92,21 @@
             _cliente = value
         End Set
     End Property
+    Public Property Observacion As String
+        Get
+            Return _cliente
+        End Get
+        Set(value As String)
+            _observacion = value
+        End Set
+    End Property
+    Public Property Tipo As Short
+        Get
+            Return _estado
+        End Get
+        Set(value As Short)
+            _tipo = value
+        End Set
+    End Property
+
 End Class

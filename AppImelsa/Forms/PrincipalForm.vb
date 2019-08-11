@@ -122,20 +122,18 @@ Public Class PrincipalForm
         WindowsAbono.ShowDialog()
     End Sub
 
-    Private Sub ReflectionLabel1_Click(sender As Object, e As EventArgs) Handles ReflectionLabel1.Click
-
-    End Sub
-
-
-    Private Sub ButtonItem4_Click_1(sender As Object, e As EventArgs) Handles ButtonItem4.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnMostrar.Click
         Dim WindowsProyect As New ProyectoForm
         NewWindows("Proyectos", WindowsProyect)
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Dim WindowsProyect As New ProyectoForm
-        NewWindows("Proyectos", WindowsProyect)
+    Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click
+        Dim WindowsInsertProyect As New AgregarProyectoForm
+        WindowsInsertProyect.ShowDialog()
     End Sub
 
-
+    Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
+        Dim WindowsReport As New ReporteProyectoForm
+        WindowsReport.ShowDialog()
+    End Sub
 End Class

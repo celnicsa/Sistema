@@ -23,7 +23,6 @@ Partial Class AgregarProyectoForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AgregarProyectoForm))
         Me.TxtBName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
@@ -63,14 +62,16 @@ Partial Class AgregarProyectoForm
         'TxtBName
         '
         Me.TxtBName.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TxtBName.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.TxtBName.Border.BackColorGradientType = DevComponents.DotNetBar.eGradientType.Radial
         Me.TxtBName.Border.Class = "TextBoxBorder"
         Me.TxtBName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TxtBName.DisabledBackColor = System.Drawing.Color.Black
+        Me.TxtBName.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBName.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBName, True)
         Me.TxtBName.Location = New System.Drawing.Point(120, 23)
         Me.TxtBName.MaxLength = 15
@@ -87,7 +88,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX1.ForeColor = System.Drawing.Color.White
+        Me.LabelX1.ForeColor = System.Drawing.Color.Black
         Me.LabelX1.Location = New System.Drawing.Point(36, 23)
         Me.LabelX1.Name = "LabelX1"
         Me.LabelX1.Size = New System.Drawing.Size(78, 23)
@@ -102,7 +103,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX2.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX2.ForeColor = System.Drawing.Color.White
+        Me.LabelX2.ForeColor = System.Drawing.Color.Black
         Me.LabelX2.Location = New System.Drawing.Point(36, 57)
         Me.LabelX2.Name = "LabelX2"
         Me.LabelX2.Size = New System.Drawing.Size(71, 23)
@@ -111,8 +112,8 @@ Partial Class AgregarProyectoForm
         '
         'DateInputInit
         '
-        Me.DateInputInit.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.DateInputInit.ForeColor = System.Drawing.Color.White
+        Me.DateInputInit.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.DateInputInit.ForeColor = System.Drawing.Color.Black
         Me.DateInputInit.Location = New System.Drawing.Point(124, 27)
         Me.DateInputInit.Name = "DateInputInit"
         Me.DateInputInit.Size = New System.Drawing.Size(200, 22)
@@ -126,7 +127,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX3.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX3.ForeColor = System.Drawing.Color.White
+        Me.LabelX3.ForeColor = System.Drawing.Color.Black
         Me.LabelX3.Location = New System.Drawing.Point(20, 23)
         Me.LabelX3.Name = "LabelX3"
         Me.LabelX3.Size = New System.Drawing.Size(77, 23)
@@ -141,7 +142,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX4.ForeColor = System.Drawing.Color.White
+        Me.LabelX4.ForeColor = System.Drawing.Color.Black
         Me.LabelX4.Location = New System.Drawing.Point(20, 54)
         Me.LabelX4.Name = "LabelX4"
         Me.LabelX4.Size = New System.Drawing.Size(98, 23)
@@ -150,8 +151,8 @@ Partial Class AgregarProyectoForm
         '
         'DateInputEnd
         '
-        Me.DateInputEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.DateInputEnd.ForeColor = System.Drawing.Color.White
+        Me.DateInputEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.DateInputEnd.ForeColor = System.Drawing.Color.Black
         Me.DateInputEnd.Location = New System.Drawing.Point(124, 55)
         Me.DateInputEnd.Name = "DateInputEnd"
         Me.DateInputEnd.Size = New System.Drawing.Size(200, 22)
@@ -159,20 +160,19 @@ Partial Class AgregarProyectoForm
         '
         'TxtBUbicacion
         '
-        Me.TxtBUbicacion.BackColor = System.Drawing.Color.Black
+        Me.TxtBUbicacion.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.TxtBUbicacion.BackgroundStyle.Class = "RichTextBoxBorder"
         Me.TxtBUbicacion.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBUbicacion.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBUbicacion.ForeColor = System.Drawing.Color.White
+        Me.TxtBUbicacion.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBUbicacion, True)
         Me.TxtBUbicacion.Location = New System.Drawing.Point(36, 135)
         Me.TxtBUbicacion.Name = "TxtBUbicacion"
         Me.TxtBUbicacion.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
-    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red255\green255\blue255;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\p" &
-    "ar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red0\green0\blue0;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBUbicacion.Size = New System.Drawing.Size(340, 66)
         Me.TxtBUbicacion.TabIndex = 2
         '
@@ -184,7 +184,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX6.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX6.ForeColor = System.Drawing.Color.White
+        Me.LabelX6.ForeColor = System.Drawing.Color.Black
         Me.LabelX6.Location = New System.Drawing.Point(36, 106)
         Me.LabelX6.Name = "LabelX6"
         Me.LabelX6.Size = New System.Drawing.Size(91, 23)
@@ -199,7 +199,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX8.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX8.ForeColor = System.Drawing.Color.White
+        Me.LabelX8.ForeColor = System.Drawing.Color.Black
         Me.LabelX8.Location = New System.Drawing.Point(466, 36)
         Me.LabelX8.Name = "LabelX8"
         Me.LabelX8.Size = New System.Drawing.Size(175, 23)
@@ -209,6 +209,7 @@ Partial Class AgregarProyectoForm
         'BtnAccept
         '
         Me.BtnAccept.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAccept.BackColor = System.Drawing.Color.Lime
         Me.BtnAccept.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.BtnAccept.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAccept.Location = New System.Drawing.Point(713, 20)
@@ -232,12 +233,12 @@ Partial Class AgregarProyectoForm
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.LabelX3)
         Me.GroupBox1.Controls.Add(Me.DateInputInit)
         Me.GroupBox1.Controls.Add(Me.DateInputEnd)
         Me.GroupBox1.Controls.Add(Me.LabelX4)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(453, 135)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(361, 141)
@@ -247,15 +248,17 @@ Partial Class AgregarProyectoForm
         '
         'TxtBCode
         '
+        Me.TxtBCode.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.TxtBCode.Border.BackColorGradientType = DevComponents.DotNetBar.eGradientType.Radial
         Me.TxtBCode.Border.Class = "TextBoxBorder"
         Me.TxtBCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TxtBCode.DisabledBackColor = System.Drawing.Color.Black
+        Me.TxtBCode.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBCode.Enabled = False
         Me.TxtBCode.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBCode.ForeColor = System.Drawing.Color.Black
         Me.TxtBCode.Location = New System.Drawing.Point(704, 75)
         Me.TxtBCode.Name = "TxtBCode"
         Me.TxtBCode.PreventEnterBeep = True
@@ -272,7 +275,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX5.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX5.ForeColor = System.Drawing.Color.White
+        Me.LabelX5.ForeColor = System.Drawing.Color.Black
         Me.LabelX5.Location = New System.Drawing.Point(704, 36)
         Me.LabelX5.Name = "LabelX5"
         Me.LabelX5.Size = New System.Drawing.Size(98, 22)
@@ -282,7 +285,7 @@ Partial Class AgregarProyectoForm
         '
         'TxtBPresupuesto
         '
-        Me.TxtBPresupuesto.BackColor = System.Drawing.Color.Black
+        Me.TxtBPresupuesto.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -291,7 +294,7 @@ Partial Class AgregarProyectoForm
         Me.TxtBPresupuesto.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBPresupuesto.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.TxtBPresupuesto.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBPresupuesto.ForeColor = System.Drawing.Color.White
+        Me.TxtBPresupuesto.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBPresupuesto, True)
         Me.TxtBPresupuesto.Increment = 1.0R
         Me.TxtBPresupuesto.Location = New System.Drawing.Point(120, 58)
@@ -306,6 +309,7 @@ Partial Class AgregarProyectoForm
         Me.CmBClient.DisplayMember = "Text"
         Me.CmBClient.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CmBClient.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CmBClient.ForeColor = System.Drawing.Color.Black
         Me.CmBClient.FormattingEnabled = True
         Me.Highlighter1.SetHighlightOnFocus(Me.CmBClient, True)
         Me.CmBClient.ItemHeight = 16
@@ -317,18 +321,18 @@ Partial Class AgregarProyectoForm
         '
         'ReflectionLabel1
         '
-        Me.ReflectionLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ReflectionLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
         Me.ReflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ReflectionLabel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ReflectionLabel1.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReflectionLabel1.ForeColor = System.Drawing.Color.White
+        Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
         Me.ErrorProvider1.SetIconAlignment(Me.ReflectionLabel1, System.Windows.Forms.ErrorIconAlignment.TopLeft)
         Me.ReflectionLabel1.Location = New System.Drawing.Point(50, 10)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(792, 30)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(903, 30)
         Me.ReflectionLabel1.TabIndex = 171
         Me.ReflectionLabel1.Text = "<b><b><font size=""+6"">Datos del Proyecto</font></b></b>"
         '
@@ -341,7 +345,6 @@ Partial Class AgregarProyectoForm
         'ErrorProvider1
         '
         Me.ErrorProvider1.ContainerControl = Me
-        Me.ErrorProvider1.Icon = CType(resources.GetObject("ErrorProvider1.Icon"), System.Drawing.Icon)
         '
         'Highlighter1
         '
@@ -349,39 +352,38 @@ Partial Class AgregarProyectoForm
         '
         'TxtBDesc
         '
-        Me.TxtBDesc.BackColor = System.Drawing.Color.Black
+        Me.TxtBDesc.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.TxtBDesc.BackgroundStyle.Class = "RichTextBoxBorder"
         Me.TxtBDesc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBDesc.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBDesc.ForeColor = System.Drawing.Color.White
+        Me.TxtBDesc.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBDesc, True)
         Me.TxtBDesc.Location = New System.Drawing.Point(36, 252)
         Me.TxtBDesc.Name = "TxtBDesc"
         Me.TxtBDesc.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
-    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red255\green255\blue255;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\p" &
-    "ar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red0\green0\blue0;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBDesc.Size = New System.Drawing.Size(340, 66)
         Me.TxtBDesc.TabIndex = 3
         '
         'StyleManager1
         '
         Me.StyleManager1.ManagerColorTint = System.Drawing.Color.Gray
-        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Windows7Blue
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'Titulo
         '
-        Me.Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.Titulo.Controls.Add(Me.ReflectionLabel1)
         Me.Titulo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Titulo.ForeColor = System.Drawing.Color.White
+        Me.Titulo.ForeColor = System.Drawing.Color.Black
         Me.Titulo.Location = New System.Drawing.Point(0, 0)
         Me.Titulo.Name = "Titulo"
         Me.Titulo.Padding = New System.Windows.Forms.Padding(50, 10, 20, 20)
-        Me.Titulo.Size = New System.Drawing.Size(862, 60)
+        Me.Titulo.Size = New System.Drawing.Size(973, 60)
         Me.Titulo.TabIndex = 174
         '
         'Panel1
@@ -402,11 +404,11 @@ Partial Class AgregarProyectoForm
         Me.Panel1.Controls.Add(Me.TxtBCode)
         Me.Panel1.Controls.Add(Me.LabelX2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.ForeColor = System.Drawing.Color.White
+        Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(0, 60)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel1.Size = New System.Drawing.Size(862, 395)
+        Me.Panel1.Size = New System.Drawing.Size(973, 526)
         Me.Panel1.TabIndex = 175
         '
         'LabelX7
@@ -417,7 +419,7 @@ Partial Class AgregarProyectoForm
         '
         Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX7.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX7.ForeColor = System.Drawing.Color.White
+        Me.LabelX7.ForeColor = System.Drawing.Color.Black
         Me.LabelX7.Location = New System.Drawing.Point(36, 223)
         Me.LabelX7.Name = "LabelX7"
         Me.LabelX7.Size = New System.Drawing.Size(96, 23)
@@ -427,26 +429,26 @@ Partial Class AgregarProyectoForm
         'Panel2
         '
         Me.Panel2.AutoSize = True
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.Panel2.Controls.Add(Me.ProgressOne)
         Me.Panel2.Controls.Add(Me.BtnCancel)
         Me.Panel2.Controls.Add(Me.BtnAccept)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.ForeColor = System.Drawing.Color.White
-        Me.Panel2.Location = New System.Drawing.Point(0, 389)
+        Me.Panel2.ForeColor = System.Drawing.Color.Black
+        Me.Panel2.Location = New System.Drawing.Point(0, 520)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel2.Size = New System.Drawing.Size(862, 66)
+        Me.Panel2.Size = New System.Drawing.Size(973, 66)
         Me.Panel2.TabIndex = 176
         '
         'ProgressOne
         '
-        Me.ProgressOne.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ProgressOne.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
         Me.ProgressOne.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ProgressOne.ForeColor = System.Drawing.Color.White
+        Me.ProgressOne.ForeColor = System.Drawing.Color.Black
         Me.ProgressOne.Location = New System.Drawing.Point(38, 17)
         Me.ProgressOne.Name = "ProgressOne"
         Me.ProgressOne.Size = New System.Drawing.Size(131, 25)
@@ -458,13 +460,12 @@ Partial Class AgregarProyectoForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(862, 455)
+        Me.ClientSize = New System.Drawing.Size(973, 586)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Titulo)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.White
         Me.Name = "AgregarProyectoForm"
         Me.Text = "Nuevo Proyecto"
         Me.GroupBox1.ResumeLayout(False)

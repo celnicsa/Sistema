@@ -205,6 +205,8 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Desc", Data.Descripcion)
             Cmd.Parameters.AddWithValue("@Estate", Data.Estado)
             Cmd.Parameters.AddWithValue("@Client", Data.Cliente)
+            Cmd.Parameters.AddWithValue("@obs", Data.obs)
+            Cmd.Parameters.AddWithValue("@tipo", Data.tipo)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -230,6 +232,8 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Ubic", Data.Ubicacion)
             Cmd.Parameters.AddWithValue("@Desc", Data.Descripcion)
             Cmd.Parameters.AddWithValue("@Estate", Data.Estado)
+            Cmd.Parameters.AddWithValue("@obs", Data.obs)
+            Cmd.Parameters.AddWithValue("@tipo", Data.Tipo)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else

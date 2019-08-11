@@ -32,6 +32,9 @@ Public Class AgregarProyectoForm
         Return True
     End Function
 
+
+
+
     Private Sub GetData()
         If ValidateBoxs() Then
             If LegalData() = True Then
@@ -44,6 +47,7 @@ Public Class AgregarProyectoForm
                 DataProyect.DateEnd = DateInputEnd.Value.ToString("yyyyMMMdd")
                 DataProyect.Cliente = CmBClient.SelectedItem.ToString
                 DataProyect.Estado = 0
+
                 If CmdInsertProyect(DataProyect) Then
                     ProgressOne.Value = 100
                     MsgBox("Proyecto Insertado Satisfactoriament")

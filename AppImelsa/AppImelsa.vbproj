@@ -475,6 +475,9 @@
     <EmbeddedResource Include="Forms\Proyects\ActualizarProyectoForm.resx">
       <DependentUpon>ActualizarProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proyects\AgregarProyectoForm.resx">
+      <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proyects\FormReporteProyecto.resx">
       <DependentUpon>FormReporteProyecto.vb</DependentUpon>
     </EmbeddedResource>

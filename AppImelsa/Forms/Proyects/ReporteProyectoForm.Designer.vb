@@ -74,8 +74,8 @@ Partial Class ReporteProyectoForm
         '
         'Txt1
         '
-        Me.Txt1.BackColor = System.Drawing.Color.Black
-        Me.Txt1.ForeColor = System.Drawing.Color.White
+        Me.Txt1.BackColor = System.Drawing.Color.White
+        Me.Txt1.ForeColor = System.Drawing.Color.Black
         Me.Txt1.Location = New System.Drawing.Point(867, 20)
         Me.Txt1.Name = "Txt1"
         Me.Txt1.Size = New System.Drawing.Size(245, 26)
@@ -87,7 +87,7 @@ Partial Class ReporteProyectoForm
         '
         '
         Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.ForeColor = System.Drawing.Color.White
+        Me.LabelX2.ForeColor = System.Drawing.Color.Black
         Me.LabelX2.Location = New System.Drawing.Point(347, 20)
         Me.LabelX2.Name = "LabelX2"
         Me.LabelX2.Size = New System.Drawing.Size(48, 23)
@@ -100,7 +100,7 @@ Partial Class ReporteProyectoForm
         '
         '
         Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.ForeColor = System.Drawing.Color.White
+        Me.LabelX1.ForeColor = System.Drawing.Color.Black
         Me.LabelX1.Location = New System.Drawing.Point(44, 20)
         Me.LabelX1.Name = "LabelX1"
         Me.LabelX1.Size = New System.Drawing.Size(64, 23)
@@ -109,9 +109,9 @@ Partial Class ReporteProyectoForm
         '
         'DateInputEnd
         '
-        Me.DateInputEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.DateInputEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.DateInputEnd.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateInputEnd.ForeColor = System.Drawing.Color.White
+        Me.DateInputEnd.ForeColor = System.Drawing.Color.Black
         Me.DateInputEnd.Location = New System.Drawing.Point(401, 21)
         Me.DateInputEnd.Name = "DateInputEnd"
         Me.DateInputEnd.Size = New System.Drawing.Size(200, 22)
@@ -119,9 +119,9 @@ Partial Class ReporteProyectoForm
         '
         'DateInputInit
         '
-        Me.DateInputInit.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.DateInputInit.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.DateInputInit.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateInputInit.ForeColor = System.Drawing.Color.White
+        Me.DateInputInit.ForeColor = System.Drawing.Color.Black
         Me.DateInputInit.Location = New System.Drawing.Point(114, 21)
         Me.DateInputInit.Name = "DateInputInit"
         Me.DateInputInit.Size = New System.Drawing.Size(200, 22)
@@ -130,13 +130,15 @@ Partial Class ReporteProyectoForm
         'StyleManager1
         '
         Me.StyleManager1.ManagerColorTint = System.Drawing.Color.Gray
-        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Dark
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'PanelContenedor
         '
+        Me.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.PanelContenedor.Controls.Add(Me.CrystalReportViewer1)
         Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.ForeColor = System.Drawing.Color.Black
         Me.PanelContenedor.Location = New System.Drawing.Point(0, 63)
         Me.PanelContenedor.Name = "PanelContenedor"
         Me.PanelContenedor.Size = New System.Drawing.Size(1196, 597)
@@ -145,9 +147,11 @@ Partial Class ReporteProyectoForm
         'CrystalReportViewer1
         '
         Me.CrystalReportViewer1.ActiveViewIndex = -1
+        Me.CrystalReportViewer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CrystalReportViewer1.ForeColor = System.Drawing.Color.Black
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1196, 597)
@@ -162,7 +166,6 @@ Partial Class ReporteProyectoForm
         Me.Controls.Add(Me.PanelEx1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.White
         Me.Name = "ReporteProyectoForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Generar Reporte"
