@@ -293,7 +293,7 @@
     <Compile Include="Forms\Nomina\UpdateAbonoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\AddProyectForm.Designer.vb">
+    <Compile Include="Forms\Proyects\AgregarProyectoForm.Designer.vb">
       <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Proyects\AgregarProyectoForm.vb">
@@ -468,9 +468,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nomina\UpdateAbonoForm.resx">
       <DependentUpon>UpdateAbonoForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\AddProyectForm.resx">
-      <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proyects\ActualizarProyectoForm.resx">
       <DependentUpon>ActualizarProyectoForm.vb</DependentUpon>

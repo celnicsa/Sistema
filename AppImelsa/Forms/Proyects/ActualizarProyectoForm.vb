@@ -1,6 +1,5 @@
 Public Class ActualizarProyectoForm
     Public Code As String
-    Private text As String
     Public num As Int16
     Dim DataProyect As New Proyect
     Dim Input As New ValidateInput
@@ -56,18 +55,17 @@ Public Class ActualizarProyectoForm
     End Function
 
     Private Function Getlista() As Int16
-        text = Comb.Text
-        If (text = "Sin Definir") Then
+        If (Comb.Text = "Sin Definir") Then
             Return 6
-        ElseIf text = "Electricidad" Then
+        ElseIf Comb.Text = "Electricidad" Then
             Return 1
-        ElseIf text = "Construccion" Then
+        ElseIf Comb.Text = "Construccion" Then
             Return 2
-        ElseIf text = "Instalacion" Then
+        ElseIf Comb.Text = "Instalacion" Then
             Return 3
-        ElseIf text = "Transformadores" Then
+        ElseIf Comb.Text = "Transformadores" Then
             Return 4
-        ElseIf text = "Capacitacion" Then
+        ElseIf Comb.Text = "Capacitacion" Then
             Return 5
         Else
             Return 6
@@ -107,7 +105,5 @@ Public Class ActualizarProyectoForm
     Private Sub BtnAccept_Click(sender As Object, e As EventArgs) Handles BtnAccept.Click
         Me.Close()
     End Sub
-
-
 
 End Class

@@ -51,6 +51,10 @@ Partial Class AgregarProyectoForm
         Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ProgressOne = New DevComponents.DotNetBar.Controls.ProgressBarX()
+        Me.LisCob = New System.Windows.Forms.ComboBox()
+        Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX10 = New DevComponents.DotNetBar.LabelX()
+        Me.TxtObservacion = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
         Me.GroupBox1.SuspendLayout()
         CType(Me.TxtBPresupuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,7 +213,6 @@ Partial Class AgregarProyectoForm
         'BtnAccept
         '
         Me.BtnAccept.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAccept.BackColor = System.Drawing.Color.Lime
         Me.BtnAccept.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.BtnAccept.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAccept.Location = New System.Drawing.Point(713, 20)
@@ -332,7 +335,7 @@ Partial Class AgregarProyectoForm
         Me.ErrorProvider1.SetIconAlignment(Me.ReflectionLabel1, System.Windows.Forms.ErrorIconAlignment.TopLeft)
         Me.ReflectionLabel1.Location = New System.Drawing.Point(50, 10)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(903, 30)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(792, 30)
         Me.ReflectionLabel1.TabIndex = 171
         Me.ReflectionLabel1.Text = "<b><b><font size=""+6"">Datos del Proyecto</font></b></b>"
         '
@@ -383,13 +386,17 @@ Partial Class AgregarProyectoForm
         Me.Titulo.Location = New System.Drawing.Point(0, 0)
         Me.Titulo.Name = "Titulo"
         Me.Titulo.Padding = New System.Windows.Forms.Padding(50, 10, 20, 20)
-        Me.Titulo.Size = New System.Drawing.Size(973, 60)
+        Me.Titulo.Size = New System.Drawing.Size(862, 60)
         Me.Titulo.TabIndex = 174
         '
         'Panel1
         '
         Me.Panel1.AutoSize = True
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.TxtObservacion)
+        Me.Panel1.Controls.Add(Me.LabelX10)
+        Me.Panel1.Controls.Add(Me.LabelX9)
+        Me.Panel1.Controls.Add(Me.LisCob)
         Me.Panel1.Controls.Add(Me.TxtBDesc)
         Me.Panel1.Controls.Add(Me.LabelX7)
         Me.Panel1.Controls.Add(Me.GroupBox1)
@@ -408,7 +415,7 @@ Partial Class AgregarProyectoForm
         Me.Panel1.Location = New System.Drawing.Point(0, 60)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel1.Size = New System.Drawing.Size(973, 526)
+        Me.Panel1.Size = New System.Drawing.Size(862, 515)
         Me.Panel1.TabIndex = 175
         '
         'LabelX7
@@ -435,10 +442,10 @@ Partial Class AgregarProyectoForm
         Me.Panel2.Controls.Add(Me.BtnAccept)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.Panel2.Location = New System.Drawing.Point(0, 520)
+        Me.Panel2.Location = New System.Drawing.Point(0, 509)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel2.Size = New System.Drawing.Size(973, 66)
+        Me.Panel2.Size = New System.Drawing.Size(862, 66)
         Me.Panel2.TabIndex = 176
         '
         'ProgressOne
@@ -455,17 +462,75 @@ Partial Class AgregarProyectoForm
         Me.ProgressOne.TabIndex = 167
         Me.ProgressOne.Text = "ProgressBarX1"
         '
+        'LisCob
+        '
+        Me.LisCob.FormattingEnabled = True
+        Me.LisCob.Items.AddRange(New Object() {"Sin Definir", "Electricidad", "Construccion", "Instalacion", "Transformadores", "Capacitaciones"})
+        Me.LisCob.Location = New System.Drawing.Point(453, 342)
+        Me.LisCob.Name = "LisCob"
+        Me.LisCob.Size = New System.Drawing.Size(209, 21)
+        Me.LisCob.TabIndex = 171
+        '
+        'LabelX9
+        '
+        Me.LabelX9.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX9.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX9.ForeColor = System.Drawing.Color.Black
+        Me.LabelX9.Location = New System.Drawing.Point(453, 313)
+        Me.LabelX9.Name = "LabelX9"
+        Me.LabelX9.Size = New System.Drawing.Size(149, 23)
+        Me.LabelX9.TabIndex = 172
+        Me.LabelX9.Text = "Tipo de Proyecto"
+        '
+        'LabelX10
+        '
+        Me.LabelX10.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX10.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX10.ForeColor = System.Drawing.Color.Black
+        Me.LabelX10.Location = New System.Drawing.Point(38, 338)
+        Me.LabelX10.Name = "LabelX10"
+        Me.LabelX10.Size = New System.Drawing.Size(96, 23)
+        Me.LabelX10.TabIndex = 173
+        Me.LabelX10.Text = "Observaciones"
+        '
+        'TxtObservacion
+        '
+        Me.TxtObservacion.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.TxtObservacion.BackgroundStyle.Class = "RichTextBoxBorder"
+        Me.TxtObservacion.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtObservacion.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtObservacion.ForeColor = System.Drawing.Color.Black
+        Me.Highlighter1.SetHighlightOnFocus(Me.TxtObservacion, True)
+        Me.TxtObservacion.Location = New System.Drawing.Point(36, 367)
+        Me.TxtObservacion.Name = "TxtObservacion"
+        Me.TxtObservacion.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
+    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red0\green0\blue0;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TxtObservacion.Size = New System.Drawing.Size(340, 66)
+        Me.TxtObservacion.TabIndex = 174
+        '
         'AgregarProyectoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(973, 586)
+        Me.ClientSize = New System.Drawing.Size(862, 575)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Titulo)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "AgregarProyectoForm"
         Me.Text = "Nuevo Proyecto"
         Me.GroupBox1.ResumeLayout(False)
@@ -507,4 +572,8 @@ Partial Class AgregarProyectoForm
     Friend WithEvents LabelX7 As DevComponents.DotNetBar.LabelX
     Friend WithEvents Titulo As Panel
     Friend WithEvents ProgressOne As DevComponents.DotNetBar.Controls.ProgressBarX
+    Friend WithEvents LisCob As ComboBox
+    Friend WithEvents TxtObservacion As DevComponents.DotNetBar.Controls.RichTextBoxEx
+    Friend WithEvents LabelX10 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
 End Class

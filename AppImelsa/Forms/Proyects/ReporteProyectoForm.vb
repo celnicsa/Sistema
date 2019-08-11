@@ -7,7 +7,6 @@ Public Class ReporteProyectoForm
         If DateTime.Compare(DateInputEnd.Value, DateInputInit.Value) < 0 Then
             MsgBox("Fecha Invalida, no cumple con el rango", MsgBoxStyle.Exclamation)
         Else
-            mostrar()
             GenerarReport()
 
         End If
@@ -27,10 +26,6 @@ Public Class ReporteProyectoForm
         CrystalReportViewer1.ReportSource = Info
     End Sub
 
-    Public Sub mostrar()
-        Txt1.Text = DateInputInit.Value.ToString("yyyy-MM-dd")
-
-    End Sub
 
 
 End Class

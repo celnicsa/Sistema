@@ -25,7 +25,6 @@ Partial Class ReporteProyectoForm
         Me.components = New System.ComponentModel.Container()
         Me.BtnGenerarReport = New DevComponents.DotNetBar.ButtonX()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
-        Me.Txt1 = New System.Windows.Forms.TextBox()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.DateInputEnd = New System.Windows.Forms.DateTimePicker()
@@ -52,7 +51,6 @@ Partial Class ReporteProyectoForm
         '
         Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
         Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx1.Controls.Add(Me.Txt1)
         Me.PanelEx1.Controls.Add(Me.LabelX2)
         Me.PanelEx1.Controls.Add(Me.LabelX1)
         Me.PanelEx1.Controls.Add(Me.DateInputEnd)
@@ -71,15 +69,6 @@ Partial Class ReporteProyectoForm
         Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
         Me.PanelEx1.Style.GradientAngle = 90
         Me.PanelEx1.TabIndex = 1
-        '
-        'Txt1
-        '
-        Me.Txt1.BackColor = System.Drawing.Color.White
-        Me.Txt1.ForeColor = System.Drawing.Color.Black
-        Me.Txt1.Location = New System.Drawing.Point(867, 20)
-        Me.Txt1.Name = "Txt1"
-        Me.Txt1.Size = New System.Drawing.Size(245, 26)
-        Me.Txt1.TabIndex = 5
         '
         'LabelX2
         '
@@ -170,7 +159,6 @@ Partial Class ReporteProyectoForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Generar Reporte"
         Me.PanelEx1.ResumeLayout(False)
-        Me.PanelEx1.PerformLayout()
         Me.PanelContenedor.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -184,6 +172,5 @@ Partial Class ReporteProyectoForm
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
     Friend WithEvents PanelContenedor As Panel
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
-    Friend WithEvents Txt1 As TextBox
     Friend WithEvents CachedReporteProyecto1 As CachedReporteProyecto
 End Class

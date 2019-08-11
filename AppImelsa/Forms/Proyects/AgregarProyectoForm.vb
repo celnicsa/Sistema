@@ -31,10 +31,23 @@ Public Class AgregarProyectoForm
         End If
         Return True
     End Function
-
-
-
-
+    Private Function Getlista1() As Int16
+        If LisCob.Text = "Sin Definir" Then
+            Return 6
+        ElseIf LisCob.Text = "Electricidad" Then
+            Return 1
+        ElseIf LisCob.Text = "Construccion" Then
+            Return 2
+        ElseIf LisCob.Text = "Instalacion" Then
+            Return 3
+        ElseIf LisCob.Text = "Transformadores" Then
+            Return 4
+        ElseIf LisCob.Text = "Capacitacion" Then
+            Return 5
+        Else
+            Return 6
+        End If
+    End Function
     Private Sub GetData()
         If ValidateBoxs() Then
             If LegalData() = True Then
@@ -47,6 +60,9 @@ Public Class AgregarProyectoForm
                 DataProyect.DateEnd = DateInputEnd.Value.ToString("yyyyMMMdd")
                 DataProyect.Cliente = CmBClient.SelectedItem.ToString
                 DataProyect.Estado = 0
+                DataProyect.Observacion = TxtObservacion.Text
+                DataProyect.Tipo = Getlista1()
+
 
                 If CmdInsertProyect(DataProyect) Then
                     ProgressOne.Value = 100
