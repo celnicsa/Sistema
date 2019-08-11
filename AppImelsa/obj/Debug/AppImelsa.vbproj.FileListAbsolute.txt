@@ -280,4 +280,4 @@ E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\DevComponents.Instr
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.exe.manifest
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.application
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\CrystalDecisions.Windows.Forms.dll
-E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.FormReporteProyecto.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReporteUnicoForm.resources

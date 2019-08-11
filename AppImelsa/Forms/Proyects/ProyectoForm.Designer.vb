@@ -70,6 +70,7 @@ Partial Class ProyectoForm
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.BtnProUnico = New DevComponents.DotNetBar.ButtonX()
         Me.GroupPanel2.SuspendLayout()
         Me.GroupPanel1.SuspendLayout()
         Me.PanelEx3.SuspendLayout()
@@ -80,7 +81,6 @@ Partial Class ProyectoForm
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -91,9 +91,9 @@ Partial Class ProyectoForm
         Me.BtnUpdateEmployed.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
         Me.BtnUpdateEmployed.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnUpdateEmployed.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUpdateEmployed.Location = New System.Drawing.Point(562, 13)
+        Me.BtnUpdateEmployed.Location = New System.Drawing.Point(614, 6)
         Me.BtnUpdateEmployed.Name = "BtnUpdateEmployed"
-        Me.BtnUpdateEmployed.Size = New System.Drawing.Size(155, 30)
+        Me.BtnUpdateEmployed.Size = New System.Drawing.Size(130, 50)
         Me.BtnUpdateEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnUpdateEmployed.TabIndex = 29
         Me.BtnUpdateEmployed.Text = "Actualizar"
@@ -105,9 +105,9 @@ Partial Class ProyectoForm
         Me.BtnDeleteEmployed.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
         Me.BtnDeleteEmployed.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnDeleteEmployed.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDeleteEmployed.Location = New System.Drawing.Point(745, 13)
+        Me.BtnDeleteEmployed.Location = New System.Drawing.Point(768, 6)
         Me.BtnDeleteEmployed.Name = "BtnDeleteEmployed"
-        Me.BtnDeleteEmployed.Size = New System.Drawing.Size(155, 30)
+        Me.BtnDeleteEmployed.Size = New System.Drawing.Size(130, 50)
         Me.BtnDeleteEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnDeleteEmployed.TabIndex = 28
         Me.BtnDeleteEmployed.Text = "Eliminar"
@@ -612,12 +612,12 @@ Partial Class ProyectoForm
         Me.BtnGenerarReport.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnGenerarReport.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
         Me.BtnGenerarReport.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
-        Me.BtnGenerarReport.Location = New System.Drawing.Point(196, 13)
+        Me.BtnGenerarReport.Location = New System.Drawing.Point(158, 6)
         Me.BtnGenerarReport.Name = "BtnGenerarReport"
-        Me.BtnGenerarReport.Size = New System.Drawing.Size(143, 30)
+        Me.BtnGenerarReport.Size = New System.Drawing.Size(130, 50)
         Me.BtnGenerarReport.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnGenerarReport.TabIndex = 55
-        Me.BtnGenerarReport.Text = "Generar Reporte"
+        Me.BtnGenerarReport.Text = "Generar Lista " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Proyectos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'PictureBox1
         '
@@ -640,10 +640,10 @@ Partial Class ProyectoForm
         Me.BtnLoadTable.FadeEffect = False
         Me.BtnLoadTable.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLoadTable.Image = Global.AppImelsa.My.Resources.Resources.Icp
-        Me.BtnLoadTable.Location = New System.Drawing.Point(13, 13)
+        Me.BtnLoadTable.Location = New System.Drawing.Point(6, 6)
         Me.BtnLoadTable.Name = "BtnLoadTable"
         Me.BtnLoadTable.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
-        Me.BtnLoadTable.Size = New System.Drawing.Size(155, 30)
+        Me.BtnLoadTable.Size = New System.Drawing.Size(130, 50)
         Me.BtnLoadTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.BtnLoadTable.TabIndex = 30
         Me.BtnLoadTable.Text = "Refrescar"
@@ -657,15 +657,14 @@ Partial Class ProyectoForm
         Me.BtnNewEmployed.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNewEmployed.FadeEffect = False
         Me.BtnNewEmployed.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNewEmployed.Image = Global.AppImelsa.My.Resources.Resources.Ic
-        Me.BtnNewEmployed.Location = New System.Drawing.Point(379, 13)
+        Me.BtnNewEmployed.Location = New System.Drawing.Point(462, 6)
         Me.BtnNewEmployed.Name = "BtnNewEmployed"
         Me.BtnNewEmployed.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
-        Me.BtnNewEmployed.Size = New System.Drawing.Size(155, 30)
+        Me.BtnNewEmployed.Size = New System.Drawing.Size(130, 50)
         Me.BtnNewEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.BtnNewEmployed.TabIndex = 22
         Me.BtnNewEmployed.Text = "Nuevo Proyecto"
-        Me.BtnNewEmployed.TextColor = System.Drawing.Color.White
+        Me.BtnNewEmployed.TextColor = System.Drawing.Color.Black
         '
         'titulo
         '
@@ -741,6 +740,7 @@ Partial Class ProyectoForm
         '
         Me.Panel5.AutoSize = True
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel5.Controls.Add(Me.Panel6)
         Me.Panel5.Controls.Add(Me.GridProyect)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
@@ -754,7 +754,6 @@ Partial Class ProyectoForm
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel6.ForeColor = System.Drawing.Color.Black
         Me.Panel6.Location = New System.Drawing.Point(20, 463)
@@ -768,27 +767,41 @@ Partial Class ProyectoForm
         Me.TableLayoutPanel1.AutoSize = True
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.TableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.TableLayoutPanel1.ColumnCount = 5
+        Me.TableLayoutPanel1.ColumnCount = 6
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.BtnDeleteEmployed, 4, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.BtnUpdateEmployed, 3, 0)
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.022!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.24202!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.BtnProUnico, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BtnGenerarReport, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.BtnNewEmployed, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BtnLoadTable, 0, 0)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Controls.Add(Me.BtnDeleteEmployed, 5, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BtnUpdateEmployed, 4, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BtnNewEmployed, 3, 0)
         Me.TableLayoutPanel1.ForeColor = System.Drawing.Color.Black
         Me.TableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(20, 20)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(23, 395)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.Padding = New System.Windows.Forms.Padding(10)
+        Me.TableLayoutPanel1.Padding = New System.Windows.Forms.Padding(3)
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(939, 60)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(915, 62)
         Me.TableLayoutPanel1.TabIndex = 37
+        '
+        'BtnProUnico
+        '
+        Me.BtnProUnico.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnProUnico.BackColor = System.Drawing.Color.Coral
+        Me.BtnProUnico.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
+        Me.BtnProUnico.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.BtnProUnico.Location = New System.Drawing.Point(310, 6)
+        Me.BtnProUnico.Name = "BtnProUnico"
+        Me.BtnProUnico.Size = New System.Drawing.Size(130, 50)
+        Me.BtnProUnico.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnProUnico.TabIndex = 56
+        Me.BtnProUnico.Text = "Generar Reporte " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "De Un Proyecto" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'ProyectoForm
         '
@@ -817,8 +830,7 @@ Partial Class ProyectoForm
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
+        Me.Panel5.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -870,4 +882,5 @@ Partial Class ProyectoForm
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents BtnProUnico As DevComponents.DotNetBar.ButtonX
 End Class

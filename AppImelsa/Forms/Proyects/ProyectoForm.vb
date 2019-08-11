@@ -175,4 +175,14 @@ Public Class ProyectoForm
         WindowsReport.ShowDialog()
     End Sub
 
+    Private Sub BtnProUnico_Click(sender As Object, e As EventArgs) Handles BtnProUnico.Click
+        If GridProyect.GetSelectedRows.Count = 0 Then
+            MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
+        Else
+            Dim Grida As GridRow = GridProyect.GetSelectedRows(0)
+            Dim WindowsReporteProyect As New ReporteUnicoForm
+            WindowsReporteProyect.Code = Grida.Cells(0).Value.ToString
+            WindowsReporteProyect.ShowDialog()
+        End If
+    End Sub
 End Class

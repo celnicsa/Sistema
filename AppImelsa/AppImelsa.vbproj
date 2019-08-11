@@ -305,10 +305,10 @@
     <Compile Include="Forms\Proyects\ActualizarProyectoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\FormReporteProyecto.Designer.vb">
-      <DependentUpon>FormReporteProyecto.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ReporteUnicoForm.Designer.vb">
+      <DependentUpon>ReporteUnicoForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\FormReporteProyecto.vb">
+    <Compile Include="Forms\Proyects\ReporteUnicoForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Proyects\ProyectoForm.Designer.vb">
@@ -475,8 +475,8 @@
     <EmbeddedResource Include="Forms\Proyects\AgregarProyectoForm.resx">
       <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\FormReporteProyecto.resx">
-      <DependentUpon>FormReporteProyecto.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ReporteUnicoForm.resx">
+      <DependentUpon>ReporteUnicoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proyects\ProyectoForm.resx">
       <DependentUpon>ProyectoForm.vb</DependentUpon>
