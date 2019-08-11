@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3350528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3334144">
       <assemblyIdentity name="AppImelsa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6mfM967v7kmz2PIRqTeg9/b6A+b/oZVgBaCdTViJ2XQ=</dsig:DigestValue>
+        <dsig:DigestValue>44VlkzsEw5BJmYeodMmt/M0/T6G0bOShxaI69rN5lN8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
