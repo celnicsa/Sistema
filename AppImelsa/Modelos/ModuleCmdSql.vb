@@ -1147,7 +1147,7 @@ Module ModuleCmdSql
                 Data.Name = dr.Item("Nombre")
                 Data.Apellido = dr.Item("Apellido")
                 Data.Identi = dr.Item("Cedula")
-                Data.Inss = dr.Item("INSS")
+                Data.Inss = dr.Item("Activo")
                 Data.Direc = dr.Item("Direccion")
                 Data.DateNaci = dr.Item("Fecha")
                 Data.Sexo = dr.Item("Sexo")
@@ -1816,16 +1816,32 @@ Module ModuleCmdSql
         End Try
     End Sub
 
-    Public Sub CmdInsertNomina(ID_Nomina As String, Año As String, Mes As String, Cod_Empleado As String)
-        Dim Transaccion As SqlTransaction = Connect.BeginTransaction
+    Public Function CmdGetEmployersID()
         Try
             Connect.Open()
-            Cmd = New SqlCommand("select CodEmp,MS.SalarioMensual from MTableEmp ME, MTableSalarioBase MS
-                                  where ME.Flg_Activo = 'SI' AND ME.CodSalarioBase = MS.CodSalarioBase;", Connect)
+            Cmd = New SqlCommand("select NamEmp+' '+ApeEmp+' : '+CodEmp AS [ID] from MtableEmp;", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Empleado")
+            Return ds.Tables("Empleado")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+    Public Sub CmdInsertNomina(ID_Nomina As String, Año As String, Mes As String, Cod_Empleado As String, DT As DateTime)
+        Dim Transaccion As SqlTransaction
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select CodEmp,(MS.SalarioMensual+MB.Beneficio_Grado) As [SalarioMensual] from MTableEmp ME, MTableSalarioBase MS , MTableBeneficioEscolaridad MB
+                                  where ME.Flg_Activo = 'SI' AND ME.CodSalarioBase = MS.CodSalarioBase AND MB.Cod_Escolaridad = ME.Tipo_Escolaridad;", Connect)
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
             da.Fill(ds, "Nomina")
-
+            Transaccion = Connect.BeginTransaction
             Dim GastoBruto As Decimal = 0
             Dim GastoDeducciones As Decimal = 0
 
@@ -1838,17 +1854,18 @@ Module ModuleCmdSql
             Dim SumtariaDeducciones As Decimal = 0
 
             For Each Row As DataRow In ds.Tables(0).Rows
-                CodigoEmpleado = ds.Tables(0).Columns(0).ToString()
-                SalarioMensual = Decimal.Parse(ds.Tables(0).Columns(1).ToString())
+                CodigoEmpleado = Row("CodEmp").ToString()
+                SalarioMensual = Decimal.Parse(Row("SalarioMensual").ToString())
                 IR = CalculaIR(SalarioMensual)
                 INSS = CalculaINSS(SalarioMensual)
                 Total = SalarioMensual - IR - INSS
                 SumtariaBruto = SumtariaBruto + SalarioMensual
                 SumtariaDeducciones = SumtariaDeducciones + IR + INSS
                 Cmd = New SqlCommand("[SP_INSERT_NOMINADETALLE]", Connect)
+                Cmd.Transaction = Transaccion
                 Cmd.CommandType = CommandType.StoredProcedure
                 Cmd.Parameters.AddWithValue("@ID_Nomina", ID_Nomina)
-                Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado)
+                Cmd.Parameters.AddWithValue("@Cod_Empleado", CodigoEmpleado)
                 Cmd.Parameters.AddWithValue("@Salario", SalarioMensual)
                 Cmd.Parameters.AddWithValue("@INSS", INSS)
                 Cmd.Parameters.AddWithValue("@IR", IR)
@@ -1857,10 +1874,11 @@ Module ModuleCmdSql
             Next
 
             Cmd = New SqlCommand("[SP_INSERT_NOMINA]", Connect)
+            Cmd.Transaction = Transaccion
             Cmd.CommandType = CommandType.StoredProcedure
-            Cmd.Parameters.AddWithValue("@ID", "NO-" + DateTime.Now.Year + "-" + DateTime.Now.Month.ToString("d2"))
-            Cmd.Parameters.AddWithValue("@Año", DateTime.Now.Year)
-            Cmd.Parameters.AddWithValue("@Mes", DateTime.Now.Month.ToString("MMMM"))
+            Cmd.Parameters.AddWithValue("@ID", "NO-" + DT.Year.ToString() + "-" + DT.Month.ToString("d2"))
+            Cmd.Parameters.AddWithValue("@Año", DT.Now.Year)
+            Cmd.Parameters.AddWithValue("@Mes", DT.Now.Month.ToString("MMMM"))
             Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado)
             Cmd.Parameters.AddWithValue("@Total_Bruto", SumtariaBruto)
             Cmd.Parameters.AddWithValue("@Total_Deduciones", SumtariaDeducciones)
@@ -1869,7 +1887,7 @@ Module ModuleCmdSql
             Transaccion.Commit()
         Catch ex As Exception
             MsgBox(ex.Message)
-            Transaccion.rollback()
+            Transaccion.Rollback()
         Finally
             Connect.Close()
         End Try

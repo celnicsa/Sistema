@@ -155,5 +155,7 @@ Public Class EmployedForm
         End If
     End Sub
 
-
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        LoadTable()
+    End Sub
 End Class

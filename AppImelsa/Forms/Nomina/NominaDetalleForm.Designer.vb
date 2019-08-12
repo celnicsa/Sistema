@@ -34,23 +34,21 @@ Partial Class NominaDetalleForm
         Me.TextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TextBoxX3 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.DateInput = New System.Windows.Forms.DateTimePicker()
+        Me.TextBoxX4 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
+        Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
         Me.GridCargos = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
         Me.GroupPanel1 = New DevComponents.DotNetBar.Controls.GroupPanel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.BtnUpdateCargo = New DevComponents.DotNetBar.ButtonX()
-        Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
-        Me.TextBoxX4 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
-        Me.TextBoxX5 = New DevComponents.DotNetBar.Controls.TextBoxX()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx1.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
@@ -60,7 +58,7 @@ Partial Class NominaDetalleForm
         'StyleManager1
         '
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'SuperValidator1
         '
@@ -80,13 +78,14 @@ Partial Class NominaDetalleForm
         Me.TxtBName.Border.Class = "TextBoxBorder"
         Me.TxtBName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBName.DisabledBackColor = System.Drawing.Color.White
+        Me.TxtBName.Enabled = False
         Me.TxtBName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBName, True)
         Me.TxtBName.Location = New System.Drawing.Point(75, 95)
         Me.TxtBName.MaxLength = 85
         Me.TxtBName.Name = "TxtBName"
         Me.TxtBName.PreventEnterBeep = True
-        Me.TxtBName.Size = New System.Drawing.Size(128, 22)
+        Me.TxtBName.Size = New System.Drawing.Size(182, 22)
         Me.TxtBName.TabIndex = 14
         '
         'TextBoxX1
@@ -97,13 +96,14 @@ Partial Class NominaDetalleForm
         Me.TextBoxX1.Border.Class = "TextBoxBorder"
         Me.TextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TextBoxX1.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBoxX1.Enabled = False
         Me.TextBoxX1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX1, True)
         Me.TextBoxX1.Location = New System.Drawing.Point(108, 24)
         Me.TextBoxX1.MaxLength = 85
         Me.TextBoxX1.Name = "TextBoxX1"
         Me.TextBoxX1.PreventEnterBeep = True
-        Me.TextBoxX1.Size = New System.Drawing.Size(95, 22)
+        Me.TextBoxX1.Size = New System.Drawing.Size(149, 22)
         Me.TextBoxX1.TabIndex = 14
         '
         'TextBoxX2
@@ -114,13 +114,14 @@ Partial Class NominaDetalleForm
         Me.TextBoxX2.Border.Class = "TextBoxBorder"
         Me.TextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TextBoxX2.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBoxX2.Enabled = False
         Me.TextBoxX2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX2, True)
         Me.TextBoxX2.Location = New System.Drawing.Point(75, 15)
         Me.TextBoxX2.MaxLength = 85
         Me.TextBoxX2.Name = "TextBoxX2"
         Me.TextBoxX2.PreventEnterBeep = True
-        Me.TextBoxX2.Size = New System.Drawing.Size(128, 22)
+        Me.TextBoxX2.Size = New System.Drawing.Size(182, 22)
         Me.TextBoxX2.TabIndex = 17
         '
         'TextBoxX3
@@ -131,26 +132,45 @@ Partial Class NominaDetalleForm
         Me.TextBoxX3.Border.Class = "TextBoxBorder"
         Me.TextBoxX3.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TextBoxX3.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBoxX3.Enabled = False
         Me.TextBoxX3.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX3, True)
         Me.TextBoxX3.Location = New System.Drawing.Point(75, 54)
         Me.TextBoxX3.MaxLength = 85
         Me.TextBoxX3.Name = "TextBoxX3"
         Me.TextBoxX3.PreventEnterBeep = True
-        Me.TextBoxX3.Size = New System.Drawing.Size(128, 22)
+        Me.TextBoxX3.Size = New System.Drawing.Size(182, 22)
         Me.TextBoxX3.TabIndex = 18
         '
         'DateInput
         '
-        Me.DateInput.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.DateInput.BackColor = System.Drawing.Color.WhiteSmoke
         Me.DateInput.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateInput.ForeColor = System.Drawing.Color.Black
         Me.DateInput.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.Highlighter1.SetHighlightOnFocus(Me.DateInput, True)
         Me.DateInput.Location = New System.Drawing.Point(75, 132)
         Me.DateInput.Name = "DateInput"
-        Me.DateInput.Size = New System.Drawing.Size(128, 22)
+        Me.DateInput.Size = New System.Drawing.Size(182, 22)
         Me.DateInput.TabIndex = 175
+        '
+        'TextBoxX4
+        '
+        '
+        '
+        '
+        Me.TextBoxX4.Border.Class = "TextBoxBorder"
+        Me.TextBoxX4.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBoxX4.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBoxX4.Enabled = False
+        Me.TextBoxX4.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX4, True)
+        Me.TextBoxX4.Location = New System.Drawing.Point(108, 70)
+        Me.TextBoxX4.MaxLength = 85
+        Me.TextBoxX4.Name = "TextBoxX4"
+        Me.TextBoxX4.PreventEnterBeep = True
+        Me.TextBoxX4.Size = New System.Drawing.Size(149, 22)
+        Me.TextBoxX4.TabIndex = 16
         '
         'PanelEx1
         '
@@ -176,20 +196,18 @@ Partial Class NominaDetalleForm
         '
         'GroupPanel2
         '
-        Me.GroupPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GroupPanel2.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GroupPanel2.CanvasColor = System.Drawing.Color.WhiteSmoke
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel2.Controls.Add(Me.LabelX9)
-        Me.GroupPanel2.Controls.Add(Me.TextBoxX5)
         Me.GroupPanel2.Controls.Add(Me.LabelX8)
         Me.GroupPanel2.Controls.Add(Me.TextBoxX4)
         Me.GroupPanel2.Controls.Add(Me.LabelX5)
         Me.GroupPanel2.Controls.Add(Me.TextBoxX1)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
         Me.GroupPanel2.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupPanel2.Location = New System.Drawing.Point(12, 248)
+        Me.GroupPanel2.Location = New System.Drawing.Point(12, 296)
         Me.GroupPanel2.Name = "GroupPanel2"
-        Me.GroupPanel2.Size = New System.Drawing.Size(225, 179)
+        Me.GroupPanel2.Size = New System.Drawing.Size(266, 131)
         '
         '
         '
@@ -221,6 +239,21 @@ Partial Class NominaDetalleForm
         Me.GroupPanel2.TabIndex = 22
         Me.GroupPanel2.Text = "Gastos "
         '
+        'LabelX8
+        '
+        Me.LabelX8.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX8.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX8.ForeColor = System.Drawing.Color.Black
+        Me.LabelX8.Location = New System.Drawing.Point(3, 67)
+        Me.LabelX8.Name = "LabelX8"
+        Me.LabelX8.Size = New System.Drawing.Size(99, 23)
+        Me.LabelX8.TabIndex = 15
+        Me.LabelX8.Text = "Total Deducciones"
+        '
         'LabelX5
         '
         Me.LabelX5.BackColor = System.Drawing.Color.Transparent
@@ -238,11 +271,11 @@ Partial Class NominaDetalleForm
         '
         'GridCargos
         '
-        Me.GridCargos.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GridCargos.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GridCargos.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed
         Me.GridCargos.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridCargos.ForeColor = System.Drawing.Color.Black
-        Me.GridCargos.Location = New System.Drawing.Point(256, 41)
+        Me.GridCargos.Location = New System.Drawing.Point(284, 41)
         Me.GridCargos.Name = "GridCargos"
         '
         '
@@ -259,14 +292,14 @@ Partial Class NominaDetalleForm
         Me.GridCargos.PrimaryGrid.MultiSelect = False
         Me.GridCargos.PrimaryGrid.PrimaryColumnIndex = 2236962
         Me.GridCargos.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.Row
-        Me.GridCargos.Size = New System.Drawing.Size(635, 386)
+        Me.GridCargos.Size = New System.Drawing.Size(607, 386)
         Me.GridCargos.TabIndex = 38
         Me.GridCargos.Text = "SuperGridControl1"
         '
         'GroupPanel1
         '
-        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GroupPanel1.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GroupPanel1.CanvasColor = System.Drawing.Color.WhiteSmoke
         Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
         Me.GroupPanel1.Controls.Add(Me.ComboBox1)
         Me.GroupPanel1.Controls.Add(Me.LabelX7)
@@ -282,7 +315,7 @@ Partial Class NominaDetalleForm
         Me.GroupPanel1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupPanel1.Location = New System.Drawing.Point(12, 12)
         Me.GroupPanel1.Name = "GroupPanel1"
-        Me.GroupPanel1.Size = New System.Drawing.Size(225, 230)
+        Me.GroupPanel1.Size = New System.Drawing.Size(266, 230)
         '
         '
         '
@@ -313,6 +346,32 @@ Partial Class NominaDetalleForm
         Me.GroupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel1.TabIndex = 21
         Me.GroupPanel1.Text = "Nomina"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ComboBox1.Font = New System.Drawing.Font("Agency FB", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(75, 165)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(182, 25)
+        Me.ComboBox1.TabIndex = 39
+        '
+        'LabelX7
+        '
+        Me.LabelX7.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX7.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX7.ForeColor = System.Drawing.Color.Black
+        Me.LabelX7.Location = New System.Drawing.Point(3, 165)
+        Me.LabelX7.Name = "LabelX7"
+        Me.LabelX7.Size = New System.Drawing.Size(42, 23)
+        Me.LabelX7.TabIndex = 177
+        Me.LabelX7.Text = "Usuario"
         '
         'LabelX6
         '
@@ -382,7 +441,7 @@ Partial Class NominaDetalleForm
         Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX4.ForeColor = System.Drawing.Color.Black
-        Me.LabelX4.Location = New System.Drawing.Point(256, 12)
+        Me.LabelX4.Location = New System.Drawing.Point(284, 12)
         Me.LabelX4.Name = "LabelX4"
         Me.LabelX4.Size = New System.Drawing.Size(165, 23)
         Me.LabelX4.TabIndex = 9
@@ -400,99 +459,14 @@ Partial Class NominaDetalleForm
         Me.BtnUpdateCargo.TabIndex = 10
         Me.BtnUpdateCargo.Text = "Generar Nomina"
         '
-        'LabelX7
-        '
-        Me.LabelX7.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX7.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX7.ForeColor = System.Drawing.Color.Black
-        Me.LabelX7.Location = New System.Drawing.Point(3, 165)
-        Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.Size = New System.Drawing.Size(42, 23)
-        Me.LabelX7.TabIndex = 177
-        Me.LabelX7.Text = "Usuario"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(75, 165)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(128, 28)
-        Me.ComboBox1.TabIndex = 39
-        '
-        'LabelX8
-        '
-        Me.LabelX8.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX8.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX8.ForeColor = System.Drawing.Color.Black
-        Me.LabelX8.Location = New System.Drawing.Point(3, 67)
-        Me.LabelX8.Name = "LabelX8"
-        Me.LabelX8.Size = New System.Drawing.Size(99, 23)
-        Me.LabelX8.TabIndex = 15
-        Me.LabelX8.Text = "Total Deducciones"
-        '
-        'TextBoxX4
-        '
-        '
-        '
-        '
-        Me.TextBoxX4.Border.Class = "TextBoxBorder"
-        Me.TextBoxX4.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX4.DisabledBackColor = System.Drawing.Color.White
-        Me.TextBoxX4.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX4, True)
-        Me.TextBoxX4.Location = New System.Drawing.Point(108, 70)
-        Me.TextBoxX4.MaxLength = 85
-        Me.TextBoxX4.Name = "TextBoxX4"
-        Me.TextBoxX4.PreventEnterBeep = True
-        Me.TextBoxX4.Size = New System.Drawing.Size(95, 22)
-        Me.TextBoxX4.TabIndex = 16
-        '
-        'LabelX9
-        '
-        Me.LabelX9.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX9.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX9.ForeColor = System.Drawing.Color.Black
-        Me.LabelX9.Location = New System.Drawing.Point(3, 113)
-        Me.LabelX9.Name = "LabelX9"
-        Me.LabelX9.Size = New System.Drawing.Size(99, 23)
-        Me.LabelX9.TabIndex = 17
-        Me.LabelX9.Text = "Total Nomina"
-        '
-        'TextBoxX5
-        '
-        '
-        '
-        '
-        Me.TextBoxX5.Border.Class = "TextBoxBorder"
-        Me.TextBoxX5.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX5.DisabledBackColor = System.Drawing.Color.White
-        Me.TextBoxX5.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX5, True)
-        Me.TextBoxX5.Location = New System.Drawing.Point(108, 116)
-        Me.TextBoxX5.MaxLength = 85
-        Me.TextBoxX5.Name = "TextBoxX5"
-        Me.TextBoxX5.PreventEnterBeep = True
-        Me.TextBoxX5.Size = New System.Drawing.Size(95, 22)
-        Me.TextBoxX5.TabIndex = 18
-        '
         'NominaDetalleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(903, 473)
         Me.Controls.Add(Me.PanelEx1)
+        Me.DoubleBuffered = True
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "NominaDetalleForm"
         Me.Text = "NominaDetalleForm"
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -523,8 +497,6 @@ Partial Class NominaDetalleForm
     Friend WithEvents TextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents LabelX6 As DevComponents.DotNetBar.LabelX
     Friend WithEvents DateInput As DateTimePicker
-    Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents TextBoxX5 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents LabelX8 As DevComponents.DotNetBar.LabelX
     Friend WithEvents TextBoxX4 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents ComboBox1 As ComboBox

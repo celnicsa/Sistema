@@ -2,6 +2,7 @@ Imports DevComponents.DotNetBar.SuperGrid
 Public Class NominaForm
     Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click
         Dim ND As New NominaDetalleForm
+        ND.Tipo_Operacion = "Nueva"
         ND.ShowDialog()
     End Sub
 
@@ -45,7 +46,6 @@ Public Class NominaForm
     End Sub
 
     Private Sub BtnDeleteEmployed_Click(sender As Object, e As EventArgs) Handles BtnDeleteEmployed.Click
-        Dim A = GridEmployed.GetSelectedRows()
         If (GridEmployed.GetSelectedRows().Count > 0) Then
             Dim Resultado As Integer = MessageBox.Show("¿Seguro que desea borrar esta nomina?", "Cuidado", MessageBoxButtons.YesNoCancel)
             If Resultado = DialogResult.Yes Then
