@@ -1,4 +1,4 @@
-﻿s<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AddEmployedForm
     Inherits DevComponents.DotNetBar.Metro.MetroForm
 
@@ -483,7 +483,7 @@ Partial Class AddEmployedForm
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
         Me.ReflectionLabel1.Size = New System.Drawing.Size(143, 42)
         Me.ReflectionLabel1.TabIndex = 152
-        Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Datos</i><font color=""#003333""> Generales</font></font></b>" &
+        Me.ReflectionLabel1.Text = "<b><font size="" +6""><i>Datos</i><font color=""#003333""> Generales</font></font></b>" &
     ""
         '
         'PageSliderPage2
@@ -666,7 +666,7 @@ Partial Class AddEmployedForm
         Me.ReflectionLabel3.Name = "ReflectionLabel3"
         Me.ReflectionLabel3.Size = New System.Drawing.Size(143, 42)
         Me.ReflectionLabel3.TabIndex = 153
-        Me.ReflectionLabel3.Text = "<b><font size=""+6""><i>Datos</i><font color=""#003333""> Laborales</font></font></b>" &
+        Me.ReflectionLabel3.Text = "<b><font size="" +6""><i>Datos</i><font color=""#003333""> Laborales</font></font></b>" &
     ""
         '
         'PageSliderPage3
@@ -940,7 +940,7 @@ Partial Class AddEmployedForm
         Me.ReflectionLabel2.Name = "ReflectionLabel2"
         Me.ReflectionLabel2.Size = New System.Drawing.Size(175, 42)
         Me.ReflectionLabel2.TabIndex = 153
-        Me.ReflectionLabel2.Text = "<b><font size=""+6""><i>" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</i><font color=""#003333""> Contactos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</font></font></b>"
+        Me.ReflectionLabel2.Text = "<b><font size="" +6""><i>" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</i><font color=""#003333""> Contactos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</font></font></b>"
         '
         'BtnAccept
         '

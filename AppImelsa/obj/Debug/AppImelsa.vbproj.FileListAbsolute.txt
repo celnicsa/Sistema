@@ -264,3 +264,5 @@ E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.exe.manif
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.application
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\CrystalDecisions.Windows.Forms.dll
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReporteUnicoForm.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
