@@ -1,3 +1,5 @@
+
+Imports CrystalDecisions.Shared
 Imports DevComponents.DotNetBar.SuperGrid
 Public Class NominaForm
     Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click
@@ -35,9 +37,9 @@ Public Class NominaForm
             Dim panel As GridPanel = GridEmployed.PrimaryGrid
             panel.RowHeaderWidth = 50
             panel.RowHeaderIndexOffset = 1
-            CmdViewNominaFiltroMesAño(panel, TextBoxX2.Text, CmBCargo.Text)
+            CmdViewNominaFiltroMesAÃ±o(panel, TextBoxX2.Text, CmBCargo.Text)
         Else
-            MessageBox.Show("Debe escribir un año para realizar el filtro.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe escribir un aï¿½o para realizar el filtro.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -47,7 +49,7 @@ Public Class NominaForm
 
     Private Sub BtnDeleteEmployed_Click(sender As Object, e As EventArgs) Handles BtnDeleteEmployed.Click
         If (GridEmployed.GetSelectedRows().Count > 0) Then
-            Dim Resultado As Integer = MessageBox.Show("¿Seguro que desea borrar esta nomina?", "Cuidado", MessageBoxButtons.YesNoCancel)
+            Dim Resultado As Integer = MessageBox.Show("ï¿½Seguro que desea borrar esta nomina?", "Cuidado", MessageBoxButtons.YesNoCancel)
             If Resultado = DialogResult.Yes Then
                 CmdDeleteNomina(GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(0).Value())
                 LoadTable()

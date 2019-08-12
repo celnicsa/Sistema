@@ -27,7 +27,7 @@ Public Class InventariadoForm
     End Sub
     Private Function QuestionDelete(ByVal Entidad As String) As Boolean
         Dim Question As Int16
-        Question = MsgBox("¿Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
+        Question = MsgBox("ï¿½Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
         If Question = MsgBoxResult.Yes Then
             Return True
         End If
@@ -83,7 +83,7 @@ Public Class InventariadoForm
     End Function
     Private Function QuestionUpdate(ByVal Entidad As String) As Boolean
         Dim Question As Int16
-        Question = MsgBox("¿Desea Modificarla Entidad a:'" + Entidad + "' ?", MsgBoxStyle.YesNo)
+        Question = MsgBox("ï¿½Desea Modificarla Entidad a:'" + Entidad + "' ?", MsgBoxStyle.YesNo)
         If Question = MsgBoxResult.Yes Then
             Return True
         End If
