@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 Imports CrystalDecisions.Shared
-=======
->>>>>>> parent of 9676787... Merge branch 'Proyecto'
 Imports DevComponents.DotNetBar.SuperGrid
 Public Class NominaForm
     Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click

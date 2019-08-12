@@ -263,7 +263,6 @@ E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\DevComponents.DotNe
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\DevComponents.Instrumentation.xml
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.exe.manifest
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.application
-E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\CrystalDecisions.Windows.Forms.dll
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReporteUnicoForm.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
@@ -293,3 +292,8 @@ C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\DevCompone
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
 >>>>>>> parent of 9676787... Merge branch 'Proyecto'
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.AddProyectForm.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.OneProyectForm.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ProyectForm.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReportProyectForm.resources
+E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.SelectProyectForm.resources

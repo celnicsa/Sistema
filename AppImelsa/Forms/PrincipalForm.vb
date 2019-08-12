@@ -135,17 +135,15 @@ Public Class PrincipalForm
     Private Sub ButtonItem3_Click(sender As Object, e As EventArgs) Handles ButtonItem3.Click
         Dim Inventariado As New InventariadoForm
         NewWindows("Inventariado", InventariadoForm)
-<<<<<<< HEAD
-    End Sub
-    Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click
-        Dim WindowsInsertProyect As New AgregarProyectoForm
-        WindowsInsertProyect.ShowDialog()
-    End Sub
 
-    Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
-        Dim WindowsReport As New ReporteProyectoForm
-        WindowsReport.ShowDialog()
-=======
->>>>>>> parent of 9676787... Merge branch 'Proyecto'
     End Sub
+    'Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click
+    'Dim WindowsInsertProyect As New AgregarProyectoForm
+    'WindowsInsertProyect.ShowDialog() ''
+    'End Sub
+
+    ' Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
+    'Dim WindowsReport As New ReporteProyectoForm
+    'WindowsReport.ShowDialog()
+    'End Sub
 End Class

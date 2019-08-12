@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-=======
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
->>>>>>> parent of 9676787... Merge branch 'Proyecto'
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AddEmployedForm
     Inherits DevComponents.DotNetBar.Metro.MetroForm
 
