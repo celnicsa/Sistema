@@ -183,6 +183,7 @@ C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.NominaDetalleForm.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.exe.config
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.Web.dll
+<<<<<<< HEAD
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
@@ -266,3 +267,29 @@ E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\bin\Debug\CrystalDecisions.Wi
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.ReporteUnicoForm.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources
 E:\Sistemas\Ing_Software\Version\Sistema\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
+=======
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.vbproj.AppImelsa.exe.config
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.EscolaridadForm.resources
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.NominaDetalleForm.resources
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\CrystalDecisions.Web.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\bin\Debug\FlashControlV71.dll
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
+C:\Users\Rennerp\Documents\Visual Studio 2017\Projects\AppImelsa\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.CategoriaForms.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.InventariadoForm.resources
+>>>>>>> parent of 9676787... Merge branch 'Proyecto'

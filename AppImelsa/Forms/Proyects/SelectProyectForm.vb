@@ -1,12 +1,12 @@
 Imports DevComponents.DotNetBar.SuperGrid
 
-Public Class SeleccionarProyectoForm
+Public Class SelectProyectForm
     Private Sub BtnAccept_Click(sender As Object, e As EventArgs) Handles BtnAccept.Click
         If GridEmployed.GetSelectedRows.Count = 0 Then
             MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
         Else
             Dim Grida As GridRow = GridEmployed.GetSelectedRows(0)
-            Dim WindowsPerfilProyect As New ActualizarProyectoForm
+            Dim WindowsPerfilProyect As New OneProyectForm
             WindowsPerfilProyect.Code = Grida.Cells(0).Value.ToString
             WindowsPerfilProyect.ShowDialog()
             Me.Close()

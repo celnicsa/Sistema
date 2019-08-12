@@ -15,7 +15,7 @@ Public Class PrincipalForm
         Windows.Parent = Panel
         newpage.AttachedControl = Panel
         newpage.Text = Titulo
-        newpage.PredefinedColor = eTabItemColor.Default
+        newpage.PredefinedColor = eTabItemColor.OfficeMobile2014Blue
         Windows.Show()
     End Sub
     Private Sub BtnEmployeds_Click(sender As Object, e As EventArgs) Handles BtnEmployed.Click
@@ -27,7 +27,7 @@ Public Class PrincipalForm
         NewWindows("Clientes", WindowsClient)
     End Sub
     Private Sub BtnProyects_Click(sender As Object, e As EventArgs) Handles BtnProyect.Click
-        Dim WindowsProyect As New ProyectoForm
+        Dim WindowsProyect As New ProyectForm
         NewWindows("Proyectos", WindowsProyect)
     End Sub
     Private Sub ButtonItem4_Click(sender As Object, e As EventArgs)
@@ -63,7 +63,7 @@ Public Class PrincipalForm
         Time += 1
         If (Time = 300) Then
             'PVision_Mision.Image = My.Resources.Mision
-        ElseIf (Time = 600) Then
+        ElseIf (Time = 600)Then
             MTimer.Stop()
             ' PVision_Mision.Image = My.Resources.Vision
             Time = 0
@@ -72,7 +72,7 @@ Public Class PrincipalForm
 
     End Sub
     Private Sub Btn_ReportProyect_Click(sender As Object, e As EventArgs) Handles BtnReportProyect.Click
-        Dim WindowsReportProyect As New ReporteProyectoForm
+        Dim WindowsReportProyect As New ReportProyectForm
         WindowsReportProyect.ShowDialog()
     End Sub
 
@@ -93,7 +93,7 @@ Public Class PrincipalForm
     End Sub
 
     Private Sub BtnAddProyect_Click(sender As Object, e As EventArgs) Handles BtnAddProyect.Click
-        Dim WindowsAddProyect As New AgregarProyectoForm
+        Dim WindowsAddProyect As New AddProyectForm
         WindowsAddProyect.ShowDialog()
     End Sub
 
@@ -103,8 +103,8 @@ Public Class PrincipalForm
     End Sub
 
     Private Sub BtnViewOneProyect_Click(sender As Object, e As EventArgs) Handles BtnViewOneProyect.Click
-        'Dim WindowsOneProyect As New SelectProyectForm'
-        'WindowsOneProyect.ShowDialog()'
+        Dim WindowsOneProyect As New SelectProyectForm
+        WindowsOneProyect.ShowDialog()
     End Sub
 
     Private Sub BtnViewOneClient_Click(sender As Object, e As EventArgs) Handles BtnViewOneClient.Click
@@ -118,13 +118,13 @@ Public Class PrincipalForm
     End Sub
 
     Private Sub ButtonItem1_Click(sender As Object, e As EventArgs) Handles ButtonItem1.Click
-        Dim WindowsAbono As New NominaForm
-        WindowsAbono.ShowDialog()
+        Dim NF As New NominaForm
+        NewWindows("Nomina", NominaForm)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnMostrar.Click
-        Dim WindowsProyect As New ProyectoForm
-        NewWindows("Proyectos", WindowsProyect)
+    Private Sub ButtonItem44_Click(sender As Object, e As EventArgs) Handles ButtonItem44.Click
+        Dim EscolaridadForm As New EscolaridadForm
+        EscolaridadForm.ShowDialog()
     End Sub
 
     Private Sub ButtonItem20_Click(sender As Object, e As EventArgs) Handles ButtonItem20.Click
@@ -135,6 +135,7 @@ Public Class PrincipalForm
     Private Sub ButtonItem3_Click(sender As Object, e As EventArgs) Handles ButtonItem3.Click
         Dim Inventariado As New InventariadoForm
         NewWindows("Inventariado", InventariadoForm)
+<<<<<<< HEAD
     End Sub
     Private Sub BtnNewEmployed_Click(sender As Object, e As EventArgs) Handles BtnNewEmployed.Click
         Dim WindowsInsertProyect As New AgregarProyectoForm
@@ -144,5 +145,7 @@ Public Class PrincipalForm
     Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
         Dim WindowsReport As New ReporteProyectoForm
         WindowsReport.ShowDialog()
+=======
+>>>>>>> parent of 9676787... Merge branch 'Proyecto'
     End Sub
 End Class

@@ -1,6 +1,5 @@
-Public Class ActualizarProyectoForm
+Public Class OneProyectForm
     Public Code As String
-    Public num As Int16
     Dim DataProyect As New Proyect
     Dim Input As New ValidateInput
     Private Sub OneProyectForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -13,7 +12,6 @@ Public Class ActualizarProyectoForm
         TxtBName.Text = DataProyect.Name
         TxtBPresupuesto.Value = DataProyect.Presupuesto
         TxtBDesc.Text = DataProyect.Descripcion
-        TxtObs.Text = DataProyect.Observacion
         TxtBAddres.Text = DataProyect.Ubicacion
         TxtBClient.Text = DataProyect.Cliente
         DateInputInit.Value = DataProyect.DateStar
@@ -53,25 +51,6 @@ Public Class ActualizarProyectoForm
             Return 1
         End If
     End Function
-
-    Private Function Getlista() As Int16
-        If (Comb.Text = "Sin Definir") Then
-            Return 6
-        ElseIf Comb.Text = "Electricidad" Then
-            Return 1
-        ElseIf Comb.Text = "Construccion" Then
-            Return 2
-        ElseIf Comb.Text = "Instalacion" Then
-            Return 3
-        ElseIf Comb.Text = "Transformadores" Then
-            Return 4
-        ElseIf Comb.Text = "Capacitacion" Then
-            Return 5
-        Else
-            Return 6
-        End If
-
-    End Function
     Private Sub GetData()
         If ValidateBoxs() Then
             If LegalData() = True Then
@@ -83,9 +62,6 @@ Public Class ActualizarProyectoForm
                 DataProyect.DateStar = DateInputInit.Value.ToString("yyyyMMMdd")
                 DataProyect.DateEnd = DateInputEnd.Value.ToString("yyyyMMMdd")
                 DataProyect.Estado = GetState()
-                DataProyect.Observacion = TxtObs.Text
-                DataProyect.Tipo = Getlista()
-
                 If CmdUpdateProyect(DataProyect) Then
                     MsgBox("Proyecto Insertado Satisfactoriament")
                 Else
@@ -105,5 +81,4 @@ Public Class ActualizarProyectoForm
     Private Sub BtnAccept_Click(sender As Object, e As EventArgs) Handles BtnAccept.Click
         Me.Close()
     End Sub
-
 End Class

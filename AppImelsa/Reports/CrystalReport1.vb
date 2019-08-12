@@ -18,7 +18,7 @@ Imports System
 Imports System.ComponentModel
 
 
-Public Class ReporteProyecto
+Public Class CrystalReport1
     Inherits ReportClass
     
     Public Sub New()
@@ -27,7 +27,7 @@ Public Class ReporteProyecto
     
     Public Overrides Property ResourceName() As String
         Get
-            Return "ReporteProyecto.rpt"
+            Return "CrystalReport1.rpt"
         End Get
         Set
             'Do nothing
@@ -45,7 +45,7 @@ Public Class ReporteProyecto
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "AppImelsa.ReporteProyecto.rpt"
+            Return "AppImelsa.CrystalReport1.rpt"
         End Get
         Set
             'Do nothing
@@ -94,23 +94,15 @@ Public Class ReporteProyecto
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_DateInit() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_Code() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(0)
-        End Get
-    End Property
-    
-    <Browsable(false),  _
-     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_DateEnd() As CrystalDecisions.[Shared].IParameterField
-        Get
-            Return Me.DataDefinition.ParameterFields(1)
         End Get
     End Property
 End Class
 
 <System.Drawing.ToolboxBitmapAttribute(GetType(CrystalDecisions.[Shared].ExportOptions), "report.bmp")>  _
-Public Class CachedReporteProyecto
+Public Class CachedCrystalReport1
     Inherits Component
     Implements ICachedReport
     
@@ -152,7 +144,7 @@ Public Class CachedReporteProyecto
     End Property
     
     Public Overridable Function CreateReport() As CrystalDecisions.CrystalReports.Engine.ReportDocument Implements CrystalDecisions.ReportSource.ICachedReport.CreateReport
-        Dim rpt As ReporteProyecto = New ReporteProyecto()
+        Dim rpt As CrystalReport1 = New CrystalReport1()
         rpt.Site = Me.Site
         Return rpt
     End Function

@@ -1,7 +1,7 @@
 Imports CrystalDecisions.Shared
 
 Public Class AddAbono
-    'Dim Info As New CrystalReport1
+    Dim Info As New CrystalReport1
     Dim Param As New ParameterValues
     Dim MyDiscretValues As New ParameterDiscreteValue
     Public Code_Prestamo As String
@@ -40,7 +40,7 @@ Public Class AddAbono
                 DataAbono.Prestamo = Code_Prestamo
                 If CmdInsertAbono(DataAbono) Then
                     MsgBox("Abono Insertado Satisfactoriament", MsgBoxStyle.Information)
-                    'GenerarReport()
+                    GenerarReport()
                 Else
                     MsgBox("Error, no se ingreso Abono", MsgBoxStyle.Exclamation)
                 End If
@@ -61,14 +61,14 @@ Public Class AddAbono
 
         'Me.Close()
     End Sub
-    ' Public Sub GenerarReport()
-    '    Param.Clear()
-    '    MyDiscretValues.Value = TxtBCode.Text
-    '   Param.Add(MyDiscretValues)
-    '    Info.DataDefinition.ParameterFields("@Code").ApplyCurrentValues(Param)
+    Public Sub GenerarReport()
+        Param.Clear()
+        MyDiscretValues.Value = TxtBCode.Text
+        Param.Add(MyDiscretValues)
+        Info.DataDefinition.ParameterFields("@Code").ApplyCurrentValues(Param)
 
-    '    CrystalReportViewer1.ReportSource = Info
-    ' End Sub
+        CrystalReportViewer1.ReportSource = Info
+    End Sub
 
     Private Sub PanelEx2_Click(sender As Object, e As EventArgs) Handles PanelEx2.Click
 

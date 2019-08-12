@@ -12,6 +12,8 @@ Public Class AddEmployedForm
         InitElements()
         LoadDefaultPhoto()
         LoadNextCode()
+        CmdViewEscolaridadCombo(ComboBox1)
+        ComboBox1.SelectedIndex = 0
     End Sub
     Public Sub LoadNextCode()
         TxtBCode.Text = CmdNextCode("SPNextCodeEmp")
@@ -116,12 +118,12 @@ Public Class AddEmployedForm
             If ProgressOne.Value = 50 Then
                 ProgressOne.Value = 100
                 ProgressTwo.Value = 50
-            ElseIf ProgressTwo.Value = 50
+            ElseIf ProgressTwo.Value = 50 Then
                 ProgressTwo.Value = 100
                 ProgressTree.Value = 50
-            ElseIf ProgressTree.Value = 50
+            ElseIf ProgressTree.Value = 50 Then
                 ProgressTree.Value = 100
-            ElseIf ProgressOne.Value = 0
+            ElseIf ProgressOne.Value = 0 Then
                 ProgressOne.Value = 50.0
             Else
                 DesktopAlert.Show("Error de Proceso, No se Puede mostrar Grafica de Proceso")
@@ -130,7 +132,7 @@ Public Class AddEmployedForm
             If ProgressTwo.Value = 50 And ProgressOne.Value = 100 Then
                 ProgressTwo.Value = 0
                 ProgressOne.Value = 50
-            ElseIf ProgressTree.Value = 50 And ProgressTwo.Value = 100
+            ElseIf ProgressTree.Value = 50 And ProgressTwo.Value = 100 Then
                 ProgressTree.Value = 0
                 ProgressTwo.Value = 50
             Else
@@ -202,6 +204,7 @@ Public Class AddEmployedForm
             DataEmployed.CodeCargo = ListBoxCargo.SelectedItem.ToString
             DataEmployed.CodeSalario = ListBoxSalario.SelectedItem.ToString
             DataEmployed.Photo = PictureBox1.Image
+            DataEmployed.Escolaridad = ComboBox1.Text.Split(" ")(0)
             If CmdInsertEmployed(DataEmployed) Then
                 GetDataPhone(DataEmployed.Code)
                 GetDataEmail(DataEmployed.Code)
@@ -250,7 +253,7 @@ Public Class AddEmployedForm
             Return False
         ElseIf TxtBAddres.Text.Length = 0 Then
             Return False
-        ElseIf RbtnFemenine.Checked <> True And RbtnMale.Checked <> True
+        ElseIf RbtnFemenine.Checked <> True And RbtnMale.Checked <> True Then
             Return False
         End If
         Return True

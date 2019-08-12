@@ -18,9 +18,6 @@
           Opciones del manifiesto de Control de cuentas de usuario
           Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
           nodo requestedExecutionLevel por alguno de los siguientes.
-          Opciones del manifiesto de UAC
-          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
-          nodo requestedExecutionLevel por uno de los siguientes.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
@@ -28,8 +25,6 @@
 
          Si desea usar la virtualización de archivos y del Registro para la
          compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
-         Si desea usar Virtualización de archivos y Registro para compatibilidad con 
-         versiones anteriores, elimine el nodo requestedExecutionLevel.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -49,39 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="3341312">
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.ReportSource" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.Shared" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.Web" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="amd64" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="4965376">
       <assemblyIdentity name="AppImelsa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ukQ0NyTkUnp+xl1anu1XnOOwBm8w2LZRLFGofvqredM=</dsig:DigestValue>
+        <dsig:DigestValue>Ft34yxnnAwhywh3N2peedL/AtLZ958oj2iVgIDcLvBQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -93,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BXTFqpkUKUmObERu97KEG38dxxmvD+p2n88jV034BcI=</dsig:DigestValue>
+        <dsig:DigestValue>5ggYU0vTP37RDFKg0l1mNvmHHDK2hNLMHQNOetjwiGI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.Windows.Forms.dll" size="552960">
-      <assemblyIdentity name="CrystalDecisions.Windows.Forms" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.Windows.Forms.dll" size="544768">
+      <assemblyIdentity name="CrystalDecisions.Windows.Forms" version="13.0.2000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hyWTki7iLdqNRy5qNHZLDsFgG+eiA4sxbCdtw3gZ/Hc=</dsig:DigestValue>
+        <dsig:DigestValue>9xnazDScN/k2j7OvoNnVGxoqVpcYAiBS+1ZGs0f3OJ8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -307,7 +276,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>E8d4Qln3fXDPsJdQ1TY5Ck6NBp4RBOtjDXiUsQMdZGI=</dsig:DigestValue>
+      <dsig:DigestValue>ydfGMycStQ+RtgyyYzk5Zg180YSoU/sPqeHK6xbxZps=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LogoImelsa.ico" size="67646">

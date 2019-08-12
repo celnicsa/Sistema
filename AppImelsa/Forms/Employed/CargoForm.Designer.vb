@@ -23,7 +23,7 @@ Partial Class CargoForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CargoForm))
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.GridCargos = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
@@ -83,9 +83,9 @@ Partial Class CargoForm
         '
         '
         Me.GridCargos.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridCargos.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridCargos.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridCargos.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridCargos.PrimaryGrid.MultiSelect = False
         Me.GridCargos.PrimaryGrid.PrimaryColumnIndex = 2236962

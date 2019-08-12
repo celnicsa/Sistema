@@ -108,7 +108,7 @@
     <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Design, Version=12.5.0.2, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Layout, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
@@ -305,40 +305,34 @@
     <Compile Include="Forms\Nomina\UpdateAbonoForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\AgregarProyectoForm.Designer.vb">
-      <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\AddProyectForm.Designer.vb">
+      <DependentUpon>AddProyectForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\AgregarProyectoForm.vb">
+    <Compile Include="Forms\Proyects\AddProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ActualizarProyectoForm.Designer.vb">
-      <DependentUpon>ActualizarProyectoForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\OneProyectForm.Designer.vb">
+      <DependentUpon>OneProyectForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\ActualizarProyectoForm.vb">
+    <Compile Include="Forms\Proyects\OneProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ReporteUnicoForm.Designer.vb">
-      <DependentUpon>ReporteUnicoForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ProyectForm.Designer.vb">
+      <DependentUpon>ProyectForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\ReporteUnicoForm.vb">
+    <Compile Include="Forms\Proyects\ProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ProyectoForm.Designer.vb">
-      <DependentUpon>ProyectoForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ReportProyectForm.Designer.vb">
+      <DependentUpon>ReportProyectForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\ProyectoForm.vb">
+    <Compile Include="Forms\Proyects\ReportProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\ReporteProyectoForm.Designer.vb">
-      <DependentUpon>ReporteProyectoForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\SelectProyectForm.Designer.vb">
+      <DependentUpon>SelectProyectForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\ReporteProyectoForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Proyects\SeleccionarProyectoForm.Designer.vb">
-      <DependentUpon>SeleccionarProyectoForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Proyects\SeleccionarProyectoForm.vb">
+    <Compile Include="Forms\Proyects\SelectProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ImelsaDataSet.Designer.vb">
@@ -391,16 +385,22 @@
     <Compile Include="Forms\PrincipalForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reporte\ReporteForm.vb">
+    <Compile Include="Reports\CrystalReport1.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteForm.rpt</DependentUpon>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reporte\ReporteProyecto.vb">
+    <Compile Include="Reports\CrystalReportNomina.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteProyecto.rpt</DependentUpon>
+      <DependentUpon>CrystalReportNomina.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportProyect.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportProyect.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SplashScreen.Designer.vb">
@@ -489,23 +489,20 @@
     <EmbeddedResource Include="Forms\Nomina\UpdateAbonoForm.resx">
       <DependentUpon>UpdateAbonoForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ActualizarProyectoForm.resx">
-      <DependentUpon>ActualizarProyectoForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\AddProyectForm.resx">
+      <DependentUpon>AddProyectForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\AgregarProyectoForm.resx">
-      <DependentUpon>AgregarProyectoForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\OneProyectForm.resx">
+      <DependentUpon>OneProyectForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ReporteUnicoForm.resx">
-      <DependentUpon>ReporteUnicoForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ProyectForm.resx">
+      <DependentUpon>ProyectForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ProyectoForm.resx">
-      <DependentUpon>ProyectoForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ReportProyectForm.resx">
+      <DependentUpon>ReportProyectForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\ReporteProyectoForm.resx">
-      <DependentUpon>ReporteProyectoForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\SeleccionarProyectoForm.resx">
-      <DependentUpon>SeleccionarProyectoForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\SelectProyectForm.resx">
+      <DependentUpon>SelectProyectForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -516,13 +513,17 @@
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte\ReporteForm.rpt">
+    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteForm.vb</LastGenOutput>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte\ReporteProyecto.rpt">
+    <EmbeddedResource Include="Reports\CrystalReportNomina.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteProyecto.vb</LastGenOutput>
+      <LastGenOutput>CrystalReportNomina.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportProyect.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportProyect.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -665,7 +666,6 @@
     <None Include="Resources\look.png" />
     <Content Include="Sin_t_tulo-1_.ico" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
