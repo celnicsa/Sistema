@@ -1,4 +1,4 @@
-Public Class AddProyectForm
+Public Class AgregarProyectoForm
     Private DataProyect As New Proyect
     Private Sub AddProyectForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CmdLoadClient(CmBClient)
@@ -19,7 +19,7 @@ Public Class AddProyectForm
             Return False
         ElseIf TxtBPresupuesto.Text.Length = 0 Then
             Return False
-        ElseIf CmBClient.SelectedIndex = -1
+        ElseIf CmBClient.SelectedIndex = -1 Then
             Return False
         End If
         Return True
@@ -31,7 +31,23 @@ Public Class AddProyectForm
         End If
         Return True
     End Function
-
+    Private Function Getlista1() As Int16
+        If LisCob.Text = "Sin Definir" Then
+            Return 6
+        ElseIf LisCob.Text = "Electricidad" Then
+            Return 1
+        ElseIf LisCob.Text = "Construccion" Then
+            Return 2
+        ElseIf LisCob.Text = "Instalacion" Then
+            Return 3
+        ElseIf LisCob.Text = "Transformadores" Then
+            Return 4
+        ElseIf LisCob.Text = "Capacitacion" Then
+            Return 5
+        Else
+            Return 6
+        End If
+    End Function
     Private Sub GetData()
         If ValidateBoxs() Then
             If LegalData() = True Then
@@ -44,6 +60,10 @@ Public Class AddProyectForm
                 DataProyect.DateEnd = DateInputEnd.Value.ToString("yyyyMMMdd")
                 DataProyect.Cliente = CmBClient.SelectedItem.ToString
                 DataProyect.Estado = 0
+                DataProyect.Observacion = TxtObservacion.Text
+                DataProyect.Tipo = Getlista1()
+
+
                 If CmdInsertProyect(DataProyect) Then
                     ProgressOne.Value = 100
                     MsgBox("Proyecto Insertado Satisfactoriament")
@@ -65,7 +85,4 @@ Public Class AddProyectForm
         Me.Close()
     End Sub
 
-    Private Sub PageSliderPage1_Paint(sender As Object, e As PaintEventArgs) Handles PageSliderPage1.Paint
-
-    End Sub
 End Class

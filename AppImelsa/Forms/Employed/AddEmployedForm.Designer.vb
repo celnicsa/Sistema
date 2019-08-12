@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿s<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class AddEmployedForm
     Inherits DevComponents.DotNetBar.Metro.MetroForm
 
@@ -39,6 +39,7 @@ Partial Class AddEmployedForm
         Me.RbtnFemenine = New System.Windows.Forms.RadioButton()
         Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.TxtBAddres = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
+        Me.TxtBInss = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBIden = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBLastName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBName = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -124,7 +125,7 @@ Partial Class AddEmployedForm
         Me.PSliderEmployed.NextPageVisibleMargin = 0
         Me.PSliderEmployed.PageMouseDragEnabled = False
         Me.PSliderEmployed.ScrollBarVisibility = DevComponents.DotNetBar.Controls.eScrollBarVisibility.Hidden
-        Me.PSliderEmployed.SelectedPage = Me.PageSliderPage1
+        Me.PSliderEmployed.SelectedPage = Me.PageSliderPage3
         Me.PSliderEmployed.Size = New System.Drawing.Size(805, 331)
         Me.PSliderEmployed.TabIndex = 11
         Me.PSliderEmployed.Text = "PageSlider1"
@@ -146,6 +147,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Controls.Add(Me.RbtnFemenine)
         Me.PageSliderPage1.Controls.Add(Me.LabelX7)
         Me.PageSliderPage1.Controls.Add(Me.TxtBAddres)
+        Me.PageSliderPage1.Controls.Add(Me.TxtBInss)
         Me.PageSliderPage1.Controls.Add(Me.TxtBIden)
         Me.PageSliderPage1.Controls.Add(Me.TxtBLastName)
         Me.PageSliderPage1.Controls.Add(Me.TxtBName)
@@ -155,7 +157,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Controls.Add(Me.LabelX1)
         Me.PageSliderPage1.Controls.Add(Me.ReflectionLabel1)
         Me.PageSliderPage1.ForeColor = System.Drawing.Color.Black
-        Me.PageSliderPage1.Location = New System.Drawing.Point(4, 8)
+        Me.PageSliderPage1.Location = New System.Drawing.Point(-1590, 8)
         Me.PageSliderPage1.Name = "PageSliderPage1"
         Me.PageSliderPage1.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage1.TabIndex = 3
@@ -327,11 +329,29 @@ Partial Class AddEmployedForm
         Me.TxtBAddres.Location = New System.Drawing.Point(286, 201)
         Me.TxtBAddres.MaxLength = 133
         Me.TxtBAddres.Name = "TxtBAddres"
-        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang19466{\fonttbl{\f0\fnil\fcharset0" &
-    " Arial Narrow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\*\generator Riched20 10.0.18362}\viewkind4\uc1 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\pard\f0\fs" &
-    "20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
+    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBAddres.Size = New System.Drawing.Size(223, 49)
         Me.TxtBAddres.TabIndex = 162
+        '
+        'TxtBInss
+        '
+        Me.TxtBInss.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        '
+        '
+        '
+        Me.TxtBInss.Border.BackColorGradientType = DevComponents.DotNetBar.eGradientType.Radial
+        Me.TxtBInss.Border.Class = "TextBoxBorder"
+        Me.TxtBInss.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtBInss.DisabledBackColor = System.Drawing.Color.White
+        Me.TxtBInss.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Highlighter1.SetHighlightOnFocus(Me.TxtBInss, True)
+        Me.TxtBInss.Location = New System.Drawing.Point(98, 222)
+        Me.TxtBInss.MaxLength = 9
+        Me.TxtBInss.Name = "TxtBInss"
+        Me.TxtBInss.PreventEnterBeep = True
+        Me.TxtBInss.Size = New System.Drawing.Size(144, 22)
+        Me.TxtBInss.TabIndex = 161
         '
         'TxtBIden
         '
@@ -483,7 +503,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage2.Controls.Add(Me.CmBTurno)
         Me.PageSliderPage2.Controls.Add(Me.ReflectionLabel3)
         Me.PageSliderPage2.ForeColor = System.Drawing.Color.Black
-        Me.PageSliderPage2.Location = New System.Drawing.Point(801, 8)
+        Me.PageSliderPage2.Location = New System.Drawing.Point(-793, 8)
         Me.PageSliderPage2.Name = "PageSliderPage2"
         Me.PageSliderPage2.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage2.TabIndex = 6
@@ -665,7 +685,7 @@ Partial Class AddEmployedForm
         Me.PageSliderPage3.Controls.Add(Me.BtnAddPhone)
         Me.PageSliderPage3.Controls.Add(Me.ReflectionLabel2)
         Me.PageSliderPage3.ForeColor = System.Drawing.Color.Black
-        Me.PageSliderPage3.Location = New System.Drawing.Point(1598, 8)
+        Me.PageSliderPage3.Location = New System.Drawing.Point(4, 8)
         Me.PageSliderPage3.Name = "PageSliderPage3"
         Me.PageSliderPage3.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage3.TabIndex = 5
@@ -747,6 +767,7 @@ Partial Class AddEmployedForm
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -807,6 +828,7 @@ Partial Class AddEmployedForm
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -1109,6 +1131,7 @@ Partial Class AddEmployedForm
     Friend WithEvents RbtnFemenine As RadioButton
     Friend WithEvents LabelX7 As DevComponents.DotNetBar.LabelX
     Friend WithEvents TxtBAddres As DevComponents.DotNetBar.Controls.RichTextBoxEx
+    Friend WithEvents TxtBInss As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBIden As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBLastName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBName As DevComponents.DotNetBar.Controls.TextBoxX

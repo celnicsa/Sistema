@@ -32,11 +32,7 @@ Partial Class NominaForm
         Me.TxtBSearch = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
-        Me.BtnDeleteEmployed = New DevComponents.DotNetBar.ButtonX()
-        Me.BtnUpdateEmployed = New DevComponents.DotNetBar.ButtonX()
-        Me.ReflectionLabel2 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
-        Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
-        Me.GridEmployed = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
+        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.PanelEx2 = New DevComponents.DotNetBar.PanelEx()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.RbtnCode = New System.Windows.Forms.RadioButton()
@@ -66,12 +62,12 @@ Partial Class NominaForm
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.BtnNewEmployed = New DevComponents.DotNetBar.ButtonX()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.BtnAccept = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnCancel = New DevComponents.DotNetBar.ButtonX()
+        Me.TxtBCode = New DevComponents.Editors.IntegerInput()
         Me.PanelEx2.SuspendLayout()
-        Me.GroupPanel2.SuspendLayout()
-        Me.GroupPanel1.SuspendLayout()
-        Me.PanelEx3.SuspendLayout()
-        Me.PanelEx1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtBCode, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnRefresh
@@ -146,45 +142,7 @@ Partial Class NominaForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
-        'BtnDeleteEmployed
-        '
-        Me.BtnDeleteEmployed.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnDeleteEmployed.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnDeleteEmployed.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDeleteEmployed.Location = New System.Drawing.Point(1003, 457)
-        Me.BtnDeleteEmployed.Name = "BtnDeleteEmployed"
-        Me.BtnDeleteEmployed.Size = New System.Drawing.Size(86, 23)
-        Me.BtnDeleteEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnDeleteEmployed.TabIndex = 19
-        Me.BtnDeleteEmployed.Text = "Eliminar Nomina"
-        '
-        'BtnUpdateEmployed
-        '
-        Me.BtnUpdateEmployed.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnUpdateEmployed.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.BtnUpdateEmployed.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUpdateEmployed.Location = New System.Drawing.Point(912, 457)
-        Me.BtnUpdateEmployed.Name = "BtnUpdateEmployed"
-        Me.BtnUpdateEmployed.Size = New System.Drawing.Size(75, 23)
-        Me.BtnUpdateEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnUpdateEmployed.TabIndex = 20
-        Me.BtnUpdateEmployed.Text = "Ver Nomina"
-        '
-        'ReflectionLabel2
-        '
-        Me.ReflectionLabel2.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.ReflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ReflectionLabel2.Font = New System.Drawing.Font("Agency FB", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReflectionLabel2.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionLabel2.Location = New System.Drawing.Point(884, 53)
-        Me.ReflectionLabel2.Name = "ReflectionLabel2"
-        Me.ReflectionLabel2.Size = New System.Drawing.Size(213, 23)
-        Me.ReflectionLabel2.TabIndex = 35
-        Me.ReflectionLabel2.Text = "<b><font size=""+6""><i>Registro y</i><font color=""#222222""> Control </font><font c" &
-    "olor=""#003333"">de Nomina</font></font></b>"
+        'CrystalReportViewer1
         '
         'ReflectionLabel1
         '
@@ -228,22 +186,32 @@ Partial Class NominaForm
         Me.GridEmployed.Size = New System.Drawing.Size(832, 273)
         Me.GridEmployed.TabIndex = 37
         Me.GridEmployed.Text = "SuperGridControl1"
+        Me.CrystalReportViewer1.ActiveViewIndex = -1
+        Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CrystalReportViewer1.ForeColor = System.Drawing.Color.Black
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 94)
+        Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(877, 342)
+        Me.CrystalReportViewer1.TabIndex = 21
         '
         'PanelEx2
         '
-        Me.PanelEx2.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.PanelEx2.CanvasColor = System.Drawing.SystemColors.Control
         Me.PanelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx2.Controls.Add(Me.GroupPanel2)
-        Me.PanelEx2.Controls.Add(Me.GroupPanel1)
-        Me.PanelEx2.Controls.Add(Me.LabelX2)
-        Me.PanelEx2.Controls.Add(Me.BtnSearch)
-        Me.PanelEx2.Controls.Add(Me.TxtBSearch)
+        Me.PanelEx2.Controls.Add(Me.TxtBCode)
+        Me.PanelEx2.Controls.Add(Me.LabelX3)
+        Me.PanelEx2.Controls.Add(Me.BtnAccept)
+        Me.PanelEx2.Controls.Add(Me.BtnCancel)
         Me.PanelEx2.DisabledBackColor = System.Drawing.Color.Empty
-        Me.PanelEx2.Location = New System.Drawing.Point(12, 12)
+        Me.PanelEx2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelEx2.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx2.Name = "PanelEx2"
-        Me.PanelEx2.Size = New System.Drawing.Size(232, 481)
+        Me.PanelEx2.Size = New System.Drawing.Size(877, 94)
         Me.PanelEx2.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
+        Me.PanelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
         Me.PanelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.PanelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
         Me.PanelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
@@ -284,14 +252,12 @@ Partial Class NominaForm
         '
         '
         Me.GroupPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.PanelEx2.TabIndex = 20
+        '
+        'LabelX3
         '
         '
         '
-        Me.GroupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.GroupPanel2.TabIndex = 39
-        Me.GroupPanel2.Text = "Aplicar Busqueda Por"
-        '
-        'RbtnCode
         '
         Me.RbtnCode.AutoSize = True
         Me.RbtnCode.BackColor = System.Drawing.Color.Transparent
@@ -306,35 +272,40 @@ Partial Class NominaForm
         Me.RbtnCode.UseVisualStyleBackColor = False
         '
         'GroupPanel1
+        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX3.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX3.ForeColor = System.Drawing.Color.Black
+        Me.LabelX3.Location = New System.Drawing.Point(26, 12)
+        Me.LabelX3.Name = "LabelX3"
+        Me.LabelX3.Size = New System.Drawing.Size(74, 23)
+        Me.LabelX3.TabIndex = 10
+        Me.LabelX3.Text = "Horas Extras"
         '
-        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GroupPanel1.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel1.Controls.Add(Me.PanelEx3)
-        Me.GroupPanel1.DisabledBackColor = System.Drawing.Color.Empty
-        Me.GroupPanel1.Location = New System.Drawing.Point(14, 197)
-        Me.GroupPanel1.Name = "GroupPanel1"
-        Me.GroupPanel1.Size = New System.Drawing.Size(200, 134)
+        'BtnAccept
+        '
+        Me.BtnAccept.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnAccept.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAccept.Location = New System.Drawing.Point(771, 51)
+        Me.BtnAccept.Name = "BtnAccept"
+        Me.BtnAccept.Size = New System.Drawing.Size(75, 23)
+        Me.BtnAccept.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnAccept.TabIndex = 4
+        Me.BtnAccept.Text = "Aceptar"
+        '
+        'BtnCancel
+        '
+        Me.BtnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnCancel.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCancel.Location = New System.Drawing.Point(690, 51)
+        Me.BtnCancel.Name = "BtnCancel"
+        Me.BtnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.BtnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnCancel.TabIndex = 5
+        Me.BtnCancel.Text = "Cancelar"
+        '
+        'TxtBCode
         '
         '
-        '
-        Me.GroupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
-        Me.GroupPanel1.Style.BackColorGradientAngle = 90
-        Me.GroupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
-        Me.GroupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel1.Style.BorderBottomWidth = 1
-        Me.GroupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.GroupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel1.Style.BorderLeftWidth = 1
-        Me.GroupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel1.Style.BorderRightWidth = 1
-        Me.GroupPanel1.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel1.Style.BorderTopWidth = 1
-        Me.GroupPanel1.Style.CornerDiameter = 4
-        Me.GroupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.GroupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
-        Me.GroupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
-        Me.GroupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near
         '
         '
         '
@@ -392,7 +363,7 @@ Partial Class NominaForm
         Me.LabelX9.Name = "LabelX9"
         Me.LabelX9.Size = New System.Drawing.Size(33, 23)
         Me.LabelX9.TabIndex = 10
-        Me.LabelX9.Text = "Año"
+        Me.LabelX9.Text = "Aï¿½o"
         '
         'CmBCargo
         '
@@ -572,41 +543,35 @@ Partial Class NominaForm
         Me.BtnNewEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnNewEmployed.TabIndex = 42
         Me.BtnNewEmployed.Text = "Generar Nomina"
+        Me.TxtBCode.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.TxtBCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtBCode.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.TxtBCode.Location = New System.Drawing.Point(106, 13)
+        Me.TxtBCode.Name = "TxtBCode"
+        Me.TxtBCode.ShowUpDown = True
+        Me.TxtBCode.Size = New System.Drawing.Size(147, 22)
+        Me.TxtBCode.TabIndex = 12
         '
         'NominaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1123, 505)
-        Me.Controls.Add(Me.PanelEx1)
+        Me.ClientSize = New System.Drawing.Size(877, 436)
+        Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.Controls.Add(Me.PanelEx2)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Location = New System.Drawing.Point(5, 5)
         Me.Name = "NominaForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Registro de Empleados / IMELSA"
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Nomina"
         Me.PanelEx2.ResumeLayout(False)
-        Me.GroupPanel2.ResumeLayout(False)
-        Me.GroupPanel2.PerformLayout()
-        Me.GroupPanel1.ResumeLayout(False)
-        Me.PanelEx3.ResumeLayout(False)
-        Me.PanelEx1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtBCode, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents BtnRefresh As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents Highlighter1 As DevComponents.DotNetBar.Validator.Highlighter
-    Friend WithEvents SuperValidator1 As DevComponents.DotNetBar.Validator.SuperValidator
-    Friend WithEvents ErrorProvider1 As ErrorProvider
+
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents BtnNewEmployed As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents PanelEx2 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents GroupPanel2 As DevComponents.DotNetBar.Controls.GroupPanel
     Friend WithEvents RbtnCode As RadioButton
@@ -638,4 +603,8 @@ Partial Class NominaForm
     Friend WithEvents ComboItem11 As DevComponents.Editors.ComboItem
     Friend WithEvents ComboItem12 As DevComponents.Editors.ComboItem
     Friend WithEvents TextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents BtnAccept As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents BtnCancel As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents TxtBCode As DevComponents.Editors.IntegerInput
 End Class
