@@ -197,8 +197,7 @@ Public Class AddEmployedForm
             DataEmployed.Sexo = GetSexo()
             DataEmployed.DateNaci = DateInputBirth.Value.ToString("yyyyMMMdd")
             DataEmployed.Identi = TxtBIden.Text
-            DataEmployed.Inss = TxtBInss.Text
-            DataEmployed.Inss = TxtBInss.Text
+            DataEmployed.Inss = "SI"
             DataEmployed.Direc = TxtBAddres.Text
             DataEmployed.CodeProyect = ListBoxProyect.SelectedItem.ToString
             DataEmployed.CodeTurno = CmBTurno.SelectedItem.ToString
@@ -251,8 +250,6 @@ Public Class AddEmployedForm
         ElseIf TxtBLastName.Text.Length = 0 Then
             Return False
         ElseIf TxtBIden.Text.Length = 0 Then
-            Return False
-        ElseIf TxtBInss.Text.Length = 0 Then
             Return False
         ElseIf TxtBAddres.Text.Length = 0 Then
             Return False

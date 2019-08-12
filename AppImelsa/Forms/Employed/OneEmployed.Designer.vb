@@ -23,8 +23,8 @@ Partial Class OneEmployed
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Background3 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
@@ -49,6 +49,9 @@ Partial Class OneEmployed
         Me.SideNav2 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel4 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.LabelX23 = New DevComponents.DotNetBar.LabelX()
+        Me.TxtBInss = New System.Windows.Forms.ComboBox()
         Me.Bar1 = New DevComponents.DotNetBar.Bar()
         Me.ProgressItem = New DevComponents.DotNetBar.CircularProgressItem()
         Me.LabelProcess = New DevComponents.DotNetBar.LabelItem()
@@ -108,9 +111,6 @@ Partial Class OneEmployed
         Me.SideNavItem7 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem8 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.StyleManager2 = New DevComponents.DotNetBar.StyleManager(Me.components)
-        Me.TxtBInss = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.LabelX23 = New DevComponents.DotNetBar.LabelX()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNav2.SuspendLayout()
         Me.SideNavPanel4.SuspendLayout()
@@ -469,6 +469,43 @@ Partial Class OneEmployed
         Me.PanelEx1.Style.GradientAngle = 90
         Me.PanelEx1.TabIndex = 0
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.White
+        Me.ComboBox1.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(122, 289)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(177, 24)
+        Me.ComboBox1.TabIndex = 219
+        '
+        'LabelX23
+        '
+        Me.LabelX23.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX23.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX23.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX23.ForeColor = System.Drawing.Color.Black
+        Me.LabelX23.Location = New System.Drawing.Point(41, 289)
+        Me.LabelX23.Name = "LabelX23"
+        Me.LabelX23.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX23.TabIndex = 218
+        Me.LabelX23.Text = "Escolaridad"
+        '
+        'TxtBInss
+        '
+        Me.TxtBInss.BackColor = System.Drawing.Color.White
+        Me.TxtBInss.ForeColor = System.Drawing.Color.Black
+        Me.TxtBInss.FormattingEnabled = True
+        Me.TxtBInss.Items.AddRange(New Object() {"SI", "NO"})
+        Me.TxtBInss.Location = New System.Drawing.Point(122, 162)
+        Me.TxtBInss.Name = "TxtBInss"
+        Me.TxtBInss.Size = New System.Drawing.Size(177, 24)
+        Me.TxtBInss.TabIndex = 217
+        Me.TxtBInss.Text = "SI"
+        '
         'Bar1
         '
         Me.Bar1.AccessibleDescription = "Bar1 (Bar1)"
@@ -736,7 +773,7 @@ Partial Class OneEmployed
         Me.LabelX13.Name = "LabelX13"
         Me.LabelX13.Size = New System.Drawing.Size(64, 23)
         Me.LabelX13.TabIndex = 200
-        Me.LabelX13.Text = "Inss"
+        Me.LabelX13.Text = "Activo"
         '
         'LabelX14
         '
@@ -1157,9 +1194,9 @@ Partial Class OneEmployed
         '
         '
         Me.GridEmailContacts.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background3.Color1 = System.Drawing.Color.DodgerBlue
-        Background3.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridEmailContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background3
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridEmailContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridEmailContacts.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridEmailContacts.PrimaryGrid.MultiSelect = False
         Me.GridEmailContacts.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -1184,9 +1221,9 @@ Partial Class OneEmployed
         '
         '
         Me.GridTelContacts.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background1.Color1 = System.Drawing.Color.DodgerBlue
-        Background1.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridTelContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
+        Background2.Color1 = System.Drawing.Color.DodgerBlue
+        Background2.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridTelContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
         Me.GridTelContacts.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridTelContacts.PrimaryGrid.MultiSelect = False
         Me.GridTelContacts.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -1270,43 +1307,6 @@ Partial Class OneEmployed
         '
         Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
-        '
-        'TxtBInss
-        '
-        Me.TxtBInss.BackColor = System.Drawing.Color.White
-        Me.TxtBInss.ForeColor = System.Drawing.Color.Black
-        Me.TxtBInss.FormattingEnabled = True
-        Me.TxtBInss.Items.AddRange(New Object() {"Aplica", "No aplica"})
-        Me.TxtBInss.Location = New System.Drawing.Point(122, 162)
-        Me.TxtBInss.Name = "TxtBInss"
-        Me.TxtBInss.Size = New System.Drawing.Size(177, 24)
-        Me.TxtBInss.TabIndex = 217
-        Me.TxtBInss.Text = "Aplica"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.White
-        Me.ComboBox1.ForeColor = System.Drawing.Color.Black
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(122, 289)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(177, 24)
-        Me.ComboBox1.TabIndex = 219
-        '
-        'LabelX23
-        '
-        Me.LabelX23.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX23.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX23.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX23.ForeColor = System.Drawing.Color.Black
-        Me.LabelX23.Location = New System.Drawing.Point(41, 289)
-        Me.LabelX23.Name = "LabelX23"
-        Me.LabelX23.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX23.TabIndex = 218
-        Me.LabelX23.Text = "Escolaridad"
         '
         'OneEmployed
         '

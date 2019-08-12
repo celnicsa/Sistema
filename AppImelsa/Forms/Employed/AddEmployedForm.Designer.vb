@@ -27,7 +27,6 @@ Partial Class AddEmployedForm
         Me.BtnCancel = New DevComponents.DotNetBar.ButtonX()
         Me.PSliderEmployed = New DevComponents.DotNetBar.Controls.PageSlider()
         Me.PageSliderPage1 = New DevComponents.DotNetBar.Controls.PageSliderPage()
-        Me.TxtBInss = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.BtnLoadPhoto = New DevComponents.DotNetBar.ButtonX()
@@ -44,7 +43,6 @@ Partial Class AddEmployedForm
         Me.TxtBLastName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TxtBName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
@@ -136,7 +134,6 @@ Partial Class AddEmployedForm
         '
         Me.PageSliderPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PageSliderPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PageSliderPage1.Controls.Add(Me.TxtBInss)
         Me.PageSliderPage1.Controls.Add(Me.ComboBox1)
         Me.PageSliderPage1.Controls.Add(Me.LabelX15)
         Me.PageSliderPage1.Controls.Add(Me.BtnLoadPhoto)
@@ -153,7 +150,6 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Controls.Add(Me.TxtBLastName)
         Me.PageSliderPage1.Controls.Add(Me.TxtBName)
         Me.PageSliderPage1.Controls.Add(Me.LabelX6)
-        Me.PageSliderPage1.Controls.Add(Me.LabelX4)
         Me.PageSliderPage1.Controls.Add(Me.LabelX3)
         Me.PageSliderPage1.Controls.Add(Me.LabelX2)
         Me.PageSliderPage1.Controls.Add(Me.LabelX1)
@@ -164,24 +160,12 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage1.TabIndex = 3
         '
-        'TxtBInss
-        '
-        Me.TxtBInss.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.TxtBInss.ForeColor = System.Drawing.Color.Black
-        Me.TxtBInss.FormattingEnabled = True
-        Me.TxtBInss.Items.AddRange(New Object() {"Aplica", "No aplica"})
-        Me.TxtBInss.Location = New System.Drawing.Point(98, 227)
-        Me.TxtBInss.Name = "TxtBInss"
-        Me.TxtBInss.Size = New System.Drawing.Size(144, 21)
-        Me.TxtBInss.TabIndex = 174
-        Me.TxtBInss.Text = "Aplica"
-        '
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.ComboBox1.ForeColor = System.Drawing.Color.Black
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(98, 259)
+        Me.ComboBox1.Location = New System.Drawing.Point(98, 225)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
         Me.ComboBox1.TabIndex = 173
@@ -195,7 +179,7 @@ Partial Class AddEmployedForm
         Me.LabelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX15.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX15.ForeColor = System.Drawing.Color.Black
-        Me.LabelX15.Location = New System.Drawing.Point(17, 259)
+        Me.LabelX15.Location = New System.Drawing.Point(17, 225)
         Me.LabelX15.Name = "LabelX15"
         Me.LabelX15.Size = New System.Drawing.Size(75, 23)
         Me.LabelX15.TabIndex = 172
@@ -343,8 +327,9 @@ Partial Class AddEmployedForm
         Me.TxtBAddres.Location = New System.Drawing.Point(286, 201)
         Me.TxtBAddres.MaxLength = 133
         Me.TxtBAddres.Name = "TxtBAddres"
-        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
-    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang19466{\fonttbl{\f0\fnil\fcharset0" &
+    " Arial Narrow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\*\generator Riched20 10.0.18362}\viewkind4\uc1 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\pard\f0\fs" &
+    "20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBAddres.Size = New System.Drawing.Size(223, 49)
         Me.TxtBAddres.TabIndex = 162
         '
@@ -419,21 +404,6 @@ Partial Class AddEmployedForm
         Me.LabelX6.Size = New System.Drawing.Size(77, 23)
         Me.LabelX6.TabIndex = 157
         Me.LabelX6.Text = "Dirección"
-        '
-        'LabelX4
-        '
-        Me.LabelX4.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX4.ForeColor = System.Drawing.Color.Black
-        Me.LabelX4.Location = New System.Drawing.Point(36, 225)
-        Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.Size = New System.Drawing.Size(36, 23)
-        Me.LabelX4.TabIndex = 156
-        Me.LabelX4.Text = "INSS"
         '
         'LabelX3
         '
@@ -777,7 +747,6 @@ Partial Class AddEmployedForm
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -838,7 +807,6 @@ Partial Class AddEmployedForm
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -1145,7 +1113,6 @@ Partial Class AddEmployedForm
     Friend WithEvents TxtBLastName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents TxtBName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents LabelX6 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX4 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
@@ -1171,5 +1138,4 @@ Partial Class AddEmployedForm
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents LabelX15 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents TxtBInss As ComboBox
 End Class

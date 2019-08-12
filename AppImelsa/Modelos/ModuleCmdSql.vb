@@ -1801,4 +1801,148 @@ Module ModuleCmdSql
         End Try
     End Sub
 
+    Public Sub CmdViewNomina(ByRef DatagridViewNomina As GridPanel)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select * from ViewNomina ORDER BY [Fecha De Generacion] DESC;", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Nomina")
+            DatagridViewNomina.DataSource = ds.Tables("Nomina")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
+    Public Sub CmdInsertNomina(ID_Nomina As String, Año As String, Mes As String, Cod_Empleado As String)
+        Dim Transaccion As SqlTransaction = Connect.BeginTransaction
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select CodEmp,MS.SalarioMensual from MTableEmp ME, MTableSalarioBase MS
+                                  where ME.Flg_Activo = 'SI' AND ME.CodSalarioBase = MS.CodSalarioBase;", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Nomina")
+
+            Dim GastoBruto As Decimal = 0
+            Dim GastoDeducciones As Decimal = 0
+
+            Dim CodigoEmpleado As String
+            Dim SalarioMensual As String
+            Dim IR As Decimal
+            Dim INSS As Decimal
+            Dim Total As Decimal
+            Dim SumtariaBruto As Decimal = 0
+            Dim SumtariaDeducciones As Decimal = 0
+
+            For Each Row As DataRow In ds.Tables(0).Rows
+                CodigoEmpleado = ds.Tables(0).Columns(0).ToString()
+                SalarioMensual = Decimal.Parse(ds.Tables(0).Columns(1).ToString())
+                IR = CalculaIR(SalarioMensual)
+                INSS = CalculaINSS(SalarioMensual)
+                Total = SalarioMensual - IR - INSS
+                SumtariaBruto = SumtariaBruto + SalarioMensual
+                SumtariaDeducciones = SumtariaDeducciones + IR + INSS
+                Cmd = New SqlCommand("[SP_INSERT_NOMINADETALLE]", Connect)
+                Cmd.CommandType = CommandType.StoredProcedure
+                Cmd.Parameters.AddWithValue("@ID_Nomina", ID_Nomina)
+                Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado)
+                Cmd.Parameters.AddWithValue("@Salario", SalarioMensual)
+                Cmd.Parameters.AddWithValue("@INSS", INSS)
+                Cmd.Parameters.AddWithValue("@IR", IR)
+                Cmd.Parameters.AddWithValue("@Total", Total)
+                Cmd.ExecuteNonQuery()
+            Next
+
+            Cmd = New SqlCommand("[SP_INSERT_NOMINA]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@ID", "NO-" + DateTime.Now.Year + "-" + DateTime.Now.Month.ToString("d2"))
+            Cmd.Parameters.AddWithValue("@Año", DateTime.Now.Year)
+            Cmd.Parameters.AddWithValue("@Mes", DateTime.Now.Month.ToString("MMMM"))
+            Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado)
+            Cmd.Parameters.AddWithValue("@Total_Bruto", SumtariaBruto)
+            Cmd.Parameters.AddWithValue("@Total_Deduciones", SumtariaDeducciones)
+            Cmd.Parameters.AddWithValue("@Total_Nomina", SumtariaBruto)
+            Cmd.ExecuteNonQuery()
+            Transaccion.Commit()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Transaccion.rollback()
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
+    Public Function CmdDeleteNomina(ByVal ID As String) As Boolean
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("[SP_DELETE_NOMINA]", Connect)
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.Parameters.AddWithValue("@ID_Nomina", ID)
+            If Cmd.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+    Public Sub CmdViewNominaFiltroMesAño(ByRef DatagridViewNomina As GridPanel, ByVal Año As String, ByVal Mes As String)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select * from ViewNomina where Año = '" + Año + "' and Mes = '" + Mes + "'  ORDER BY [Fecha De Generacion] DESC;", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Nomina")
+            DatagridViewNomina.DataSource = ds.Tables("Nomina")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
+    Public Sub CmdViewNominaFiltroID(ByRef DatagridViewNomina As GridPanel, ByVal ID As String)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select * from ViewNomina where id = " + ID, Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Nomina")
+            DatagridViewNomina.DataSource = ds.Tables("Nomina")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Sub
+
+    Public Function CalculaIR(Salario As Decimal)
+        Dim SalarioAnual = Salario * 12
+        Dim DeduccionIR As Decimal
+        If (SalarioAnual <= 100000) Then
+            DeduccionIR = 0
+        ElseIf (SalarioAnual >= 100000 And SalarioAnual <= 200000) Then
+            DeduccionIR = (Salario * 0.15)
+        ElseIf (SalarioAnual >= 200000 And SalarioAnual <= 350000) Then
+            DeduccionIR = (Salario * 0.2)
+        ElseIf (SalarioAnual >= 350000 And SalarioAnual <= 500000) Then
+            DeduccionIR = (Salario * 0.25)
+        Else
+            DeduccionIR = (DeduccionIR * 0.3)
+        End If
+        Return DeduccionIR
+    End Function
+
+    Public Function CalculaINSS(Salario As Decimal)
+        Return Salario * 0.0625
+    End Function
+
 End Module

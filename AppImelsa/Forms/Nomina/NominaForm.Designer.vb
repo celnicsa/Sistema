@@ -23,13 +23,14 @@ Partial Class NominaForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NominaForm))
         Me.BtnRefresh = New DevComponents.DotNetBar.ButtonX()
         Me.SuperValidator1 = New DevComponents.DotNetBar.Validator.SuperValidator()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Highlighter1 = New DevComponents.DotNetBar.Validator.Highlighter()
         Me.TxtBSearch = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.TextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.BtnDeleteEmployed = New DevComponents.DotNetBar.ButtonX()
         Me.BtnUpdateEmployed = New DevComponents.DotNetBar.ButtonX()
@@ -39,21 +40,31 @@ Partial Class NominaForm
         Me.PanelEx2 = New DevComponents.DotNetBar.PanelEx()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.RbtnCode = New System.Windows.Forms.RadioButton()
-        Me.RbtnAll = New System.Windows.Forms.RadioButton()
         Me.GroupPanel1 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.PanelEx3 = New DevComponents.DotNetBar.PanelEx()
         Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
-        Me.CmBTurno = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
         Me.CmBCargo = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboItem1 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem2 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem3 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem4 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem5 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem6 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem7 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem8 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem9 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem10 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem11 = New DevComponents.Editors.ComboItem()
+        Me.ComboItem12 = New DevComponents.Editors.ComboItem()
         Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
+        Me.BtnSearch = New DevComponents.DotNetBar.ButtonX()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.BtnNewEmployed = New DevComponents.DotNetBar.ButtonX()
-        Me.BtnSearch = New DevComponents.DotNetBar.ButtonX()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx2.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
@@ -112,6 +123,23 @@ Partial Class NominaForm
         Me.TxtBSearch.PreventEnterBeep = True
         Me.TxtBSearch.Size = New System.Drawing.Size(129, 23)
         Me.TxtBSearch.TabIndex = 16
+        '
+        'TextBoxX2
+        '
+        '
+        '
+        '
+        Me.TextBoxX2.Border.Class = "TextBoxBorder"
+        Me.TextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBoxX2.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBoxX2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Highlighter1.SetHighlightOnFocus(Me.TextBoxX2, True)
+        Me.TextBoxX2.Location = New System.Drawing.Point(45, 53)
+        Me.TextBoxX2.MaxLength = 85
+        Me.TextBoxX2.Name = "TextBoxX2"
+        Me.TextBoxX2.PreventEnterBeep = True
+        Me.TextBoxX2.Size = New System.Drawing.Size(131, 22)
+        Me.TextBoxX2.TabIndex = 55
         '
         'StyleManager1
         '
@@ -190,9 +218,9 @@ Partial Class NominaForm
         '
         '
         Me.GridEmployed.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background1.Color1 = System.Drawing.Color.DodgerBlue
-        Background1.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridEmployed.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
+        Background2.Color1 = System.Drawing.Color.DodgerBlue
+        Background2.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridEmployed.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
         Me.GridEmployed.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridEmployed.PrimaryGrid.MultiSelect = False
         Me.GridEmployed.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -228,11 +256,10 @@ Partial Class NominaForm
         Me.GroupPanel2.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
         Me.GroupPanel2.Controls.Add(Me.RbtnCode)
-        Me.GroupPanel2.Controls.Add(Me.RbtnAll)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
-        Me.GroupPanel2.Location = New System.Drawing.Point(12, 94)
+        Me.GroupPanel2.Location = New System.Drawing.Point(17, 94)
         Me.GroupPanel2.Name = "GroupPanel2"
-        Me.GroupPanel2.Size = New System.Drawing.Size(202, 84)
+        Me.GroupPanel2.Size = New System.Drawing.Size(202, 58)
         '
         '
         '
@@ -268,27 +295,15 @@ Partial Class NominaForm
         '
         Me.RbtnCode.AutoSize = True
         Me.RbtnCode.BackColor = System.Drawing.Color.Transparent
+        Me.RbtnCode.Checked = True
         Me.RbtnCode.ForeColor = System.Drawing.Color.Black
         Me.RbtnCode.Location = New System.Drawing.Point(20, 3)
         Me.RbtnCode.Name = "RbtnCode"
         Me.RbtnCode.Size = New System.Drawing.Size(54, 22)
         Me.RbtnCode.TabIndex = 2
+        Me.RbtnCode.TabStop = True
         Me.RbtnCode.Text = "Codigo"
         Me.RbtnCode.UseVisualStyleBackColor = False
-        '
-        'RbtnAll
-        '
-        Me.RbtnAll.AutoSize = True
-        Me.RbtnAll.BackColor = System.Drawing.Color.Transparent
-        Me.RbtnAll.Checked = True
-        Me.RbtnAll.ForeColor = System.Drawing.Color.Black
-        Me.RbtnAll.Location = New System.Drawing.Point(20, 31)
-        Me.RbtnAll.Name = "RbtnAll"
-        Me.RbtnAll.Size = New System.Drawing.Size(71, 22)
-        Me.RbtnAll.TabIndex = 1
-        Me.RbtnAll.TabStop = True
-        Me.RbtnAll.Text = "Ver Todos"
-        Me.RbtnAll.UseVisualStyleBackColor = False
         '
         'GroupPanel1
         '
@@ -336,8 +351,8 @@ Partial Class NominaForm
         Me.PanelEx3.AutoScroll = True
         Me.PanelEx3.CanvasColor = System.Drawing.SystemColors.Control
         Me.PanelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.PanelEx3.Controls.Add(Me.TextBoxX2)
         Me.PanelEx3.Controls.Add(Me.ButtonX2)
-        Me.PanelEx3.Controls.Add(Me.CmBTurno)
         Me.PanelEx3.Controls.Add(Me.LabelX9)
         Me.PanelEx3.Controls.Add(Me.CmBCargo)
         Me.PanelEx3.Controls.Add(Me.LabelX8)
@@ -366,19 +381,6 @@ Partial Class NominaForm
         Me.ButtonX2.TabIndex = 54
         Me.ButtonX2.Text = "Filtrar datos"
         '
-        'CmBTurno
-        '
-        Me.CmBTurno.DisplayMember = "Text"
-        Me.CmBTurno.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CmBTurno.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CmBTurno.FormattingEnabled = True
-        Me.CmBTurno.ItemHeight = 16
-        Me.CmBTurno.Location = New System.Drawing.Point(45, 52)
-        Me.CmBTurno.Name = "CmBTurno"
-        Me.CmBTurno.Size = New System.Drawing.Size(131, 22)
-        Me.CmBTurno.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.CmBTurno.TabIndex = 11
-        '
         'LabelX9
         '
         '
@@ -399,11 +401,60 @@ Partial Class NominaForm
         Me.CmBCargo.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmBCargo.FormattingEnabled = True
         Me.CmBCargo.ItemHeight = 16
+        Me.CmBCargo.Items.AddRange(New Object() {Me.ComboItem1, Me.ComboItem2, Me.ComboItem3, Me.ComboItem4, Me.ComboItem5, Me.ComboItem6, Me.ComboItem7, Me.ComboItem8, Me.ComboItem9, Me.ComboItem10, Me.ComboItem11, Me.ComboItem12})
         Me.CmBCargo.Location = New System.Drawing.Point(45, 22)
         Me.CmBCargo.Name = "CmBCargo"
         Me.CmBCargo.Size = New System.Drawing.Size(131, 22)
         Me.CmBCargo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.CmBCargo.TabIndex = 8
+        '
+        'ComboItem1
+        '
+        Me.ComboItem1.Text = "Enero"
+        '
+        'ComboItem2
+        '
+        Me.ComboItem2.Text = "Febrero"
+        '
+        'ComboItem3
+        '
+        Me.ComboItem3.Text = "Marzo"
+        '
+        'ComboItem4
+        '
+        Me.ComboItem4.Text = "Abril"
+        '
+        'ComboItem5
+        '
+        Me.ComboItem5.Text = "Mayo"
+        '
+        'ComboItem6
+        '
+        Me.ComboItem6.Text = "Junio"
+        '
+        'ComboItem7
+        '
+        Me.ComboItem7.Text = "Julio"
+        '
+        'ComboItem8
+        '
+        Me.ComboItem8.Text = "Agosto"
+        '
+        'ComboItem9
+        '
+        Me.ComboItem9.Text = "Septiembre"
+        '
+        'ComboItem10
+        '
+        Me.ComboItem10.Text = "Octubre"
+        '
+        'ComboItem11
+        '
+        Me.ComboItem11.Text = "Noviembre"
+        '
+        'ComboItem12
+        '
+        Me.ComboItem12.Text = "Diciembre"
         '
         'LabelX8
         '
@@ -431,6 +482,18 @@ Partial Class NominaForm
         Me.LabelX2.Size = New System.Drawing.Size(36, 23)
         Me.LabelX2.TabIndex = 15
         Me.LabelX2.Text = "Buscar"
+        '
+        'BtnSearch
+        '
+        Me.BtnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
+        Me.BtnSearch.Image = CType(resources.GetObject("BtnSearch.Image"), System.Drawing.Image)
+        Me.BtnSearch.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.BtnSearch.Location = New System.Drawing.Point(189, 44)
+        Me.BtnSearch.Name = "BtnSearch"
+        Me.BtnSearch.Size = New System.Drawing.Size(25, 27)
+        Me.BtnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.BtnSearch.TabIndex = 14
         '
         'PanelEx1
         '
@@ -510,18 +573,6 @@ Partial Class NominaForm
         Me.BtnNewEmployed.TabIndex = 42
         Me.BtnNewEmployed.Text = "Generar Nomina"
         '
-        'BtnSearch
-        '
-        Me.BtnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
-        Me.BtnSearch.Image = CType(resources.GetObject("BtnSearch.Image"), System.Drawing.Image)
-        Me.BtnSearch.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.BtnSearch.Location = New System.Drawing.Point(189, 44)
-        Me.BtnSearch.Name = "BtnSearch"
-        Me.BtnSearch.Size = New System.Drawing.Size(25, 27)
-        Me.BtnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.BtnSearch.TabIndex = 14
-        '
         'NominaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -559,10 +610,8 @@ Partial Class NominaForm
     Friend WithEvents PanelEx2 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents GroupPanel2 As DevComponents.DotNetBar.Controls.GroupPanel
     Friend WithEvents RbtnCode As RadioButton
-    Friend WithEvents RbtnAll As RadioButton
     Friend WithEvents GroupPanel1 As DevComponents.DotNetBar.Controls.GroupPanel
     Friend WithEvents PanelEx3 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents CmBTurno As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
     Friend WithEvents CmBCargo As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents LabelX8 As DevComponents.DotNetBar.LabelX
@@ -576,4 +625,17 @@ Partial Class NominaForm
     Friend WithEvents BtnDeleteEmployed As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ComboItem1 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem2 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem3 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem4 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem5 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem6 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem7 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem8 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem9 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem10 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem11 As DevComponents.Editors.ComboItem
+    Friend WithEvents ComboItem12 As DevComponents.Editors.ComboItem
+    Friend WithEvents TextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
 End Class
