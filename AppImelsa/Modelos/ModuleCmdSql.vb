@@ -1877,7 +1877,7 @@ Module ModuleCmdSql
             Cmd.Transaction = Transaccion
             Cmd.CommandType = CommandType.StoredProcedure
             Cmd.Parameters.AddWithValue("@ID", "NO-" + DT.Year.ToString() + "-" + DT.Month.ToString("d2"))
-            Cmd.Parameters.AddWithValue("@Año", DT.Now.Year)
+            Cmd.Parameters.AddWithValue("@Año", DT.Year.ToString())
             Cmd.Parameters.AddWithValue("@Mes", DT.Now.Month.ToString("MMMM"))
             Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado)
             Cmd.Parameters.AddWithValue("@Total_Bruto", SumtariaBruto)
