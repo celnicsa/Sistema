@@ -23,7 +23,7 @@ Partial Class NominaForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NominaForm))
         Me.BtnRefresh = New DevComponents.DotNetBar.ButtonX()
         Me.SuperValidator1 = New DevComponents.DotNetBar.Validator.SuperValidator()
@@ -163,7 +163,7 @@ Partial Class NominaForm
         Me.BtnUpdateEmployed.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.BtnUpdateEmployed.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.BtnUpdateEmployed.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUpdateEmployed.Location = New System.Drawing.Point(912, 457)
+        Me.BtnUpdateEmployed.Location = New System.Drawing.Point(912, 458)
         Me.BtnUpdateEmployed.Name = "BtnUpdateEmployed"
         Me.BtnUpdateEmployed.Size = New System.Drawing.Size(75, 23)
         Me.BtnUpdateEmployed.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -218,9 +218,9 @@ Partial Class NominaForm
         '
         '
         Me.GridEmployed.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridEmployed.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridEmployed.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridEmployed.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridEmployed.PrimaryGrid.MultiSelect = False
         Me.GridEmployed.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -407,54 +407,55 @@ Partial Class NominaForm
         Me.CmBCargo.Size = New System.Drawing.Size(131, 22)
         Me.CmBCargo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.CmBCargo.TabIndex = 8
+        Me.CmBCargo.Text = "i"
         '
         'ComboItem1
         '
-        Me.ComboItem1.Text = "Enero"
+        Me.ComboItem1.Text = "enero"
         '
         'ComboItem2
         '
-        Me.ComboItem2.Text = "Febrero"
+        Me.ComboItem2.Text = "febrero"
         '
         'ComboItem3
         '
-        Me.ComboItem3.Text = "Marzo"
+        Me.ComboItem3.Text = "marzo"
         '
         'ComboItem4
         '
-        Me.ComboItem4.Text = "Abril"
+        Me.ComboItem4.Text = "abril"
         '
         'ComboItem5
         '
-        Me.ComboItem5.Text = "Mayo"
+        Me.ComboItem5.Text = "mayo"
         '
         'ComboItem6
         '
-        Me.ComboItem6.Text = "Junio"
+        Me.ComboItem6.Text = "junio"
         '
         'ComboItem7
         '
-        Me.ComboItem7.Text = "Julio"
+        Me.ComboItem7.Text = "julio"
         '
         'ComboItem8
         '
-        Me.ComboItem8.Text = "Agosto"
+        Me.ComboItem8.Text = "agosto"
         '
         'ComboItem9
         '
-        Me.ComboItem9.Text = "Septiembre"
+        Me.ComboItem9.Text = "septiembre"
         '
         'ComboItem10
         '
-        Me.ComboItem10.Text = "Octubre"
+        Me.ComboItem10.Text = "octubre"
         '
         'ComboItem11
         '
-        Me.ComboItem11.Text = "Noviembre"
+        Me.ComboItem11.Text = "noviembre"
         '
         'ComboItem12
         '
-        Me.ComboItem12.Text = "Diciembre"
+        Me.ComboItem12.Text = "diciembre"
         '
         'LabelX8
         '

@@ -14,6 +14,7 @@ Public Class AddEmployedForm
         LoadNextCode()
         CmdViewEscolaridadCombo(ComboBox1)
         ComboBox1.SelectedIndex = 0
+        ComboBox2.SelectedIndex = 0
     End Sub
     Public Sub LoadNextCode()
         TxtBCode.Text = CmdNextCode("SPNextCodeEmp")
@@ -205,6 +206,11 @@ Public Class AddEmployedForm
             DataEmployed.CodeSalario = ListBoxSalario.SelectedItem.ToString
             DataEmployed.Photo = PictureBox1.Image
             DataEmployed.Escolaridad = ComboBox1.Text.Split(" ")(0)
+            If (ComboBox2.Text = "SI") Then
+                DataEmployed.Patrono = 1
+            Else
+                DataEmployed.Patrono = 0
+            End If
             If CmdInsertEmployed(DataEmployed) Then
                 GetDataPhone(DataEmployed.Code)
                 GetDataEmail(DataEmployed.Code)

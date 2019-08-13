@@ -88,6 +88,8 @@ Partial Class AddEmployedForm
         Me.CProgress = New DevComponents.DotNetBar.CircularProgressItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.PSliderEmployed.SuspendLayout()
         Me.PageSliderPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,6 +136,8 @@ Partial Class AddEmployedForm
         '
         Me.PageSliderPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PageSliderPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PageSliderPage1.Controls.Add(Me.ComboBox2)
+        Me.PageSliderPage1.Controls.Add(Me.LabelX4)
         Me.PageSliderPage1.Controls.Add(Me.ComboBox1)
         Me.PageSliderPage1.Controls.Add(Me.LabelX15)
         Me.PageSliderPage1.Controls.Add(Me.BtnLoadPhoto)
@@ -463,8 +467,8 @@ Partial Class AddEmployedForm
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
         Me.ReflectionLabel1.Size = New System.Drawing.Size(143, 42)
         Me.ReflectionLabel1.TabIndex = 152
-        Me.ReflectionLabel1.Text = "<b><font size="" +6""><i>Datos</i><font color=""#003333""> Generales</font></font></b>" &
-    ""
+        Me.ReflectionLabel1.Text = "<b><font size="" +6""><i>Datos</i><font color=""#003333""> Generales</font></font></b" &
+    ">"
         '
         'PageSliderPage2
         '
@@ -646,8 +650,8 @@ Partial Class AddEmployedForm
         Me.ReflectionLabel3.Name = "ReflectionLabel3"
         Me.ReflectionLabel3.Size = New System.Drawing.Size(143, 42)
         Me.ReflectionLabel3.TabIndex = 153
-        Me.ReflectionLabel3.Text = "<b><font size="" +6""><i>Datos</i><font color=""#003333""> Laborales</font></font></b>" &
-    ""
+        Me.ReflectionLabel3.Text = "<b><font size="" +6""><i>Datos</i><font color=""#003333""> Laborales</font></font></b" &
+    ">"
         '
         'PageSliderPage3
         '
@@ -747,6 +751,7 @@ Partial Class AddEmployedForm
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -807,6 +812,7 @@ Partial Class AddEmployedForm
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -918,7 +924,8 @@ Partial Class AddEmployedForm
         Me.ReflectionLabel2.Name = "ReflectionLabel2"
         Me.ReflectionLabel2.Size = New System.Drawing.Size(175, 42)
         Me.ReflectionLabel2.TabIndex = 153
-        Me.ReflectionLabel2.Text = "<b><font size="" +6""><i>" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</i><font color=""#003333""> Contactos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</font></font></b>"
+        Me.ReflectionLabel2.Text = "<b><font size="" +6""><i>" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</i><font color=""#003333""> Contactos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "</font></font></b>" &
+    ""
         '
         'BtnAccept
         '
@@ -1043,6 +1050,32 @@ Partial Class AddEmployedForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ComboBox2.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"SI", "NO"})
+        Me.ComboBox2.Location = New System.Drawing.Point(98, 261)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(144, 21)
+        Me.ComboBox2.TabIndex = 175
+        '
+        'LabelX4
+        '
+        Me.LabelX4.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX4.ForeColor = System.Drawing.Color.Black
+        Me.LabelX4.Location = New System.Drawing.Point(17, 261)
+        Me.LabelX4.Name = "LabelX4"
+        Me.LabelX4.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX4.TabIndex = 174
+        Me.LabelX4.Text = "Patrono"
+        '
         'AddEmployedForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1138,4 +1171,6 @@ Partial Class AddEmployedForm
     Friend WithEvents StyleManager1 As DevComponents.DotNetBar.StyleManager
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents LabelX15 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents LabelX4 As DevComponents.DotNetBar.LabelX
 End Class

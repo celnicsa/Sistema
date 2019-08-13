@@ -13,6 +13,7 @@
     Private _codeTurno As String
     Private _codeSalario As String
     Private _codigoescolaridad As String
+    Private _patrono As Boolean
     Public Property Code As String
         Get
             Return _code
@@ -139,4 +140,14 @@
             _codigoescolaridad = value
         End Set
     End Property
+
+    Public Property Patrono As Boolean
+        Get
+            Return _patrono
+        End Get
+        Set(value As Boolean)
+            _patrono = value
+        End Set
+    End Property
+
 End Class

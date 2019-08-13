@@ -23,8 +23,8 @@ Partial Class OneEmployed
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background3 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
@@ -74,7 +74,6 @@ Partial Class OneEmployed
         Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX16 = New DevComponents.DotNetBar.LabelX()
         Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.PanelEx2 = New DevComponents.DotNetBar.PanelEx()
         Me.ListBProyect = New System.Windows.Forms.ListBox()
@@ -111,6 +110,9 @@ Partial Class OneEmployed
         Me.SideNavItem7 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem8 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.StyleManager2 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.LabelX16 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX24 = New DevComponents.DotNetBar.LabelX()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNav2.SuspendLayout()
         Me.SideNavPanel4.SuspendLayout()
@@ -431,6 +433,8 @@ Partial Class OneEmployed
         '
         Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
         Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.PanelEx1.Controls.Add(Me.ComboBox2)
+        Me.PanelEx1.Controls.Add(Me.LabelX24)
         Me.PanelEx1.Controls.Add(Me.ComboBox1)
         Me.PanelEx1.Controls.Add(Me.LabelX23)
         Me.PanelEx1.Controls.Add(Me.TxtBInss)
@@ -474,7 +478,7 @@ Partial Class OneEmployed
         Me.ComboBox1.BackColor = System.Drawing.Color.White
         Me.ComboBox1.ForeColor = System.Drawing.Color.Black
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(122, 289)
+        Me.ComboBox1.Location = New System.Drawing.Point(122, 260)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(177, 24)
         Me.ComboBox1.TabIndex = 219
@@ -488,7 +492,7 @@ Partial Class OneEmployed
         Me.LabelX23.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX23.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX23.ForeColor = System.Drawing.Color.Black
-        Me.LabelX23.Location = New System.Drawing.Point(41, 289)
+        Me.LabelX23.Location = New System.Drawing.Point(41, 260)
         Me.LabelX23.Name = "LabelX23"
         Me.LabelX23.Size = New System.Drawing.Size(75, 23)
         Me.LabelX23.TabIndex = 218
@@ -500,7 +504,7 @@ Partial Class OneEmployed
         Me.TxtBInss.ForeColor = System.Drawing.Color.Black
         Me.TxtBInss.FormattingEnabled = True
         Me.TxtBInss.Items.AddRange(New Object() {"SI", "NO"})
-        Me.TxtBInss.Location = New System.Drawing.Point(122, 162)
+        Me.TxtBInss.Location = New System.Drawing.Point(122, 148)
         Me.TxtBInss.Name = "TxtBInss"
         Me.TxtBInss.Size = New System.Drawing.Size(177, 24)
         Me.TxtBInss.TabIndex = 217
@@ -548,7 +552,7 @@ Partial Class OneEmployed
         Me.TxtBLastName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBLastName.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBLastName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBLastName.Location = New System.Drawing.Point(122, 83)
+        Me.TxtBLastName.Location = New System.Drawing.Point(122, 69)
         Me.TxtBLastName.Name = "TxtBLastName"
         Me.TxtBLastName.PreventEnterBeep = True
         Me.TxtBLastName.Size = New System.Drawing.Size(177, 22)
@@ -563,7 +567,7 @@ Partial Class OneEmployed
         Me.LabelX22.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX22.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX22.ForeColor = System.Drawing.Color.Black
-        Me.LabelX22.Location = New System.Drawing.Point(41, 83)
+        Me.LabelX22.Location = New System.Drawing.Point(41, 69)
         Me.LabelX22.Name = "LabelX22"
         Me.LabelX22.Size = New System.Drawing.Size(64, 23)
         Me.LabelX22.TabIndex = 214
@@ -586,7 +590,7 @@ Partial Class OneEmployed
         Me.RbtnMasculine.BackColor = System.Drawing.Color.Transparent
         Me.RbtnMasculine.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RbtnMasculine.ForeColor = System.Drawing.Color.Black
-        Me.RbtnMasculine.Location = New System.Drawing.Point(193, 324)
+        Me.RbtnMasculine.Location = New System.Drawing.Point(193, 323)
         Me.RbtnMasculine.Name = "RbtnMasculine"
         Me.RbtnMasculine.Size = New System.Drawing.Size(66, 22)
         Me.RbtnMasculine.TabIndex = 8
@@ -601,7 +605,7 @@ Partial Class OneEmployed
         Me.RbtnFemine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RbtnFemine.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RbtnFemine.ForeColor = System.Drawing.Color.Black
-        Me.RbtnFemine.Location = New System.Drawing.Point(122, 324)
+        Me.RbtnFemine.Location = New System.Drawing.Point(122, 323)
         Me.RbtnFemine.Name = "RbtnFemine"
         Me.RbtnFemine.Size = New System.Drawing.Size(65, 22)
         Me.RbtnFemine.TabIndex = 7
@@ -630,12 +634,12 @@ Partial Class OneEmployed
         Me.TxtBAdress.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBAdress.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBAdress.ForeColor = System.Drawing.Color.Black
-        Me.TxtBAdress.Location = New System.Drawing.Point(122, 198)
+        Me.TxtBAdress.Location = New System.Drawing.Point(122, 184)
         Me.TxtBAdress.Name = "TxtBAdress"
         Me.TxtBAdress.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang19466{\fonttbl{\f0\fnil\fcharset0" &
     " Arial Narrow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\*\generator Riched20 10.0.18362}\viewkind4\uc1 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\pard\f0\fs" &
     "20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.TxtBAdress.Size = New System.Drawing.Size(202, 43)
+        Me.TxtBAdress.Size = New System.Drawing.Size(177, 34)
         Me.TxtBAdress.TabIndex = 5
         '
         'DInput
@@ -643,9 +647,9 @@ Partial Class OneEmployed
         Me.DInput.BackColor = System.Drawing.Color.White
         Me.DInput.ForeColor = System.Drawing.Color.Black
         Me.DInput.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DInput.Location = New System.Drawing.Point(122, 254)
+        Me.DInput.Location = New System.Drawing.Point(122, 225)
         Me.DInput.Name = "DInput"
-        Me.DInput.Size = New System.Drawing.Size(137, 22)
+        Me.DInput.Size = New System.Drawing.Size(177, 22)
         Me.DInput.TabIndex = 6
         '
         'TxtBCode
@@ -657,9 +661,9 @@ Partial Class OneEmployed
         Me.TxtBCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBCode.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBCode.ForeColor = System.Drawing.Color.Black
-        Me.TxtBCode.Location = New System.Drawing.Point(122, 17)
+        Me.TxtBCode.Location = New System.Drawing.Point(122, 5)
         Me.TxtBCode.Name = "TxtBCode"
-        Me.TxtBCode.Size = New System.Drawing.Size(93, 23)
+        Me.TxtBCode.Size = New System.Drawing.Size(177, 23)
         Me.TxtBCode.TabIndex = 207
         '
         'TxtBIden
@@ -671,7 +675,7 @@ Partial Class OneEmployed
         Me.TxtBIden.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBIden.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBIden.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBIden.Location = New System.Drawing.Point(122, 125)
+        Me.TxtBIden.Location = New System.Drawing.Point(122, 111)
         Me.TxtBIden.Name = "TxtBIden"
         Me.TxtBIden.PreventEnterBeep = True
         Me.TxtBIden.Size = New System.Drawing.Size(177, 22)
@@ -686,7 +690,7 @@ Partial Class OneEmployed
         Me.TxtBName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBName.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBName.Location = New System.Drawing.Point(122, 46)
+        Me.TxtBName.Location = New System.Drawing.Point(122, 36)
         Me.TxtBName.Name = "TxtBName"
         Me.TxtBName.PreventEnterBeep = True
         Me.TxtBName.Size = New System.Drawing.Size(177, 22)
@@ -701,7 +705,7 @@ Partial Class OneEmployed
         Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX10.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX10.ForeColor = System.Drawing.Color.Black
-        Me.LabelX10.Location = New System.Drawing.Point(41, 198)
+        Me.LabelX10.Location = New System.Drawing.Point(41, 184)
         Me.LabelX10.Name = "LabelX10"
         Me.LabelX10.Size = New System.Drawing.Size(64, 23)
         Me.LabelX10.TabIndex = 203
@@ -727,7 +731,7 @@ Partial Class OneEmployed
         Me.LabelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX11.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX11.ForeColor = System.Drawing.Color.Black
-        Me.LabelX11.Location = New System.Drawing.Point(41, 323)
+        Me.LabelX11.Location = New System.Drawing.Point(41, 322)
         Me.LabelX11.Name = "LabelX11"
         Me.LabelX11.Size = New System.Drawing.Size(64, 23)
         Me.LabelX11.TabIndex = 202
@@ -754,7 +758,7 @@ Partial Class OneEmployed
         Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX12.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX12.ForeColor = System.Drawing.Color.Black
-        Me.LabelX12.Location = New System.Drawing.Point(41, 253)
+        Me.LabelX12.Location = New System.Drawing.Point(41, 224)
         Me.LabelX12.Name = "LabelX12"
         Me.LabelX12.Size = New System.Drawing.Size(75, 23)
         Me.LabelX12.TabIndex = 201
@@ -769,7 +773,7 @@ Partial Class OneEmployed
         Me.LabelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX13.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX13.ForeColor = System.Drawing.Color.Black
-        Me.LabelX13.Location = New System.Drawing.Point(41, 160)
+        Me.LabelX13.Location = New System.Drawing.Point(41, 146)
         Me.LabelX13.Name = "LabelX13"
         Me.LabelX13.Size = New System.Drawing.Size(64, 23)
         Me.LabelX13.TabIndex = 200
@@ -784,7 +788,7 @@ Partial Class OneEmployed
         Me.LabelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX14.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX14.ForeColor = System.Drawing.Color.Black
-        Me.LabelX14.Location = New System.Drawing.Point(41, 125)
+        Me.LabelX14.Location = New System.Drawing.Point(41, 111)
         Me.LabelX14.Name = "LabelX14"
         Me.LabelX14.Size = New System.Drawing.Size(64, 23)
         Me.LabelX14.TabIndex = 199
@@ -799,26 +803,11 @@ Partial Class OneEmployed
         Me.LabelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX15.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX15.ForeColor = System.Drawing.Color.Black
-        Me.LabelX15.Location = New System.Drawing.Point(41, 46)
+        Me.LabelX15.Location = New System.Drawing.Point(41, 32)
         Me.LabelX15.Name = "LabelX15"
         Me.LabelX15.Size = New System.Drawing.Size(64, 23)
         Me.LabelX15.TabIndex = 198
         Me.LabelX15.Text = "Nombre"
-        '
-        'LabelX16
-        '
-        Me.LabelX16.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX16.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX16.ForeColor = System.Drawing.Color.Black
-        Me.LabelX16.Location = New System.Drawing.Point(41, 17)
-        Me.LabelX16.Name = "LabelX16"
-        Me.LabelX16.Size = New System.Drawing.Size(64, 23)
-        Me.LabelX16.TabIndex = 197
-        Me.LabelX16.Text = "Codigo"
         '
         'SideNavPanel5
         '
@@ -1180,7 +1169,7 @@ Partial Class OneEmployed
         '
         'GridEmailContacts
         '
-        Me.GridEmailContacts.BackColor = System.Drawing.Color.White
+        Me.GridEmailContacts.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GridEmailContacts.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed
         Me.GridEmailContacts.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridEmailContacts.ForeColor = System.Drawing.Color.Black
@@ -1194,9 +1183,9 @@ Partial Class OneEmployed
         '
         '
         Me.GridEmailContacts.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background1.Color1 = System.Drawing.Color.DodgerBlue
-        Background1.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridEmailContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
+        Background2.Color1 = System.Drawing.Color.DodgerBlue
+        Background2.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridEmailContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
         Me.GridEmailContacts.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridEmailContacts.PrimaryGrid.MultiSelect = False
         Me.GridEmailContacts.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -1207,7 +1196,7 @@ Partial Class OneEmployed
         '
         'GridTelContacts
         '
-        Me.GridTelContacts.BackColor = System.Drawing.Color.White
+        Me.GridTelContacts.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GridTelContacts.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed
         Me.GridTelContacts.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridTelContacts.ForeColor = System.Drawing.Color.Black
@@ -1221,9 +1210,9 @@ Partial Class OneEmployed
         '
         '
         Me.GridTelContacts.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridTelContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background3.Color1 = System.Drawing.Color.DodgerBlue
+        Background3.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridTelContacts.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background3
         Me.GridTelContacts.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridTelContacts.PrimaryGrid.MultiSelect = False
         Me.GridTelContacts.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -1308,11 +1297,52 @@ Partial Class OneEmployed
         Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
+        'LabelX16
+        '
+        Me.LabelX16.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX16.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX16.ForeColor = System.Drawing.Color.Black
+        Me.LabelX16.Location = New System.Drawing.Point(41, 3)
+        Me.LabelX16.Name = "LabelX16"
+        Me.LabelX16.Size = New System.Drawing.Size(64, 23)
+        Me.LabelX16.TabIndex = 197
+        Me.LabelX16.Text = "Codigo"
+        '
+        'LabelX24
+        '
+        Me.LabelX24.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX24.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX24.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX24.ForeColor = System.Drawing.Color.Black
+        Me.LabelX24.Location = New System.Drawing.Point(41, 292)
+        Me.LabelX24.Name = "LabelX24"
+        Me.LabelX24.Size = New System.Drawing.Size(64, 23)
+        Me.LabelX24.TabIndex = 220
+        Me.LabelX24.Text = "Patrono"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ComboBox2.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"NO", "SI"})
+        Me.ComboBox2.Location = New System.Drawing.Point(122, 293)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(177, 24)
+        Me.ComboBox2.TabIndex = 221
+        '
         'OneEmployed
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(750, 420)
         Me.Controls.Add(Me.SideNav2)
         Me.DoubleBuffered = True
@@ -1395,7 +1425,6 @@ Partial Class OneEmployed
     Friend WithEvents LabelX13 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX14 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX15 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX16 As DevComponents.DotNetBar.LabelX
     Friend WithEvents PanelEx2 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents BtnChangeSalario As DevComponents.DotNetBar.ButtonX
     Friend WithEvents TxtBSal As DevComponents.DotNetBar.Controls.TextBoxX
@@ -1430,4 +1459,7 @@ Partial Class OneEmployed
     Friend WithEvents TxtBInss As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents LabelX23 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX24 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX16 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents ComboBox2 As ComboBox
 End Class

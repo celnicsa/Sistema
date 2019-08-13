@@ -77,6 +77,11 @@ Public Class OneEmployed
         TxtBSal.Text = DataEmployed.CodeSalario
         TxtBProyect.Text = DataEmployed.CodeProyect
         ComboBox1.SelectedItem = DataEmployed.Escolaridad
+        If (DataEmployed.Patrono = True) Then
+            ComboBox2.SelectedItem = "SI"
+        Else
+            ComboBox2.SelectedItem = "NO"
+        End If
         DInput.Value = DataEmployed.DateNaci
         CheckedSexo(DataEmployed.Sexo)
         PicBPhoto.Image = DataEmployed.Photo
@@ -319,6 +324,13 @@ Public Class OneEmployed
                 DataEmployed.CodeSalario = TxtBSal.Text 'ListBSalario.SelectedItem.ToString
                 DataEmployed.Photo = PicBPhoto.Image
                 DataEmployed.Escolaridad = ComboBox1.Text.Split(" ")(0)
+                If (ComboBox2.Text = "SI") Then
+                    DataEmployed.Patrono = 1
+                Else
+                    DataEmployed.Patrono = 0
+
+                End If
+
                 If CmdUpdateEmployed(DataEmployed) Then
                     MsgBox("Datos de Empleado Guardados Satisfactoriamente", MsgBoxStyle.Information)
                     Me.Close()

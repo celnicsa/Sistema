@@ -55,3 +55,4 @@ C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.exe
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.xml
 C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Sistema\AppImelsa\obj\Debug\AppImelsa.vbprojAssemblyReference.cache

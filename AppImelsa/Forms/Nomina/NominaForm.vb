@@ -39,7 +39,7 @@ Public Class NominaForm
             panel.RowHeaderIndexOffset = 1
             CmdViewNominaFiltroMesAño(panel, TextBoxX2.Text, CmBCargo.Text)
         Else
-            MessageBox.Show("Debe escribir un a�o para realizar el filtro.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe escribir un año para realizar el filtro.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -49,7 +49,7 @@ Public Class NominaForm
 
     Private Sub BtnDeleteEmployed_Click(sender As Object, e As EventArgs) Handles BtnDeleteEmployed.Click
         If (GridEmployed.GetSelectedRows().Count > 0) Then
-            Dim Resultado As Integer = MessageBox.Show("�Seguro que desea borrar esta nomina?", "Cuidado", MessageBoxButtons.YesNoCancel)
+            Dim Resultado As Integer = MessageBox.Show("¿Seguro que desea borrar esta nomina?", "Cuidado", MessageBoxButtons.YesNoCancel)
             If Resultado = DialogResult.Yes Then
                 CmdDeleteNomina(GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(0).Value())
                 LoadTable()
@@ -64,5 +64,20 @@ Public Class NominaForm
         e.Handled = True
     End Sub
 
-
+    Private Sub BtnUpdateEmployed_Click(sender As Object, e As EventArgs) Handles BtnUpdateEmployed.Click
+        If (GridEmployed.GetSelectedRows().Count > 0) Then
+            Dim ND As New NominaDetalleForm
+            ND.Tipo_Operacion = "Leer"
+            ND.ID_Nomina = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(0).Value()
+            ND.Bruto_Total = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(4).Value()
+            ND.Deducciones_Total = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(5).Value()
+            ND.Fecha = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(3).Value()
+            ND.Usuario = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(6).Value()
+            ND.Año = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(1).Value()
+            ND.Mes = GridEmployed.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(2).Value()
+            ND.ShowDialog()
+        Else
+            MessageBox.Show("Debe seleccionar una fila de la tabla para ver dicha nomina.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
 End Class

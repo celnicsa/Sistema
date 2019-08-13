@@ -107,6 +107,8 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@SalarioBase", Data.CodeSalario)
             Cmd.Parameters.AddWithValue("@Photo", BytesToString(ImageToBytes(Data.Photo)))
             Cmd.Parameters.AddWithValue("@CodEscolaridad", Data.Escolaridad)
+            Cmd.Parameters.AddWithValue("@FLG_PATRONO", Data.Patrono)
+
 
             If Cmd.ExecuteNonQuery() Then
                 Return True
@@ -139,6 +141,7 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@SalarioBase", Data.CodeSalario)
             Cmd.Parameters.AddWithValue("@Photo", BytesToString(ImageToBytes(Data.Photo)))
             Cmd.Parameters.AddWithValue("@CodEscolaridad", Data.Escolaridad)
+            Cmd.Parameters.AddWithValue("@FLG_PATRONO", Data.Patrono)
             If Cmd.ExecuteNonQuery() Then
                 Return True
             Else
@@ -1156,6 +1159,7 @@ Module ModuleCmdSql
                 Data.CodeCargo = dr.Item("Cargo")
                 Data.CodeSalario = dr.Item("Salario Base")
                 Data.Escolaridad = dr.Item("Escolaridad")
+                Data.Patrono = dr.Item("flg_patrono")
                 Resultado = dr.Item("Foto")
             Loop
             ArrayText = Resultado.Split(",")
@@ -1832,12 +1836,12 @@ Module ModuleCmdSql
         End Try
     End Function
 
-    Public Sub CmdInsertNomina(ID_Nomina As String, Año As String, Mes As String, Cod_Empleado As String, DT As DateTime)
+    Public Function CmdInsertNomina(ID_Nomina As String, Año As String, Mes As String, Cod_Empleado As String, DT As DateTime)
         Dim Transaccion As SqlTransaction
         Try
             Connect.Open()
-            Cmd = New SqlCommand("select CodEmp,(MS.SalarioMensual+MB.Beneficio_Grado) As [SalarioMensual] from MTableEmp ME, MTableSalarioBase MS , MTableBeneficioEscolaridad MB
-                                  where ME.Flg_Activo = 'SI' AND ME.CodSalarioBase = MS.CodSalarioBase AND MB.Cod_Escolaridad = ME.Tipo_Escolaridad;", Connect)
+            Cmd = New SqlCommand("select CodEmp,(MS.SalarioMensual+MB.Beneficio_Grado) As [SalarioMensual],ME.FLG_PATRONO from MTableEmp ME, MTableSalarioBase MS , MTableBeneficioEscolaridad MB
+                                    where ME.Flg_Activo = 'SI' AND ME.CodSalarioBase = MS.CodSalarioBase AND MB.Cod_Escolaridad = ME.Tipo_Escolaridad;", Connect)
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
             da.Fill(ds, "Nomina")
@@ -1850,21 +1854,23 @@ Module ModuleCmdSql
             Dim IR As Decimal
             Dim INSS As Decimal
             Dim Total As Decimal
+            Dim PatronoFLG As Boolean
             Dim SumtariaBruto As Decimal = 0
             Dim SumtariaDeducciones As Decimal = 0
 
             For Each Row As DataRow In ds.Tables(0).Rows
                 CodigoEmpleado = Row("CodEmp").ToString()
                 SalarioMensual = Decimal.Parse(Row("SalarioMensual").ToString())
+                PatronoFLG = Row("FLG_PATRONO")
                 IR = CalculaIR(SalarioMensual)
-                INSS = CalculaINSS(SalarioMensual)
+                INSS = CalculaINSS(SalarioMensual, PatronoFLG)
                 Total = SalarioMensual - IR - INSS
                 SumtariaBruto = SumtariaBruto + SalarioMensual
                 SumtariaDeducciones = SumtariaDeducciones + IR + INSS
                 Cmd = New SqlCommand("[SP_INSERT_NOMINADETALLE]", Connect)
                 Cmd.Transaction = Transaccion
                 Cmd.CommandType = CommandType.StoredProcedure
-                Cmd.Parameters.AddWithValue("@ID_Nomina", ID_Nomina)
+                Cmd.Parameters.AddWithValue("@ID_Nomina", "NO-" + DT.Year.ToString() + "-" + DT.Month.ToString("d2"))
                 Cmd.Parameters.AddWithValue("@Cod_Empleado", CodigoEmpleado)
                 Cmd.Parameters.AddWithValue("@Salario", SalarioMensual)
                 Cmd.Parameters.AddWithValue("@INSS", INSS)
@@ -1878,16 +1884,42 @@ Module ModuleCmdSql
             Cmd.CommandType = CommandType.StoredProcedure
             Cmd.Parameters.AddWithValue("@ID", "NO-" + DT.Year.ToString() + "-" + DT.Month.ToString("d2"))
             Cmd.Parameters.AddWithValue("@Año", DT.Year.ToString())
-            Cmd.Parameters.AddWithValue("@Mes", DT.Now.Month.ToString("MMMM"))
-            Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado)
+            Cmd.Parameters.AddWithValue("@Mes", MonthName(DT.Month.ToString("")))
+            Cmd.Parameters.AddWithValue("@Cod_Empleado", Cod_Empleado.Trim(" "))
             Cmd.Parameters.AddWithValue("@Total_Bruto", SumtariaBruto)
             Cmd.Parameters.AddWithValue("@Total_Deduciones", SumtariaDeducciones)
             Cmd.Parameters.AddWithValue("@Total_Nomina", SumtariaBruto)
+            Cmd.Parameters.AddWithValue("@Fecha", DT)
             Cmd.ExecuteNonQuery()
             Transaccion.Commit()
+            MsgBox("Se genero la nomina con exito")
+            Return {SumtariaBruto.ToString() + " C$", SumtariaDeducciones.ToString() + " C$"}
+        Catch ex As Exception
+            If (ex.HResult = -2146232060) Then
+                MsgBox("Ya existe una nomina para este mes y este año, debe borrarla antes de volver a ingresar una nueva")
+            Else
+                MsgBox(ex.Message)
+            End If
+            Transaccion.Rollback()
+            Return Nothing
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
+
+    Public Sub CmdViewNominaDetalle(ByRef DatagridViewNomina As GridPanel, ID_NOMINA As String)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("SELECT MND.ID_Nomina AS [Codigo Nomina],MND.Cod_Empleado as [ID Empleado], ME.NamEmp + ' ' + Me.ApeEmp as [Nombre Completo],MND.Salario_Bruto as [Salario Bruto],MND.INSS_Laboral as [Deducciones de INSS],MND.IR_Laboral as [IR],[Total_Neto] 
+                                  FROM MTableNominaDetalle  MND, MTableEmp ME    
+                                  WHERE ID_Nomina = '" + ID_NOMINA + "' AND ME.CodEmp = MND.Cod_Empleado;", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Nomina")
+            DatagridViewNomina.DataSource = ds.Tables("Nomina")
         Catch ex As Exception
             MsgBox(ex.Message)
-            Transaccion.Rollback()
         Finally
             Connect.Close()
         End Try
@@ -1930,7 +1962,7 @@ Module ModuleCmdSql
     Public Sub CmdViewNominaFiltroID(ByRef DatagridViewNomina As GridPanel, ByVal ID As String)
         Try
             Connect.Open()
-            Cmd = New SqlCommand("select * from ViewNomina where id = " + ID, Connect)
+            Cmd = New SqlCommand("select * from ViewNomina where id = '" + ID+"'", Connect)
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
             da.Fill(ds, "Nomina")
@@ -1954,13 +1986,17 @@ Module ModuleCmdSql
         ElseIf (SalarioAnual >= 350000 And SalarioAnual <= 500000) Then
             DeduccionIR = (Salario * 0.25)
         Else
-            DeduccionIR = (DeduccionIR * 0.3)
+            DeduccionIR = (Salario * 0.3)
         End If
         Return DeduccionIR
     End Function
 
-    Public Function CalculaINSS(Salario As Decimal)
-        Return Salario * 0.0625
+    Public Function CalculaINSS(Salario As Decimal, PatronoFLG As Boolean)
+        If (PatronoFLG = False) Then
+            Return Salario * 0.0625
+        Else
+            Return Salario * 0.19
+        End If
     End Function
 
 End Module
