@@ -302,10 +302,16 @@
     <Compile Include="Forms\Proyects\AddProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyects\OneProyectForm.Designer.vb">
-      <DependentUpon>OneProyectForm.vb</DependentUpon>
+    <Compile Include="Forms\Proyects\ReportSingleForm.Designer.vb">
+      <DependentUpon>ReportSingleForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyects\OneProyectForm.vb">
+    <Compile Include="Forms\Proyects\ReportSingleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proyects\UpdateProyectForm.Designer.vb">
+      <DependentUpon>UpdateProyectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proyects\UpdateProyectForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Proyects\ProyectForm.Designer.vb">
@@ -483,8 +489,11 @@
     <EmbeddedResource Include="Forms\Proyects\AddProyectForm.resx">
       <DependentUpon>AddProyectForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyects\OneProyectForm.resx">
-      <DependentUpon>OneProyectForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Proyects\ReportSingleForm.resx">
+      <DependentUpon>ReportSingleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proyects\UpdateProyectForm.resx">
+      <DependentUpon>UpdateProyectForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proyects\ProyectForm.resx">
       <DependentUpon>ProyectForm.vb</DependentUpon>

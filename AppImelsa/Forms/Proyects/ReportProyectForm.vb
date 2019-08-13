@@ -13,12 +13,12 @@ Public Class ReportProyectForm
 
     Public Sub GenerarReport()
         Param.Clear()
-        MyDiscretValues.Value = DateInputInit.Value '.ToString("yyyyMMMdd")
+        MyDiscretValues.Value = DateInputInit.Value.ToString("yyyy-MM-dd")
         Param.Add(MyDiscretValues)
         Info.DataDefinition.ParameterFields("@DateInit").ApplyCurrentValues(Param)
 
         Param.Clear()
-        MyDiscretValues.Value = DateInputEnd.Value '.ToString("yyyyMMMdd")
+        MyDiscretValues.Value = DateInputEnd.Value.ToString("yyyy-MM-dd")
         Param.Add(MyDiscretValues)
         Info.DataDefinition.ParameterFields("@DateEnd").ApplyCurrentValues(Param)
 

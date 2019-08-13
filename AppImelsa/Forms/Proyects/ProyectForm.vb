@@ -42,7 +42,8 @@ Public Class ProyectForm
     End Sub
 
     Private Sub CallInsertProyect()
-        Dim WindowsInsertProyect As New AgregarProyectoForm
+        Dim WindowsInsertProyect As New AddProyectForm
+
         WindowsInsertProyect.ShowDialog()
     End Sub
 
@@ -164,14 +165,15 @@ Public Class ProyectForm
             MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
         Else
             Dim Grida As GridRow = GridProyect.GetSelectedRows(0)
-            Dim WindowsOneProyect As New ActualizarProyectoForm
+            Dim WindowsOneProyect As New UpdateProyectForm
+
             WindowsOneProyect.Code = Grida.Cells(0).Value.ToString
             WindowsOneProyect.ShowDialog()
         End If
     End Sub
 
     Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
-        Dim WindowsReport As New ReporteProyectoForm
+        Dim WindowsReport As New ReportProyectForm
         WindowsReport.ShowDialog()
     End Sub
 
@@ -180,7 +182,7 @@ Public Class ProyectForm
             MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
         Else
             Dim Grida As GridRow = GridProyect.GetSelectedRows(0)
-            Dim WindowsReporteProyect As New ReporteUnicoForm
+            Dim WindowsReporteProyect As New ReportSingleForm
             WindowsReporteProyect.Code = Grida.Cells(0).Value.ToString
             WindowsReporteProyect.ShowDialog()
         End If

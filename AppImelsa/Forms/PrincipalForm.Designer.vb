@@ -147,8 +147,9 @@ Partial Class PrincipalForm
         '
         'StyleManager2
         '
-        Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
-        Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        Me.StyleManager2.ManagerColorTint = System.Drawing.Color.Gray
+        Me.StyleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light
+        Me.StyleManager2.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'ButtonItem2
         '
@@ -249,7 +250,7 @@ Partial Class PrincipalForm
         '
         'RibbonControl1
         '
-        Me.RibbonControl1.BackColor = System.Drawing.Color.White
+        Me.RibbonControl1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -263,7 +264,6 @@ Partial Class PrincipalForm
         Me.RibbonControl1.KeyTipsFont = New System.Drawing.Font("Tahoma", 7.0!)
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
         Me.RibbonControl1.Name = "RibbonControl1"
-        Me.RibbonControl1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 3)
         Me.RibbonControl1.QuickToolbarItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.QatCustomizeItem3})
         Me.RibbonControl1.Size = New System.Drawing.Size(1367, 154)
         Me.RibbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -294,10 +294,10 @@ Partial Class PrincipalForm
         Me.RibbonPanel1.Controls.Add(Me.RibbonBar7)
         Me.RibbonPanel1.Controls.Add(Me.RibbonBar8)
         Me.RibbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel1.Location = New System.Drawing.Point(0, 53)
+        Me.RibbonPanel1.Location = New System.Drawing.Point(0, 54)
         Me.RibbonPanel1.Name = "RibbonPanel1"
-        Me.RibbonPanel1.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.RibbonPanel1.Size = New System.Drawing.Size(1367, 98)
+        Me.RibbonPanel1.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
+        Me.RibbonPanel1.Size = New System.Drawing.Size(1367, 100)
         '
         '
         '
@@ -331,7 +331,7 @@ Partial Class PrincipalForm
         Me.RibbonBar2.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem3, Me.ItemContainer6})
         Me.RibbonBar2.Location = New System.Drawing.Point(822, 0)
         Me.RibbonBar2.Name = "RibbonBar2"
-        Me.RibbonBar2.Size = New System.Drawing.Size(249, 95)
+        Me.RibbonBar2.Size = New System.Drawing.Size(249, 98)
         Me.RibbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar2.TabIndex = 6
         Me.RibbonBar2.Text = "Iventario"
@@ -401,7 +401,7 @@ Partial Class PrincipalForm
         Me.RibbonBar6.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnProyect, Me.ItemContainer3})
         Me.RibbonBar6.Location = New System.Drawing.Point(573, 0)
         Me.RibbonBar6.Name = "RibbonBar6"
-        Me.RibbonBar6.Size = New System.Drawing.Size(249, 95)
+        Me.RibbonBar6.Size = New System.Drawing.Size(249, 98)
         Me.RibbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar6.TabIndex = 5
         Me.RibbonBar6.Text = "Proyectos"
@@ -480,7 +480,7 @@ Partial Class PrincipalForm
         Me.RibbonBar7.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnClient, Me.ItemContainer1})
         Me.RibbonBar7.Location = New System.Drawing.Point(324, 0)
         Me.RibbonBar7.Name = "RibbonBar7"
-        Me.RibbonBar7.Size = New System.Drawing.Size(249, 95)
+        Me.RibbonBar7.Size = New System.Drawing.Size(249, 98)
         Me.RibbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar7.TabIndex = 4
         Me.RibbonBar7.Text = "Clientes"
@@ -550,7 +550,7 @@ Partial Class PrincipalForm
         Me.RibbonBar8.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnEmployed, Me.ItemContainer5, Me.ItemContainer2})
         Me.RibbonBar8.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar8.Name = "RibbonBar8"
-        Me.RibbonBar8.Size = New System.Drawing.Size(321, 95)
+        Me.RibbonBar8.Size = New System.Drawing.Size(321, 98)
         Me.RibbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar8.TabIndex = 3
         Me.RibbonBar8.Text = "Empleados"
@@ -649,7 +649,7 @@ Partial Class PrincipalForm
         Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RibbonPanel2.Location = New System.Drawing.Point(0, 54)
         Me.RibbonPanel2.Name = "RibbonPanel2"
-        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
         Me.RibbonPanel2.Size = New System.Drawing.Size(1367, 100)
         '
         '
@@ -669,7 +669,7 @@ Partial Class PrincipalForm
         'RibbonBar1
         '
         Me.RibbonBar1.AutoOverflowEnabled = True
-        Me.RibbonBar1.BackColor = System.Drawing.Color.White
+        Me.RibbonBar1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -685,7 +685,7 @@ Partial Class PrincipalForm
         Me.RibbonBar1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem1})
         Me.RibbonBar1.Location = New System.Drawing.Point(252, 0)
         Me.RibbonBar1.Name = "RibbonBar1"
-        Me.RibbonBar1.Size = New System.Drawing.Size(100, 97)
+        Me.RibbonBar1.Size = New System.Drawing.Size(100, 98)
         Me.RibbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar1.TabIndex = 12
         Me.RibbonBar1.Text = "Nomina"
@@ -725,7 +725,7 @@ Partial Class PrincipalForm
         Me.RibbonBar9.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem33, Me.ItemContainer4})
         Me.RibbonBar9.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar9.Name = "RibbonBar9"
-        Me.RibbonBar9.Size = New System.Drawing.Size(249, 97)
+        Me.RibbonBar9.Size = New System.Drawing.Size(249, 98)
         Me.RibbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar9.TabIndex = 11
         Me.RibbonBar9.Text = "Prestamos"
@@ -783,7 +783,7 @@ Partial Class PrincipalForm
         Me.ApplicationButton1.Image = CType(resources.GetObject("ApplicationButton1.Image"), System.Drawing.Image)
         Me.ApplicationButton1.ImageFixedSize = New System.Drawing.Size(16, 16)
         Me.ApplicationButton1.ImagePaddingHorizontal = 0
-        Me.ApplicationButton1.ImagePaddingVertical = 0
+        Me.ApplicationButton1.ImagePaddingVertical = 1
         Me.ApplicationButton1.Name = "ApplicationButton1"
         Me.ApplicationButton1.ShowSubItems = False
         Me.ApplicationButton1.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnBackup})
@@ -919,11 +919,12 @@ Partial Class PrincipalForm
         Me.TabCWindows.ForeColor = System.Drawing.Color.Black
         Me.TabCWindows.Location = New System.Drawing.Point(15, 160)
         Me.TabCWindows.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.TabCWindows.MinimumSize = New System.Drawing.Size(1294, 720)
         Me.TabCWindows.Name = "TabCWindows"
         Me.TabCWindows.ReorderTabsEnabled = True
         Me.TabCWindows.SelectedTabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.SelectedTabIndex = 0
-        Me.TabCWindows.Size = New System.Drawing.Size(1340, 546)
+        Me.TabCWindows.Size = New System.Drawing.Size(1340, 720)
         Me.TabCWindows.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
@@ -935,17 +936,19 @@ Partial Class PrincipalForm
         '
         'SuperTabControlPanel1
         '
+        Me.SuperTabControlPanel1.AutoSize = True
         Me.SuperTabControlPanel1.Controls.Add(Me.ReflectionLabel1)
         Me.SuperTabControlPanel1.Controls.Add(Me.ReflectionImage1)
         Me.SuperTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SuperTabControlPanel1.Location = New System.Drawing.Point(0, 26)
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.SuperTabControlPanel1.MinimumSize = New System.Drawing.Size(1340, 520)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
         SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
         SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
         SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
         Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
-        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 520)
+        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 694)
         Me.SuperTabControlPanel1.TabIndex = 1
         Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
         '
@@ -998,7 +1001,7 @@ Partial Class PrincipalForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1369, 727)
         Me.Controls.Add(Me.PanelEx1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1014,6 +1017,7 @@ Partial Class PrincipalForm
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.TabCWindows, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabCWindows.ResumeLayout(False)
+        Me.TabCWindows.PerformLayout()
         Me.SuperTabControlPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
