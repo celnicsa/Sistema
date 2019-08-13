@@ -337,6 +337,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ImelsaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ImelsaDataSet.vb">
+      <DependentUpon>ImelsaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Modelos\Client\Client.vb" />
     <Compile Include="Modelos\Client\EmailClient.vb" />
     <Compile Include="Modelos\Client\PhoneClient.vb" />

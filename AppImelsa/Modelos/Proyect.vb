@@ -91,17 +91,14 @@
             _cliente = value
         End Set
     End Property
-
     Public Property Observacion As String
         Get
             Return _observacion
         End Get
         Set(value As String)
             _observacion = value
-
         End Set
     End Property
-
     Public Property Tipo As Short
         Get
             Return _tipo
@@ -110,5 +107,4 @@
             _tipo = value
         End Set
     End Property
-
 End Class

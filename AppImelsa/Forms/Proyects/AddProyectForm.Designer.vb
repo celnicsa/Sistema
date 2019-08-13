@@ -468,8 +468,10 @@ Partial Class AddProyectForm
         '
         'LisCob
         '
+        Me.LisCob.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.LisCob.ForeColor = System.Drawing.Color.Black
         Me.LisCob.FormattingEnabled = True
-        Me.LisCob.Items.AddRange(New Object() {"Sin Definir", "Electricidad", "Construccion", "Instalacion", "Transformadores", "Capacitaciones"})
+        Me.LisCob.Items.AddRange(New Object() {"Sin Definir", "Electricidad", "Construccion", "Instalacion", "Transformadores", "Capacitacion"})
         Me.LisCob.Location = New System.Drawing.Point(453, 342)
         Me.LisCob.Name = "LisCob"
         Me.LisCob.Size = New System.Drawing.Size(209, 21)

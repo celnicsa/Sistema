@@ -88,7 +88,7 @@ Public Class UpdateProyectForm
                 DataProyect.Tipo = Getlista()
 
                 If CmdUpdateProyect(DataProyect) Then
-                    MsgBox("Proyecto Insertado Satisfactoriament")
+                    MsgBox("Proyecto Insertado Satisfactoriamente")
                 Else
                     MsgBox("Error, no se ingreso proyecto")
                 End If

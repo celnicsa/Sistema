@@ -1,5 +1,6 @@
 Public Class AddProyectForm
     Private DataProyect As New Proyect
+    Public nota As String
     Private Sub AddProyectForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CmdLoadClient(CmBClient)
         ProgressOne.Value = 50
@@ -32,17 +33,18 @@ Public Class AddProyectForm
         Return True
     End Function
     Private Function Getlista1() As Int16
-        If LisCob.Text = "Sin Definir" Then
+        nota = LisCob.Text
+        If nota = "Sin Definir" Then
             Return 6
-        ElseIf LisCob.Text = "Electricidad" Then
+        ElseIf nota = "Electricidad" Then
             Return 1
-        ElseIf LisCob.Text = "Construccion" Then
+        ElseIf nota = "Construccion" Then
             Return 2
-        ElseIf LisCob.Text = "Instalacion" Then
+        ElseIf nota = "Instalacion" Then
             Return 3
-        ElseIf LisCob.Text = "Transformadores" Then
+        ElseIf nota = "Transformadores" Then
             Return 4
-        ElseIf LisCob.Text = "Capacitacion" Then
+        ElseIf nota = "Capacitacion" Then
             Return 5
         Else
             Return 6
@@ -63,10 +65,10 @@ Public Class AddProyectForm
                 DataProyect.Observacion = TxtObservacion.Text
                 DataProyect.Tipo = Getlista1()
 
-
                 If CmdInsertProyect(DataProyect) Then
                     ProgressOne.Value = 100
-                    MsgBox("Proyecto Insertado Satisfactoriament")
+                    MsgBox("Proyecto Insertado Satisfactoriamente " + nota)
+
                 Else
                     MsgBox("Error, no se ingreso proyecto")
                 End If
