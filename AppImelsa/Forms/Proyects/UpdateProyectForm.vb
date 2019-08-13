@@ -1,5 +1,6 @@
 Public Class UpdateProyectForm
     Public Code As String
+    Public Cont As String
     Public num As Int16
     Dim DataProyect As New Proyect
     Dim Input As New ValidateInput
@@ -13,11 +14,11 @@ Public Class UpdateProyectForm
         TxtBName.Text = DataProyect.Name
         TxtBPresupuesto.Value = DataProyect.Presupuesto
         TxtBDesc.Text = DataProyect.Descripcion
-        TxtObs.Text = DataProyect.Observacion
         TxtBAddres.Text = DataProyect.Ubicacion
         TxtBClient.Text = DataProyect.Cliente
         DateInputInit.Value = DataProyect.DateStar
         DateInputEnd.Value = DataProyect.DateEnd
+        TxtObs.Text = DataProyect.Observacion
         CheckedState()
     End Sub
     Public Sub CheckedState()
@@ -55,17 +56,18 @@ Public Class UpdateProyectForm
     End Function
 
     Private Function Getlista() As Int16
-        If (Comb.Text = "Sin Definir") Then
+        Cont = Comb.Text
+        If (Cont = "Sin Definir") Then
             Return 6
-        ElseIf Comb.Text = "Electricidad" Then
+        ElseIf Cont = "Electricidad" Then
             Return 1
-        ElseIf Comb.Text = "Construccion" Then
+        ElseIf Cont = "Construccion" Then
             Return 2
-        ElseIf Comb.Text = "Instalacion" Then
+        ElseIf Cont = "Instalacion" Then
             Return 3
-        ElseIf Comb.Text = "Transformadores" Then
+        ElseIf Cont = "Transformadores" Then
             Return 4
-        ElseIf Comb.Text = "Capacitacion" Then
+        ElseIf Cont = "Capacitacion" Then
             Return 5
         Else
             Return 6

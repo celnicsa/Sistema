@@ -530,7 +530,6 @@ Partial Class AddProyectForm
         Me.Controls.Add(Me.Titulo)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AddProyectForm"

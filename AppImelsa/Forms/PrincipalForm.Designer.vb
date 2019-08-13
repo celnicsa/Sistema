@@ -24,11 +24,11 @@ Partial Class PrincipalForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
-        Dim SuperTabColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
-        Dim SuperTabLinearGradientColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Dim SuperTabPanelColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
-        Dim SuperTabPanelItemColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
         Dim SuperTabLinearGradientColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
+        Dim SuperTabPanelColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
+        Dim SuperTabPanelItemColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Me.ControlContainerItem1 = New DevComponents.DotNetBar.ControlContainerItem()
         Me.LabelItem1 = New DevComponents.DotNetBar.LabelItem()
         Me.QatCustomizeItem2 = New DevComponents.DotNetBar.QatCustomizeItem()
@@ -924,13 +924,13 @@ Partial Class PrincipalForm
         Me.TabCWindows.ReorderTabsEnabled = True
         Me.TabCWindows.SelectedTabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.SelectedTabIndex = 0
-        Me.TabCWindows.Size = New System.Drawing.Size(1340, 720)
+        Me.TabCWindows.Size = New System.Drawing.Size(1440, 820)
         Me.TabCWindows.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
-        SuperTabLinearGradientColorTable2.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
-        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable2
-        Me.TabCWindows.TabStripColor = SuperTabColorTable1
+        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
+        SuperTabColorTable2.Background = SuperTabLinearGradientColorTable1
+        Me.TabCWindows.TabStripColor = SuperTabColorTable2
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
         '
@@ -944,11 +944,11 @@ Partial Class PrincipalForm
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SuperTabControlPanel1.MinimumSize = New System.Drawing.Size(1340, 520)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
-        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
-        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
-        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
-        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1340, 694)
+        SuperTabLinearGradientColorTable3.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
+        SuperTabPanelItemColorTable2.Background = SuperTabLinearGradientColorTable3
+        SuperTabPanelColorTable2.Default = SuperTabPanelItemColorTable2
+        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable2
+        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1440, 794)
         Me.SuperTabControlPanel1.TabIndex = 1
         Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
         '
@@ -965,7 +965,7 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
         Me.ReflectionLabel1.Location = New System.Drawing.Point(461, 34)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(550, 70)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(650, 70)
         Me.ReflectionLabel1.TabIndex = 1
         Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222""> y </font><font col" &
     "or=""#003333"">Eléctricas de Nicaragua.SA</font></font></b>"
@@ -984,7 +984,7 @@ Partial Class PrincipalForm
         Me.ReflectionImage1.Image = Global.AppImelsa.My.Resources.Resources.logo
         Me.ReflectionImage1.Location = New System.Drawing.Point(476, 134)
         Me.ReflectionImage1.Name = "ReflectionImage1"
-        Me.ReflectionImage1.Size = New System.Drawing.Size(511, 335)
+        Me.ReflectionImage1.Size = New System.Drawing.Size(611, 335)
         Me.ReflectionImage1.TabIndex = 0
         '
         'SuperTabItem1
