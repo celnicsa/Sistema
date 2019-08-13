@@ -56,23 +56,22 @@ Public Class UpdateProyectForm
     End Function
 
     Private Function Getlista() As Int16
-        Cont = Comb.Text
-        If (Cont = "Sin Definir") Then
+        If Comb.Text = "Sin Definir" Then
             Return 6
-        ElseIf Cont = "Electricidad" Then
+        ElseIf Comb.Text = "Electricidad" Then
             Return 1
-        ElseIf Cont = "Construccion" Then
+        ElseIf Comb.Text = "Construccion" Then
             Return 2
-        ElseIf Cont = "Instalacion" Then
+        ElseIf Comb.Text = "Instalacion" Then
             Return 3
-        ElseIf Cont = "Transformadores" Then
+        ElseIf Comb.Text = "Transformadores" Then
+
             Return 4
-        ElseIf Cont = "Capacitacion" Then
+        ElseIf Comb.Text = "Capacitacion" Then
             Return 5
         Else
             Return 6
         End If
-
     End Function
     Private Sub GetData()
         If ValidateBoxs() Then
