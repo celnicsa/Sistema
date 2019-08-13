@@ -34,15 +34,17 @@ Public Class NominaDetalleForm
     End Sub
 
     Private Sub BtnUpdateCargo_Click(sender As Object, e As EventArgs) Handles BtnUpdateCargo.Click
-        Dim panel As GridPanel = GridCargos.PrimaryGrid
-        Dim Resultado = CmdInsertNomina("NO-" + DateInput.Value.Year.ToString() + "-" + DateInput.Value.Month.ToString("d2"), DateInput.Value.Year.ToString(), MonthName(DateInput.Value.Month, False), ComboBox1.Text.Split(":")(1), DateInput.Value)
-        CmdViewNominaDetalle(panel, "NO-" + DateInput.Value.Year.ToString() + "-" + DateInput.Value.Month.ToString("d2"))
-        TextBoxX1.Text = Resultado(0).ToString()
-        TextBoxX4.Text = Resultado(1).ToString()
-        TextBoxX2.Text = "NO-" + DateInput.Value.Year.ToString() + "-" + DateInput.Value.Month.ToString("d2")
-        TextBoxX3.Text = MonthName(DateInput.Value.Month.ToString())
-        TxtBName.Text = DateInput.Value.Year.ToString()
-        BtnUpdateCargo.Visible = False
-
+        Try
+            Dim panel As GridPanel = GridCargos.PrimaryGrid
+            Dim Resultado = CmdInsertNomina("NO-" + DateInput.Value.Year.ToString() + "-" + DateInput.Value.Month.ToString("d2"), DateInput.Value.Year.ToString(), MonthName(DateInput.Value.Month, False), ComboBox1.Text.Split(":")(1), DateInput.Value)
+            CmdViewNominaDetalle(panel, "NO-" + DateInput.Value.Year.ToString() + "-" + DateInput.Value.Month.ToString("d2"))
+            TextBoxX1.Text = Resultado(0).ToString()
+            TextBoxX4.Text = Resultado(1).ToString()
+            TextBoxX2.Text = "NO-" + DateInput.Value.Year.ToString() + "-" + DateInput.Value.Month.ToString("d2")
+            TextBoxX3.Text = MonthName(DateInput.Value.Month.ToString())
+            TxtBName.Text = DateInput.Value.Year.ToString()
+            BtnUpdateCargo.Visible = False
+        Catch ex As Exception
+        End Try
     End Sub
 End Class

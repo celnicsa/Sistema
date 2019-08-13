@@ -3,7 +3,6 @@
 Public Class EscolaridadForm
 
     Dim FlagOperacion As String
-    Dim IDEscolaridadAux As String
 
     Private Sub EscolaridadForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadTable()
