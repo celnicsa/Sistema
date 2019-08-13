@@ -1844,7 +1844,7 @@ Module ModuleCmdSql
     End Function
 
     Public Function CmdInsertNomina(ID_Nomina As String, Año As String, Mes As String, Cod_Empleado As String, DT As DateTime)
-        Dim Transaccion As SqlTransaction
+        Dim Transaccion As SqlTransaction = Nothing
         Try
             Connect.Open()
             Cmd = New SqlCommand("select CodEmp,(MS.SalarioMensual+MB.Beneficio_Grado) As [SalarioMensual],ME.FLG_PATRONO from MTableEmp ME, MTableSalarioBase MS , MTableBeneficioEscolaridad MB
@@ -1931,6 +1931,24 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Sub
+
+    Public Function CMDVIEWNOMINDETALLEEXCEL(ID_NOMINA As String)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("SELECT MND.ID_Nomina AS [Codigo Nomina],MND.Cod_Empleado as [ID Empleado], ME.NamEmp + ' ' + Me.ApeEmp as [Nombre Completo],MND.Salario_Bruto as [Salario Bruto],MND.INSS_Laboral as [Deducciones de INSS],MND.IR_Laboral as [IR],[Total_Neto] 
+                                  FROM MTableNominaDetalle  MND, MTableEmp ME    
+                                  WHERE ID_Nomina = '" + ID_NOMINA + "' AND ME.CodEmp = MND.Cod_Empleado;", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Nomina")
+            Return ds.Tables("Nomina")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Function
+
 
     Public Function CmdDeleteNomina(ByVal ID As String) As Boolean
         Try
