@@ -6,7 +6,7 @@ Public Class SelectProyectForm
             MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
         Else
             Dim Grida As GridRow = GridEmployed.GetSelectedRows(0)
-            Dim WindowsPerfilProyect As New OneProyectForm
+            Dim WindowsPerfilProyect As New UpdateProyectForm
             WindowsPerfilProyect.Code = Grida.Cells(0).Value.ToString
             WindowsPerfilProyect.ShowDialog()
             Me.Close()
@@ -27,4 +27,5 @@ Public Class SelectProyectForm
     Private Sub SelectProyectForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadProyect()
     End Sub
+
 End Class

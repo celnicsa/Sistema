@@ -11,6 +11,7 @@ Public Class PrincipalForm
         TabCWindows.Tabs.Add(newpage)
         TabCWindows.Controls.Add(Panel)
         TabCWindows.SelectedTab = newpage
+        Windows.Dock = DockStyle.Fill
         Windows.TopLevel = False
         Windows.Parent = Panel
         newpage.AttachedControl = Panel
