@@ -16,7 +16,7 @@ Public Class ProyectForm
     End Sub
     Private Function QuestionDelete(ByVal Entidad As String) As Boolean
         Dim Question As Int16
-        Question = MsgBox("¿Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
+        Question = MsgBox("ï¿½Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
         If Question = MsgBoxResult.Yes Then
             Return True
         End If
@@ -42,7 +42,7 @@ Public Class ProyectForm
     End Sub
 
     Private Sub CallInsertProyect()
-        Dim WindowsInsertProyect As New AddProyectForm
+        Dim WindowsInsertProyect As New AgregarProyectoForm
         WindowsInsertProyect.ShowDialog()
     End Sub
 
@@ -80,10 +80,10 @@ Public Class ProyectForm
         If RbtnName.Checked = True Then
             CmdSearchProyect(Panel, "Name", TxtBSearch.Text, GetSelectEstado(), DateInit_1, DateInit_2, Case_1,
                              DateEnd_1, DateEnd_2, Case_2)
-        ElseIf RbtnIden.Checked
+        ElseIf RbtnIden.Checked Then
             CmdSearchProyect(Panel, "Client", TxtBSearch.Text, GetSelectEstado(), DateInit_1, DateInit_2, Case_1,
                              DateEnd_1, DateEnd_2, Case_2)
-        ElseIf RbtnCode.Checked
+        ElseIf RbtnCode.Checked Then
             CmdSearchProyect(Panel, "Code", TxtBSearch.Text, GetSelectEstado(), DateInit_1, DateInit_2, Case_1,
                              DateEnd_1, DateEnd_2, Case_2)
         End If
@@ -120,7 +120,7 @@ Public Class ProyectForm
         DateEnd_2 = DinputEnd_2.Value.ToString("yyyyMMMdd")
     End Sub
     Private Sub CmBEstado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmBEstado.SelectedIndexChanged
-        Search
+        Search()
     End Sub
     Private Sub DinputInit_2_ValueChanged(sender As Object, e As EventArgs) Handles DinputInit_2.ValueChanged
         If DateTime.Compare(DinputInit_2.Value, DinputInit_1.Value) < 0 Then
@@ -164,14 +164,25 @@ Public Class ProyectForm
             MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
         Else
             Dim Grida As GridRow = GridProyect.GetSelectedRows(0)
-            Dim WindowsOneProyect As New OneProyectForm
+            Dim WindowsOneProyect As New ActualizarProyectoForm
             WindowsOneProyect.Code = Grida.Cells(0).Value.ToString
             WindowsOneProyect.ShowDialog()
         End If
     End Sub
 
     Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
-        Dim WindowsReport As New ReportProyectForm
+        Dim WindowsReport As New ReporteProyectoForm
         WindowsReport.ShowDialog()
+    End Sub
+
+    Private Sub BtnProUnico_Click(sender As Object, e As EventArgs) Handles BtnProUnico.Click
+        If GridProyect.GetSelectedRows.Count = 0 Then
+            MsgBox("No se ha Seleccionado Proyecto", MsgBoxStyle.Information)
+        Else
+            Dim Grida As GridRow = GridProyect.GetSelectedRows(0)
+            Dim WindowsReporteProyect As New ReporteUnicoForm
+            WindowsReporteProyect.Code = Grida.Cells(0).Value.ToString
+            WindowsReporteProyect.ShowDialog()
+        End If
     End Sub
 End Class
