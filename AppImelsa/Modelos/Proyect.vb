@@ -10,6 +10,7 @@
     Private _cliente As String
     Private _observacion As String
     Private _tipo As Int16
+    Private _tiponombre As String
 
     Public Property Code As String
         Get
@@ -107,4 +108,13 @@
             _tipo = value
         End Set
     End Property
+    Public Property TipoNombre As String
+        Get
+            Return _tiponombre
+        End Get
+        Set(value As String)
+            _tiponombre = value
+        End Set
+    End Property
+
 End Class

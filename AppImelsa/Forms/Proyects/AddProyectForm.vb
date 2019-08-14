@@ -67,7 +67,7 @@ Public Class AddProyectForm
 
                 If CmdInsertProyect(DataProyect) Then
                     ProgressOne.Value = 100
-                    MsgBox("Proyecto Insertado Satisfactoriamente " + nota)
+                    MsgBox("Proyecto Insertado Satisfactoriamente ")
 
                 Else
                     MsgBox("Error, no se ingreso proyecto")

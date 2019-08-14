@@ -19,8 +19,11 @@ Public Class UpdateProyectForm
         DateInputInit.Value = DataProyect.DateStar
         DateInputEnd.Value = DataProyect.DateEnd
         TxtObs.Text = DataProyect.Observacion
+        Comb.Text = DataProyect.TipoNombre
+
         CheckedState()
     End Sub
+
     Public Sub CheckedState()
         If DataProyect.Estado = 0 Then
             ChBState.Checked = True
@@ -106,5 +109,6 @@ Public Class UpdateProyectForm
     Private Sub BtnAccept_Click(sender As Object, e As EventArgs) Handles BtnAccept.Click
         Me.Close()
     End Sub
+
 
 End Class

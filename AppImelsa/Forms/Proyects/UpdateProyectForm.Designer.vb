@@ -27,7 +27,6 @@ Partial Class UpdateProyectForm
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.LabelX10 = New DevComponents.DotNetBar.LabelX()
         Me.TxtBDesc = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
-        Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
         Me.TxtBPresupuesto = New DevComponents.Editors.DoubleInput()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
@@ -48,21 +47,30 @@ Partial Class UpdateProyectForm
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
         Me.TxtObs = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
         Me.Comb = New System.Windows.Forms.ComboBox()
         Me.LabelX12 = New DevComponents.DotNetBar.LabelX()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
         CType(Me.TxtBPresupuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -78,11 +86,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX10.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX10.ForeColor = System.Drawing.Color.Black
-        Me.LabelX10.Location = New System.Drawing.Point(33, 357)
+        Me.LabelX10.Location = New System.Drawing.Point(13, 115)
         Me.LabelX10.Name = "LabelX10"
-        Me.LabelX10.Size = New System.Drawing.Size(71, 14)
+        Me.LabelX10.Size = New System.Drawing.Size(336, 22)
         Me.LabelX10.TabIndex = 228
         Me.LabelX10.Text = "Descripcion"
         '
@@ -94,28 +103,15 @@ Partial Class UpdateProyectForm
         '
         Me.TxtBDesc.BackgroundStyle.Class = "RichTextBoxBorder"
         Me.TxtBDesc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtBDesc.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtBDesc.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBDesc.ForeColor = System.Drawing.Color.Black
-        Me.TxtBDesc.Location = New System.Drawing.Point(188, 357)
+        Me.TxtBDesc.Location = New System.Drawing.Point(13, 143)
         Me.TxtBDesc.Name = "TxtBDesc"
         Me.TxtBDesc.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
     "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red0\green0\blue0;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.TxtBDesc.Size = New System.Drawing.Size(266, 43)
+        Me.TxtBDesc.Size = New System.Drawing.Size(336, 76)
         Me.TxtBDesc.TabIndex = 229
-        '
-        'LabelX9
-        '
-        Me.LabelX9.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX9.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX9.ForeColor = System.Drawing.Color.Black
-        Me.LabelX9.Location = New System.Drawing.Point(188, 547)
-        Me.LabelX9.Name = "LabelX9"
-        Me.LabelX9.Size = New System.Drawing.Size(116, 15)
-        Me.LabelX9.TabIndex = 227
         '
         'TxtBPresupuesto
         '
@@ -127,13 +123,14 @@ Partial Class UpdateProyectForm
         Me.TxtBPresupuesto.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.TxtBPresupuesto.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBPresupuesto.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.TxtBPresupuesto.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtBPresupuesto.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBPresupuesto.ForeColor = System.Drawing.Color.Black
         Me.TxtBPresupuesto.Increment = 1.0R
-        Me.TxtBPresupuesto.Location = New System.Drawing.Point(188, 150)
+        Me.TxtBPresupuesto.Location = New System.Drawing.Point(13, 39)
         Me.TxtBPresupuesto.Name = "TxtBPresupuesto"
         Me.TxtBPresupuesto.ShowUpDown = True
-        Me.TxtBPresupuesto.Size = New System.Drawing.Size(163, 22)
+        Me.TxtBPresupuesto.Size = New System.Drawing.Size(336, 22)
         Me.TxtBPresupuesto.TabIndex = 226
         '
         'LabelX1
@@ -143,11 +140,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX1.ForeColor = System.Drawing.Color.Black
-        Me.LabelX1.Location = New System.Drawing.Point(33, 33)
+        Me.LabelX1.Location = New System.Drawing.Point(13, 3)
         Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(71, 23)
+        Me.LabelX1.Size = New System.Drawing.Size(336, 30)
         Me.LabelX1.TabIndex = 209
         Me.LabelX1.Text = "Codigo"
         '
@@ -158,11 +156,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX8.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX8.ForeColor = System.Drawing.Color.Black
-        Me.LabelX8.Location = New System.Drawing.Point(33, 150)
+        Me.LabelX8.Location = New System.Drawing.Point(13, 3)
         Me.LabelX8.Name = "LabelX8"
-        Me.LabelX8.Size = New System.Drawing.Size(71, 23)
+        Me.LabelX8.Size = New System.Drawing.Size(336, 30)
         Me.LabelX8.TabIndex = 225
         Me.LabelX8.Text = "Presupuesto"
         '
@@ -173,11 +172,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.ChBState.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ChBState.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ChBState.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ChBState.ForeColor = System.Drawing.Color.Black
-        Me.ChBState.Location = New System.Drawing.Point(188, 188)
+        Me.ChBState.Location = New System.Drawing.Point(13, 111)
         Me.ChBState.Name = "ChBState"
-        Me.ChBState.Size = New System.Drawing.Size(163, 23)
+        Me.ChBState.Size = New System.Drawing.Size(336, 30)
         Me.ChBState.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ChBState.TabIndex = 224
         Me.ChBState.Text = "Activo"
@@ -189,11 +189,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX2.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX2.ForeColor = System.Drawing.Color.Black
-        Me.LabelX2.Location = New System.Drawing.Point(33, 105)
+        Me.LabelX2.Location = New System.Drawing.Point(13, 147)
         Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(83, 23)
+        Me.LabelX2.Size = New System.Drawing.Size(336, 21)
         Me.LabelX2.TabIndex = 210
         Me.LabelX2.Text = "Nombre / Titulo"
         '
@@ -206,12 +207,13 @@ Partial Class UpdateProyectForm
         Me.TxtBName.Border.Class = "TextBoxBorder"
         Me.TxtBName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBName.DisabledBackColor = System.Drawing.Color.White
+        Me.TxtBName.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtBName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBName.ForeColor = System.Drawing.Color.Black
-        Me.TxtBName.Location = New System.Drawing.Point(188, 105)
+        Me.TxtBName.Location = New System.Drawing.Point(13, 174)
         Me.TxtBName.Name = "TxtBName"
         Me.TxtBName.PreventEnterBeep = True
-        Me.TxtBName.Size = New System.Drawing.Size(163, 22)
+        Me.TxtBName.Size = New System.Drawing.Size(336, 22)
         Me.TxtBName.TabIndex = 211
         '
         'TxtBCode
@@ -221,11 +223,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.TxtBCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtBCode.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtBCode.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBCode.ForeColor = System.Drawing.Color.Black
-        Me.TxtBCode.Location = New System.Drawing.Point(188, 33)
+        Me.TxtBCode.Location = New System.Drawing.Point(13, 39)
         Me.TxtBCode.Name = "TxtBCode"
-        Me.TxtBCode.Size = New System.Drawing.Size(163, 23)
+        Me.TxtBCode.Size = New System.Drawing.Size(336, 30)
         Me.TxtBCode.TabIndex = 212
         '
         'LabelX4
@@ -235,11 +238,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX4.ForeColor = System.Drawing.Color.Black
-        Me.LabelX4.Location = New System.Drawing.Point(33, 67)
+        Me.LabelX4.Location = New System.Drawing.Point(13, 75)
         Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.Size = New System.Drawing.Size(71, 23)
+        Me.LabelX4.Size = New System.Drawing.Size(336, 30)
         Me.LabelX4.TabIndex = 213
         Me.LabelX4.Text = "Cliente"
         '
@@ -250,11 +254,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX7.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX7.ForeColor = System.Drawing.Color.Black
-        Me.LabelX7.Location = New System.Drawing.Point(33, 301)
+        Me.LabelX7.Location = New System.Drawing.Point(13, 3)
         Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.Size = New System.Drawing.Size(71, 14)
+        Me.LabelX7.Size = New System.Drawing.Size(336, 27)
         Me.LabelX7.TabIndex = 219
         Me.LabelX7.Text = "Ubicacion"
         '
@@ -265,11 +270,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.TxtBClient.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtBClient.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtBClient.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBClient.ForeColor = System.Drawing.Color.Black
-        Me.TxtBClient.Location = New System.Drawing.Point(188, 67)
+        Me.TxtBClient.Location = New System.Drawing.Point(13, 111)
         Me.TxtBClient.Name = "TxtBClient"
-        Me.TxtBClient.Size = New System.Drawing.Size(163, 23)
+        Me.TxtBClient.Size = New System.Drawing.Size(336, 30)
         Me.TxtBClient.TabIndex = 214
         '
         'TxtBAddres
@@ -280,22 +286,24 @@ Partial Class UpdateProyectForm
         '
         Me.TxtBAddres.BackgroundStyle.Class = "RichTextBoxBorder"
         Me.TxtBAddres.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtBAddres.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtBAddres.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBAddres.ForeColor = System.Drawing.Color.Black
-        Me.TxtBAddres.Location = New System.Drawing.Point(188, 301)
+        Me.TxtBAddres.Location = New System.Drawing.Point(13, 36)
         Me.TxtBAddres.Name = "TxtBAddres"
         Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
     "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red0\green0\blue0;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.TxtBAddres.Size = New System.Drawing.Size(266, 43)
+        Me.TxtBAddres.Size = New System.Drawing.Size(336, 48)
         Me.TxtBAddres.TabIndex = 220
         '
         'DateInputInit
         '
         Me.DateInputInit.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.DateInputInit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateInputInit.ForeColor = System.Drawing.Color.Black
-        Me.DateInputInit.Location = New System.Drawing.Point(188, 227)
+        Me.DateInputInit.Location = New System.Drawing.Point(13, 31)
         Me.DateInputInit.Name = "DateInputInit"
-        Me.DateInputInit.Size = New System.Drawing.Size(266, 22)
+        Me.DateInputInit.Size = New System.Drawing.Size(336, 22)
         Me.DateInputInit.TabIndex = 215
         '
         'LabelX6
@@ -305,21 +313,23 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX6.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX6.ForeColor = System.Drawing.Color.Black
-        Me.LabelX6.Location = New System.Drawing.Point(33, 263)
+        Me.LabelX6.Location = New System.Drawing.Point(13, 59)
         Me.LabelX6.Name = "LabelX6"
-        Me.LabelX6.Size = New System.Drawing.Size(83, 23)
+        Me.LabelX6.Size = New System.Drawing.Size(336, 22)
         Me.LabelX6.TabIndex = 218
         Me.LabelX6.Text = "F. Culminacion"
         '
         'DateInputEnd
         '
         Me.DateInputEnd.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.DateInputEnd.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateInputEnd.ForeColor = System.Drawing.Color.Black
-        Me.DateInputEnd.Location = New System.Drawing.Point(188, 263)
+        Me.DateInputEnd.Location = New System.Drawing.Point(13, 87)
         Me.DateInputEnd.Name = "DateInputEnd"
-        Me.DateInputEnd.Size = New System.Drawing.Size(266, 22)
+        Me.DateInputEnd.Size = New System.Drawing.Size(336, 22)
         Me.DateInputEnd.TabIndex = 216
         '
         'LabelX5
@@ -329,25 +339,26 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX5.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX5.ForeColor = System.Drawing.Color.Black
-        Me.LabelX5.Location = New System.Drawing.Point(33, 227)
+        Me.LabelX5.Location = New System.Drawing.Point(13, 3)
         Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.Size = New System.Drawing.Size(71, 23)
+        Me.LabelX5.Size = New System.Drawing.Size(336, 22)
         Me.LabelX5.TabIndex = 217
         Me.LabelX5.Text = "F. de Inicio"
         '
         'BtnSave
         '
         Me.BtnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnSave.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnSave.BackColor = System.Drawing.Color.DodgerBlue
         Me.BtnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
-        Me.BtnSave.Location = New System.Drawing.Point(28, 3)
+        Me.BtnSave.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BtnSave.Location = New System.Drawing.Point(5, 5)
+        Me.BtnSave.Margin = New System.Windows.Forms.Padding(5)
         Me.BtnSave.Name = "BtnSave"
         Me.BtnSave.Padding = New System.Windows.Forms.Padding(10)
-        Me.BtnSave.Size = New System.Drawing.Size(154, 35)
+        Me.BtnSave.Size = New System.Drawing.Size(172, 40)
         Me.BtnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnSave.TabIndex = 222
         Me.BtnSave.Text = "Guardar"
@@ -355,14 +366,14 @@ Partial Class UpdateProyectForm
         'BtnAccept
         '
         Me.BtnAccept.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.BtnAccept.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnAccept.BackColor = System.Drawing.Color.IndianRed
+        Me.BtnAccept.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.BtnAccept.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
-        Me.BtnAccept.Location = New System.Drawing.Point(31, 3)
+        Me.BtnAccept.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BtnAccept.Location = New System.Drawing.Point(187, 5)
+        Me.BtnAccept.Margin = New System.Windows.Forms.Padding(5)
         Me.BtnAccept.Name = "BtnAccept"
         Me.BtnAccept.Padding = New System.Windows.Forms.Padding(10)
-        Me.BtnAccept.Size = New System.Drawing.Size(141, 35)
+        Me.BtnAccept.Size = New System.Drawing.Size(173, 40)
         Me.BtnAccept.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnAccept.TabIndex = 221
         Me.BtnAccept.Text = "Cancelar"
@@ -376,7 +387,7 @@ Partial Class UpdateProyectForm
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel2.Size = New System.Drawing.Size(631, 74)
+        Me.Panel2.Size = New System.Drawing.Size(736, 74)
         Me.Panel2.TabIndex = 230
         '
         'LabelX3
@@ -391,94 +402,41 @@ Partial Class UpdateProyectForm
         Me.LabelX3.ForeColor = System.Drawing.Color.Black
         Me.LabelX3.Location = New System.Drawing.Point(10, 10)
         Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.Size = New System.Drawing.Size(611, 54)
+        Me.LabelX3.Size = New System.Drawing.Size(716, 54)
         Me.LabelX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014
         Me.LabelX3.TabIndex = 0
-        Me.LabelX3.Text = "<b>Actualizar Datos del Proyecto</b>"
+        Me.LabelX3.Text = "<b>      Actualizar Datos del Proyecto</b>"
         Me.LabelX3.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Panel5)
-        Me.Panel3.Controls.Add(Me.Panel4)
+        Me.Panel3.Controls.Add(Me.TableLayoutPanel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel3.ForeColor = System.Drawing.Color.Black
-        Me.Panel3.Location = New System.Drawing.Point(0, 695)
+        Me.Panel3.Location = New System.Drawing.Point(0, 530)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(631, 50)
+        Me.Panel3.Size = New System.Drawing.Size(736, 50)
         Me.Panel3.TabIndex = 231
         '
-        'Panel5
+        'TableLayoutPanel4
         '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.BtnSave)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.ForeColor = System.Drawing.Color.Black
-        Me.Panel5.Location = New System.Drawing.Point(231, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(200, 50)
-        Me.Panel5.TabIndex = 1
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.BtnAccept)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.ForeColor = System.Drawing.Color.Black
-        Me.Panel4.Location = New System.Drawing.Point(431, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(200, 50)
-        Me.Panel4.TabIndex = 0
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.29045!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.70955!))
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtBAddres, 1, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtBCode, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX5, 0, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX6, 0, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX7, 0, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX4, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtBClient, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateInputInit, 1, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX2, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtBName, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateInputEnd, 1, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.ChBState, 1, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtBPresupuesto, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX8, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtBDesc, 1, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX10, 0, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX11, 0, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.TxtObs, 1, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX9, 1, 11)
-        Me.TableLayoutPanel1.Controls.Add(Me.Comb, 1, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelX12, 0, 10)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.ForeColor = System.Drawing.Color.Black
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 74)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.Padding = New System.Windows.Forms.Padding(30)
-        Me.TableLayoutPanel1.RowCount = 12
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.22222!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.77778!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(631, 671)
-        Me.TableLayoutPanel1.TabIndex = 232
+        Me.TableLayoutPanel4.AutoSize = True
+        Me.TableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TableLayoutPanel4.ColumnCount = 2
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.Controls.Add(Me.BtnAccept, 1, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.BtnSave, 0, 0)
+        Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right
+        Me.TableLayoutPanel4.ForeColor = System.Drawing.Color.Black
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(371, 0)
+        Me.TableLayoutPanel4.MinimumSize = New System.Drawing.Size(365, 50)
+        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
+        Me.TableLayoutPanel4.RowCount = 1
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(365, 50)
+        Me.TableLayoutPanel4.TabIndex = 2
         '
         'LabelX11
         '
@@ -487,11 +445,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX11.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX11.ForeColor = System.Drawing.Color.Black
-        Me.LabelX11.Location = New System.Drawing.Point(33, 413)
+        Me.LabelX11.Location = New System.Drawing.Point(13, 90)
         Me.LabelX11.Name = "LabelX11"
-        Me.LabelX11.Size = New System.Drawing.Size(107, 14)
+        Me.LabelX11.Size = New System.Drawing.Size(336, 38)
         Me.LabelX11.TabIndex = 230
         Me.LabelX11.Text = "Observaciones"
         '
@@ -503,24 +462,26 @@ Partial Class UpdateProyectForm
         '
         Me.TxtObs.BackgroundStyle.Class = "RichTextBoxBorder"
         Me.TxtObs.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TxtObs.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtObs.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtObs.ForeColor = System.Drawing.Color.Black
-        Me.TxtObs.Location = New System.Drawing.Point(188, 413)
+        Me.TxtObs.Location = New System.Drawing.Point(13, 134)
         Me.TxtObs.Name = "TxtObs"
         Me.TxtObs.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
     "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red0\green0\blue0;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.TxtObs.Size = New System.Drawing.Size(266, 43)
+        Me.TxtObs.Size = New System.Drawing.Size(336, 85)
         Me.TxtObs.TabIndex = 231
         '
         'Comb
         '
         Me.Comb.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Comb.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Comb.ForeColor = System.Drawing.Color.Black
         Me.Comb.FormattingEnabled = True
         Me.Comb.Items.AddRange(New Object() {"Sin Definir", "Electricidad", "Construccion", "Instalacion", "Transformadores", "Capacitacion"})
-        Me.Comb.Location = New System.Drawing.Point(188, 481)
+        Me.Comb.Location = New System.Drawing.Point(13, 183)
         Me.Comb.Name = "Comb"
-        Me.Comb.Size = New System.Drawing.Size(163, 21)
+        Me.Comb.Size = New System.Drawing.Size(336, 21)
         Me.Comb.TabIndex = 232
         '
         'LabelX12
@@ -530,11 +491,12 @@ Partial Class UpdateProyectForm
         '
         '
         Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelX12.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelX12.ForeColor = System.Drawing.Color.Black
-        Me.LabelX12.Location = New System.Drawing.Point(33, 481)
+        Me.LabelX12.Location = New System.Drawing.Point(13, 147)
         Me.LabelX12.Name = "LabelX12"
-        Me.LabelX12.Size = New System.Drawing.Size(107, 14)
+        Me.LabelX12.Size = New System.Drawing.Size(336, 30)
         Me.LabelX12.TabIndex = 233
         Me.LabelX12.Text = "Tipo de Proyecto"
         '
@@ -542,25 +504,177 @@ Partial Class UpdateProyectForm
         '
         Me.Panel1.AutoSize = True
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Panel8)
         Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(631, 745)
+        Me.Panel1.Size = New System.Drawing.Size(736, 580)
         Me.Panel1.TabIndex = 233
+        '
+        'Panel8
+        '
+        Me.Panel8.AutoSize = True
+        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Panel8.Controls.Add(Me.TableLayoutPanel1)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel8.ForeColor = System.Drawing.Color.Black
+        Me.Panel8.Location = New System.Drawing.Point(0, 74)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(736, 456)
+        Me.Panel8.TabIndex = 235
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.AutoSize = True
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel6, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel5, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 1, 1)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.ForeColor = System.Drawing.Color.Black
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(736, 456)
+        Me.TableLayoutPanel1.TabIndex = 235
+        '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.AutoSize = True
+        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TableLayoutPanel5.ColumnCount = 1
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.LabelX1, 0, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.TxtBName, 0, 5)
+        Me.TableLayoutPanel5.Controls.Add(Me.TxtBCode, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.LabelX2, 0, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.LabelX4, 0, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.TxtBClient, 0, 3)
+        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel5.ForeColor = System.Drawing.Color.Black
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.TableLayoutPanel5.RowCount = 6
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.61261!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.52252!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(362, 222)
+        Me.TableLayoutPanel5.TabIndex = 215
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.AutoSize = True
+        Me.TableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TableLayoutPanel3.ColumnCount = 1
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.LabelX5, 0, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.TxtBDesc, 0, 5)
+        Me.TableLayoutPanel3.Controls.Add(Me.DateInputEnd, 0, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.LabelX10, 0, 4)
+        Me.TableLayoutPanel3.Controls.Add(Me.DateInputInit, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.LabelX6, 0, 2)
+        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel3.ForeColor = System.Drawing.Color.Black
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 231)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.TableLayoutPanel3.RowCount = 6
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(362, 222)
+        Me.TableLayoutPanel3.TabIndex = 230
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.AutoSize = True
+        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.LabelX7, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.TxtObs, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.LabelX11, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.TxtBAddres, 0, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.ForeColor = System.Drawing.Color.Black
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(371, 231)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.TableLayoutPanel2.RowCount = 4
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.77477!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.27027!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.54054!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(362, 222)
+        Me.TableLayoutPanel2.TabIndex = 232
+        '
+        'TableLayoutPanel6
+        '
+        Me.TableLayoutPanel6.AutoSize = True
+        Me.TableLayoutPanel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TableLayoutPanel6.ColumnCount = 1
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel6.Controls.Add(Me.LabelX8, 0, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.Comb, 0, 5)
+        Me.TableLayoutPanel6.Controls.Add(Me.LabelX9, 0, 2)
+        Me.TableLayoutPanel6.Controls.Add(Me.TxtBPresupuesto, 0, 1)
+        Me.TableLayoutPanel6.Controls.Add(Me.ChBState, 0, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.LabelX12, 0, 4)
+        Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel6.ForeColor = System.Drawing.Color.Black
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(371, 3)
+        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
+        Me.TableLayoutPanel6.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.TableLayoutPanel6.RowCount = 6
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(362, 222)
+        Me.TableLayoutPanel6.TabIndex = 234
+        '
+        'LabelX9
+        '
+        Me.LabelX9.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LabelX9.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX9.ForeColor = System.Drawing.Color.Black
+        Me.LabelX9.Location = New System.Drawing.Point(13, 75)
+        Me.LabelX9.Name = "LabelX9"
+        Me.LabelX9.Size = New System.Drawing.Size(336, 30)
+        Me.LabelX9.TabIndex = 227
+        Me.LabelX9.Text = "Esatdo"
         '
         'UpdateProyectForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(631, 745)
+        Me.ClientSize = New System.Drawing.Size(736, 580)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -568,10 +682,18 @@ Partial Class UpdateProyectForm
         CType(Me.TxtBPresupuesto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.TableLayoutPanel4.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel6.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -593,7 +715,6 @@ Partial Class UpdateProyectForm
     Friend WithEvents BtnSave As DevComponents.DotNetBar.ButtonX
     Friend WithEvents BtnAccept As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ChBState As DevComponents.DotNetBar.Controls.CheckBoxX
-    Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
     Friend WithEvents TxtBPresupuesto As DevComponents.Editors.DoubleInput
     Friend WithEvents LabelX8 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX10 As DevComponents.DotNetBar.LabelX
@@ -601,12 +722,17 @@ Partial Class UpdateProyectForm
     Friend WithEvents Panel2 As Panel
     Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents LabelX11 As DevComponents.DotNetBar.LabelX
     Friend WithEvents TxtObs As DevComponents.DotNetBar.Controls.RichTextBoxEx
     Friend WithEvents Comb As ComboBox
     Friend WithEvents LabelX12 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
 End Class

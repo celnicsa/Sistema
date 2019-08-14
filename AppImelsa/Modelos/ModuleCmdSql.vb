@@ -1218,6 +1218,8 @@ Module ModuleCmdSql
                 Data.Ubicacion = dr.Item("Ubicación")
                 Data.Descripcion = dr.Item("Descripcion")
                 Data.Estado = dr.Item("Estado")
+                Data.Observacion = dr.Item("Observaciones")
+                Data.TipoNombre = dr.Item("Tipo de Proyecto")
             Loop
         Catch ex As Exception
             MsgBox(ex.Message)
