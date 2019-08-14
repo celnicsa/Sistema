@@ -162,67 +162,1812 @@ AppImelsa
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSet">
+<member name="T:AppImelsa.BDImelsaDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSet.ViewTurnoDataTable">
+<member name="T:AppImelsa.BDImelsaDataSet.MSettingsDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSet.ViewTurnoRow">
+<member name="T:AppImelsa.BDImelsaDataSet.MTableAbonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableArticuloDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableBeneficioEscolaridadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableCargDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableCategoriaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableColillaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmailClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmailEmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableJornadaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableNominaDetalleDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableNominaEmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTablePrestamoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableSalarioBaseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTelClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTelEmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTurnoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.TableTypeProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewAbonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewCargoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewDetaillsClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewDetaillsEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmailClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmailEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewNominaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewPrestamosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewProyectOfClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewSalarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTelClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTelEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTurnoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.LoadNamePhotoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.LoadPhotoForEmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPAsistencePrototipoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp3DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp4DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPDetaillsProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPDetailsPrestamoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadCargDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadCategoriaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadClientSelectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadPrestamoSelectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadProyectSelectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadSalarioBaseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadTurnoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeAbonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeCargDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeEmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeEscolaridadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodePrestamoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeSalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeTurnDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPPerfilClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPPerfilEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPProyectOfClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReadAbonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReadClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportFacturaAbonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportProyectDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportProyectCompleteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPViewArticuloDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MFn_Calculo_AsistDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForCodeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForIdenDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForNameDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForAgeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForCedulaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForCodeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForNameDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchPrestamoForCodeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchPrestamoForEmployedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForCodeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForNameDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportArticuloDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MSettingsRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSet.ViewTurnoRowChangeEvent">
+<member name="T:AppImelsa.BDImelsaDataSet.MTableAbonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableArticuloRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableBeneficioEscolaridadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableCargRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableCategoriaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableColillaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmailClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmailEmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableJornadaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableNominaDetalleRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableNominaEmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTablePrestamoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableSalarioBaseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTelClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTelEmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTurnoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.TableTypeProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewAbonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewCargoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewDetaillsClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewDetaillsEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmailClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmailEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewNominaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewPrestamosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewProyectOfClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewSalarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTelClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTelEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTurnoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.LoadNamePhotoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.LoadPhotoForEmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPAsistencePrototipoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp3Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp4Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPDetaillsProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPDetailsPrestamoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadCargRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadCategoriaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadClientSelectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadPrestamoSelectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadProyectSelectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadSalarioBaseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadTurnoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeAbonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeCargRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeEmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeEscolaridadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodePrestamoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeSalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeTurnRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPPerfilClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPPerfilEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPProyectOfClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReadAbonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReadClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportFacturaAbonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportProyectRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportProyectCompleteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPViewArticuloRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MFn_Calculo_AsistRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForCodeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForIdenRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForNameRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForAgeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForCedulaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForCodeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForNameRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchPrestamoForCodeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchPrestamoForEmployedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForCodeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForNameRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportArticuloRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MSettingsRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSetTableAdapters.ViewTurnoTableAdapter">
+<member name="T:AppImelsa.BDImelsaDataSet.MTableAbonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableArticuloRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableBeneficioEscolaridadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableCargRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableCategoriaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableColillaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmailClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmailEmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableEmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableJornadaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableNominaDetalleRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableNominaEmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTablePrestamoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableSalarioBaseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTelClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTelEmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MTableTurnoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.TableTypeProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewAbonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewCargoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewDetaillsClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewDetaillsEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmailClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmailEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewNominaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewPrestamosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewProyectOfClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewSalarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTelClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTelEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.ViewTurnoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.LoadNamePhotoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.LoadPhotoForEmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPAsistencePrototipoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp3RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPContactsEmp4RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPDetaillsProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPDetailsPrestamoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadCargRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadCategoriaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadClientSelectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadPrestamoSelectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadProyectSelectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadSalarioBaseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPLoadTurnoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeAbonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeCargRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeEmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeEscolaridadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodePrestamoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeSalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPNextCodeTurnRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPPerfilClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPPerfilEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPProyectOfClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReadAbonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReadClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportFacturaAbonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportProyectRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportProyectCompleteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPViewArticuloRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.MFn_Calculo_AsistRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForCodeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForIdenRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchClientForNameRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForAgeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForCedulaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForCodeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchEmployedForNameRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchPrestamoForCodeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchPrestamoForEmployedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForCodeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SearchProyectForNameRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSet.SPReportArticuloRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MSettingsTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager">
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableAbonoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableArticuloTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableBeneficioEscolaridadTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableCargTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableCategoriaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableColillaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableEmailClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableEmailEmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableEmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableJornadaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableNominaDetalleTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableNominaEmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTablePrestamoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableSalarioBaseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableTelClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableTelEmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MTableTurnoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.TableTypeProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewAbonoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewCargoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewDetaillsClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewDetaillsEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewEmailClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewEmailEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewNominaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewPrestamosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewProyectOfClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewSalarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewTelClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewTelEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.ViewTurnoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.LoadNamePhotoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.LoadPhotoForEmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPAsistencePrototipoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPContactsEmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPContactsEmp2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPContactsEmp3TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPContactsEmp4TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPDetaillsProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPDetailsPrestamoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadCargTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadCategoriaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadClientSelectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadPrestamoSelectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadProyectSelectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadSalarioBaseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPLoadTurnoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeAbonoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeCargTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeEmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeEscolaridadTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodePrestamoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeSalTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPNextCodeTurnTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPPerfilClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPPerfilEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPProyectOfClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPReadAbonoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPReadClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPReportFacturaAbonoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPReportProyectTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPReportProyectCompleteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPViewArticuloTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.MFn_Calculo_AsistTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchClientForCodeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchClientForIdenTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchClientForNameTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchEmployedForAgeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchEmployedForCedulaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchEmployedForCodeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchEmployedForNameTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchPrestamoForCodeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchPrestamoForEmployedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchProyectForClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchProyectForCodeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SearchProyectForNameTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.SPReportArticuloTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.QueriesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager">
 <summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
-<member name="M:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(AppImelsa.ImelsaDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(AppImelsa.BDImelsaDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Update rows in top-down order.
 </summary>
 </member>
-<member name="M:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(AppImelsa.ImelsaDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(AppImelsa.BDImelsaDataSet,System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Insert rows in top-down order.
 </summary>
 </member>
-<member name="M:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(AppImelsa.ImelsaDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(AppImelsa.BDImelsaDataSet,System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Delete rows in bottom-up order.
 </summary>
 </member>
-<member name="M:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
 </member>
-<member name="M:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.UpdateAll(AppImelsa.ImelsaDataSet)">
+<member name="M:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.UpdateAll(AppImelsa.BDImelsaDataSet)">
 <summary>
 Update all changes to the dataset.
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
 <summary>
 Update Order Option
 </summary>
 </member>
-<member name="T:AppImelsa.ImelsaDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<member name="T:AppImelsa.BDImelsaDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

@@ -4,18 +4,17 @@
   <description asmv2:publisher="M&amp;M Computer Services" co.v1:suiteName="App Imelsa" asmv2:product="SIGN-SIARH" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.6" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.6.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="AppImelsa.exe.manifest" size="26038">
+    <dependentAssembly dependencyType="install" codebase="AppImelsa.exe.manifest" size="73546">
       <assemblyIdentity name="AppImelsa.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I5XOxqrVvkflMrPm2usmkTVA0iGF1L5zwBnTzsBhZgs=</dsig:DigestValue>
-        <dsig:DigestValue>IvH5xJkRsr5ShfyWSxm6L4VsvPjMYS/zKwWjtjmRbaE=</dsig:DigestValue>
+        <dsig:DigestValue>d2azrgj43/JYQBAmdoNwAJjBMBYVcHXq5w1fVi7LYig=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
