@@ -22,7 +22,8 @@ Partial Class InventariadoForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InventariadoForm))
         Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -31,6 +32,7 @@ Partial Class InventariadoForm
         Me.BtnLoadTable = New DevComponents.DotNetBar.ButtonX()
         Me.GridArticulo = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
         Me.GroupPanel1 = New DevComponents.DotNetBar.Controls.GroupPanel()
+        Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextCodeArt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.TextStock = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -44,7 +46,7 @@ Partial Class InventariadoForm
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.BtnInsertArticulo = New DevComponents.DotNetBar.ButtonX()
         Me.TextCodeCat = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
+        Me.BtnReportCaller = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -158,9 +160,9 @@ Partial Class InventariadoForm
         '
         '
         Me.GridArticulo.PrimaryGrid.Caption.BackgroundImage = Global.AppImelsa.My.Resources.Resources.Anadir
-        Background2.Color1 = System.Drawing.Color.DodgerBlue
-        Background2.Color2 = System.Drawing.Color.DodgerBlue
-        Me.GridArticulo.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background2
+        Background1.Color1 = System.Drawing.Color.DodgerBlue
+        Background1.Color2 = System.Drawing.Color.DodgerBlue
+        Me.GridArticulo.PrimaryGrid.DefaultVisualStyles.AlternateRowCellStyles.Default.Background = Background1
         Me.GridArticulo.PrimaryGrid.InitialSelection = DevComponents.DotNetBar.SuperGrid.RelativeSelection.Row
         Me.GridArticulo.PrimaryGrid.MultiSelect = False
         Me.GridArticulo.PrimaryGrid.PrimaryColumnIndex = 2236962
@@ -223,6 +225,17 @@ Partial Class InventariadoForm
         Me.GroupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel1.TabIndex = 63
         Me.GroupPanel1.Text = "Agregar Nuevo Articulo"
+        '
+        'ButtonX3
+        '
+        Me.ButtonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX3.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonX3.Location = New System.Drawing.Point(171, 225)
+        Me.ButtonX3.Name = "ButtonX3"
+        Me.ButtonX3.Size = New System.Drawing.Size(112, 34)
+        Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX3.TabIndex = 175
+        Me.ButtonX3.Text = "Modificar"
         '
         'ComboBox1
         '
@@ -425,25 +438,32 @@ Partial Class InventariadoForm
         Me.TextCodeCat.Size = New System.Drawing.Size(166, 22)
         Me.TextCodeCat.TabIndex = 14
         '
-        'ButtonX3
+        'BtnReportCaller
         '
-        Me.ButtonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX3.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonX3.Location = New System.Drawing.Point(171, 225)
-        Me.ButtonX3.Name = "ButtonX3"
-        Me.ButtonX3.Size = New System.Drawing.Size(112, 34)
-        Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX3.TabIndex = 175
-        Me.ButtonX3.Text = "Modificar"
+        Me.BtnReportCaller.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.BtnReportCaller.BackColor = System.Drawing.Color.Transparent
+        Me.BtnReportCaller.ColorTable = DevComponents.DotNetBar.eButtonColor.Orange
+        Me.BtnReportCaller.FadeEffect = False
+        Me.BtnReportCaller.Font = New System.Drawing.Font("Agency FB", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReportCaller.Image = Global.AppImelsa.My.Resources.Resources.elimin1
+        Me.BtnReportCaller.Location = New System.Drawing.Point(147, 117)
+        Me.BtnReportCaller.Name = "BtnReportCaller"
+        Me.BtnReportCaller.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
+        Me.BtnReportCaller.Size = New System.Drawing.Size(116, 29)
+        Me.BtnReportCaller.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
+        Me.BtnReportCaller.TabIndex = 64
+        Me.BtnReportCaller.Text = "Generar Reporte"
+        Me.BtnReportCaller.TextColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         '
         'InventariadoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.BottomLeftCornerSize = 0
         Me.BottomRightCornerSize = 0
         Me.ClientSize = New System.Drawing.Size(1105, 505)
+        Me.Controls.Add(Me.BtnReportCaller)
         Me.Controls.Add(Me.GroupPanel1)
         Me.Controls.Add(Me.ButtonX2)
         Me.Controls.Add(Me.ButtonX1)
@@ -454,7 +474,9 @@ Partial Class InventariadoForm
         Me.Controls.Add(Me.GridArticulo)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "InventariadoForm"
         Me.Text = "Control de Articulos"
         Me.TopLeftCornerSize = 0
@@ -487,4 +509,5 @@ Partial Class InventariadoForm
     Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
     Friend WithEvents BtnInsertArticulo As DevComponents.DotNetBar.ButtonX
     Friend WithEvents TextCodeCat As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents BtnReportCaller As DevComponents.DotNetBar.ButtonX
 End Class

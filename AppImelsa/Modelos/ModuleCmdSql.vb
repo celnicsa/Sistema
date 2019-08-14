@@ -1733,7 +1733,7 @@ Module ModuleCmdSql
     Public Function CmdViewArticulo(ByVal DataGridViewArticulo As GridPanel) As Boolean
         Try
             Connect.Open()
-            Cmd = New SqlCommand("select A.ID_ARTICULO CodigoArticulo,A.Nombre Articulo,C.Nombre Categoria, P.NamProyect Proyecto,A.STOCK Cantidad,A.DESCRIPCION Descripcion 
+            Cmd = New SqlCommand("select A.ID_ARTICULO CodigoArticulo,A.Nombre Articulo,C.Nombre Categoria, P.NamProyect Proyecto,A.STOCK Cantidad,A.DESCRIPCION Descripcion, P.CodProyect
                       from MTableArticulo A JOIN MTableCategoria C ON A.ID_CATEGORIA= C.ID_CATEGORIA JOIN MTableProyect P ON A.PROYECTO=P.CodProyect", Connect)
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
@@ -1793,6 +1793,7 @@ Module ModuleCmdSql
             Connect.Close()
         End Try
     End Function
+
     Public Sub CmdViewProyectosCombo(ByRef Combobox As ComboBox)
         Try
             Connect.Open()
@@ -2025,4 +2026,19 @@ Module ModuleCmdSql
         End If
     End Function
 
+    Public Function CmdReportArticulo(Proyecto As String)
+        Try
+            Connect.Open()
+            Cmd = New SqlCommand("select A.ID_ARTICULO CodigoArticulo,A.Nombre Articulo,C.Nombre Categoria, P.NamProyect Proyecto,A.STOCK Cantidad,A.DESCRIPCION Descripcion, P.CodProyect
+                      from MTableArticulo A JOIN MTableCategoria C ON A.ID_CATEGORIA= C.ID_CATEGORIA JOIN MTableProyect P ON A.PROYECTO=P.CodProyect where CodProyect =" + Proyecto + "", Connect)
+            da = New SqlDataAdapter(Cmd)
+            ds = New DataSet
+            da.Fill(ds, "Proyectos")
+            Return ds.Tables("Proyectos")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Connect.Close()
+        End Try
+    End Function
 End Module
