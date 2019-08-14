@@ -236,7 +236,6 @@ Module ModuleCmdSql
             Cmd.Parameters.AddWithValue("@Ubic", Data.Ubicacion)
             Cmd.Parameters.AddWithValue("@Desc", Data.Descripcion)
             Cmd.Parameters.AddWithValue("@Estate", Data.Estado)
-            Cmd.Parameters.AddWithValue("@Estate", Data.Estado)
             Cmd.Parameters.AddWithValue("@Observacion", Data.Observacion)
             Cmd.Parameters.AddWithValue("@Tipo", Data.Tipo)
 
