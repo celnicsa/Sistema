@@ -25,11 +25,11 @@ Partial Class ReportSingleForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReportSingleForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.BTNgenerar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lbDatos = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.BTNgenerar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -50,7 +50,7 @@ Partial Class ReportSingleForm
         '
         Me.Panel6.AutoScroll = True
         Me.Panel6.AutoSize = True
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Panel6.Controls.Add(Me.BTNgenerar)
         Me.Panel6.Controls.Add(Me.Panel2)
         Me.Panel6.Controls.Add(Me.CrystalReportViewer1)
@@ -60,6 +60,22 @@ Partial Class ReportSingleForm
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1264, 681)
         Me.Panel6.TabIndex = 1
+        '
+        'BTNgenerar
+        '
+        Me.BTNgenerar.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BTNgenerar.FlatAppearance.BorderSize = 0
+        Me.BTNgenerar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue
+        Me.BTNgenerar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.BTNgenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNgenerar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNgenerar.ForeColor = System.Drawing.Color.White
+        Me.BTNgenerar.Location = New System.Drawing.Point(510, 106)
+        Me.BTNgenerar.Name = "BTNgenerar"
+        Me.BTNgenerar.Size = New System.Drawing.Size(263, 49)
+        Me.BTNgenerar.TabIndex = 2
+        Me.BTNgenerar.Text = "Generar Reporte"
+        Me.BTNgenerar.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -122,22 +138,7 @@ Partial Class ReportSingleForm
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1264, 518)
         Me.CrystalReportViewer1.TabIndex = 0
-        '
-        'BTNgenerar
-        '
-        Me.BTNgenerar.BackColor = System.Drawing.Color.RoyalBlue
-        Me.BTNgenerar.FlatAppearance.BorderSize = 0
-        Me.BTNgenerar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue
-        Me.BTNgenerar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.BTNgenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNgenerar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNgenerar.ForeColor = System.Drawing.Color.White
-        Me.BTNgenerar.Location = New System.Drawing.Point(510, 106)
-        Me.BTNgenerar.Name = "BTNgenerar"
-        Me.BTNgenerar.Size = New System.Drawing.Size(263, 49)
-        Me.BTNgenerar.TabIndex = 2
-        Me.BTNgenerar.Text = "Generar Reporte"
-        Me.BTNgenerar.UseVisualStyleBackColor = False
+        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'ReportSingleForm
         '

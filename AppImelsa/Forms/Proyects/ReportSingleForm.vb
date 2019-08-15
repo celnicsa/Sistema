@@ -1,7 +1,7 @@
 Imports CrystalDecisions.Shared
 
 Public Class ReportSingleForm
-    Dim Info As New CrystalReportProyect
+    Dim Info As New ReporteCompleto
     Public Code As String
     Public Detalles As String
     Public Codigo As String
@@ -23,9 +23,9 @@ Public Class ReportSingleForm
         Param.Clear()
         MyDiscretValues.Value = Codigo
         Param.Add(MyDiscretValues)
-        'Info.DataDefinition.ParameterFields("@code").ApplyCurrentValues(Param)
+        Info.DataDefinition.ParameterFields("@code").ApplyCurrentValues(Param)
 
-        'CrystalReportViewer1.ReportSource = Info
+        CrystalReportViewer1.ReportSource = Info
     End Sub
 
     Private Sub BTNgenerar_Click(sender As Object, e As EventArgs) Handles BTNgenerar.Click
