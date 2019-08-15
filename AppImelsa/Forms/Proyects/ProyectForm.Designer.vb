@@ -613,7 +613,7 @@ Partial Class ProyectForm
         Me.LabelX7.ForeColor = System.Drawing.Color.Black
         Me.LabelX7.Location = New System.Drawing.Point(21, 161)
         Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.Size = New System.Drawing.Size(61, 23)
+        Me.LabelX7.Size = New System.Drawing.Size(50, 23)
         Me.LabelX7.TabIndex = 10
         Me.LabelX7.Text = "Estado"
         '
@@ -641,7 +641,7 @@ Partial Class ProyectForm
         Me.CmBEstado.FormattingEnabled = True
         Me.CmBEstado.ItemHeight = 16
         Me.CmBEstado.Items.AddRange(New Object() {Me.ComboItem1, Me.ComboItem2, Me.ComboItem3})
-        Me.CmBEstado.Location = New System.Drawing.Point(66, 162)
+        Me.CmBEstado.Location = New System.Drawing.Point(76, 162)
         Me.CmBEstado.Name = "CmBEstado"
         Me.CmBEstado.Size = New System.Drawing.Size(121, 22)
         Me.CmBEstado.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -742,7 +742,6 @@ Partial Class ProyectForm
         Me.Controls.Add(Me.Panel4)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Location = New System.Drawing.Point(5, 5)
         Me.MinimumSize = New System.Drawing.Size(1294, 520)
