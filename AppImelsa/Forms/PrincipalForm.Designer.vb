@@ -98,9 +98,9 @@ Partial Class PrincipalForm
         Me.GalleryContainer2 = New DevComponents.DotNetBar.GalleryContainer()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.TabCWindows = New DevComponents.DotNetBar.SuperTabControl()
-        Me.ReflectionImage1 = New DevComponents.DotNetBar.Controls.ReflectionImage()
-        Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.SuperTabControlPanel1 = New DevComponents.DotNetBar.SuperTabControlPanel()
+        Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
+        Me.ReflectionImage1 = New DevComponents.DotNetBar.Controls.ReflectionImage()
         Me.SuperTabItem1 = New DevComponents.DotNetBar.SuperTabItem()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
@@ -284,7 +284,7 @@ Partial Class PrincipalForm
         Me.RibbonControl1.SystemText.QatRemoveItemText = "&Remove from Quick Access Toolbar"
         Me.RibbonControl1.TabGroupHeight = 14
         Me.RibbonControl1.TabIndex = 2
-        Me.RibbonControl1.Text = "RibbonControl1"
+        Me.RibbonControl1.Text = "CelNic S.A"
         '
         'RibbonPanel1
         '
@@ -334,7 +334,7 @@ Partial Class PrincipalForm
         Me.RibbonBar2.Size = New System.Drawing.Size(249, 98)
         Me.RibbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar2.TabIndex = 6
-        Me.RibbonBar2.Text = "Iventario"
+        Me.RibbonBar2.Text = "Inventario"
         '
         '
         '
@@ -416,7 +416,7 @@ Partial Class PrincipalForm
         '
         'BtnProyect
         '
-        Me.BtnProyect.Image = Global.AppImelsa.My.Resources.Resources.Icon_003_Small_2
+        Me.BtnProyect.Image = CType(resources.GetObject("BtnProyect.Image"), System.Drawing.Image)
         Me.BtnProyect.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.BtnProyect.Name = "BtnProyect"
         Me.BtnProyect.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
@@ -495,7 +495,7 @@ Partial Class PrincipalForm
         '
         'BtnClient
         '
-        Me.BtnClient.Image = Global.AppImelsa.My.Resources.Resources.relationship_icon_2
+        Me.BtnClient.Image = CType(resources.GetObject("BtnClient.Image"), System.Drawing.Image)
         Me.BtnClient.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.BtnClient.Name = "BtnClient"
         Me.BtnClient.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
@@ -565,13 +565,12 @@ Partial Class PrincipalForm
         '
         'BtnEmployed
         '
-        Me.BtnEmployed.Image = Global.AppImelsa.My.Resources.Resources.Sin_título_1
+        Me.BtnEmployed.Image = CType(resources.GetObject("BtnEmployed.Image"), System.Drawing.Image)
         Me.BtnEmployed.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.BtnEmployed.Name = "BtnEmployed"
         Me.BtnEmployed.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
         Me.BtnEmployed.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnAddEmp})
         Me.BtnEmployed.SubItemsExpandWidth = 14
-        Me.BtnEmployed.Text = "Empleados"
         '
         'BtnAddEmp
         '
@@ -627,7 +626,7 @@ Partial Class PrincipalForm
         'BtnSalario
         '
         Me.BtnSalario.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.BtnSalario.Image = Global.AppImelsa.My.Resources.Resources.i_7
+        Me.BtnSalario.Image = CType(resources.GetObject("BtnSalario.Image"), System.Drawing.Image)
         Me.BtnSalario.ImageFixedSize = New System.Drawing.Size(20, 20)
         Me.BtnSalario.Name = "BtnSalario"
         Me.BtnSalario.Text = "Salarios Base"
@@ -700,7 +699,7 @@ Partial Class PrincipalForm
         '
         'ButtonItem1
         '
-        Me.ButtonItem1.Image = Global.AppImelsa.My.Resources.Resources.nomina
+        Me.ButtonItem1.Image = CType(resources.GetObject("ButtonItem1.Image"), System.Drawing.Image)
         Me.ButtonItem1.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.ButtonItem1.Name = "ButtonItem1"
         Me.ButtonItem1.SubItemsExpandWidth = 14
@@ -740,7 +739,7 @@ Partial Class PrincipalForm
         '
         'ButtonItem33
         '
-        Me.ButtonItem33.Image = Global.AppImelsa.My.Resources.Resources.iconos_para_prestamos_Credixpress_05
+        Me.ButtonItem33.Image = CType(resources.GetObject("ButtonItem33.Image"), System.Drawing.Image)
         Me.ButtonItem33.ImageFixedSize = New System.Drawing.Size(65, 65)
         Me.ButtonItem33.Name = "ButtonItem33"
         Me.ButtonItem33.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom
@@ -770,7 +769,7 @@ Partial Class PrincipalForm
         'BtnAbono
         '
         Me.BtnAbono.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.BtnAbono.Image = Global.AppImelsa.My.Resources.Resources.iconos_para_prestamos_Credixpress_01
+        Me.BtnAbono.Image = CType(resources.GetObject("BtnAbono.Image"), System.Drawing.Image)
         Me.BtnAbono.ImageFixedSize = New System.Drawing.Size(30, 30)
         Me.BtnAbono.Name = "BtnAbono"
         Me.BtnAbono.Text = "Abonos"
@@ -934,22 +933,22 @@ Partial Class PrincipalForm
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
         '
-        'ReflectionImage1
+        'SuperTabControlPanel1
         '
-        Me.ReflectionImage1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ReflectionImage1.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.ReflectionImage1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ReflectionImage1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
-        Me.ReflectionImage1.ForeColor = System.Drawing.Color.Black
-        Me.ReflectionImage1.Image = Global.AppImelsa.My.Resources.Resources.logo
-        Me.ReflectionImage1.Location = New System.Drawing.Point(476, 134)
-        Me.ReflectionImage1.Name = "ReflectionImage1"
-        Me.ReflectionImage1.Size = New System.Drawing.Size(504, 335)
-        Me.ReflectionImage1.TabIndex = 0
+        Me.SuperTabControlPanel1.Controls.Add(Me.ReflectionLabel1)
+        Me.SuperTabControlPanel1.Controls.Add(Me.ReflectionImage1)
+        Me.SuperTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SuperTabControlPanel1.Location = New System.Drawing.Point(0, 26)
+        Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.SuperTabControlPanel1.MinimumSize = New System.Drawing.Size(0, 520)
+        Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
+        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
+        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
+        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
+        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
+        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1333, 520)
+        Me.SuperTabControlPanel1.TabIndex = 1
+        Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
         '
         'ReflectionLabel1
         '
@@ -969,22 +968,22 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222""> y </font><font col" &
     "or=""#003333"">Eléctricas de Nicaragua.SA</font></font></b>"
         '
-        'SuperTabControlPanel1
+        'ReflectionImage1
         '
-        Me.SuperTabControlPanel1.Controls.Add(Me.ReflectionLabel1)
-        Me.SuperTabControlPanel1.Controls.Add(Me.ReflectionImage1)
-        Me.SuperTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SuperTabControlPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.SuperTabControlPanel1.MinimumSize = New System.Drawing.Size(0, 520)
-        Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
-        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
-        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
-        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
-        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1333, 525)
-        Me.SuperTabControlPanel1.TabIndex = 1
-        Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
+        Me.ReflectionImage1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ReflectionImage1.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.ReflectionImage1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ReflectionImage1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
+        Me.ReflectionImage1.ForeColor = System.Drawing.Color.Black
+        Me.ReflectionImage1.Image = Global.AppImelsa.My.Resources.Resources.logo
+        Me.ReflectionImage1.Location = New System.Drawing.Point(476, 134)
+        Me.ReflectionImage1.Name = "ReflectionImage1"
+        Me.ReflectionImage1.Size = New System.Drawing.Size(504, 335)
+        Me.ReflectionImage1.TabIndex = 0
         '
         'SuperTabItem1
         '

@@ -1,6 +1,6 @@
 Imports CrystalDecisions.Shared
 Public Class ReportProyectForm
-    Dim Info As New CrystalReportProyect
+    Dim Info As New CrystalReportReporteLista
     Dim Param As New ParameterValues
     Dim MyDiscretValues As New ParameterDiscreteValue
     Private Sub BtnGenerarReport_Click(sender As Object, e As EventArgs) Handles BtnGenerarReport.Click
