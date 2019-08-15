@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="4034048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="5470208">
       <assemblyIdentity name="AppImelsa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O0XzZNwpbE8CLZeya+NGHx0J+ofDIs3g6Z9jNnGpqHA=</dsig:DigestValue>
+        <dsig:DigestValue>jeYh3r91eDOt2/glqUHUGp1Q+Xl5Zi3Y9dVN4Zahfkg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,7 +87,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5ggYU0vTP37RDFKg0l1mNvmHHDK2hNLMHQNOetjwiGI=</dsig:DigestValue>
+        <dsig:DigestValue>BXTFqpkUKUmObERu97KEG38dxxmvD+p2n88jV034BcI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1147,13 +1147,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AppImelsa.exe.config" size="6400">
+  <file name="AppImelsa.exe.config" size="6401">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>v6Kajdrps/He37zDk0aIF0uRJI/gXgFBG5LjkQNzaMY=</dsig:DigestValue>
+      <dsig:DigestValue>Qx4VkPmW/qrxmrWyHw8NbK6byYqTJPhaADXK5jZexNQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="logo.ico" size="167318">
