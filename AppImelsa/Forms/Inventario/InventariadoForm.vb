@@ -151,45 +151,55 @@ Public Class InventariadoForm
                 Dim formatRange As Excel.Range
                 formatRange = shXL.Range("a1")
                 formatRange.EntireRow.Font.Bold = True
-                shXL.Cells(2, 2).Value = "ID de Articulo"
+                shXL.Cells(1, 3).Value = "INVENTARIADO DE ARTICULOS"
+                shXL.Cells(1, 3).Font.Bold = True
+                shXL.Cells(2, 1).Value = "ID de Articulo"
+                shXL.Cells(2, 1).Font.Bold = True
+                shXL.Cells(2, 2).Value = "Codigo Categoria"
                 shXL.Cells(2, 2).Font.Bold = True
-                shXL.Cells(4, 2).Value = " Nombre de Articulo"
-                shXL.Cells(4, 2).Font.Bold = True
-                shXL.Cells(5, 2).Value = "Nombre de Categoria"
-                shXL.Cells(5, 2).Font.Bold = True
-                shXL.Cells(6, 2).Value = "Descripcion"
-                shXL.Cells(6, 2).Font.Bold = True
-                shXL.Cells(4, 5).Value = "Nombre Proyecto"
-                shXL.Cells(4, 5).Font.Bold = True
-                shXL.Cells(5, 5).Value = "Stock"
-                shXL.Cells(5, 5).Font.Bold = True
-                shXL.Cells(6, 5).Value = "Codigo Proyecto"
-                shXL.Cells(6, 5).Font.Bold = True
+                shXL.Cells(2, 3).Value = "Articulo"
+                shXL.Cells(2, 3).Font.Bold = True
+                shXL.Cells(2, 4).Value = "Nombre Categoria"
+                shXL.Cells(2, 4).Font.Bold = True
+                shXL.Cells(2, 5).Value = "Nombre Proyecto"
+                shXL.Cells(2, 5).Font.Bold = True
+                shXL.Cells(2, 6).Value = "Stock"
+                shXL.Cells(2, 6).Font.Bold = True
+                shXL.Cells(2, 7).Value = "Descripcion"
+                shXL.Cells(2, 7).Font.Bold = True
+                shXL.Cells(2, 8).Value = "Codigo Proyecto"
+                shXL.Cells(2, 8).Font.Bold = True
 
-                shXL.Cells(2, 3).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(0).Value()
-                shXL.Cells(5, 3).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(1).Value()
-                shXL.Cells(6, 3).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(2).Value()
-                shXL.Cells(4, 3).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(3).Value()
-                shXL.Cells(4, 6).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(4).Value()
-                shXL.Cells(5, 6).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(5).Value()
-                shXL.Cells(5, 6).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(6).Value()
+                shXL.Cells(3, 1).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(0).Value()
+                shXL.Cells(3, 2).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(1).Value()
+                shXL.Cells(3, 3).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(2).Value()
+                shXL.Cells(3, 4).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(3).Value()
+                shXL.Cells(3, 5).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(4).Value()
+                shXL.Cells(3, 6).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(5).Value()
+                shXL.Cells(3, 7).Value = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(6).Value()
 
-                shXL.Columns("B:B").ColumnWidth = 30
-                shXL.Columns("C:C").ColumnWidth = 30
-                shXL.Columns("E:E").ColumnWidth = 30
-                shXL.Columns("F:F").ColumnWidth = 35
-                shXL.Columns("D:D").ColumnWidth = 20
+                shXL.Columns("A:A").ColumnWidth = 15
+                shXL.Columns("B:B").ColumnWidth = 15
+                shXL.Columns("C:C").ColumnWidth = 15
+                shXL.Columns("D:D").ColumnWidth = 15
+                shXL.Columns("E:E").ColumnWidth = 15
+                shXL.Columns("F:F").ColumnWidth = 15
+                shXL.Columns("G:G").ColumnWidth = 15
+                shXL.Columns("H:H").ColumnWidth = 15
+
+                shXL.Columns("A").Cells.HorizontalAlignment = -4108
                 shXL.Columns("B").Cells.HorizontalAlignment = -4108
-                shXL.Columns("D").Cells.HorizontalAlignment = -4108
                 shXL.Columns("C").Cells.HorizontalAlignment = -4108
+                shXL.Columns("D").Cells.HorizontalAlignment = -4108
                 shXL.Columns("E").Cells.HorizontalAlignment = -4108
                 shXL.Columns("F").Cells.HorizontalAlignment = -4108
                 shXL.Columns("G").Cells.HorizontalAlignment = -4108
+                shXL.Columns("H").Cells.HorizontalAlignment = -4108
 
 
                 Dim Detalle = CmdReportArticulo(GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(6).Value().ToString())
 
-                Dim FilaID As Integer = 9
+                Dim FilaID As Integer = 3
                 For Each Row As DataRow In Detalle.Rows
                     shXL.Cells(FilaID, 2).Value = Row("CodigoArticulo").ToString()
                     shXL.Cells(FilaID, 3).Value = Row("Articulo").ToString()
@@ -205,7 +215,7 @@ Public Class InventariadoForm
                 Dim saveFileDialog1 As New SaveFileDialog()
                 saveFileDialog1.Title = "Guardar documento Excel"
                 saveFileDialog1.Filter = "Excel File|*.xlsx"
-                saveFileDialog1.FileName = GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(6).Value().ToString()
+                saveFileDialog1.FileName = Trim(GridArticulo.GetSelectedRows().Item(0).GridPanel.GetSelectedRows.GetCells(6).Value().ToString())
                 saveFileDialog1.ShowDialog()
 
                 wbXl.SaveAs(saveFileDialog1.FileName)

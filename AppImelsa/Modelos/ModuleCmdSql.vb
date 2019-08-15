@@ -2030,7 +2030,7 @@ Module ModuleCmdSql
         Try
             Connect.Open()
             Cmd = New SqlCommand("select A.ID_ARTICULO CodigoArticulo,A.Nombre Articulo,C.Nombre Categoria, P.NamProyect Proyecto,A.STOCK Cantidad,A.DESCRIPCION Descripcion, P.CodProyect
-                      from MTableArticulo A JOIN MTableCategoria C ON A.ID_CATEGORIA= C.ID_CATEGORIA JOIN MTableProyect P ON A.PROYECTO=P.CodProyect where CodProyect =" + Proyecto + "", Connect)
+                      from MTableArticulo A JOIN MTableCategoria C ON A.ID_CATEGORIA= C.ID_CATEGORIA JOIN MTableProyect P ON A.PROYECTO=P.CodProyect where CodProyect ='" + Proyecto + "'", Connect)
             da = New SqlDataAdapter(Cmd)
             ds = New DataSet
             da.Fill(ds, "Proyectos")
