@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="AppImelsa.exe.manifest" size="73546">
+    <dependentAssembly dependencyType="install" codebase="AppImelsa.exe.manifest" size="72026">
       <assemblyIdentity name="AppImelsa.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ko+Q8spwfHHLtP1agaO+JIIAuuJMuBM5DPlSwuG2zCI=</dsig:DigestValue>
+        <dsig:DigestValue>GnJJfLwY6+ZbN8I9x5yVuunhHH4PFjBFPsZlq2ALkfA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

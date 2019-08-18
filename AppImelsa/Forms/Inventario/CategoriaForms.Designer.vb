@@ -65,7 +65,7 @@ Partial Class CategoriaForms
         Me.BtnAddClient.Size = New System.Drawing.Size(202, 27)
         Me.BtnAddClient.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BtnAddClient.TabIndex = 155
-        Me.BtnAddClient.Text = "Añadir Categoria"
+        Me.BtnAddClient.Text = "Aï¿½adir Categoria"
         '
         'BtnDeleteCategoria
         '
@@ -288,6 +288,7 @@ Partial Class CategoriaForms
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1089, 505)
+        Me.ControlBox = False
         Me.Controls.Add(Me.ReflectionLabel2)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PictureBox1)
@@ -295,6 +296,7 @@ Partial Class CategoriaForms
         Me.Controls.Add(Me.GridCategorias)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "CategoriaForms"
         Me.Text = "MetroForm"

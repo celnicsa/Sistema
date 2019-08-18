@@ -43,39 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.ReportSource" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.Shared" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="CrystalDecisions.Web" version="13.0.3500.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="amd64" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="6802432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppImelsa.exe" size="6810112">
       <assemblyIdentity name="AppImelsa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hOLFOXMXztLd9vJRDxp3lMgpXX+J+LYHV2njlCi9Mbc=</dsig:DigestValue>
+        <dsig:DigestValue>kAEd+o5ItBn6f67otbtqcPtPLV2Inou/z0Jm15CNhZo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -380,14 +355,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="261784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="261768">
       <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>L7bzDifOJzR4Yax5FlX3hD9QjAjNhbzkEvYJfoxzuEM=</dsig:DigestValue>
+        <dsig:DigestValue>JAWczHzxYClzq+Y8hlhK7xPOFYMxW6mN6UHRfpGZWZs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1153,7 +1128,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Qx4VkPmW/qrxmrWyHw8NbK6byYqTJPhaADXK5jZexNQ=</dsig:DigestValue>
+      <dsig:DigestValue>9n77suJ3eBcwdH7+094jw30mkuPIVQrq5ioSgyuGAoo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="logo.ico" size="167318">

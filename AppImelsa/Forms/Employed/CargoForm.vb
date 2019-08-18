@@ -47,7 +47,7 @@ Public Class CargoForm
 
     Private Function QuestionDelete(ByVal Entidad As String) As Boolean
         Dim Question As Int16
-        Question = MsgBox("¿Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
+        Question = MsgBox("ï¿½Desea Eliminar a la Entidad '" + Entidad + "' ?", MsgBoxStyle.YesNo)
         If Question = MsgBoxResult.Yes Then
             Return True
         End If

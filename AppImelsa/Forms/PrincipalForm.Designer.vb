@@ -24,11 +24,11 @@ Partial Class PrincipalForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrincipalForm))
-        Dim SuperTabColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
-        Dim SuperTabLinearGradientColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
-        Dim SuperTabPanelColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
-        Dim SuperTabPanelItemColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabColorTable = New DevComponents.DotNetBar.Rendering.SuperTabColorTable()
         Dim SuperTabLinearGradientColorTable1 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
+        Dim SuperTabPanelColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelColorTable()
+        Dim SuperTabPanelItemColorTable2 As DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable = New DevComponents.DotNetBar.Rendering.SuperTabPanelItemColorTable()
+        Dim SuperTabLinearGradientColorTable3 As DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable = New DevComponents.DotNetBar.Rendering.SuperTabLinearGradientColorTable()
         Me.ControlContainerItem1 = New DevComponents.DotNetBar.ControlContainerItem()
         Me.LabelItem1 = New DevComponents.DotNetBar.LabelItem()
         Me.QatCustomizeItem2 = New DevComponents.DotNetBar.QatCustomizeItem()
@@ -102,6 +102,8 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1 = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.ReflectionImage1 = New DevComponents.DotNetBar.Controls.ReflectionImage()
         Me.SuperTabItem1 = New DevComponents.DotNetBar.SuperTabItem()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
         Me.RibbonPanel2.SuspendLayout()
@@ -109,6 +111,8 @@ Partial Class PrincipalForm
         CType(Me.TabCWindows, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabCWindows.SuspendLayout()
         Me.SuperTabControlPanel1.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ControlContainerItem1
@@ -258,14 +262,15 @@ Partial Class PrincipalForm
         Me.RibbonControl1.CaptionVisible = True
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel1)
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel2)
-        Me.RibbonControl1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.RibbonControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RibbonControl1.ForeColor = System.Drawing.Color.Black
         Me.RibbonControl1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ApplicationButton1, Me.RibbonTabItem3, Me.RibbonTabItem4})
         Me.RibbonControl1.KeyTipsFont = New System.Drawing.Font("Tahoma", 7.0!)
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonControl1.Margin = New System.Windows.Forms.Padding(0)
         Me.RibbonControl1.Name = "RibbonControl1"
         Me.RibbonControl1.QuickToolbarItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.QatCustomizeItem3})
-        Me.RibbonControl1.Size = New System.Drawing.Size(1367, 154)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1367, 145)
         Me.RibbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonControl1.SystemText.MaximizeRibbonText = "&Maximize the Ribbon"
         Me.RibbonControl1.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon"
@@ -288,6 +293,7 @@ Partial Class PrincipalForm
         '
         'RibbonPanel1
         '
+        Me.RibbonPanel1.AutoSize = True
         Me.RibbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonPanel1.Controls.Add(Me.RibbonBar2)
         Me.RibbonPanel1.Controls.Add(Me.RibbonBar6)
@@ -297,7 +303,7 @@ Partial Class PrincipalForm
         Me.RibbonPanel1.Location = New System.Drawing.Point(0, 54)
         Me.RibbonPanel1.Name = "RibbonPanel1"
         Me.RibbonPanel1.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel1.Size = New System.Drawing.Size(1367, 100)
+        Me.RibbonPanel1.Size = New System.Drawing.Size(1367, 91)
         '
         '
         '
@@ -331,7 +337,7 @@ Partial Class PrincipalForm
         Me.RibbonBar2.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem3, Me.ItemContainer6})
         Me.RibbonBar2.Location = New System.Drawing.Point(822, 0)
         Me.RibbonBar2.Name = "RibbonBar2"
-        Me.RibbonBar2.Size = New System.Drawing.Size(249, 98)
+        Me.RibbonBar2.Size = New System.Drawing.Size(249, 89)
         Me.RibbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar2.TabIndex = 6
         Me.RibbonBar2.Text = "Inventario"
@@ -401,7 +407,7 @@ Partial Class PrincipalForm
         Me.RibbonBar6.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnProyect, Me.ItemContainer3})
         Me.RibbonBar6.Location = New System.Drawing.Point(573, 0)
         Me.RibbonBar6.Name = "RibbonBar6"
-        Me.RibbonBar6.Size = New System.Drawing.Size(249, 98)
+        Me.RibbonBar6.Size = New System.Drawing.Size(249, 89)
         Me.RibbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar6.TabIndex = 5
         Me.RibbonBar6.Text = "Proyectos"
@@ -480,7 +486,7 @@ Partial Class PrincipalForm
         Me.RibbonBar7.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnClient, Me.ItemContainer1})
         Me.RibbonBar7.Location = New System.Drawing.Point(324, 0)
         Me.RibbonBar7.Name = "RibbonBar7"
-        Me.RibbonBar7.Size = New System.Drawing.Size(249, 98)
+        Me.RibbonBar7.Size = New System.Drawing.Size(249, 89)
         Me.RibbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar7.TabIndex = 4
         Me.RibbonBar7.Text = "Clientes"
@@ -550,7 +556,7 @@ Partial Class PrincipalForm
         Me.RibbonBar8.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.BtnEmployed, Me.ItemContainer5, Me.ItemContainer2})
         Me.RibbonBar8.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar8.Name = "RibbonBar8"
-        Me.RibbonBar8.Size = New System.Drawing.Size(321, 98)
+        Me.RibbonBar8.Size = New System.Drawing.Size(321, 89)
         Me.RibbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar8.TabIndex = 3
         Me.RibbonBar8.Text = "Empleados"
@@ -878,8 +884,7 @@ Partial Class PrincipalForm
         '
         Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
         Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx1.Controls.Add(Me.RibbonControl1)
-        Me.PanelEx1.Controls.Add(Me.TabCWindows)
+        Me.PanelEx1.Controls.Add(Me.TableLayoutPanel1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEx1.Location = New System.Drawing.Point(1, 1)
@@ -914,22 +919,23 @@ Partial Class PrincipalForm
         Me.TabCWindows.ControlBox.Name = ""
         Me.TabCWindows.ControlBox.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.TabCWindows.ControlBox.MenuBox, Me.TabCWindows.ControlBox.CloseBox})
         Me.TabCWindows.Controls.Add(Me.SuperTabControlPanel1)
+        Me.TabCWindows.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabCWindows.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.ForeColor = System.Drawing.Color.Black
-        Me.TabCWindows.Location = New System.Drawing.Point(15, 160)
+        Me.TabCWindows.Location = New System.Drawing.Point(8, 8)
         Me.TabCWindows.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TabCWindows.MinimumSize = New System.Drawing.Size(1020, 520)
         Me.TabCWindows.Name = "TabCWindows"
         Me.TabCWindows.ReorderTabsEnabled = True
         Me.TabCWindows.SelectedTabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.SelectedTabIndex = 0
-        Me.TabCWindows.Size = New System.Drawing.Size(1333, 525)
+        Me.TabCWindows.Size = New System.Drawing.Size(1345, 558)
         Me.TabCWindows.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabCWindows.TabIndex = 3
         Me.TabCWindows.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem1})
-        SuperTabLinearGradientColorTable2.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
-        SuperTabColorTable1.Background = SuperTabLinearGradientColorTable2
-        Me.TabCWindows.TabStripColor = SuperTabColorTable1
+        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))}
+        SuperTabColorTable2.Background = SuperTabLinearGradientColorTable1
+        Me.TabCWindows.TabStripColor = SuperTabColorTable2
         Me.TabCWindows.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.TabCWindows.Text = "SuperTabControl1"
         '
@@ -942,11 +948,11 @@ Partial Class PrincipalForm
         Me.SuperTabControlPanel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SuperTabControlPanel1.MinimumSize = New System.Drawing.Size(0, 520)
         Me.SuperTabControlPanel1.Name = "SuperTabControlPanel1"
-        SuperTabLinearGradientColorTable1.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
-        SuperTabPanelItemColorTable1.Background = SuperTabLinearGradientColorTable1
-        SuperTabPanelColorTable1.Default = SuperTabPanelItemColorTable1
-        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable1
-        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1333, 520)
+        SuperTabLinearGradientColorTable3.Colors = New System.Drawing.Color() {System.Drawing.Color.WhiteSmoke}
+        SuperTabPanelItemColorTable2.Background = SuperTabLinearGradientColorTable3
+        SuperTabPanelColorTable2.Default = SuperTabPanelItemColorTable2
+        Me.SuperTabControlPanel1.PanelColor = SuperTabPanelColorTable2
+        Me.SuperTabControlPanel1.Size = New System.Drawing.Size(1345, 532)
         Me.SuperTabControlPanel1.TabIndex = 1
         Me.SuperTabControlPanel1.TabItem = Me.SuperTabItem1
         '
@@ -963,7 +969,7 @@ Partial Class PrincipalForm
         Me.ReflectionLabel1.ForeColor = System.Drawing.Color.Black
         Me.ReflectionLabel1.Location = New System.Drawing.Point(461, 34)
         Me.ReflectionLabel1.Name = "ReflectionLabel1"
-        Me.ReflectionLabel1.Size = New System.Drawing.Size(543, 70)
+        Me.ReflectionLabel1.Size = New System.Drawing.Size(555, 70)
         Me.ReflectionLabel1.TabIndex = 1
         Me.ReflectionLabel1.Text = "<b><font size=""+6""><i>Construcciones</i><font color=""#222222""> y </font><font col" &
     "or=""#003333"">Eléctricas de Nicaragua.SA</font></font></b>"
@@ -982,7 +988,7 @@ Partial Class PrincipalForm
         Me.ReflectionImage1.Image = Global.AppImelsa.My.Resources.Resources.logo
         Me.ReflectionImage1.Location = New System.Drawing.Point(476, 134)
         Me.ReflectionImage1.Name = "ReflectionImage1"
-        Me.ReflectionImage1.Size = New System.Drawing.Size(504, 335)
+        Me.ReflectionImage1.Size = New System.Drawing.Size(516, 335)
         Me.ReflectionImage1.TabIndex = 0
         '
         'SuperTabItem1
@@ -994,6 +1000,34 @@ Partial Class PrincipalForm
         Me.SuperTabItem1.PredefinedColor = DevComponents.DotNetBar.eTabItemColor.OfficeMobile2014Blue
         Me.SuperTabItem1.TabFont = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SuperTabItem1.Text = "Bienvenidos"
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.AutoSize = True
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.RibbonControl1, 0, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1367, 725)
+        Me.TableLayoutPanel1.TabIndex = 4
+        '
+        'Panel1
+        '
+        Me.Panel1.AutoSize = True
+        Me.Panel1.Controls.Add(Me.TabCWindows)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(3, 148)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(8)
+        Me.Panel1.Size = New System.Drawing.Size(1361, 574)
+        Me.Panel1.TabIndex = 5
         '
         'PrincipalForm
         '
@@ -1013,9 +1047,13 @@ Partial Class PrincipalForm
         Me.RibbonPanel1.ResumeLayout(False)
         Me.RibbonPanel2.ResumeLayout(False)
         Me.PanelEx1.ResumeLayout(False)
+        Me.PanelEx1.PerformLayout()
         CType(Me.TabCWindows, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabCWindows.ResumeLayout(False)
         Me.SuperTabControlPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1092,4 +1130,6 @@ Partial Class PrincipalForm
     Friend WithEvents ReflectionLabel1 As DevComponents.DotNetBar.Controls.ReflectionLabel
     Friend WithEvents ReflectionImage1 As DevComponents.DotNetBar.Controls.ReflectionImage
     Friend WithEvents SuperTabItem1 As DevComponents.DotNetBar.SuperTabItem
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents Panel1 As Panel
 End Class

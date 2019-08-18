@@ -236,8 +236,6 @@ E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\DevComponents.DotNet
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\DevComponents.DotNetBar2.xml
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\DevComponents.Instrumentation.xml
-E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.vbprojResolveAssemblyReference.cache
-E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.vbproj.AppImelsa.exe.config
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.vbproj.ResolveComReference.cache
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.AddClientForm.resources
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.ClientForm.resources
@@ -345,3 +343,7 @@ E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\zh-CHS\Microsoft.Rep
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
 E:\Sistemas\Ing_Software\Version\Master\AppImelsa\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.vbprojAssemblyReference.cache
+E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.exe.config
+E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.vbproj.CoreCompileInputs.cache
+E:\Sistemas\Ing_Software\Version\Master\AppImelsa\obj\Debug\AppImelsa.vbproj.CopyComplete

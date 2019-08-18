@@ -27,6 +27,8 @@ Partial Class AddEmployedForm
         Me.BtnCancel = New DevComponents.DotNetBar.ButtonX()
         Me.PSliderEmployed = New DevComponents.DotNetBar.Controls.PageSlider()
         Me.PageSliderPage1 = New DevComponents.DotNetBar.Controls.PageSliderPage()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.BtnLoadPhoto = New DevComponents.DotNetBar.ButtonX()
@@ -88,8 +90,6 @@ Partial Class AddEmployedForm
         Me.CProgress = New DevComponents.DotNetBar.CircularProgressItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.PSliderEmployed.SuspendLayout()
         Me.PageSliderPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,6 +164,32 @@ Partial Class AddEmployedForm
         Me.PageSliderPage1.Size = New System.Drawing.Size(749, 319)
         Me.PageSliderPage1.TabIndex = 3
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ComboBox2.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"SI", "NO"})
+        Me.ComboBox2.Location = New System.Drawing.Point(98, 261)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(144, 21)
+        Me.ComboBox2.TabIndex = 175
+        '
+        'LabelX4
+        '
+        Me.LabelX4.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelX4.ForeColor = System.Drawing.Color.Black
+        Me.LabelX4.Location = New System.Drawing.Point(17, 261)
+        Me.LabelX4.Name = "LabelX4"
+        Me.LabelX4.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX4.TabIndex = 174
+        Me.LabelX4.Text = "Patrono"
+        '
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
@@ -227,6 +253,7 @@ Partial Class AddEmployedForm
         '
         'TxtBCode
         '
+        Me.TxtBCode.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -235,6 +262,7 @@ Partial Class AddEmployedForm
         Me.TxtBCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBCode.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBCode.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBCode.ForeColor = System.Drawing.Color.Black
         Me.TxtBCode.Location = New System.Drawing.Point(98, 71)
         Me.TxtBCode.Name = "TxtBCode"
         Me.TxtBCode.PreventEnterBeep = True
@@ -331,15 +359,15 @@ Partial Class AddEmployedForm
         Me.TxtBAddres.Location = New System.Drawing.Point(286, 201)
         Me.TxtBAddres.MaxLength = 133
         Me.TxtBAddres.Name = "TxtBAddres"
-        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang19466{\fonttbl{\f0\fnil\fcharset0" &
-    " Arial Narrow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\*\generator Riched20 10.0.18362}\viewkind4\uc1 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\pard\f0\fs" &
-    "20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TxtBAddres.Rtf = "{\rtf1\ansi\ansicpg1252\deff0\deflang19466{\fonttbl{\f0\fnil\fcharset0 Arial Narr" &
+    "ow;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\f0\fs20\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TxtBAddres.Size = New System.Drawing.Size(223, 49)
         Me.TxtBAddres.TabIndex = 162
         '
         'TxtBIden
         '
         Me.TxtBIden.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TxtBIden.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -348,6 +376,7 @@ Partial Class AddEmployedForm
         Me.TxtBIden.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBIden.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBIden.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBIden.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBIden, True)
         Me.TxtBIden.Location = New System.Drawing.Point(98, 181)
         Me.TxtBIden.MaxLength = 19
@@ -359,6 +388,7 @@ Partial Class AddEmployedForm
         'TxtBLastName
         '
         Me.TxtBLastName.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TxtBLastName.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -367,6 +397,7 @@ Partial Class AddEmployedForm
         Me.TxtBLastName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBLastName.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBLastName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBLastName.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBLastName, True)
         Me.TxtBLastName.Location = New System.Drawing.Point(98, 145)
         Me.TxtBLastName.MaxLength = 40
@@ -378,6 +409,7 @@ Partial Class AddEmployedForm
         'TxtBName
         '
         Me.TxtBName.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.TxtBName.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -386,6 +418,7 @@ Partial Class AddEmployedForm
         Me.TxtBName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBName.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBName.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBName.ForeColor = System.Drawing.Color.Black
         Me.Highlighter1.SetHighlightOnFocus(Me.TxtBName, True)
         Me.TxtBName.Location = New System.Drawing.Point(98, 107)
         Me.TxtBName.MaxLength = 90
@@ -751,7 +784,6 @@ Partial Class AddEmployedForm
         Me.ListBoxEmail.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxEmail.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxEmail.CheckStateMember = Nothing
         Me.ListBoxEmail.ContainerControlProcessDialogKey = True
         Me.ListBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxEmail.DragDropSupport = True
@@ -812,7 +844,6 @@ Partial Class AddEmployedForm
         Me.ListBoxTel.BackgroundStyle.BackColor = System.Drawing.Color.White
         Me.ListBoxTel.BackgroundStyle.Class = "ListBoxAdv"
         Me.ListBoxTel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ListBoxTel.CheckStateMember = Nothing
         Me.ListBoxTel.ContainerControlProcessDialogKey = True
         Me.ListBoxTel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxTel.DragDropSupport = True
@@ -826,6 +857,7 @@ Partial Class AddEmployedForm
         '
         'TxtBEmail
         '
+        Me.TxtBEmail.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -833,6 +865,7 @@ Partial Class AddEmployedForm
         Me.TxtBEmail.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBEmail.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBEmail.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBEmail.ForeColor = System.Drawing.Color.Black
         Me.TxtBEmail.Location = New System.Drawing.Point(419, 58)
         Me.TxtBEmail.MaxLength = 30
         Me.TxtBEmail.Name = "TxtBEmail"
@@ -842,6 +875,7 @@ Partial Class AddEmployedForm
         '
         'TxtBPhone
         '
+        Me.TxtBPhone.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -849,6 +883,7 @@ Partial Class AddEmployedForm
         Me.TxtBPhone.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.TxtBPhone.DisabledBackColor = System.Drawing.Color.White
         Me.TxtBPhone.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBPhone.ForeColor = System.Drawing.Color.Black
         Me.TxtBPhone.Location = New System.Drawing.Point(118, 57)
         Me.TxtBPhone.Name = "TxtBPhone"
         Me.TxtBPhone.PreventEnterBeep = True
@@ -1050,32 +1085,6 @@ Partial Class AddEmployedForm
         Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue
         Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.ComboBox2.ForeColor = System.Drawing.Color.Black
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"SI", "NO"})
-        Me.ComboBox2.Location = New System.Drawing.Point(98, 261)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(144, 21)
-        Me.ComboBox2.TabIndex = 175
-        '
-        'LabelX4
-        '
-        Me.LabelX4.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX4.ForeColor = System.Drawing.Color.Black
-        Me.LabelX4.Location = New System.Drawing.Point(17, 261)
-        Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX4.TabIndex = 174
-        Me.LabelX4.Text = "Patrono"
-        '
         'AddEmployedForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1090,7 +1099,6 @@ Partial Class AddEmployedForm
         Me.Controls.Add(Me.ProgressSteps1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "AddEmployedForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nuevo Empleado"

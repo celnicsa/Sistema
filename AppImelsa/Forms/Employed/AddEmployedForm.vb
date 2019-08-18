@@ -182,7 +182,7 @@ Public Class AddEmployedForm
     Private Function NoContact()
         If ListBoxEmail.Items.Count = 0 And ListBoxTel.Items.Count = 0 Then
             Dim Question As Int16
-            Question = MsgBox("No se ha Añadido ningun Contacto, ¿Desea Continuar?", MsgBoxStyle.YesNo)
+            Question = MsgBox("No se ha Aï¿½adido ningun Contacto, ï¿½Desea Continuar?", MsgBoxStyle.YesNo)
             If Question = MsgBoxResult.No Then
                 Return False
             End If
